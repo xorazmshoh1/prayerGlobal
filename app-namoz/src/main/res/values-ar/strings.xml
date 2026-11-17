@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مواقيت الصلاة: الأذان والقبلة</string>
+    <string name="widget_name">مواقيت الصلاة</string>
+    <string name="widget_no_location">افتح التطبيق واختر موقعك</string>
+    <string name="widget_next">التالية: %1$s %2$s</string>
+
+    <string name="channel_azan">وقت الصلاة (أذان)</string>
+    <string name="channel_beep">وقت الصلاة (تنبيه)</string>
+    <string name="channel_silent">وقت الصلاة (صامت)</string>
+    <string name="channel_reminder">تذكير قبل الصلاة</string>
+    <string name="notif_title">حان وقت صلاة %1$s</string>
+    <string name="notif_reminder_title">%1$s بعد %2$d دقيقة</string>
+    <string name="notif_text">%1$s · %2$s</string>
+
+    <string name="prayer_fajr">الفجر</string>
+    <string name="prayer_sunrise">الشروق</string>
+    <string name="prayer_dhuhr">الظهر</string>
+    <string name="prayer_asr">العصر</string>
+    <string name="prayer_maghrib">المغرب</string>
+    <string name="prayer_isha">العشاء</string>
+    <string name="until_fajr">المتبقي حتى الفجر</string>
+    <string name="until_sunrise">المتبقي حتى الشروق</string>
+    <string name="until_dhuhr">المتبقي حتى الظهر</string>
+    <string name="until_asr">المتبقي حتى العصر</string>
+    <string name="until_maghrib">المتبقي حتى المغرب</string>
+    <string name="until_isha">المتبقي حتى العشاء</string>
+
+    <string name="method_mwl">رابطة العالم الإسلامي</string>
+    <string name="method_umm_al_qura">أم القرى، مكة المكرمة</string>
+    <string name="method_dubai">دبي</string>
+    <string name="method_kuwait">الكويت</string>
+    <string name="method_qatar">قطر</string>
+    <string name="method_egyptian">الهيئة المصرية العامة للمساحة</string>
+    <string name="method_karachi">جامعة العلوم الإسلامية، كراتشي</string>
+    <string name="method_turkey">تركيا (معايير ديانت)</string>
+    <string name="method_uzbekistan">أوزبكستان / آسيا الوسطى</string>
+    <string name="method_singapore">سنغافورة، ماليزيا، إندونيسيا</string>
+    <string name="method_isna">الجمعية الإسلامية لأمريكا الشمالية</string>
+    <string name="method_moonsighting">لجنة رؤية الهلال</string>
+    <string name="madhab_shafi">الشافعي (الافتراضي)</string>
+    <string name="madhab_hanafi">الحنفي</string>
+    <string name="highlat_middle">منتصف الليل</string>
+    <string name="highlat_seventh">سُبع الليل</string>
+    <string name="highlat_angle">زاوية الشفق</string>
+    <string name="sound_azan">أذان</string>
+    <string name="sound_beep">تنبيه</string>
+    <string name="sound_silent">صامت</string>
+    <string name="label_none">بدون تسمية</string>
+    <string name="label_home">المنزل</string>
+    <string name="label_work">العمل</string>
+    <string name="label_travel">السفر</string>
+
+    <string name="no_location_title">لم يتم تحديد الموقع</string>
+    <string name="no_location_message">اختر مدينة أو استخدم GPS لعرض مواقيت الصلاة.</string>
+    <string name="choose_location">اختيار الموقع</string>
+    <string name="travel_title">تم اكتشاف موقع جديد</string>
+    <string name="travel_message">يبدو أنك في %1$s. هل تريد تحديث المواقيت للموقع الجديد؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="toggle_notification">تشغيل الإشعار أو إيقافه</string>
+
+    <string name="previous_month">الشهر السابق</string>
+    <string name="next_month">الشهر التالي</string>
+    <string name="calendar_day">اليوم</string>
+    <string name="suhoor">السحور</string>
+    <string name="iftar">الإفطار</string>
+
+    <string name="qibla_title">اتجاه القبلة</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">أنت متجه نحو القبلة</string>
+    <string name="qibla_turn">استدر حتى يشير السهم إلى الكعبة</string>
+    <string name="calibrate_hint">دقة البوصلة منخفضة. حرّك الهاتف على شكل الرقم ٨ وأبعده عن المعادن والمغناطيس.</string>
+    <string name="compass_unavailable">لا يحتوي هذا الهاتف على مستشعر بوصلة</string>
+
+    <string name="dhikr_subhanallah">سبحان الله</string>
+    <string name="dhikr_alhamdulillah">الحمد لله</string>
+    <string name="dhikr_allahuakbar">الله أكبر</string>
+    <string name="dhikr_tahlil">لا إله إلا الله</string>
+    <string name="dhikr_istighfar">أستغفر الله</string>
+    <string name="dhikr_salawat">الصلاة على النبي</string>
+    <string name="tasbeh_rounds">الدورات: %1$d · الهدف %2$d</string>
+    <string name="tasbeh_custom">مخصص</string>
+    <string name="tasbeh_target">الهدف</string>
+    <string name="tasbeh_today_total">اليوم: %1$d</string>
+    <string name="reset">تصفير</string>
+    <string name="ok">حسنًا</string>
+    <string name="cancel">إلغاء</string>
+    <string name="close">إغلاق</string>
+    <string name="back">رجوع</string>
+    <string name="delete">حذف</string>
+    <string name="next">التالي</string>
+    <string name="later">لاحقًا</string>
+    <string name="allow">السماح</string>
+    <string name="off">إيقاف</string>
+    <string name="minutes_short">%1$d د</string>
+
+    <string name="settings">الإعدادات</string>
+    <string name="section_location">الموقع</string>
+    <string name="saved_locations">المواقع المحفوظة</string>
+    <string name="add_location">إضافة موقع</string>
+    <string name="use_gps">تحديد عبر GPS</string>
+    <string name="gps_failed">تعذّر تحديد موقعك. فعّل الموقع أو ابحث عن مدينة.</string>
+    <string name="gps_optional">GPS اختياري — يمكنك دائمًا البحث عن مدينة.</string>
+    <string name="search_city">ابحث عن مدينة</string>
+    <string name="section_calculation">الحساب</string>
+    <string name="calc_method">طريقة الحساب</string>
+    <string name="auto_value">تلقائي: %1$s</string>
+    <string name="asr_madhab">مذهب العصر</string>
+    <string name="high_lat_rule">قاعدة خطوط العرض العليا</string>
+    <string name="time_adjustments">تعديل المواقيت</string>
+    <string name="time_adjustments_hint">أضف أو اطرح دقائق لكل وقت لتطابق مسجدك المحلي.</string>
+    <string name="hijri_adjust">تعديل التاريخ الهجري (أيام)</string>
+    <string name="section_app">التطبيق</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="language">اللغة</string>
+    <string name="system_default">لغة النظام</string>
+    <string name="theme">المظهر</string>
+    <string name="theme_system">النظام</string>
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">داكن</string>
+    <string name="section_about">حول التطبيق</string>
+    <string name="support_authors">ادعم المطورين</string>
+    <string name="support_authors_hint">شاهد إعلانًا قصيرًا (اختياري)</string>
+    <string name="thanks_title">شكرًا لك!</string>
+    <string name="thanks_message">جزاك الله خيرًا. دعمك يساعد على إبقاء التطبيق مجانيًا.</string>
+    <string name="privacy_options">خيارات خصوصية الإعلانات</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="rate_app">قيّم التطبيق</string>
+    <string name="disclaimer">تُحسب المواقيت على جهازك. يمكن تغيير الطريقة والتعديلات من الإعدادات. التطبيق غير تابع لأي جهة حكومية أو دينية.</string>
+
+    <string name="exact_alarm_needed">اسمح بـ «المنبهات والتذكيرات» لتصل الإشعارات في وقتها تمامًا.</string>
+    <string name="remind_before">التذكير قبل</string>
+
+    <string name="help_notifications">الإشعارات لا تصل؟</string>
+    <string name="help_intro">بعض الهواتف توقف التطبيقات في الخلفية لتوفير البطارية. يرجى التحقق مما يلي:</string>
+    <string name="help_battery_title">تحسين البطارية</string>
+    <string name="help_battery_text">الإعدادات ← التطبيقات ← مواقيت الصلاة ← البطارية ← اختر «غير مقيد».</string>
+    <string name="help_xiaomi_title">Xiaomi / Redmi / POCO</string>
+    <string name="help_xiaomi_text">الأمان ← الأذونات ← التشغيل التلقائي ← فعّله للتطبيق. ثم الإعدادات ← التطبيقات ← مواقيت الصلاة ← توفير البطارية ← «بلا قيود».</string>
+    <string name="help_huawei_title">Huawei / Honor</string>
+    <string name="help_huawei_text">الإعدادات ← البطارية ← تشغيل التطبيقات ← مواقيت الصلاة ← الإدارة يدويًا وتفعيل الخيارات الثلاثة.</string>
+    <string name="help_samsung_title">Samsung</string>
+    <string name="help_samsung_text">الإعدادات ← البطارية ← حدود الاستخدام في الخلفية ← أزل التطبيق من «التطبيقات النائمة».</string>
+    <string name="open_app_settings">فتح إعدادات التطبيق</string>
+    <string name="open_battery_settings">فتح إعدادات البطارية</string>
+
+    <string name="onboarding_language_title">اختر لغتك</string>
+    <string name="onboarding_location_title">أين أنت؟</string>
+    <string name="onboarding_method_title">طريقة الحساب</string>
+    <string name="onboarding_method_hint">اخترنا الطريقة المعتمدة في بلدك. يمكنك تغييرها في أي وقت من الإعدادات.</string>
+    <string name="onboarding_notif_title">إشعارات الصلاة</string>
+    <string name="onboarding_notif_text">اسمح بالإشعارات لسماع الأذان في كل وقت صلاة.</string>
+
+    <string name="tab_home">اليوم</string>
+    <string name="tab_calendar">الشهر</string>
+    <string name="tab_qibla">القبلة</string>
+    <string name="tab_tasbeh">المسبحة</string>
+    <string name="tab_settings">الإعدادات</string>
+</resources>

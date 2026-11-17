@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Arabcha zikr matnlari barcha tillarda bir xil. -->
+    <string name="dhikr_subhanallah_ar" translatable="false">سُبْحَانَ ٱللَّٰهِ</string>
+    <string name="dhikr_alhamdulillah_ar" translatable="false">ٱلْحَمْدُ لِلَّٰهِ</string>
+    <string name="dhikr_allahuakbar_ar" translatable="false">ٱللَّٰهُ أَكْبَرُ</string>
+    <string name="dhikr_tahlil_ar" translatable="false">لَا إِلَٰهَ إِلَّا ٱللَّٰهُ</string>
+    <string name="dhikr_istighfar_ar" translatable="false">أَسْتَغْفِرُ ٱللَّٰهَ</string>
+    <string name="dhikr_salawat_ar" translatable="false">ٱللَّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ</string>
+    <!-- Maxfiylik siyosati URL (GitHub Pages yoki Google Sites'da joylashtiriladi). -->
+    <string name="privacy_policy_url" translatable="false">https://example.github.io/prayer-times/privacy</string>
+</resources>
