@@ -1,6 +1,6 @@
 # Loyiha: Prayer Times: Azan & Qibla (3-ilova)
 
-Global namoz vaqtlari ilovasi: internetsiz hisoblash (adhan), qibla, tasbeh, oylik taqvim, bildirishnomalar, Glance vidjeti, 7 til (en, ar, id, tr, ur, uz, ru).
+Global namoz vaqtlari ilovasi: internetsiz hisoblash (adhan), qibla, tasbeh, oylik taqvim, bildirishnomalar, Glance vidjeti, 12 til (en, ar, id, ur, bn, tr, fa, ms, fr, ru, uz, de).
 
 ## Texnologiyalar
 Kotlin 2.0, Jetpack Compose, Material 3, MVVM, Hilt, Room, DataStore,
@@ -17,7 +17,7 @@ minSdk 24, compileSdk/targetSdk 34, Gradle version catalog (`gradle/libs.version
 Umumiy kod faqat `core-*` modullarida.
 
 ## Qoidalar
-- Barcha matnlar `strings.xml` da: `values` = inglizcha, `values-{ar,in,tr,ur,uz,ru}`. RTL (ar, ur) qo'llab-quvvatlanadi, kompas aylantirilmaydi.
+- Barcha matnlar `strings.xml` da: `values` = inglizcha, `values-{ar,in,ur,bn,tr,fa,ms,fr,ru,uz,de}`. RTL (ar, ur, fa) qo'llab-quvvatlanadi, kompas aylantirilmaydi.
 - Faqat AdMob TEST ID lari; haqiqiy ID lar `local.properties` dan (faqat release).
 - Diniy ilova: interstitial va app open YO'Q, faqat banner (bosh sahifa, oylik taqvim) va ixtiyoriy rewarded (sozlamalar → "Mualliflarni qo'llab-quvvatlash"). AdMob'da qimor, spirtli ichimlik, tanishuv, astrologiya toifalarini bloklang.
 - Har bir ViewModel va hisoblash funksiyasi uchun unit test.

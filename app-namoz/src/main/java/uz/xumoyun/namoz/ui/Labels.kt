@@ -109,13 +109,18 @@ object TimeFormat {
     fun currentLocale(context: Context): Locale = context.resources.configuration.locales[0]
 }
 
-/** Qo'llab-quvvatlanadigan tillar (TZ: avval 5 til + o'zbek va rus). */
+/** Qo'llab-quvvatlanadigan 12 til (TZ: "Tillar va lokalizatsiya"). RTL: ar, ur, fa. */
 val SupportedLanguages = listOf(
     "en" to "English",
     "ar" to "العربية",
     "id" to "Bahasa Indonesia",
-    "tr" to "Türkçe",
     "ur" to "اردو",
-    "uz" to "O‘zbekcha",
+    "bn" to "বাংলা",
+    "tr" to "Türkçe",
+    "fa" to "فارسی",
+    "ms" to "Bahasa Melayu",
+    "fr" to "Français",
     "ru" to "Русский",
+    "uz" to "O‘zbekcha",
+    "de" to "Deutsch",
 )

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Heures de prière : Adhan &amp; Qibla</string>
+    <string name="widget_name">Heures de prière</string>
+    <string name="widget_no_location">Ouvrez l’application et choisissez un lieu</string>
+    <string name="widget_next">Prochaine : %1$s %2$s</string>
+
+    <string name="channel_azan">Heure de prière (adhan)</string>
+    <string name="channel_beep">Heure de prière (signal)</string>
+    <string name="channel_silent">Heure de prière (silencieux)</string>
+    <string name="channel_reminder">Rappel avant la prière</string>
+    <string name="notif_title">C’est l’heure de %1$s</string>
+    <string name="notif_reminder_title">%1$s dans %2$d min</string>
+    <string name="notif_text">%1$s · %2$s</string>
+
+    <string name="prayer_fajr">Fajr</string>
+    <string name="prayer_sunrise">Lever du soleil</string>
+    <string name="prayer_dhuhr">Dhuhr</string>
+    <string name="prayer_asr">Asr</string>
+    <string name="prayer_maghrib">Maghrib</string>
+    <string name="prayer_isha">Isha</string>
+    <string name="until_fajr">Avant Fajr</string>
+    <string name="until_sunrise">Avant le lever du soleil</string>
+    <string name="until_dhuhr">Avant Dhuhr</string>
+    <string name="until_asr">Avant Asr</string>
+    <string name="until_maghrib">Avant Maghrib</string>
+    <string name="until_isha">Avant Isha</string>
+
+    <string name="method_mwl">Ligue islamique mondiale</string>
+    <string name="method_umm_al_qura">Umm al-Qura, La Mecque</string>
+    <string name="method_dubai">Dubaï</string>
+    <string name="method_kuwait">Koweït</string>
+    <string name="method_qatar">Qatar</string>
+    <string name="method_egyptian">Autorité générale égyptienne</string>
+    <string name="method_karachi">Université des sciences islamiques, Karachi</string>
+    <string name="method_turkey">Turquie (paramètres Diyanet)</string>
+    <string name="method_uzbekistan">Ouzbékistan / Asie centrale</string>
+    <string name="method_singapore">Singapour, Malaisie, Indonésie</string>
+    <string name="method_isna">ISNA (Amérique du Nord)</string>
+    <string name="method_moonsighting">Moonsighting Committee</string>
+    <string name="madhab_shafi">Chaféite (standard)</string>
+    <string name="madhab_hanafi">Hanafite</string>
+    <string name="highlat_middle">Milieu de la nuit</string>
+    <string name="highlat_seventh">Un septième de la nuit</string>
+    <string name="highlat_angle">Angle du crépuscule</string>
+    <string name="sound_azan">Adhan</string>
+    <string name="sound_beep">Signal</string>
+    <string name="sound_silent">Silencieux</string>
+    <string name="label_none">Sans étiquette</string>
+    <string name="label_home">Maison</string>
+    <string name="label_work">Travail</string>
+    <string name="label_travel">Voyage</string>
+
+    <string name="no_location_title">Lieu non défini</string>
+    <string name="no_location_message">Choisissez une ville ou utilisez le GPS pour voir les heures de prière.</string>
+    <string name="choose_location">Choisir un lieu</string>
+    <string name="travel_title">Nouveau lieu détecté</string>
+    <string name="travel_message">Vous semblez être à %1$s. Mettre à jour les heures pour ce nouveau lieu ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="toggle_notification">Activer ou désactiver la notification</string>
+
+    <string name="previous_month">Mois précédent</string>
+    <string name="next_month">Mois suivant</string>
+    <string name="calendar_day">Jour</string>
+    <string name="suhoor">Suhour</string>
+    <string name="iftar">Iftar</string>
+
+    <string name="qibla_title">Direction de la Qibla</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">Vous êtes face à la Qibla</string>
+    <string name="qibla_turn">Tournez jusqu’à ce que la flèche pointe vers la Kaaba</string>
+    <string name="calibrate_hint">La précision de la boussole est faible. Faites un mouvement en forme de huit avec votre téléphone et éloignez-le du métal et des aimants.</string>
+    <string name="compass_unavailable">Ce téléphone n’a pas de capteur boussole</string>
+
+    <string name="dhikr_subhanallah">SubhanAllah</string>
+    <string name="dhikr_alhamdulillah">Alhamdulillah</string>
+    <string name="dhikr_allahuakbar">Allahu Akbar</string>
+    <string name="dhikr_tahlil">La ilaha illallah</string>
+    <string name="dhikr_istighfar">Astaghfirullah</string>
+    <string name="dhikr_salawat">Salawat</string>
+    <string name="tasbeh_rounds">Tours : %1$d · objectif %2$d</string>
+    <string name="tasbeh_custom">Personnalisé</string>
+    <string name="tasbeh_target">Objectif</string>
+    <string name="tasbeh_today_total">Aujourd’hui : %1$d</string>
+    <string name="reset">Réinitialiser</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Annuler</string>
+    <string name="close">Fermer</string>
+    <string name="back">Retour</string>
+    <string name="delete">Supprimer</string>
+    <string name="next">Suivant</string>
+    <string name="later">Plus tard</string>
+    <string name="allow">Autoriser</string>
+    <string name="off">Désactivé</string>
+    <string name="minutes_short">%1$d min</string>
+
+    <string name="settings">Paramètres</string>
+    <string name="section_location">Lieu</string>
+    <string name="saved_locations">Lieux enregistrés</string>
+    <string name="add_location">Ajouter un lieu</string>
+    <string name="use_gps">Détecter par GPS</string>
+    <string name="gps_failed">Impossible de détecter votre position. Activez la localisation ou recherchez une ville.</string>
+    <string name="gps_optional">Le GPS est facultatif — vous pouvez toujours rechercher une ville.</string>
+    <string name="search_city">Rechercher une ville</string>
+    <string name="section_calculation">Calcul</string>
+    <string name="calc_method">Méthode de calcul</string>
+    <string name="auto_value">Automatique : %1$s</string>
+    <string name="asr_madhab">École juridique pour Asr</string>
+    <string name="high_lat_rule">Règle des hautes latitudes</string>
+    <string name="time_adjustments">Ajustements des heures</string>
+    <string name="time_adjustments_hint">Ajoutez ou retirez des minutes à chaque heure pour correspondre à votre mosquée.</string>
+    <string name="hijri_adjust">Ajustement de la date hégirienne (jours)</string>
+    <string name="section_app">Application</string>
+    <string name="notifications">Notifications</string>
+    <string name="language">Langue</string>
+    <string name="system_default">Langue du système</string>
+    <string name="theme">Thème</string>
+    <string name="theme_system">Système</string>
+    <string name="theme_light">Clair</string>
+    <string name="theme_dark">Sombre</string>
+    <string name="section_about">À propos</string>
+    <string name="support_authors">Soutenir les développeurs</string>
+    <string name="support_authors_hint">Regarder une courte publicité (facultatif)</string>
+    <string name="thanks_title">Merci !</string>
+    <string name="thanks_message">Qu’Allah vous récompense. Votre soutien aide à garder l’application gratuite.</string>
+    <string name="privacy_options">Options de confidentialité des annonces</string>
+    <string name="privacy_policy">Politique de confidentialité</string>
+    <string name="rate_app">Noter l’application</string>
+    <string name="disclaimer">Les heures sont calculées sur votre appareil. Les méthodes et ajustements peuvent être modifiés dans les paramètres. Cette application n’est affiliée à aucune autorité gouvernementale ou religieuse.</string>
+
+    <string name="exact_alarm_needed">Autorisez « Alarmes et rappels » pour que les notifications arrivent à l’heure exacte.</string>
+    <string name="remind_before">Rappeler avant</string>
+
+    <string name="help_notifications">Les notifications n’arrivent pas ?</string>
+    <string name="help_intro">Certains téléphones arrêtent les applications en arrière-plan pour économiser la batterie. Vérifiez les points suivants :</string>
+    <string name="help_battery_title">Optimisation de la batterie</string>
+    <string name="help_battery_text">Paramètres → Applications → Heures de prière → Batterie → choisissez « Non restreinte » (ou « Ne pas optimiser »).</string>
+    <string name="help_xiaomi_title">Xiaomi / Redmi / POCO</string>
+    <string name="help_xiaomi_text">Sécurité → Autorisations → Démarrage auto → activez pour Heures de prière. Puis Paramètres → Applications → Heures de prière → Économiseur de batterie → « Aucune restriction ».</string>
+    <string name="help_huawei_title">Huawei / Honor</string>
+    <string name="help_huawei_text">Paramètres → Batterie → Lancement d’applications → Heures de prière → gérer manuellement et activer le lancement auto, le lancement secondaire et l’exécution en arrière-plan.</string>
+    <string name="help_samsung_title">Samsung</string>
+    <string name="help_samsung_text">Paramètres → Batterie → Limites d’utilisation en arrière-plan → retirez Heures de prière des « Applications en veille » et « Applications en veille prolongée ».</string>
+    <string name="open_app_settings">Ouvrir les paramètres de l’application</string>
+    <string name="open_battery_settings">Ouvrir les paramètres de la batterie</string>
+
+    <string name="onboarding_language_title">Choisissez votre langue</string>
+    <string name="onboarding_location_title">Où êtes-vous ?</string>
+    <string name="onboarding_method_title">Méthode de calcul</string>
+    <string name="onboarding_method_hint">Nous avons choisi la méthode utilisée dans votre pays. Vous pouvez la modifier à tout moment dans les paramètres.</string>
+    <string name="onboarding_notif_title">Notifications de prière</string>
+    <string name="onboarding_notif_text">Autorisez les notifications pour entendre l’adhan à chaque heure de prière.</string>
+
+    <string name="tab_home">Aujourd’hui</string>
+    <string name="tab_calendar">Mois</string>
+    <string name="tab_qibla">Qibla</string>
+    <string name="tab_tasbeh">Tasbih</string>
+    <string name="tab_settings">Paramètres</string>
+</resources>
