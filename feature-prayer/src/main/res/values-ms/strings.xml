@@ -29,9 +29,6 @@
     <string name="highlat_middle">Pertengahan malam</string>
     <string name="highlat_seventh">Satu pertujuh malam</string>
     <string name="highlat_angle">Sudut senja</string>
-    <string name="sound_azan">Azan</string>
-    <string name="sound_beep">Isyarat</string>
-    <string name="sound_silent">Senyap</string>
     <string name="label_none">Tiada label</string>
     <string name="label_home">Rumah</string>
     <string name="label_work">Tempat kerja</string>
@@ -54,4 +51,24 @@
     <string name="open_ramadan">Ramadan</string>
     <string name="open_settings">Tetapan</string>
     <string name="location_denied">Akses lokasi ditolak. Cari bandar anda dalam carian di bawah.</string>
+    <string name="widget_name">Waktu solat</string>
+    <string name="widget_no_location">Buka aplikasi dan pilih lokasi</string>
+    <string name="widget_next">Seterusnya: %1$s %2$s</string>
+    <string name="channel_reminder">Peringatan sebelum solat</string>
+    <string name="notif_title">Telah masuk waktu %1$s</string>
+    <string name="notif_reminder_title">%1$s dalam %2$d minit</string>
+    <string name="notif_text">%1$s · %2$s</string>
+    <string name="remind_before">Ingatkan sebelum</string>
+    <string name="minutes_short">%1$d minit</string>
+    <string name="alert_mode_off">Mati</string>
+    <string name="permission_allow">Benarkan</string>
+    <string name="later">Nanti</string>
+    <string name="notifications_blocked_text">Benarkan pemberitahuan untuk mendengar azan pada setiap waktu solat.</string>
+    <string name="channel_group_prayers">Waktu solat</string>
+    <string name="alert_mode_silent">Senyap</string>
+    <string name="alert_mode_sound">Bunyi</string>
+    <string name="notif_sunrise_title">Matahari terbit — waktu Subuh telah tamat</string>
+    <string name="exact_alarm_title">Pemberitahuan mungkin lewat</string>
+    <string name="exact_alarm_text">Tanpa kebenaran \"Penggera &amp; peringatan\", Android mungkin memaparkan pemberitahuan solat sehingga 10 minit lewat. Benarkan supaya azan tiba tepat pada waktunya.</string>
+    <string name="notifications_blocked_title">Pemberitahuan dimatikan</string>
 </resources>

@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Gebet &amp; Hifz</string>
-    <string name="widget_name">Gebetszeiten</string>
-    <string name="widget_no_location">Öffne die App und wähle einen Ort</string>
-    <string name="widget_next">Nächstes: %1$s %2$s</string>
 
-    <string name="channel_azan">Gebetszeit (Adhan)</string>
-    <string name="channel_beep">Gebetszeit (Signal)</string>
-    <string name="channel_silent">Gebetszeit (lautlos)</string>
-    <string name="channel_reminder">Erinnerung vor dem Gebet</string>
-    <string name="notif_title">Es ist Zeit für %1$s</string>
-    <string name="notif_reminder_title">%1$s in %2$d Min.</string>
-    <string name="notif_text">%1$s · %2$s</string>
 
 
 
@@ -47,8 +37,6 @@
     <string name="next">Weiter</string>
     <string name="later">Später</string>
     <string name="allow">Erlauben</string>
-    <string name="off">Aus</string>
-    <string name="minutes_short">%1$d Min.</string>
 
     <string name="settings">Einstellungen</string>
     <string name="section_location">Ort</string>
@@ -73,8 +61,6 @@
     <string name="rate_app">App bewerten</string>
     <string name="disclaimer">Die Zeiten werden auf deinem Gerät berechnet. Methoden und Korrekturen lassen sich in den Einstellungen ändern. Diese App ist mit keiner staatlichen oder religiösen Behörde verbunden.</string>
 
-    <string name="exact_alarm_needed">Erlaube „Wecker und Erinnerungen“, damit Benachrichtigungen pünktlich ankommen.</string>
-    <string name="remind_before">Vorher erinnern</string>
 
     <string name="help_notifications">Keine Benachrichtigungen?</string>
     <string name="help_intro">Manche Handys stoppen Apps im Hintergrund, um Akku zu sparen. Bitte prüfe Folgendes:</string>

@@ -11,8 +11,8 @@ import androidx.compose.material.icons.rounded.WbSunny
 import androidx.compose.material.icons.rounded.WbTwilight
 import androidx.compose.ui.graphics.vector.ImageVector
 import uz.xumoyun.feature.prayer.R
-import uz.xumoyun.feature.prayer.data.AlertSound
 import uz.xumoyun.feature.prayer.data.LocationLabel
+import uz.xumoyun.feature.prayer.domain.AlertMode
 import uz.xumoyun.feature.prayer.domain.AsrMadhab
 import uz.xumoyun.feature.prayer.domain.CalcMethod
 import uz.xumoyun.feature.prayer.domain.HighLatRule
@@ -85,10 +85,10 @@ fun highLatName(rule: HighLatRule): Int = when (rule) {
 }
 
 @StringRes
-fun soundName(sound: AlertSound): Int = when (sound) {
-    AlertSound.AZAN -> R.string.sound_azan
-    AlertSound.BEEP -> R.string.sound_beep
-    AlertSound.SILENT -> R.string.sound_silent
+fun alertModeName(mode: AlertMode): Int = when (mode) {
+    AlertMode.SOUND -> R.string.alert_mode_sound
+    AlertMode.SILENT -> R.string.alert_mode_silent
+    AlertMode.OFF -> R.string.alert_mode_off
 }
 
 @StringRes

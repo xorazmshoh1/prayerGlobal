@@ -2,4 +2,5 @@
 <resources>
     <string name="hifz_title">হিফজ</string>
     <string name="hifz_coming_soon">আপনার হিফজ পরিকল্পনা ও দৈনিক পাঠ এখানে দেখা যাবে।</string>
+    <string name="channel_hifz_reminder">হিফজ অনুস্মারক</string>
 </resources>

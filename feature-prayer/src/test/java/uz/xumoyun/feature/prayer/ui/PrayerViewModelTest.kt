@@ -24,6 +24,7 @@ import uz.xumoyun.feature.prayer.FileAssets
 import uz.xumoyun.feature.prayer.Tashkent
 import uz.xumoyun.feature.prayer.data.PrayerRepository
 import uz.xumoyun.feature.prayer.data.PrayerSettings
+import uz.xumoyun.feature.prayer.domain.AlertMode
 import uz.xumoyun.feature.prayer.domain.AsrMadhab
 import uz.xumoyun.feature.prayer.domain.CalcMethod
 import uz.xumoyun.feature.prayer.domain.Prayer
@@ -80,12 +81,17 @@ class PrayerViewModelTest {
         assertEquals(PrayerState.NoLocation, vm().state.first { it != PrayerState.Loading })
     }
 
-    @Test fun toggleAlertPersists() = runTest {
-        assertTrue(settings.current().alerts.getValue(Prayer.FAJR).enabled)
-        vm().toggleAlert(Prayer.FAJR).join()
+    @Test fun toggleAlertCyclesSoundSilentOffAndPersists() = runTest {
+        assertEquals(AlertMode.SOUND, settings.current().alerts.getValue(Prayer.FAJR).mode)
+        val vm = vm()
+        vm.toggleAlert(Prayer.FAJR).join()
+        assertEquals(AlertMode.SILENT, settings.current().alerts.getValue(Prayer.FAJR).mode)
+        assertEquals(AlertMode.SILENT, vm.build(repository.currentConfig()!!).board.rows.first { it.prayer == Prayer.FAJR }.alert)
+        vm.toggleAlert(Prayer.FAJR).join()
         assertFalse(settings.current().alerts.getValue(Prayer.FAJR).enabled)
-        val state = vm().build(repository.currentConfig()!!)
-        assertFalse(state.board.rows.first { it.prayer == Prayer.FAJR }.alertOn)
+        assertFalse(vm.build(repository.currentConfig()!!).board.rows.first { it.prayer == Prayer.FAJR }.alertOn)
+        vm.toggleAlert(Prayer.FAJR).join()
+        assertEquals(AlertMode.SOUND, settings.current().alerts.getValue(Prayer.FAJR).mode)
     }
 
     @Test fun adjustmentChangesDisplayedTime() = runTest {

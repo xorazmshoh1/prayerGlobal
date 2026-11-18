@@ -29,9 +29,6 @@
     <string name="highlat_middle">Milieu de la nuit</string>
     <string name="highlat_seventh">Un septième de la nuit</string>
     <string name="highlat_angle">Angle du crépuscule</string>
-    <string name="sound_azan">Adhan</string>
-    <string name="sound_beep">Signal</string>
-    <string name="sound_silent">Silencieux</string>
     <string name="label_none">Sans étiquette</string>
     <string name="label_home">Maison</string>
     <string name="label_work">Travail</string>
@@ -54,4 +51,24 @@
     <string name="open_ramadan">Ramadan</string>
     <string name="open_settings">Paramètres</string>
     <string name="location_denied">L’accès à la position a été refusé. Recherchez votre ville ci-dessous.</string>
+    <string name="widget_name">Heures de prière</string>
+    <string name="widget_no_location">Ouvrez l’application et choisissez un lieu</string>
+    <string name="widget_next">Prochaine : %1$s %2$s</string>
+    <string name="channel_reminder">Rappel avant la prière</string>
+    <string name="notif_title">C’est l’heure de %1$s</string>
+    <string name="notif_reminder_title">%1$s dans %2$d min</string>
+    <string name="notif_text">%1$s · %2$s</string>
+    <string name="remind_before">Rappeler avant</string>
+    <string name="minutes_short">%1$d min</string>
+    <string name="alert_mode_off">Désactivé</string>
+    <string name="permission_allow">Autoriser</string>
+    <string name="later">Plus tard</string>
+    <string name="notifications_blocked_text">Autorisez les notifications pour entendre l’adhan à chaque heure de prière.</string>
+    <string name="channel_group_prayers">Heures de prière</string>
+    <string name="alert_mode_silent">Silencieux</string>
+    <string name="alert_mode_sound">Son</string>
+    <string name="notif_sunrise_title">Lever du soleil — l’heure de Fajr est terminée</string>
+    <string name="exact_alarm_title">Les notifications peuvent être en retard</string>
+    <string name="exact_alarm_text">Sans l’autorisation « Alarmes et rappels », Android peut afficher la notification de prière jusqu’à 10 minutes en retard. Autorisez-la pour que l’adhan arrive à l’heure exacte.</string>
+    <string name="notifications_blocked_title">Les notifications sont désactivées</string>
 </resources>

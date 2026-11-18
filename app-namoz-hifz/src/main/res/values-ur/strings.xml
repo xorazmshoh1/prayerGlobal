@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">نماز اور حفظ</string>
-    <string name="widget_name">نماز کے اوقات</string>
-    <string name="widget_no_location">ایپ کھولیں اور مقام منتخب کریں</string>
-    <string name="widget_next">اگلی: %1$s %2$s</string>
 
-    <string name="channel_azan">نماز کا وقت (اذان)</string>
-    <string name="channel_beep">نماز کا وقت (سگنل)</string>
-    <string name="channel_silent">نماز کا وقت (خاموش)</string>
-    <string name="channel_reminder">نماز سے پہلے یاد دہانی</string>
-    <string name="notif_title">%1$s کا وقت ہو گیا</string>
-    <string name="notif_reminder_title">%1$s میں %2$d منٹ باقی</string>
-    <string name="notif_text">%1$s · %2$s</string>
 
 
 
@@ -47,8 +37,6 @@
     <string name="next">اگلا</string>
     <string name="later">بعد میں</string>
     <string name="allow">اجازت دیں</string>
-    <string name="off">بند</string>
-    <string name="minutes_short">%1$d منٹ</string>
 
     <string name="settings">ترتیبات</string>
     <string name="section_location">مقام</string>
@@ -73,8 +61,6 @@
     <string name="rate_app">ایپ کی درجہ بندی کریں</string>
     <string name="disclaimer">اوقات آپ کے فون پر ہی حساب کیے جاتے ہیں۔ طریقہ اور ترامیم ترتیبات میں بدلی جا سکتی ہیں۔ یہ ایپ کسی سرکاری یا مذہبی ادارے سے وابستہ نہیں۔</string>
 
-    <string name="exact_alarm_needed">اطلاعات بالکل وقت پر آنے کے لیے «الارم اور یاد دہانیاں» کی اجازت دیں۔</string>
-    <string name="remind_before">پہلے یاد دلائیں</string>
 
     <string name="help_notifications">اطلاعات نہیں آ رہیں؟</string>
     <string name="help_intro">کچھ فون بیٹری بچانے کے لیے پس منظر میں ایپس روک دیتے ہیں۔ براہ کرم یہ چیک کریں:</string>

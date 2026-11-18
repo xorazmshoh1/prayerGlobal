@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">নামাজ ও হিফজ</string>
-    <string name="widget_name">নামাজের সময়</string>
-    <string name="widget_no_location">অ্যাপ খুলে একটি স্থান বেছে নিন</string>
-    <string name="widget_next">পরবর্তী: %1$s %2$s</string>
 
-    <string name="channel_azan">নামাজের সময় (আজান)</string>
-    <string name="channel_beep">নামাজের সময় (সংকেত)</string>
-    <string name="channel_silent">নামাজের সময় (নীরব)</string>
-    <string name="channel_reminder">নামাজের আগে অনুস্মারক</string>
-    <string name="notif_title">%1$s-এর সময় হয়েছে</string>
-    <string name="notif_reminder_title">%2$d মিনিট পরে %1$s</string>
-    <string name="notif_text">%1$s · %2$s</string>
 
 
 
@@ -47,8 +37,6 @@
     <string name="next">পরবর্তী</string>
     <string name="later">পরে</string>
     <string name="allow">অনুমতি দিন</string>
-    <string name="off">বন্ধ</string>
-    <string name="minutes_short">%1$d মিনিট</string>
 
     <string name="settings">সেটিংস</string>
     <string name="section_location">স্থান</string>
@@ -73,8 +61,6 @@
     <string name="rate_app">অ্যাপটি রেট করুন</string>
     <string name="disclaimer">সময়গুলো আপনার ডিভাইসেই গণনা করা হয়। পদ্ধতি ও সমন্বয় সেটিংসে পরিবর্তন করা যায়। এই অ্যাপ কোনো সরকারি বা ধর্মীয় কর্তৃপক্ষের সাথে যুক্ত নয়।</string>
 
-    <string name="exact_alarm_needed">বিজ্ঞপ্তি ঠিক সময়ে পেতে \"অ্যালার্ম ও রিমাইন্ডার\" অনুমতি দিন।</string>
-    <string name="remind_before">আগে মনে করিয়ে দিন</string>
 
     <string name="help_notifications">বিজ্ঞপ্তি আসছে না?</string>
     <string name="help_intro">কিছু ফোন ব্যাটারি বাঁচাতে পটভূমিতে অ্যাপ বন্ধ করে দেয়। অনুগ্রহ করে নিচের বিষয়গুলো দেখুন:</string>

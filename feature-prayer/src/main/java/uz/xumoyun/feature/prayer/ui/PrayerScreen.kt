@@ -19,6 +19,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.DarkMode
 import androidx.compose.material.icons.rounded.LocationOn
 import androidx.compose.material.icons.rounded.Notifications
+import androidx.compose.material.icons.rounded.NotificationsActive
 import androidx.compose.material.icons.rounded.NotificationsOff
 import androidx.compose.material.icons.rounded.Settings
 import androidx.compose.material3.AlertDialog
@@ -34,6 +35,9 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -50,13 +54,16 @@ import uz.xumoyun.core.ui.theme.AppTheme
 import uz.xumoyun.core.ui.theme.NamozHifzPalette
 import uz.xumoyun.core.ui.theme.TabularNumbers
 import uz.xumoyun.feature.prayer.R
+import uz.xumoyun.feature.prayer.domain.AlertMode
 import uz.xumoyun.feature.prayer.domain.AsrMadhab
 import uz.xumoyun.feature.prayer.domain.CalcInput
 import uz.xumoyun.feature.prayer.domain.CalcMethod
 import uz.xumoyun.feature.prayer.domain.Prayer
+import uz.xumoyun.feature.prayer.domain.PrayerAlert
 import uz.xumoyun.feature.prayer.domain.PrayerBoard
 import uz.xumoyun.feature.prayer.domain.PrayerCalculator
 import uz.xumoyun.feature.prayer.domain.PrayerRow
+import uz.xumoyun.feature.prayer.notifications.ExactAlarms
 import java.time.LocalDate
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
@@ -74,6 +81,7 @@ fun PrayerRoute(
     viewModel: PrayerViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
+    val context = LocalContext.current
     val travel by viewModel.travelSuggestion.collectAsStateWithLifecycle()
     LaunchedEffect(Unit) { viewModel.checkTravel() }
 
@@ -86,13 +94,28 @@ fun PrayerRoute(
             actionLabel = stringResource(R.string.choose_location),
             onAction = onPickLocation,
         )
-        is PrayerState.Ready -> PrayerContent(
-            s,
-            onToggleAlert = viewModel::toggleAlert,
-            onCityClick = onPickLocation,
-            onRamadan = onRamadan,
-            onSettings = onSettings,
-        )
+        is PrayerState.Ready -> {
+            // TZ 8-bo'lim: aniq signal ruxsati yo'q bo'lsa tushuntirish kartasi (sessiya davomida yopish mumkin).
+            val access = rememberNotificationAccessState()
+            var exactDismissed by rememberSaveable { mutableStateOf(false) }
+            val showExact = !access.exactAlarms && !exactDismissed && s.board.rows.any { it.alertOn }
+            PrayerContent(
+                s,
+                onToggleAlert = viewModel::toggleAlert,
+                onCityClick = onPickLocation,
+                onRamadan = onRamadan,
+                onSettings = onSettings,
+                banner = {
+                    if (showExact) {
+                        ExactAlarmCard(
+                            onAllow = { ExactAlarms.openSettings(context) },
+                            onLater = { exactDismissed = true },
+                            modifier = Modifier.padding(bottom = 16.dp),
+                        )
+                    }
+                },
+            )
+        }
     }
 
     travel?.let { city ->
@@ -114,6 +137,7 @@ fun PrayerContent(
     onCityClick: () -> Unit,
     onRamadan: () -> Unit = {},
     onSettings: () -> Unit = {},
+    banner: @Composable () -> Unit = {},
 ) {
     val context = LocalContext.current
     val locale = TimeFormat.currentLocale(context)
@@ -171,6 +195,7 @@ fun PrayerContent(
             }
         }
         Spacer(Modifier.height(16.dp))
+        banner()
 
         Column(Modifier.padding(bottom = 16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             state.board.rows.forEach { row ->
@@ -208,10 +233,15 @@ private fun PrayerRowCard(row: PrayerRow, time: String, onToggle: () -> Unit) {
                 style = MaterialTheme.typography.titleMedium.merge(TabularNumbers),
                 fontWeight = if (row.isCurrent) FontWeight.Bold else FontWeight.Normal,
             )
+            // Ovoz belgisi: ovozli → ovozsiz → o'chiq.
             IconButton(onClick = onToggle) {
                 Icon(
-                    if (row.alertOn) Icons.Rounded.Notifications else Icons.Rounded.NotificationsOff,
-                    contentDescription = stringResource(R.string.toggle_notification),
+                    when (row.alert) {
+                        AlertMode.SOUND -> Icons.Rounded.NotificationsActive
+                        AlertMode.SILENT -> Icons.Rounded.Notifications
+                        AlertMode.OFF -> Icons.Rounded.NotificationsOff
+                    },
+                    contentDescription = stringResource(R.string.toggle_notification) + ": " + stringResource(alertModeName(row.alert)),
                     tint = if (row.alertOn) primary else MaterialTheme.colorScheme.outline,
                 )
             }
@@ -234,7 +264,7 @@ private fun PrayerPreview() {
                     city = "Tashkent",
                     today = date,
                     hijri = "7 Jumada al-Akhirah 1448",
-                    board = PrayerBoard.build(now, today, PrayerCalculator.day(input, date.plusDays(1))) { it.isPrayer },
+                    board = PrayerBoard.build(now, today, PrayerCalculator.day(input, date.plusDays(1))) { PrayerAlert.default(it).mode },
                 ),
                 onToggleAlert = {}, onCityClick = {},
             )

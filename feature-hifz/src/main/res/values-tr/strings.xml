@@ -2,4 +2,5 @@
 <resources>
     <string name="hifz_title">Hıfz</string>
     <string name="hifz_coming_soon">Ezber planınız ve günlük dersleriniz burada görünecek.</string>
+    <string name="channel_hifz_reminder">Hafızlık hatırlatıcısı</string>
 </resources>

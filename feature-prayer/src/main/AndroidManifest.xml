@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Bildirishnomalar va vidjet (3-bosqich). Ilova manifestiga birlashtiriladi (manifest merge).
+  Ruxsatlar (SCHEDULE_EXACT_ALARM, RECEIVE_BOOT_COMPLETED, POST_NOTIFICATIONS) ilova manifestida — TZ 8-bo'lim ro'yxati bitta joyda.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <!-- Ichki signallar: namoz vaqti, oldindan eslatma, vidjetni yangilash. -->
+        <receiver
+            android:name="uz.xumoyun.feature.prayer.notifications.PrayerAlarmReceiver"
+            android:exported="false" />
+
+        <!-- Tizim hodisalarida signallarni qayta o'rnatish. -->
+        <receiver
+            android:name="uz.xumoyun.feature.prayer.notifications.PrayerRescheduleReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="uz.xumoyun.feature.prayer.widget.PrayerWidgetReceiver"
+            android:exported="true"
+            android:label="@string/widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/prayer_widget_info" />
+        </receiver>
+    </application>
+</manifest>

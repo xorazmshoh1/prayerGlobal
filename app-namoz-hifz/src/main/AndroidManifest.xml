@@ -33,33 +33,7 @@
             </intent-filter>
         </activity>
 
-        <receiver
-            android:name=".notifications.PrayerAlarmReceiver"
-            android:exported="false" />
-
-        <receiver
-            android:name=".notifications.RescheduleReceiver"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-                <action android:name="android.intent.action.TIME_SET" />
-                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
-            </intent-filter>
-        </receiver>
-
-        <receiver
-            android:name=".widget.PrayerWidgetReceiver"
-            android:exported="true"
-            android:label="@string/widget_name">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/prayer_widget_info" />
-        </receiver>
+        <!-- Namoz bildirishnomalari va vidjet qabul qiluvchilari feature-prayer manifestidan birlashtiriladi. -->
 
         <!-- Android 12 va undan pastda tanlangan ilova tilini saqlash -->
         <service

@@ -29,9 +29,6 @@
     <string name="highlat_middle">Середина ночи</string>
     <string name="highlat_seventh">Седьмая часть ночи</string>
     <string name="highlat_angle">Угол сумерек</string>
-    <string name="sound_azan">Азан</string>
-    <string name="sound_beep">Сигнал</string>
-    <string name="sound_silent">Без звука</string>
     <string name="label_none">Без метки</string>
     <string name="label_home">Дом</string>
     <string name="label_work">Работа</string>
@@ -54,4 +51,24 @@
     <string name="open_ramadan">Рамадан</string>
     <string name="open_settings">Настройки</string>
     <string name="location_denied">Доступ к местоположению запрещён. Найдите свой город через поиск ниже.</string>
+    <string name="widget_name">Время намаза</string>
+    <string name="widget_no_location">Откройте приложение и выберите место</string>
+    <string name="widget_next">Далее: %1$s %2$s</string>
+    <string name="channel_reminder">Напоминание перед намазом</string>
+    <string name="notif_title">Наступило время: %1$s</string>
+    <string name="notif_reminder_title">%1$s через %2$d мин</string>
+    <string name="notif_text">%1$s · %2$s</string>
+    <string name="remind_before">Напомнить заранее</string>
+    <string name="minutes_short">%1$d мин</string>
+    <string name="alert_mode_off">Выкл.</string>
+    <string name="permission_allow">Разрешить</string>
+    <string name="later">Позже</string>
+    <string name="notifications_blocked_text">Разрешите уведомления, чтобы слышать азан в каждое время намаза.</string>
+    <string name="channel_group_prayers">Время намаза</string>
+    <string name="alert_mode_silent">Без звука</string>
+    <string name="alert_mode_sound">Звук</string>
+    <string name="notif_sunrise_title">Восход — время фаджра закончилось</string>
+    <string name="exact_alarm_title">Уведомления могут опаздывать</string>
+    <string name="exact_alarm_text">Без разрешения «Будильники и напоминания» Android может показать уведомление о намазе с опозданием до 10 минут. Разрешите, чтобы азан звучал точно вовремя.</string>
+    <string name="notifications_blocked_title">Уведомления отключены</string>
 </resources>

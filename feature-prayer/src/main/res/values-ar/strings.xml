@@ -29,9 +29,6 @@
     <string name="highlat_middle">منتصف الليل</string>
     <string name="highlat_seventh">سُبع الليل</string>
     <string name="highlat_angle">زاوية الشفق</string>
-    <string name="sound_azan">أذان</string>
-    <string name="sound_beep">تنبيه</string>
-    <string name="sound_silent">صامت</string>
     <string name="label_none">بدون تسمية</string>
     <string name="label_home">المنزل</string>
     <string name="label_work">العمل</string>
@@ -54,4 +51,24 @@
     <string name="open_ramadan">رمضان</string>
     <string name="open_settings">الإعدادات</string>
     <string name="location_denied">تم رفض الوصول إلى الموقع. ابحث عن مدينتك في البحث أدناه.</string>
+    <string name="widget_name">مواقيت الصلاة</string>
+    <string name="widget_no_location">افتح التطبيق واختر موقعك</string>
+    <string name="widget_next">التالية: %1$s %2$s</string>
+    <string name="channel_reminder">تذكير قبل الصلاة</string>
+    <string name="notif_title">حان وقت صلاة %1$s</string>
+    <string name="notif_reminder_title">%1$s بعد %2$d دقيقة</string>
+    <string name="notif_text">%1$s · %2$s</string>
+    <string name="remind_before">التذكير قبل</string>
+    <string name="minutes_short">%1$d د</string>
+    <string name="alert_mode_off">إيقاف</string>
+    <string name="permission_allow">السماح</string>
+    <string name="later">لاحقًا</string>
+    <string name="notifications_blocked_text">اسمح بالإشعارات لسماع الأذان في كل وقت صلاة.</string>
+    <string name="channel_group_prayers">مواقيت الصلاة</string>
+    <string name="alert_mode_silent">صامت</string>
+    <string name="alert_mode_sound">صوت</string>
+    <string name="notif_sunrise_title">الشروق — انتهى وقت الفجر</string>
+    <string name="exact_alarm_title">قد تتأخر الإشعارات</string>
+    <string name="exact_alarm_text">بدون إذن «المنبهات والتذكيرات» قد يعرض أندرويد إشعار الصلاة متأخرًا حتى 10 دقائق. اسمح به ليصل الأذان في وقته تمامًا.</string>
+    <string name="notifications_blocked_title">الإشعارات متوقفة</string>
 </resources>

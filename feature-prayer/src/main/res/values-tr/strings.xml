@@ -29,9 +29,6 @@
     <string name="highlat_middle">Gecenin yarısı</string>
     <string name="highlat_seventh">Gecenin yedide biri</string>
     <string name="highlat_angle">Şafak açısı</string>
-    <string name="sound_azan">Ezan</string>
-    <string name="sound_beep">Sinyal</string>
-    <string name="sound_silent">Sessiz</string>
     <string name="label_none">Etiketsiz</string>
     <string name="label_home">Ev</string>
     <string name="label_work">İş</string>
@@ -54,4 +51,24 @@
     <string name="open_ramadan">Ramazan</string>
     <string name="open_settings">Ayarlar</string>
     <string name="location_denied">Konum izni verilmedi. Şehrinizi aşağıdaki aramadan bulun.</string>
+    <string name="widget_name">Namaz vakitleri</string>
+    <string name="widget_no_location">Uygulamayı açıp konum seçin</string>
+    <string name="widget_next">Sıradaki: %1$s %2$s</string>
+    <string name="channel_reminder">Namazdan önce hatırlatma</string>
+    <string name="notif_title">%1$s vakti girdi</string>
+    <string name="notif_reminder_title">%1$s vaktine %2$d dk kaldı</string>
+    <string name="notif_text">%1$s · %2$s</string>
+    <string name="remind_before">Önceden hatırlat</string>
+    <string name="minutes_short">%1$d dk</string>
+    <string name="alert_mode_off">Kapalı</string>
+    <string name="permission_allow">İzin ver</string>
+    <string name="later">Sonra</string>
+    <string name="notifications_blocked_text">Her namaz vaktinde ezanı duymak için bildirimlere izin verin.</string>
+    <string name="channel_group_prayers">Namaz vakitleri</string>
+    <string name="alert_mode_silent">Sessiz</string>
+    <string name="alert_mode_sound">Sesli</string>
+    <string name="notif_sunrise_title">Güneş doğdu — sabah namazı vakti çıktı</string>
+    <string name="exact_alarm_title">Bildirimler gecikebilir</string>
+    <string name="exact_alarm_text">\"Alarmlar ve hatırlatıcılar\" izni olmadan Android namaz bildirimini 10 dakikaya kadar geç gösterebilir. Ezanın tam vaktinde gelmesi için izin verin.</string>
+    <string name="notifications_blocked_title">Bildirimler kapalı</string>
 </resources>

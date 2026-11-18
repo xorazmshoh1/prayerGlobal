@@ -33,6 +33,7 @@ import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import uz.xumoyun.feature.hifz.HifzRoute
 import uz.xumoyun.feature.prayer.ui.LocationsScreen
+import uz.xumoyun.feature.prayer.ui.NotificationSettingsRoute
 import uz.xumoyun.feature.prayer.ui.PrayerRoute
 import uz.xumoyun.feature.ramadan.RamadanHomeRoute
 import uz.xumoyun.feature.ramadan.RamadanRoutes
@@ -41,7 +42,6 @@ import uz.xumoyun.namoz.ui.calendar.CalendarRoute
 import uz.xumoyun.namoz.ui.onboarding.OnboardingRoute
 import uz.xumoyun.namoz.ui.qibla.QiblaRoute
 import uz.xumoyun.namoz.ui.settings.HelpScreen
-import uz.xumoyun.namoz.ui.settings.NotificationSettingsRoute
 import uz.xumoyun.namoz.ui.settings.SettingsRoute
 import uz.xumoyun.namoz.ui.settings.SettingsViewModel
 import uz.xumoyun.namoz.ui.tasbeh.TasbehRoute
@@ -130,7 +130,7 @@ fun NamozRoot(startWithOnboarding: Boolean) {
                 )
             }
             composable(Routes.LOCATIONS) { LocationsScreen(onPicked = { nav.popBackStack() }) }
-            composable(Routes.NOTIFICATIONS) { NotificationSettingsRoute(hiltViewModel()) }
+            composable(Routes.NOTIFICATIONS) { NotificationSettingsRoute() }
             composable(Routes.HELP) { HelpScreen() }
         }
     }

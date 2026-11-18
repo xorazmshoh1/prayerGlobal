@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">نماز و حفظ</string>
-    <string name="widget_name">اوقات نماز</string>
-    <string name="widget_no_location">برنامه را باز کنید و مکانی انتخاب کنید</string>
-    <string name="widget_next">بعدی: %1$s %2$s</string>
 
-    <string name="channel_azan">وقت نماز (اذان)</string>
-    <string name="channel_beep">وقت نماز (هشدار)</string>
-    <string name="channel_silent">وقت نماز (بی‌صدا)</string>
-    <string name="channel_reminder">یادآوری پیش از نماز</string>
-    <string name="notif_title">وقت %1$s فرا رسید</string>
-    <string name="notif_reminder_title">%1$s تا %2$d دقیقه دیگر</string>
-    <string name="notif_text">%1$s · %2$s</string>
 
 
 
@@ -47,8 +37,6 @@
     <string name="next">بعدی</string>
     <string name="later">بعداً</string>
     <string name="allow">اجازه دادن</string>
-    <string name="off">خاموش</string>
-    <string name="minutes_short">%1$d دقیقه</string>
 
     <string name="settings">تنظیمات</string>
     <string name="section_location">مکان</string>
@@ -73,8 +61,6 @@
     <string name="rate_app">امتیاز به برنامه</string>
     <string name="disclaimer">اوقات روی دستگاه شما محاسبه می‌شوند. روش‌ها و تنظیمات را می‌توان در تنظیمات تغییر داد. این برنامه به هیچ نهاد دولتی یا مذهبی وابسته نیست.</string>
 
-    <string name="exact_alarm_needed">اجازه «زنگ‌ها و یادآوری‌ها» را بدهید تا اعلان‌ها دقیقاً سر وقت برسند.</string>
-    <string name="remind_before">یادآوری پیش از</string>
 
     <string name="help_notifications">اعلان‌ها نمی‌رسند؟</string>
     <string name="help_intro">برخی گوشی‌ها برای صرفه‌جویی در باتری، برنامه‌ها را در پس‌زمینه متوقف می‌کنند. لطفاً موارد زیر را بررسی کنید:</string>

@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Namoz va Hifz</string>
-    <string name="widget_name">Namoz vaqtlari</string>
-    <string name="widget_no_location">Ilovani ochib, joyni tanlang</string>
-    <string name="widget_next">Keyingi: %1$s %2$s</string>
 
-    <string name="channel_azan">Namoz vaqti (azon)</string>
-    <string name="channel_beep">Namoz vaqti (signal)</string>
-    <string name="channel_silent">Namoz vaqti (jim)</string>
-    <string name="channel_reminder">Namozdan oldin eslatma</string>
-    <string name="notif_title">%1$s vaqti kirdi</string>
-    <string name="notif_reminder_title">%1$s vaqtiga %2$d daqiqa qoldi</string>
-    <string name="notif_text">%1$s · %2$s</string>
 
 
 
@@ -47,8 +37,6 @@
     <string name="next">Keyingi</string>
     <string name="later">Keyinroq</string>
     <string name="allow">Ruxsat berish</string>
-    <string name="off">Yoʻq</string>
-    <string name="minutes_short">%1$d daq</string>
 
     <string name="settings">Sozlamalar</string>
     <string name="section_location">Joylashuv</string>
@@ -73,8 +61,6 @@
     <string name="rate_app">Ilovani baholash</string>
     <string name="disclaimer">Vaqtlar telefoningizda hisoblanadi. Usul va tuzatishlarni sozlamalarda oʻzgartirish mumkin. Ilova hech qanday davlat yoki diniy idoraga tegishli emas.</string>
 
-    <string name="exact_alarm_needed">Bildirishnomalar aniq vaqtda kelishi uchun «Signallar va eslatmalar» ruxsatini bering.</string>
-    <string name="remind_before">Oldindan eslatish</string>
 
     <string name="help_notifications">Bildirishnomalar kelmayaptimi?</string>
     <string name="help_intro">Baʼzi telefonlar batareyani tejash uchun ilovalarni fonda toʻxtatib qoʻyadi. Quyidagilarni tekshiring:</string>

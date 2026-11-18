@@ -79,14 +79,14 @@ class PrayerViewModel @Inject constructor(
             city = config.location.name,
             today = date,
             hijri = hijri.of(date, hijriAdjust).formatted,
-            board = PrayerBoard.build(now, today, tomorrow) { config.prefs.alerts.getValue(it).enabled },
+            board = PrayerBoard.build(now, today, tomorrow) { config.prefs.alerts.getValue(it).mode },
         )
     }
 
-    /** Qatordagi ovoz belgisi: shu namoz uchun bildirishnomani yoqish/o'chirish. */
+    /** Qatordagi ovoz belgisi: ovozli → ovozsiz → o'chiq (signallar PrayerAlarmScheduler'da qayta qo'yiladi). */
     fun toggleAlert(prayer: Prayer) = viewModelScope.launch {
         val alert = settings.current().alerts.getValue(prayer)
-        settings.setAlert(prayer, alert.copy(enabled = !alert.enabled))
+        settings.setAlert(prayer, alert.copy(mode = alert.mode.next()))
     }
 
     /** Ilova ochilganda: joylashuv ruxsati bo'lsa, joy [TRAVEL_KM] dan ko'p o'zgarganini tekshiradi. */
