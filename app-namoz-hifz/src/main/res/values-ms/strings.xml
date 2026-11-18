@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Solat &amp; Hafazan</string>
+    <string name="widget_name">Waktu solat</string>
+    <string name="widget_no_location">Buka aplikasi dan pilih lokasi</string>
+    <string name="widget_next">Seterusnya: %1$s %2$s</string>
+
+    <string name="channel_azan">Waktu solat (azan)</string>
+    <string name="channel_beep">Waktu solat (isyarat)</string>
+    <string name="channel_silent">Waktu solat (senyap)</string>
+    <string name="channel_reminder">Peringatan sebelum solat</string>
+    <string name="notif_title">Telah masuk waktu %1$s</string>
+    <string name="notif_reminder_title">%1$s dalam %2$d minit</string>
+    <string name="notif_text">%1$s · %2$s</string>
+
+
+
+
+    <string name="previous_month">Bulan sebelumnya</string>
+    <string name="next_month">Bulan seterusnya</string>
+    <string name="calendar_day">Hari</string>
+    <string name="suhoor">Sahur</string>
+    <string name="iftar">Berbuka</string>
+
+    <string name="qibla_title">Arah kiblat</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">Anda menghadap kiblat</string>
+    <string name="qibla_turn">Pusing sehingga anak panah menunjuk ke Kaabah</string>
+    <string name="calibrate_hint">Ketepatan kompas rendah. Gerakkan telefon dalam bentuk angka lapan dan jauhkan daripada logam dan magnet.</string>
+    <string name="compass_unavailable">Telefon ini tiada penderia kompas</string>
+
+    <string name="dhikr_subhanallah">SubhanAllah</string>
+    <string name="dhikr_alhamdulillah">Alhamdulillah</string>
+    <string name="dhikr_allahuakbar">Allahu Akbar</string>
+    <string name="dhikr_tahlil">La ilaha illallah</string>
+    <string name="dhikr_istighfar">Astaghfirullah</string>
+    <string name="dhikr_salawat">Selawat</string>
+    <string name="tasbeh_rounds">Pusingan: %1$d · sasaran %2$d</string>
+    <string name="tasbeh_custom">Tersuai</string>
+    <string name="tasbeh_target">Sasaran</string>
+    <string name="tasbeh_today_total">Hari ini: %1$d</string>
+    <string name="reset">Set semula</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Batal</string>
+    <string name="close">Tutup</string>
+    <string name="back">Kembali</string>
+    <string name="next">Seterusnya</string>
+    <string name="later">Nanti</string>
+    <string name="allow">Benarkan</string>
+    <string name="off">Mati</string>
+    <string name="minutes_short">%1$d minit</string>
+
+    <string name="settings">Tetapan</string>
+    <string name="section_location">Lokasi</string>
+    <string name="section_calculation">Pengiraan</string>
+    <string name="calc_method">Kaedah pengiraan</string>
+    <string name="auto_value">Automatik: %1$s</string>
+    <string name="asr_madhab">Mazhab untuk Asar</string>
+    <string name="high_lat_rule">Peraturan latitud tinggi</string>
+    <string name="time_adjustments">Pelarasan waktu</string>
+    <string name="time_adjustments_hint">Tambah atau tolak minit bagi setiap waktu supaya sepadan dengan masjid setempat.</string>
+    <string name="hijri_adjust">Pelarasan tarikh Hijrah (hari)</string>
+    <string name="section_app">Aplikasi</string>
+    <string name="notifications">Pemberitahuan</string>
+    <string name="language">Bahasa</string>
+    <string name="system_default">Lalai sistem</string>
+    <string name="theme">Tema</string>
+    <string name="theme_system">Sistem</string>
+    <string name="theme_light">Cerah</string>
+    <string name="theme_dark">Gelap</string>
+    <string name="section_about">Perihal</string>
+    <string name="privacy_policy">Dasar privasi</string>
+    <string name="rate_app">Nilai aplikasi</string>
+    <string name="disclaimer">Waktu dikira pada peranti anda. Kaedah dan pelarasan boleh diubah dalam tetapan. Aplikasi ini tidak bergabung dengan mana-mana pihak berkuasa kerajaan atau agama.</string>
+
+    <string name="exact_alarm_needed">Benarkan \"Penggera &amp; peringatan\" supaya pemberitahuan tiba tepat pada waktunya.</string>
+    <string name="remind_before">Ingatkan sebelum</string>
+
+    <string name="help_notifications">Pemberitahuan tidak sampai?</string>
+    <string name="help_intro">Sesetengah telefon menghentikan aplikasi di latar belakang untuk menjimatkan bateri. Sila semak perkara berikut:</string>
+    <string name="help_battery_title">Pengoptimuman bateri</string>
+    <string name="help_battery_text">Tetapan → Aplikasi → Waktu Solat → Bateri → pilih \"Tanpa had\" (atau \"Jangan optimumkan\").</string>
+    <string name="help_xiaomi_title">Xiaomi / Redmi / POCO</string>
+    <string name="help_xiaomi_text">Keselamatan → Kebenaran → Automula → hidupkan untuk Waktu Solat. Kemudian Tetapan → Aplikasi → Waktu Solat → Penjimat bateri → \"Tiada sekatan\".</string>
+    <string name="help_huawei_title">Huawei / Honor</string>
+    <string name="help_huawei_text">Tetapan → Bateri → Pelancaran aplikasi → Waktu Solat → urus secara manual dan hidupkan auto-lancar, pelancaran sekunder dan jalan di latar belakang.</string>
+    <string name="help_samsung_title">Samsung</string>
+    <string name="help_samsung_text">Tetapan → Bateri → Had penggunaan latar belakang → keluarkan Waktu Solat daripada \"Aplikasi tidur\" dan \"Aplikasi tidur nyenyak\".</string>
+    <string name="open_app_settings">Buka tetapan aplikasi</string>
+    <string name="open_battery_settings">Buka tetapan bateri</string>
+
+    <string name="onboarding_language_title">Pilih bahasa anda</string>
+    <string name="onboarding_location_title">Di manakah anda?</string>
+    <string name="onboarding_method_title">Kaedah pengiraan</string>
+    <string name="onboarding_method_hint">Kami memilih kaedah yang digunakan di negara anda. Anda boleh mengubahnya bila-bila masa dalam tetapan.</string>
+    <string name="onboarding_notif_title">Pemberitahuan solat</string>
+    <string name="onboarding_notif_text">Benarkan pemberitahuan untuk mendengar azan pada setiap waktu solat.</string>
+    <string name="tab_prayer">Solat</string>
+    <string name="tab_calendar">Kalendar</string>
+    <string name="tab_qibla">Kiblat</string>
+    <string name="tab_tasbeh">Tasbih</string>
+    <string name="tab_settings">Tetapan</string>
+</resources>

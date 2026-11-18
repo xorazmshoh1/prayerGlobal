@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Salat &amp; Hafalan</string>
+    <string name="widget_name">Waktu sholat</string>
+    <string name="widget_no_location">Buka aplikasi dan pilih lokasi</string>
+    <string name="widget_next">Berikutnya: %1$s %2$s</string>
+
+    <string name="channel_azan">Waktu sholat (adzan)</string>
+    <string name="channel_beep">Waktu sholat (sinyal)</string>
+    <string name="channel_silent">Waktu sholat (senyap)</string>
+    <string name="channel_reminder">Pengingat sebelum sholat</string>
+    <string name="notif_title">Telah masuk waktu %1$s</string>
+    <string name="notif_reminder_title">%1$s dalam %2$d menit</string>
+    <string name="notif_text">%1$s · %2$s</string>
+
+
+
+
+    <string name="previous_month">Bulan sebelumnya</string>
+    <string name="next_month">Bulan berikutnya</string>
+    <string name="calendar_day">Tgl</string>
+    <string name="suhoor">Sahur</string>
+    <string name="iftar">Berbuka</string>
+
+    <string name="qibla_title">Arah kiblat</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">Anda menghadap kiblat</string>
+    <string name="qibla_turn">Putar sampai panah menunjuk ke Ka\'bah</string>
+    <string name="calibrate_hint">Akurasi kompas rendah. Gerakkan ponsel membentuk angka 8 dan jauhkan dari logam dan magnet.</string>
+    <string name="compass_unavailable">Ponsel ini tidak memiliki sensor kompas</string>
+
+    <string name="dhikr_subhanallah">Subhanallah</string>
+    <string name="dhikr_alhamdulillah">Alhamdulillah</string>
+    <string name="dhikr_allahuakbar">Allahu Akbar</string>
+    <string name="dhikr_tahlil">La ilaha illallah</string>
+    <string name="dhikr_istighfar">Astaghfirullah</string>
+    <string name="dhikr_salawat">Sholawat</string>
+    <string name="tasbeh_rounds">Putaran: %1$d · target %2$d</string>
+    <string name="tasbeh_custom">Kustom</string>
+    <string name="tasbeh_target">Target</string>
+    <string name="tasbeh_today_total">Hari ini: %1$d</string>
+    <string name="reset">Atur ulang</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Batal</string>
+    <string name="close">Tutup</string>
+    <string name="back">Kembali</string>
+    <string name="next">Lanjut</string>
+    <string name="later">Nanti</string>
+    <string name="allow">Izinkan</string>
+    <string name="off">Mati</string>
+    <string name="minutes_short">%1$d mnt</string>
+
+    <string name="settings">Pengaturan</string>
+    <string name="section_location">Lokasi</string>
+    <string name="section_calculation">Perhitungan</string>
+    <string name="calc_method">Metode perhitungan</string>
+    <string name="auto_value">Otomatis: %1$s</string>
+    <string name="asr_madhab">Mazhab Ashar</string>
+    <string name="high_lat_rule">Aturan lintang tinggi</string>
+    <string name="time_adjustments">Penyesuaian waktu</string>
+    <string name="time_adjustments_hint">Tambah atau kurangi menit tiap waktu agar sesuai dengan masjid setempat.</string>
+    <string name="hijri_adjust">Penyesuaian tanggal Hijriah (hari)</string>
+    <string name="section_app">Aplikasi</string>
+    <string name="notifications">Notifikasi</string>
+    <string name="language">Bahasa</string>
+    <string name="system_default">Bahasa sistem</string>
+    <string name="theme">Tema</string>
+    <string name="theme_system">Sistem</string>
+    <string name="theme_light">Terang</string>
+    <string name="theme_dark">Gelap</string>
+    <string name="section_about">Tentang</string>
+    <string name="privacy_policy">Kebijakan privasi</string>
+    <string name="rate_app">Beri nilai aplikasi</string>
+    <string name="disclaimer">Waktu dihitung di perangkat Anda. Metode dan penyesuaian dapat diubah di pengaturan. Aplikasi ini tidak berafiliasi dengan lembaga pemerintah atau keagamaan mana pun.</string>
+
+    <string name="exact_alarm_needed">Izinkan \"Alarm &amp; pengingat\" agar notifikasi tiba tepat waktu.</string>
+    <string name="remind_before">Ingatkan sebelum</string>
+
+    <string name="help_notifications">Notifikasi tidak muncul?</string>
+    <string name="help_intro">Beberapa ponsel menghentikan aplikasi di latar belakang untuk menghemat baterai. Periksa hal berikut:</string>
+    <string name="help_battery_title">Optimalisasi baterai</string>
+    <string name="help_battery_text">Pengaturan → Aplikasi → Waktu Sholat → Baterai → pilih \"Tidak dibatasi\".</string>
+    <string name="help_xiaomi_title">Xiaomi / Redmi / POCO</string>
+    <string name="help_xiaomi_text">Keamanan → Izin → Mulai otomatis → aktifkan untuk aplikasi. Lalu Pengaturan → Aplikasi → Waktu Sholat → Penghemat baterai → \"Tanpa batasan\".</string>
+    <string name="help_huawei_title">Huawei / Honor</string>
+    <string name="help_huawei_text">Pengaturan → Baterai → Peluncuran aplikasi → Waktu Sholat → kelola manual dan aktifkan ketiga opsi.</string>
+    <string name="help_samsung_title">Samsung</string>
+    <string name="help_samsung_text">Pengaturan → Baterai → Batas penggunaan latar belakang → hapus aplikasi dari \"Aplikasi tidur\".</string>
+    <string name="open_app_settings">Buka pengaturan aplikasi</string>
+    <string name="open_battery_settings">Buka pengaturan baterai</string>
+
+    <string name="onboarding_language_title">Pilih bahasa</string>
+    <string name="onboarding_location_title">Di mana Anda?</string>
+    <string name="onboarding_method_title">Metode perhitungan</string>
+    <string name="onboarding_method_hint">Kami memilih metode yang digunakan di negara Anda. Anda dapat mengubahnya kapan saja di pengaturan.</string>
+    <string name="onboarding_notif_title">Notifikasi sholat</string>
+    <string name="onboarding_notif_text">Izinkan notifikasi untuk mendengar adzan setiap waktu sholat.</string>
+    <string name="tab_prayer">Salat</string>
+    <string name="tab_calendar">Kalender</string>
+    <string name="tab_qibla">Kiblat</string>
+    <string name="tab_tasbeh">Tasbih</string>
+    <string name="tab_settings">Pengaturan</string>
+</resources>

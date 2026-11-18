@@ -1,0 +1,16 @@
+{
+  "default": { "method": "MUSLIM_WORLD_LEAGUE", "madhab": "SHAFI" },
+  "groups": [
+    { "method": "SINGAPORE", "madhab": "SHAFI", "countries": ["ID", "MY", "SG", "BN"] },
+    { "method": "MUSLIM_WORLD_LEAGUE", "madhab": "HANAFI", "countries": ["UZ", "KZ", "KG", "TJ", "TM"] },
+    { "method": "TURKEY_DIYANET", "madhab": "HANAFI", "countries": ["TR", "BA", "AL", "XK", "MK", "RS", "ME", "BG", "GR", "RO", "HR", "SI"] },
+    { "method": "KARACHI", "madhab": "HANAFI", "countries": ["PK", "IN", "BD", "AF"] },
+    { "method": "UMM_AL_QURA", "madhab": "SHAFI", "countries": ["SA", "YE"] },
+    { "method": "EGYPTIAN", "madhab": "SHAFI", "countries": ["EG", "LY", "SD", "DZ", "MA", "TN", "MR", "SN", "GM", "GN", "GW", "ML", "NE", "NG", "BF", "CI", "GH", "SL", "LR", "TG", "BJ", "TD", "CM", "EH"] },
+    { "method": "NORTH_AMERICA", "madhab": "SHAFI", "countries": ["US", "CA"] },
+    { "method": "DUBAI", "madhab": "SHAFI", "countries": ["AE"] },
+    { "method": "KUWAIT", "madhab": "SHAFI", "countries": ["KW"] },
+    { "method": "QATAR", "madhab": "SHAFI", "countries": ["QA"] },
+    { "method": "MOONSIGHTING_COMMITTEE", "madhab": "SHAFI", "countries": ["GB"] }
+  ]
+}

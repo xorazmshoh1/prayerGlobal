@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نماز و حفظ</string>
+    <string name="widget_name">اوقات نماز</string>
+    <string name="widget_no_location">برنامه را باز کنید و مکانی انتخاب کنید</string>
+    <string name="widget_next">بعدی: %1$s %2$s</string>
+
+    <string name="channel_azan">وقت نماز (اذان)</string>
+    <string name="channel_beep">وقت نماز (هشدار)</string>
+    <string name="channel_silent">وقت نماز (بی‌صدا)</string>
+    <string name="channel_reminder">یادآوری پیش از نماز</string>
+    <string name="notif_title">وقت %1$s فرا رسید</string>
+    <string name="notif_reminder_title">%1$s تا %2$d دقیقه دیگر</string>
+    <string name="notif_text">%1$s · %2$s</string>
+
+
+
+
+    <string name="previous_month">ماه قبل</string>
+    <string name="next_month">ماه بعد</string>
+    <string name="calendar_day">روز</string>
+    <string name="suhoor">سحری</string>
+    <string name="iftar">افطار</string>
+
+    <string name="qibla_title">جهت قبله</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">شما رو به قبله هستید</string>
+    <string name="qibla_turn">بچرخید تا پیکان به سمت کعبه باشد</string>
+    <string name="calibrate_hint">دقت قطب‌نما پایین است. گوشی را به شکل عدد ۸ حرکت دهید و از فلز و آهن‌ربا دور نگه دارید.</string>
+    <string name="compass_unavailable">این گوشی حسگر قطب‌نما ندارد</string>
+
+    <string name="dhikr_subhanallah">سبحان الله</string>
+    <string name="dhikr_alhamdulillah">الحمد لله</string>
+    <string name="dhikr_allahuakbar">الله اکبر</string>
+    <string name="dhikr_tahlil">لا اله الا الله</string>
+    <string name="dhikr_istighfar">استغفر الله</string>
+    <string name="dhikr_salawat">صلوات</string>
+    <string name="tasbeh_rounds">دور: %1$d · هدف %2$d</string>
+    <string name="tasbeh_custom">دلخواه</string>
+    <string name="tasbeh_target">هدف</string>
+    <string name="tasbeh_today_total">امروز: %1$d</string>
+    <string name="reset">بازنشانی</string>
+    <string name="ok">تأیید</string>
+    <string name="cancel">لغو</string>
+    <string name="close">بستن</string>
+    <string name="back">بازگشت</string>
+    <string name="next">بعدی</string>
+    <string name="later">بعداً</string>
+    <string name="allow">اجازه دادن</string>
+    <string name="off">خاموش</string>
+    <string name="minutes_short">%1$d دقیقه</string>
+
+    <string name="settings">تنظیمات</string>
+    <string name="section_location">مکان</string>
+    <string name="section_calculation">محاسبه</string>
+    <string name="calc_method">روش محاسبه</string>
+    <string name="auto_value">خودکار: %1$s</string>
+    <string name="asr_madhab">مذهب فقهی برای عصر</string>
+    <string name="high_lat_rule">قاعده عرض‌های بالا</string>
+    <string name="time_adjustments">تنظیم اوقات</string>
+    <string name="time_adjustments_hint">برای هماهنگی با مسجد محل، به هر وقت دقیقه اضافه یا از آن کم کنید.</string>
+    <string name="hijri_adjust">تنظیم تاریخ قمری (روز)</string>
+    <string name="section_app">برنامه</string>
+    <string name="notifications">اعلان‌ها</string>
+    <string name="language">زبان</string>
+    <string name="system_default">پیش‌فرض سیستم</string>
+    <string name="theme">پوسته</string>
+    <string name="theme_system">سیستم</string>
+    <string name="theme_light">روشن</string>
+    <string name="theme_dark">تیره</string>
+    <string name="section_about">درباره</string>
+    <string name="privacy_policy">سیاست حفظ حریم خصوصی</string>
+    <string name="rate_app">امتیاز به برنامه</string>
+    <string name="disclaimer">اوقات روی دستگاه شما محاسبه می‌شوند. روش‌ها و تنظیمات را می‌توان در تنظیمات تغییر داد. این برنامه به هیچ نهاد دولتی یا مذهبی وابسته نیست.</string>
+
+    <string name="exact_alarm_needed">اجازه «زنگ‌ها و یادآوری‌ها» را بدهید تا اعلان‌ها دقیقاً سر وقت برسند.</string>
+    <string name="remind_before">یادآوری پیش از</string>
+
+    <string name="help_notifications">اعلان‌ها نمی‌رسند؟</string>
+    <string name="help_intro">برخی گوشی‌ها برای صرفه‌جویی در باتری، برنامه‌ها را در پس‌زمینه متوقف می‌کنند. لطفاً موارد زیر را بررسی کنید:</string>
+    <string name="help_battery_title">بهینه‌سازی باتری</string>
+    <string name="help_battery_text">تنظیمات ← برنامه‌ها ← اوقات شرعی ← باتری ← «نامحدود» (یا «بهینه نشود») را انتخاب کنید.</string>
+    <string name="help_xiaomi_title">Xiaomi / Redmi / POCO</string>
+    <string name="help_xiaomi_text">امنیت ← مجوزها ← شروع خودکار ← برای اوقات شرعی فعال کنید. سپس تنظیمات ← برنامه‌ها ← اوقات شرعی ← صرفه‌جویی باتری ← «بدون محدودیت».</string>
+    <string name="help_huawei_title">Huawei / Honor</string>
+    <string name="help_huawei_text">تنظیمات ← باتری ← راه‌اندازی برنامه ← اوقات شرعی ← مدیریت دستی و فعال کردن راه‌اندازی خودکار، راه‌اندازی ثانویه و اجرا در پس‌زمینه.</string>
+    <string name="help_samsung_title">Samsung</string>
+    <string name="help_samsung_text">تنظیمات ← باتری ← محدودیت‌های مصرف پس‌زمینه ← اوقات شرعی را از «برنامه‌های در خواب» و «برنامه‌های در خواب عمیق» حذف کنید.</string>
+    <string name="open_app_settings">باز کردن تنظیمات برنامه</string>
+    <string name="open_battery_settings">باز کردن تنظیمات باتری</string>
+
+    <string name="onboarding_language_title">زبان خود را انتخاب کنید</string>
+    <string name="onboarding_location_title">کجا هستید؟</string>
+    <string name="onboarding_method_title">روش محاسبه</string>
+    <string name="onboarding_method_hint">روش رایج در کشور شما انتخاب شد. هر زمان می‌توانید آن را در تنظیمات تغییر دهید.</string>
+    <string name="onboarding_notif_title">اعلان‌های نماز</string>
+    <string name="onboarding_notif_text">برای شنیدن اذان در هر وقت نماز، اجازه اعلان بدهید.</string>
+    <string name="tab_prayer">نماز</string>
+    <string name="tab_calendar">تقویم</string>
+    <string name="tab_qibla">قبله</string>
+    <string name="tab_tasbeh">تسبیح</string>
+    <string name="tab_settings">تنظیمات</string>
+</resources>
