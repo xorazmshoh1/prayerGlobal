@@ -25,7 +25,10 @@ minSdk 24, compileSdk/targetSdk 36, Gradle version catalog (`gradle/libs.version
 - `feature-prayer`, `feature-calendar`, `feature-hifz`, `feature-qibla`, `feature-tasbih`, `feature-ramadan` — funksiya modullari
 
 Umumiy kod faqat `core-*` modullarida; feature modullar bir-biriga bog'lanmaydi.
-Hozircha namoz, oylik jadval, qibla va tasbeh kodi `app-namoz-hifz` ichida — 2-, 4- va 10-bosqichlarda tegishli feature modullarga ko'chiriladi.
+Namoz yadrosi (hisoblash, mamlakat → usul, PrayerSettings, joylar va shahar qidiruvi, Namoz ekrani) — `feature-prayer` (2-bosqich).
+Hozircha bildirishnomalar va vidjet (3-bosqich), qibla va tasbeh (4-bosqich), oylik jadval (10-bosqich), sozlamalar/onboarding (9-bosqich)
+va Room bazasi (`NamozDatabase`: feature-prayer'dagi `SavedLocation` + tasbeh) `app-namoz-hifz` ichida; ular feature-prayer API'sidan foydalanadi.
+Hijriy sana (`HijriProvider`) va `hijriAdjustDays` — `core-data`da (namoz, taqvim, Ramazon uchun umumiy).
 
 ## Qoidalar
 - Barcha matnlar `strings.xml` da: `values` = inglizcha, `values-{ar,uz,ru,in,ms,tr,ur,fa,bn,fr}`. RTL (ar, ur, fa) qo'llab-quvvatlanadi, kompas aylantirilmaydi.
@@ -42,8 +45,11 @@ Hozircha namoz, oylik jadval, qibla va tasbeh kodi `app-namoz-hifz` ichida — 2
 Windows (lokal): `JAVA_HOME="/c/Users/HP/.jdks/corretto-17.0.5" ./gradlew ...`
 
 ## Muhim fayllar
-- `app-namoz-hifz/src/main/assets/methods.json` — davlat → hisoblash usuli va Asr mazhabi (TZ 2-bo'lim)
-- `app-namoz-hifz/src/main/assets/cities.json` — shaharlar (`tools/geonames-to-json.mjs` bilan GeoNames'dan qayta yaratiladi)
-- `app-namoz-hifz/.../domain/PrayerCalculator.kt` — hisoblash
-- `docs/prayer-tables/` — sinov shaharlari uchun oylik jadval (unit test yaratadi)
+- `feature-prayer/src/main/assets/methods.json` — davlat → hisoblash usuli va Asr mazhabi (TZ 2-bo'lim)
+- `feature-prayer/src/main/assets/cities.json` — shaharlar (`tools/geonames-to-json.mjs` bilan GeoNames'dan qayta yaratiladi)
+- `feature-prayer/.../domain/PrayerCalculator.kt` — hisoblash (adhan, Android'siz); `domain/` dagi hamma narsa sof Kotlin
+- `feature-prayer/.../data/PrayerSettings.kt` — usul, mazhab, yuqori kenglik qoidasi, ±daqiqa (DataStore)
+- `feature-prayer/src/test/resources/adhan-testdata/` — rasmiy jadvallar (Diyanet, Umm al-Qura, MUIS), adhan'dan
+- `docs/prayer-tables/` — sinov shaharlari uchun oylik jadval; `ReferenceTimesTest` solishtiradi,
+  qayta yaratish: `./gradlew :feature-prayer:testDebugUnitTest -Dprayer.tables.write=true`
 - `.github/workflows/ci.yml` — CI: build, unit testlar, reklama SDK tekshiruvi

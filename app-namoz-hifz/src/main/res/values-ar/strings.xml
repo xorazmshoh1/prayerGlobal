@@ -13,52 +13,8 @@
     <string name="notif_reminder_title">%1$s بعد %2$d دقيقة</string>
     <string name="notif_text">%1$s · %2$s</string>
 
-    <string name="prayer_fajr">الفجر</string>
-    <string name="prayer_sunrise">الشروق</string>
-    <string name="prayer_dhuhr">الظهر</string>
-    <string name="prayer_asr">العصر</string>
-    <string name="prayer_maghrib">المغرب</string>
-    <string name="prayer_isha">العشاء</string>
-    <string name="until_fajr">المتبقي حتى الفجر</string>
-    <string name="until_sunrise">المتبقي حتى الشروق</string>
-    <string name="until_dhuhr">المتبقي حتى الظهر</string>
-    <string name="until_asr">المتبقي حتى العصر</string>
-    <string name="until_maghrib">المتبقي حتى المغرب</string>
-    <string name="until_isha">المتبقي حتى العشاء</string>
 
-    <string name="method_mwl">رابطة العالم الإسلامي</string>
-    <string name="method_umm_al_qura">أم القرى، مكة المكرمة</string>
-    <string name="method_dubai">دبي</string>
-    <string name="method_kuwait">الكويت</string>
-    <string name="method_qatar">قطر</string>
-    <string name="method_egyptian">الهيئة المصرية العامة للمساحة</string>
-    <string name="method_karachi">جامعة العلوم الإسلامية، كراتشي</string>
-    <string name="method_turkey">تركيا (معايير ديانت)</string>
-    <string name="method_uzbekistan">أوزبكستان / آسيا الوسطى</string>
-    <string name="method_singapore">سنغافورة، ماليزيا، إندونيسيا</string>
-    <string name="method_isna">الجمعية الإسلامية لأمريكا الشمالية</string>
-    <string name="method_moonsighting">لجنة رؤية الهلال</string>
-    <string name="madhab_shafi">الشافعي (الافتراضي)</string>
-    <string name="madhab_hanafi">الحنفي</string>
-    <string name="highlat_middle">منتصف الليل</string>
-    <string name="highlat_seventh">سُبع الليل</string>
-    <string name="highlat_angle">زاوية الشفق</string>
-    <string name="sound_azan">أذان</string>
-    <string name="sound_beep">تنبيه</string>
-    <string name="sound_silent">صامت</string>
-    <string name="label_none">بدون تسمية</string>
-    <string name="label_home">المنزل</string>
-    <string name="label_work">العمل</string>
-    <string name="label_travel">السفر</string>
 
-    <string name="no_location_title">لم يتم تحديد الموقع</string>
-    <string name="no_location_message">اختر مدينة أو استخدم GPS لعرض مواقيت الصلاة.</string>
-    <string name="choose_location">اختيار الموقع</string>
-    <string name="travel_title">تم اكتشاف موقع جديد</string>
-    <string name="travel_message">يبدو أنك في %1$s. هل تريد تحديث المواقيت للموقع الجديد؟</string>
-    <string name="yes">نعم</string>
-    <string name="no">لا</string>
-    <string name="toggle_notification">تشغيل الإشعار أو إيقافه</string>
 
     <string name="previous_month">الشهر السابق</string>
     <string name="next_month">الشهر التالي</string>
@@ -88,7 +44,6 @@
     <string name="cancel">إلغاء</string>
     <string name="close">إغلاق</string>
     <string name="back">رجوع</string>
-    <string name="delete">حذف</string>
     <string name="next">التالي</string>
     <string name="later">لاحقًا</string>
     <string name="allow">السماح</string>
@@ -97,12 +52,6 @@
 
     <string name="settings">الإعدادات</string>
     <string name="section_location">الموقع</string>
-    <string name="saved_locations">المواقع المحفوظة</string>
-    <string name="add_location">إضافة موقع</string>
-    <string name="use_gps">تحديد عبر GPS</string>
-    <string name="gps_failed">تعذّر تحديد موقعك. فعّل الموقع أو ابحث عن مدينة.</string>
-    <string name="gps_optional">GPS اختياري — يمكنك دائمًا البحث عن مدينة.</string>
-    <string name="search_city">ابحث عن مدينة</string>
     <string name="section_calculation">الحساب</string>
     <string name="calc_method">طريقة الحساب</string>
     <string name="auto_value">تلقائي: %1$s</string>

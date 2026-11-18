@@ -8,9 +8,9 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
-import uz.xumoyun.namoz.data.NamozSettings
-import uz.xumoyun.namoz.data.enumOrNull
-import uz.xumoyun.namoz.domain.Prayer
+import uz.xumoyun.feature.prayer.data.PrayerSettings
+import uz.xumoyun.core.common.enumOrNull
+import uz.xumoyun.feature.prayer.domain.Prayer
 import uz.xumoyun.namoz.widget.PrayerWidget
 import java.time.Instant
 import javax.inject.Inject
@@ -27,7 +27,7 @@ private fun BroadcastReceiver.runAsync(block: suspend () -> Unit) {
 /** Namoz vaqti (yoki oldindan eslatma) kelganda bildirishnoma chiqaradi. */
 @AndroidEntryPoint
 class PrayerAlarmReceiver : BroadcastReceiver() {
-    @Inject lateinit var settings: NamozSettings
+    @Inject lateinit var settings: PrayerSettings
 
     override fun onReceive(context: Context, intent: Intent) {
         val prayer = intent.getStringExtra(EXTRA_PRAYER)?.let { enumOrNull<Prayer>(it) } ?: return

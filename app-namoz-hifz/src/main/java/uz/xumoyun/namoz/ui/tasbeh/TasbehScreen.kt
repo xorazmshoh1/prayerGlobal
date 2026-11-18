@@ -60,7 +60,7 @@ import uz.xumoyun.core.common.TimeSource
 import uz.xumoyun.core.ui.components.ProgressRing
 import uz.xumoyun.core.ui.theme.TabularNumbers
 import uz.xumoyun.namoz.R
-import uz.xumoyun.namoz.data.NamozSettings
+import uz.xumoyun.namoz.data.TasbehSettings
 import uz.xumoyun.namoz.data.db.TasbehDao
 import uz.xumoyun.namoz.data.db.TasbehDay
 import uz.xumoyun.namoz.ui.NamozPreview
@@ -88,7 +88,7 @@ data class TasbehState(
 @HiltViewModel
 class TasbehViewModel @Inject constructor(
     private val dao: TasbehDao,
-    private val settings: NamozSettings,
+    private val settings: TasbehSettings,
     private val time: TimeSource,
 ) : ViewModel() {
     private val selected = MutableStateFlow(Dhikr.SUBHANALLAH)
@@ -96,8 +96,8 @@ class TasbehViewModel @Inject constructor(
     private val today get() = time.today().toString()
 
     @OptIn(ExperimentalCoroutinesApi::class)
-    val state: StateFlow<TasbehState> = combine(selected, session, settings.prefs, dao.observeDay(today)) { d, c, prefs, day ->
-        TasbehState(d, c, prefs.tasbehTarget, day.sumOf { it.count })
+    val state: StateFlow<TasbehState> = combine(selected, session, settings.target, dao.observeDay(today)) { d, c, target, day ->
+        TasbehState(d, c, target, day.sumOf { it.count })
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), TasbehState())
 
     /** Bosilganda: hisob +1, kunlik hisob saqlanadi. Maqsadga yetganda true qaytaradi. */
@@ -120,7 +120,7 @@ class TasbehViewModel @Inject constructor(
         session.value = 0
     }
 
-    fun setTarget(target: Int) = viewModelScope.launch { settings.setTasbehTarget(target) }
+    fun setTarget(target: Int) = viewModelScope.launch { settings.setTarget(target) }
 }
 
 @Composable

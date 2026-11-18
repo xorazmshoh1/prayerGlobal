@@ -44,21 +44,23 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import uz.xumoyun.core.common.ThemeMode
+import uz.xumoyun.core.data.CommonSettings
 import uz.xumoyun.core.ui.AppLocale
 import uz.xumoyun.core.ui.components.ChoiceRow
 import uz.xumoyun.core.ui.components.SectionTitle
 import uz.xumoyun.core.ui.components.SettingsRow
 import uz.xumoyun.core.ui.theme.TabularNumbers
 import uz.xumoyun.namoz.R
-import uz.xumoyun.namoz.domain.AsrMadhab
-import uz.xumoyun.namoz.domain.CalcMethod
-import uz.xumoyun.namoz.domain.HighLatRule
-import uz.xumoyun.namoz.domain.Prayer
+import uz.xumoyun.feature.prayer.R as PrayerR
+import uz.xumoyun.feature.prayer.domain.AsrMadhab
+import uz.xumoyun.feature.prayer.domain.CalcMethod
+import uz.xumoyun.feature.prayer.domain.HighLatRule
+import uz.xumoyun.feature.prayer.domain.Prayer
 import uz.xumoyun.namoz.ui.SupportedLanguages
-import uz.xumoyun.namoz.ui.highLatName
-import uz.xumoyun.namoz.ui.madhabName
-import uz.xumoyun.namoz.ui.methodName
-import uz.xumoyun.namoz.ui.prayerName
+import uz.xumoyun.feature.prayer.ui.highLatName
+import uz.xumoyun.feature.prayer.ui.madhabName
+import uz.xumoyun.feature.prayer.ui.methodName
+import uz.xumoyun.feature.prayer.ui.prayerName
 
 private enum class Dialog { LANGUAGE, METHOD, MADHAB, HIGH_LAT, THEME, ADJUST, HIJRI }
 
@@ -79,7 +81,7 @@ fun SettingsRoute(
         Text(stringResource(R.string.settings), style = MaterialTheme.typography.headlineSmall, modifier = Modifier.padding(16.dp))
 
         SectionTitle(stringResource(R.string.section_location))
-        SettingsRow(stringResource(R.string.saved_locations), value = config?.location?.name, icon = Icons.Rounded.LocationOn, onClick = onLocations)
+        SettingsRow(stringResource(PrayerR.string.saved_locations), value = config?.location?.name, icon = Icons.Rounded.LocationOn, onClick = onLocations)
 
         SectionTitle(stringResource(R.string.section_calculation))
         SettingsRow(
@@ -109,7 +111,7 @@ fun SettingsRoute(
         SettingsRow(stringResource(R.string.time_adjustments), icon = Icons.Rounded.Schedule, onClick = { dialog = Dialog.ADJUST })
         SettingsRow(
             stringResource(R.string.hijri_adjust),
-            value = config?.prefs?.hijriOffset?.let { signed(it) },
+            value = signed(state.hijriAdjustDays),
             icon = Icons.Rounded.CalendarMonth,
             onClick = { dialog = Dialog.HIJRI },
         )
@@ -175,8 +177,8 @@ fun SettingsRoute(
             }
         }
         Dialog.HIJRI -> ChoiceDialog(stringResource(R.string.hijri_adjust), close) {
-            (-2..2).forEach { d ->
-                ChoiceRow(signed(d), config?.prefs?.hijriOffset == d) { viewModel.setHijriOffset(d); close() }
+            (-CommonSettings.MAX_HIJRI_ADJUST..CommonSettings.MAX_HIJRI_ADJUST).forEach { d ->
+                ChoiceRow(signed(d), state.hijriAdjustDays == d) { viewModel.setHijriOffset(d); close() }
             }
         }
         Dialog.ADJUST -> ChoiceDialog(stringResource(R.string.time_adjustments), close) {

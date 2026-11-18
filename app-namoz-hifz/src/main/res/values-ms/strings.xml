@@ -13,52 +13,8 @@
     <string name="notif_reminder_title">%1$s dalam %2$d minit</string>
     <string name="notif_text">%1$s · %2$s</string>
 
-    <string name="prayer_fajr">Subuh</string>
-    <string name="prayer_sunrise">Syuruk</string>
-    <string name="prayer_dhuhr">Zohor</string>
-    <string name="prayer_asr">Asar</string>
-    <string name="prayer_maghrib">Maghrib</string>
-    <string name="prayer_isha">Isyak</string>
-    <string name="until_fajr">Menjelang Subuh</string>
-    <string name="until_sunrise">Menjelang Syuruk</string>
-    <string name="until_dhuhr">Menjelang Zohor</string>
-    <string name="until_asr">Menjelang Asar</string>
-    <string name="until_maghrib">Menjelang Maghrib</string>
-    <string name="until_isha">Menjelang Isyak</string>
 
-    <string name="method_mwl">Liga Muslim Sedunia</string>
-    <string name="method_umm_al_qura">Umm al-Qura, Makkah</string>
-    <string name="method_dubai">Dubai</string>
-    <string name="method_kuwait">Kuwait</string>
-    <string name="method_qatar">Qatar</string>
-    <string name="method_egyptian">Pihak Berkuasa Am Mesir</string>
-    <string name="method_karachi">Universiti Sains Islam, Karachi</string>
-    <string name="method_turkey">Turki (parameter Diyanet)</string>
-    <string name="method_uzbekistan">Uzbekistan / Asia Tengah</string>
-    <string name="method_singapore">Singapura, Malaysia, Indonesia</string>
-    <string name="method_isna">ISNA (Amerika Utara)</string>
-    <string name="method_moonsighting">Moonsighting Committee</string>
-    <string name="madhab_shafi">Syafie (standard)</string>
-    <string name="madhab_hanafi">Hanafi</string>
-    <string name="highlat_middle">Pertengahan malam</string>
-    <string name="highlat_seventh">Satu pertujuh malam</string>
-    <string name="highlat_angle">Sudut senja</string>
-    <string name="sound_azan">Azan</string>
-    <string name="sound_beep">Isyarat</string>
-    <string name="sound_silent">Senyap</string>
-    <string name="label_none">Tiada label</string>
-    <string name="label_home">Rumah</string>
-    <string name="label_work">Tempat kerja</string>
-    <string name="label_travel">Musafir</string>
 
-    <string name="no_location_title">Lokasi belum ditetapkan</string>
-    <string name="no_location_message">Pilih bandar atau gunakan GPS untuk melihat waktu solat.</string>
-    <string name="choose_location">Pilih lokasi</string>
-    <string name="travel_title">Lokasi baharu dikesan</string>
-    <string name="travel_message">Anda nampaknya berada di %1$s. Kemas kini waktu solat untuk lokasi baharu?</string>
-    <string name="yes">Ya</string>
-    <string name="no">Tidak</string>
-    <string name="toggle_notification">Hidupkan atau matikan pemberitahuan</string>
 
     <string name="previous_month">Bulan sebelumnya</string>
     <string name="next_month">Bulan seterusnya</string>
@@ -88,7 +44,6 @@
     <string name="cancel">Batal</string>
     <string name="close">Tutup</string>
     <string name="back">Kembali</string>
-    <string name="delete">Padam</string>
     <string name="next">Seterusnya</string>
     <string name="later">Nanti</string>
     <string name="allow">Benarkan</string>
@@ -97,12 +52,6 @@
 
     <string name="settings">Tetapan</string>
     <string name="section_location">Lokasi</string>
-    <string name="saved_locations">Lokasi disimpan</string>
-    <string name="add_location">Tambah lokasi</string>
-    <string name="use_gps">Kesan dengan GPS</string>
-    <string name="gps_failed">Lokasi anda tidak dapat dikesan. Hidupkan lokasi atau cari bandar.</string>
-    <string name="gps_optional">GPS adalah pilihan — anda sentiasa boleh mencari bandar.</string>
-    <string name="search_city">Cari bandar</string>
     <string name="section_calculation">Pengiraan</string>
     <string name="calc_method">Kaedah pengiraan</string>
     <string name="auto_value">Automatik: %1$s</string>

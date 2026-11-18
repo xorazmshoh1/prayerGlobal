@@ -40,9 +40,9 @@ import uz.xumoyun.core.ui.components.EmptyState
 import uz.xumoyun.namoz.R
 import uz.xumoyun.namoz.ui.NamozPreview
 import uz.xumoyun.namoz.ui.SupportedLanguages
-import uz.xumoyun.namoz.ui.madhabName
-import uz.xumoyun.namoz.ui.methodName
-import uz.xumoyun.namoz.ui.settings.LocationsScreen
+import uz.xumoyun.feature.prayer.ui.madhabName
+import uz.xumoyun.feature.prayer.ui.methodName
+import uz.xumoyun.feature.prayer.ui.LocationsScreen
 import uz.xumoyun.namoz.ui.settings.SettingsViewModel
 
 /** Onboarding: til → joylashuv → avtomatik tanlangan usul → bildirishnoma ruxsati. */
@@ -64,7 +64,7 @@ fun OnboardingRoute(viewModel: SettingsViewModel, onFinished: () -> Unit) {
                 }
                 1 -> Column {
                     Text(stringResource(R.string.onboarding_location_title), style = MaterialTheme.typography.headlineSmall, modifier = Modifier.padding(horizontal = 16.dp))
-                    LocationsScreen(viewModel, showSaved = false, onPicked = { step = 2 })
+                    LocationsScreen(showSaved = false, onPicked = { step = 2 })
                 }
                 2 -> {
                     val c = state.config

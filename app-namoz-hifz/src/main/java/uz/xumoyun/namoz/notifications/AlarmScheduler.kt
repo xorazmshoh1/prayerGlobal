@@ -6,7 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import dagger.hilt.android.qualifiers.ApplicationContext
-import uz.xumoyun.namoz.data.PrayerRepository
+import uz.xumoyun.feature.prayer.data.PrayerRepository
 import uz.xumoyun.namoz.widget.PrayerWidget
 import java.time.LocalDate
 import java.time.ZonedDateTime

@@ -15,9 +15,9 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
 import uz.xumoyun.namoz.MainActivity
 import uz.xumoyun.namoz.R
-import uz.xumoyun.namoz.data.AlertSound
-import uz.xumoyun.namoz.domain.Prayer
-import uz.xumoyun.namoz.ui.prayerName
+import uz.xumoyun.feature.prayer.data.AlertSound
+import uz.xumoyun.feature.prayer.domain.Prayer
+import uz.xumoyun.feature.prayer.ui.prayerName
 import java.time.Instant
 import java.time.ZoneId
 
@@ -62,7 +62,7 @@ object Notifications {
             else -> CHANNEL_SILENT
         }
         val name = context.getString(prayerName(prayer))
-        val time = uz.xumoyun.namoz.ui.TimeFormat.format(context, prayerTime.atZone(ZoneId.systemDefault()))
+        val time = uz.xumoyun.feature.prayer.ui.TimeFormat.format(context, prayerTime.atZone(ZoneId.systemDefault()))
         val title = if (reminder) context.getString(R.string.notif_reminder_title, name, minutesBefore)
         else context.getString(R.string.notif_title, name)
         val open = PendingIntent.getActivity(

@@ -13,52 +13,8 @@
     <string name="notif_reminder_title">%1$s vaktine %2$d dk kaldı</string>
     <string name="notif_text">%1$s · %2$s</string>
 
-    <string name="prayer_fajr">Sabah</string>
-    <string name="prayer_sunrise">Güneş</string>
-    <string name="prayer_dhuhr">Öğle</string>
-    <string name="prayer_asr">İkindi</string>
-    <string name="prayer_maghrib">Akşam</string>
-    <string name="prayer_isha">Yatsı</string>
-    <string name="until_fajr">Sabah vaktine</string>
-    <string name="until_sunrise">Güneşin doğuşuna</string>
-    <string name="until_dhuhr">Öğle vaktine</string>
-    <string name="until_asr">İkindi vaktine</string>
-    <string name="until_maghrib">Akşam vaktine</string>
-    <string name="until_isha">Yatsı vaktine</string>
 
-    <string name="method_mwl">Müslüman Dünya Birliği</string>
-    <string name="method_umm_al_qura">Ümmü\'l-Kura, Mekke</string>
-    <string name="method_dubai">Dubai</string>
-    <string name="method_kuwait">Kuveyt</string>
-    <string name="method_qatar">Katar</string>
-    <string name="method_egyptian">Mısır Genel Kurumu</string>
-    <string name="method_karachi">İslami İlimler Üniversitesi, Karaçi</string>
-    <string name="method_turkey">Türkiye (Diyanet parametreleri)</string>
-    <string name="method_uzbekistan">Özbekistan / Orta Asya</string>
-    <string name="method_singapore">Singapur, Malezya, Endonezya</string>
-    <string name="method_isna">ISNA (Kuzey Amerika)</string>
-    <string name="method_moonsighting">Moonsighting Committee</string>
-    <string name="madhab_shafi">Şafii (standart)</string>
-    <string name="madhab_hanafi">Hanefi</string>
-    <string name="highlat_middle">Gecenin yarısı</string>
-    <string name="highlat_seventh">Gecenin yedide biri</string>
-    <string name="highlat_angle">Şafak açısı</string>
-    <string name="sound_azan">Ezan</string>
-    <string name="sound_beep">Sinyal</string>
-    <string name="sound_silent">Sessiz</string>
-    <string name="label_none">Etiketsiz</string>
-    <string name="label_home">Ev</string>
-    <string name="label_work">İş</string>
-    <string name="label_travel">Seyahat</string>
 
-    <string name="no_location_title">Konum seçilmedi</string>
-    <string name="no_location_message">Namaz vakitlerini görmek için bir şehir seçin veya GPS kullanın.</string>
-    <string name="choose_location">Konum seç</string>
-    <string name="travel_title">Yeni konum algılandı</string>
-    <string name="travel_message">Görünüşe göre %1$s konumundasınız. Vakitleri yeni konuma göre güncelleyelim mi?</string>
-    <string name="yes">Evet</string>
-    <string name="no">Hayır</string>
-    <string name="toggle_notification">Bildirimi aç veya kapat</string>
 
     <string name="previous_month">Önceki ay</string>
     <string name="next_month">Sonraki ay</string>
@@ -88,7 +44,6 @@
     <string name="cancel">İptal</string>
     <string name="close">Kapat</string>
     <string name="back">Geri</string>
-    <string name="delete">Sil</string>
     <string name="next">İleri</string>
     <string name="later">Sonra</string>
     <string name="allow">İzin ver</string>
@@ -97,12 +52,6 @@
 
     <string name="settings">Ayarlar</string>
     <string name="section_location">Konum</string>
-    <string name="saved_locations">Kayıtlı konumlar</string>
-    <string name="add_location">Konum ekle</string>
-    <string name="use_gps">GPS ile bul</string>
-    <string name="gps_failed">Konumunuz bulunamadı. Konumu açın veya şehir arayın.</string>
-    <string name="gps_optional">GPS isteğe bağlıdır — her zaman şehir arayabilirsiniz.</string>
-    <string name="search_city">Şehir ara</string>
     <string name="section_calculation">Hesaplama</string>
     <string name="calc_method">Hesaplama yöntemi</string>
     <string name="auto_value">Otomatik: %1$s</string>

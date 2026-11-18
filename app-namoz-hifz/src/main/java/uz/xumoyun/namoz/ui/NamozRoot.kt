@@ -32,15 +32,15 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import uz.xumoyun.feature.hifz.HifzRoute
+import uz.xumoyun.feature.prayer.ui.LocationsScreen
+import uz.xumoyun.feature.prayer.ui.PrayerRoute
 import uz.xumoyun.feature.ramadan.RamadanHomeRoute
 import uz.xumoyun.feature.ramadan.RamadanRoutes
 import uz.xumoyun.namoz.R
 import uz.xumoyun.namoz.ui.calendar.CalendarRoute
-import uz.xumoyun.namoz.ui.home.HomeRoute
 import uz.xumoyun.namoz.ui.onboarding.OnboardingRoute
 import uz.xumoyun.namoz.ui.qibla.QiblaRoute
 import uz.xumoyun.namoz.ui.settings.HelpScreen
-import uz.xumoyun.namoz.ui.settings.LocationsScreen
 import uz.xumoyun.namoz.ui.settings.NotificationSettingsRoute
 import uz.xumoyun.namoz.ui.settings.SettingsRoute
 import uz.xumoyun.namoz.ui.settings.SettingsViewModel
@@ -107,7 +107,7 @@ fun NamozRoot(startWithOnboarding: Boolean) {
                 }
             }
             composable(Tab.PRAYER.route) {
-                HomeRoute(
+                PrayerRoute(
                     onPickLocation = { nav.navigate(Routes.LOCATIONS) },
                     onRamadan = { nav.navigate(RamadanRoutes.GRAPH) },
                     onSettings = { nav.navigate(Routes.SETTINGS) },
@@ -129,7 +129,7 @@ fun NamozRoot(startWithOnboarding: Boolean) {
                     onHelp = { nav.navigate(Routes.HELP) },
                 )
             }
-            composable(Routes.LOCATIONS) { LocationsScreen(hiltViewModel(), onPicked = { nav.popBackStack() }) }
+            composable(Routes.LOCATIONS) { LocationsScreen(onPicked = { nav.popBackStack() }) }
             composable(Routes.NOTIFICATIONS) { NotificationSettingsRoute(hiltViewModel()) }
             composable(Routes.HELP) { HelpScreen() }
         }
@@ -141,7 +141,7 @@ fun NamozRoot(startWithOnboarding: Boolean) {
 private fun SubScreenBar(route: String?, nav: NavHostController) {
     val title = when (route) {
         RamadanRoutes.HOME -> uz.xumoyun.feature.ramadan.R.string.ramadan_title
-        Routes.LOCATIONS -> R.string.saved_locations
+        Routes.LOCATIONS -> uz.xumoyun.feature.prayer.R.string.saved_locations
         Routes.NOTIFICATIONS -> R.string.notifications
         Routes.HELP -> R.string.help_notifications
         else -> return

@@ -13,52 +13,8 @@
     <string name="notif_reminder_title">%1$s in %2$d min</string>
     <string name="notif_text">%1$s · %2$s</string>
 
-    <string name="prayer_fajr">Fajr</string>
-    <string name="prayer_sunrise">Sunrise</string>
-    <string name="prayer_dhuhr">Dhuhr</string>
-    <string name="prayer_asr">Asr</string>
-    <string name="prayer_maghrib">Maghrib</string>
-    <string name="prayer_isha">Isha</string>
-    <string name="until_fajr">Until Fajr</string>
-    <string name="until_sunrise">Until sunrise</string>
-    <string name="until_dhuhr">Until Dhuhr</string>
-    <string name="until_asr">Until Asr</string>
-    <string name="until_maghrib">Until Maghrib</string>
-    <string name="until_isha">Until Isha</string>
 
-    <string name="method_mwl">Muslim World League</string>
-    <string name="method_umm_al_qura">Umm al-Qura, Makkah</string>
-    <string name="method_dubai">Dubai</string>
-    <string name="method_kuwait">Kuwait</string>
-    <string name="method_qatar">Qatar</string>
-    <string name="method_egyptian">Egyptian General Authority</string>
-    <string name="method_karachi">University of Islamic Sciences, Karachi</string>
-    <string name="method_turkey">Turkey (Diyanet parameters)</string>
-    <string name="method_uzbekistan">Uzbekistan / Central Asia</string>
-    <string name="method_singapore">Singapore, Malaysia, Indonesia</string>
-    <string name="method_isna">ISNA (North America)</string>
-    <string name="method_moonsighting">Moonsighting Committee</string>
-    <string name="madhab_shafi">Shafi\'i (standard)</string>
-    <string name="madhab_hanafi">Hanafi</string>
-    <string name="highlat_middle">Middle of the night</string>
-    <string name="highlat_seventh">One-seventh of the night</string>
-    <string name="highlat_angle">Twilight angle</string>
-    <string name="sound_azan">Azan</string>
-    <string name="sound_beep">Signal</string>
-    <string name="sound_silent">Silent</string>
-    <string name="label_none">No label</string>
-    <string name="label_home">Home</string>
-    <string name="label_work">Work</string>
-    <string name="label_travel">Travel</string>
 
-    <string name="no_location_title">Location not set</string>
-    <string name="no_location_message">Choose a city or use GPS to see prayer times.</string>
-    <string name="choose_location">Choose location</string>
-    <string name="travel_title">New location detected</string>
-    <string name="travel_message">You seem to be in %1$s. Update prayer times for the new location?</string>
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="toggle_notification">Turn notification on or off</string>
 
     <string name="previous_month">Previous month</string>
     <string name="next_month">Next month</string>
@@ -88,7 +44,6 @@
     <string name="cancel">Cancel</string>
     <string name="close">Close</string>
     <string name="back">Back</string>
-    <string name="delete">Delete</string>
     <string name="next">Next</string>
     <string name="later">Later</string>
     <string name="allow">Allow</string>
@@ -97,12 +52,6 @@
 
     <string name="settings">Settings</string>
     <string name="section_location">Location</string>
-    <string name="saved_locations">Saved locations</string>
-    <string name="add_location">Add location</string>
-    <string name="use_gps">Detect with GPS</string>
-    <string name="gps_failed">Could not detect your location. Turn on location or search for a city.</string>
-    <string name="gps_optional">GPS is optional — you can always search for a city.</string>
-    <string name="search_city">Search city</string>
     <string name="section_calculation">Calculation</string>
     <string name="calc_method">Calculation method</string>
     <string name="auto_value">Automatic: %1$s</string>

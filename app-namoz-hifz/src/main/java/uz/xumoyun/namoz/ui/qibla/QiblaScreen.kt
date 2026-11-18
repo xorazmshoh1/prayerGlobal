@@ -55,8 +55,8 @@ import kotlinx.coroutines.flow.stateIn
 import uz.xumoyun.core.ui.components.EmptyState
 import uz.xumoyun.core.ui.theme.TabularNumbers
 import uz.xumoyun.namoz.R
-import uz.xumoyun.namoz.data.PrayerRepository
-import uz.xumoyun.namoz.domain.PrayerCalculator
+import uz.xumoyun.feature.prayer.data.PrayerRepository
+import uz.xumoyun.feature.prayer.domain.PrayerCalculator
 import uz.xumoyun.namoz.ui.NamozPreview
 import javax.inject.Inject
 import kotlin.math.abs

@@ -93,7 +93,6 @@ dependencies {
     ksp(libs.room.compiler)
     implementation(libs.glance.appwidget)
     implementation(libs.glance.material3)
-    implementation(libs.adhan)
 
     testImplementation(libs.junit)
     testImplementation(libs.kotlinx.coroutines.test)

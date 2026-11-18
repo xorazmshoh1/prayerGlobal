@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.drop
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
-import uz.xumoyun.namoz.data.PrayerRepository
+import uz.xumoyun.feature.prayer.data.PrayerRepository
 import uz.xumoyun.namoz.notifications.AlarmScheduler
 import uz.xumoyun.namoz.notifications.Notifications
 import javax.inject.Inject

@@ -33,11 +33,11 @@ import dagger.hilt.android.EntryPointAccessors
 import dagger.hilt.components.SingletonComponent
 import uz.xumoyun.namoz.MainActivity
 import uz.xumoyun.namoz.R
-import uz.xumoyun.namoz.data.PrayerRepository
-import uz.xumoyun.namoz.domain.Prayer
-import uz.xumoyun.namoz.domain.Schedule
-import uz.xumoyun.namoz.ui.TimeFormat
-import uz.xumoyun.namoz.ui.prayerName
+import uz.xumoyun.feature.prayer.data.PrayerRepository
+import uz.xumoyun.feature.prayer.domain.Prayer
+import uz.xumoyun.feature.prayer.domain.Schedule
+import uz.xumoyun.feature.prayer.ui.TimeFormat
+import uz.xumoyun.feature.prayer.ui.prayerName
 import java.time.LocalDate
 import java.time.ZonedDateTime
 

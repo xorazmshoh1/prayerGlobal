@@ -45,17 +45,18 @@ import kotlinx.coroutines.flow.stateIn
 import uz.xumoyun.core.common.TimeSource
 import uz.xumoyun.core.ui.theme.TabularNumbers
 import uz.xumoyun.namoz.R
-import uz.xumoyun.namoz.data.HijriProvider
-import uz.xumoyun.namoz.data.PrayerRepository
-import uz.xumoyun.namoz.domain.AsrMadhab
-import uz.xumoyun.namoz.domain.CalcInput
-import uz.xumoyun.namoz.domain.CalcMethod
-import uz.xumoyun.namoz.domain.DayTimes
-import uz.xumoyun.namoz.domain.Prayer
-import uz.xumoyun.namoz.domain.PrayerCalculator
+import uz.xumoyun.core.data.CommonSettings
+import uz.xumoyun.core.data.HijriProvider
+import uz.xumoyun.feature.prayer.data.PrayerRepository
+import uz.xumoyun.feature.prayer.domain.AsrMadhab
+import uz.xumoyun.feature.prayer.domain.CalcInput
+import uz.xumoyun.feature.prayer.domain.CalcMethod
+import uz.xumoyun.feature.prayer.domain.DayTimes
+import uz.xumoyun.feature.prayer.domain.Prayer
+import uz.xumoyun.feature.prayer.domain.PrayerCalculator
 import uz.xumoyun.namoz.ui.NamozPreview
-import uz.xumoyun.namoz.ui.TimeFormat
-import uz.xumoyun.namoz.ui.prayerName
+import uz.xumoyun.feature.prayer.ui.TimeFormat
+import uz.xumoyun.feature.prayer.ui.prayerName
 import java.time.LocalDate
 import java.time.YearMonth
 import java.time.ZoneId
@@ -71,19 +72,20 @@ data class CalendarState(val month: YearMonth, val city: String, val rows: List<
 @HiltViewModel
 class CalendarViewModel @Inject constructor(
     repository: PrayerRepository,
+    common: CommonSettings,
     private val hijri: HijriProvider,
     private val time: TimeSource,
 ) : ViewModel() {
     private val month = MutableStateFlow(YearMonth.from(time.today()))
 
-    val state: StateFlow<CalendarState?> = combine(repository.config, month) { config, m ->
+    val state: StateFlow<CalendarState?> = combine(repository.config, common.hijriAdjustDays, month) { config, hijriAdjust, m ->
         config ?: return@combine null
         val today = LocalDate.ofInstant(time.now(), config.zone)
         CalendarState(
             month = m,
             city = config.location.name,
-            rows = PrayerCalculator.month(config.input, m).map { day ->
-                val h = hijri.of(day.date, config.prefs.hijriOffset)
+            rows = config.month(m).map { day ->
+                val h = hijri.of(day.date, hijriAdjust)
                 CalendarRow(day, day.date == today, h.day, h.isRamadan)
             },
         )
@@ -173,7 +175,7 @@ private fun Cell(text: String, width: Dp, bold: Boolean = false) {
 @Preview(showBackground = true)
 @Composable
 private fun CalendarPreview() {
-    val input = CalcInput(41.2995, 69.2401, ZoneId.of("Asia/Tashkent"), CalcMethod.UZBEKISTAN, AsrMadhab.HANAFI)
+    val input = CalcInput(41.2995, 69.2401, ZoneId.of("Asia/Tashkent"), CalcMethod.MUSLIM_WORLD_LEAGUE, AsrMadhab.HANAFI)
     val m = YearMonth.of(2027, 2)
     NamozPreview {
         CalendarContent(

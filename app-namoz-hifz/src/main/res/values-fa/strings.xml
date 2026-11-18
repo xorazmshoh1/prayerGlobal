@@ -13,52 +13,8 @@
     <string name="notif_reminder_title">%1$s تا %2$d دقیقه دیگر</string>
     <string name="notif_text">%1$s · %2$s</string>
 
-    <string name="prayer_fajr">صبح</string>
-    <string name="prayer_sunrise">طلوع آفتاب</string>
-    <string name="prayer_dhuhr">ظهر</string>
-    <string name="prayer_asr">عصر</string>
-    <string name="prayer_maghrib">مغرب</string>
-    <string name="prayer_isha">عشا</string>
-    <string name="until_fajr">تا نماز صبح</string>
-    <string name="until_sunrise">تا طلوع آفتاب</string>
-    <string name="until_dhuhr">تا نماز ظهر</string>
-    <string name="until_asr">تا نماز عصر</string>
-    <string name="until_maghrib">تا نماز مغرب</string>
-    <string name="until_isha">تا نماز عشا</string>
 
-    <string name="method_mwl">رابطه جهان اسلام</string>
-    <string name="method_umm_al_qura">ام‌القری، مکه</string>
-    <string name="method_dubai">دبی</string>
-    <string name="method_kuwait">کویت</string>
-    <string name="method_qatar">قطر</string>
-    <string name="method_egyptian">سازمان عمومی مصر</string>
-    <string name="method_karachi">دانشگاه علوم اسلامی، کراچی</string>
-    <string name="method_turkey">ترکیه (پارامترهای دیانت)</string>
-    <string name="method_uzbekistan">ازبکستان / آسیای میانه</string>
-    <string name="method_singapore">سنگاپور، مالزی، اندونزی</string>
-    <string name="method_isna">ISNA (آمریکای شمالی)</string>
-    <string name="method_moonsighting">کمیته رؤیت هلال</string>
-    <string name="madhab_shafi">شافعی (استاندارد)</string>
-    <string name="madhab_hanafi">حنفی</string>
-    <string name="highlat_middle">نیمه شب</string>
-    <string name="highlat_seventh">یک‌هفتم شب</string>
-    <string name="highlat_angle">زاویه شفق</string>
-    <string name="sound_azan">اذان</string>
-    <string name="sound_beep">هشدار</string>
-    <string name="sound_silent">بی‌صدا</string>
-    <string name="label_none">بدون برچسب</string>
-    <string name="label_home">خانه</string>
-    <string name="label_work">محل کار</string>
-    <string name="label_travel">سفر</string>
 
-    <string name="no_location_title">مکان تعیین نشده است</string>
-    <string name="no_location_message">برای دیدن اوقات نماز، شهری را انتخاب کنید یا از GPS استفاده کنید.</string>
-    <string name="choose_location">انتخاب مکان</string>
-    <string name="travel_title">مکان جدید شناسایی شد</string>
-    <string name="travel_message">به نظر می‌رسد در %1$s هستید. اوقات نماز برای مکان جدید به‌روز شود؟</string>
-    <string name="yes">بله</string>
-    <string name="no">خیر</string>
-    <string name="toggle_notification">روشن یا خاموش کردن اعلان</string>
 
     <string name="previous_month">ماه قبل</string>
     <string name="next_month">ماه بعد</string>
@@ -88,7 +44,6 @@
     <string name="cancel">لغو</string>
     <string name="close">بستن</string>
     <string name="back">بازگشت</string>
-    <string name="delete">حذف</string>
     <string name="next">بعدی</string>
     <string name="later">بعداً</string>
     <string name="allow">اجازه دادن</string>
@@ -97,12 +52,6 @@
 
     <string name="settings">تنظیمات</string>
     <string name="section_location">مکان</string>
-    <string name="saved_locations">مکان‌های ذخیره‌شده</string>
-    <string name="add_location">افزودن مکان</string>
-    <string name="use_gps">شناسایی با GPS</string>
-    <string name="gps_failed">مکان شما شناسایی نشد. موقعیت مکانی را روشن کنید یا شهری را جستجو کنید.</string>
-    <string name="gps_optional">GPS اختیاری است — همیشه می‌توانید شهری را جستجو کنید.</string>
-    <string name="search_city">جستجوی شهر</string>
     <string name="section_calculation">محاسبه</string>
     <string name="calc_method">روش محاسبه</string>
     <string name="auto_value">خودکار: %1$s</string>

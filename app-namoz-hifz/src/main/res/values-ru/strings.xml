@@ -13,52 +13,8 @@
     <string name="notif_reminder_title">%1$s через %2$d мин</string>
     <string name="notif_text">%1$s · %2$s</string>
 
-    <string name="prayer_fajr">Фаджр</string>
-    <string name="prayer_sunrise">Восход</string>
-    <string name="prayer_dhuhr">Зухр</string>
-    <string name="prayer_asr">Аср</string>
-    <string name="prayer_maghrib">Магриб</string>
-    <string name="prayer_isha">Иша</string>
-    <string name="until_fajr">До Фаджра</string>
-    <string name="until_sunrise">До восхода</string>
-    <string name="until_dhuhr">До Зухра</string>
-    <string name="until_asr">До Асра</string>
-    <string name="until_maghrib">До Магриба</string>
-    <string name="until_isha">До Иши</string>
 
-    <string name="method_mwl">Всемирная исламская лига</string>
-    <string name="method_umm_al_qura">Умм аль-Кура, Мекка</string>
-    <string name="method_dubai">Дубай</string>
-    <string name="method_kuwait">Кувейт</string>
-    <string name="method_qatar">Катар</string>
-    <string name="method_egyptian">Египетское управление</string>
-    <string name="method_karachi">Университет исламских наук, Карачи</string>
-    <string name="method_turkey">Турция (параметры Diyanet)</string>
-    <string name="method_uzbekistan">Узбекистан / Центральная Азия</string>
-    <string name="method_singapore">Сингапур, Малайзия, Индонезия</string>
-    <string name="method_isna">ISNA (Северная Америка)</string>
-    <string name="method_moonsighting">Moonsighting Committee</string>
-    <string name="madhab_shafi">Шафиитский (стандарт)</string>
-    <string name="madhab_hanafi">Ханафитский</string>
-    <string name="highlat_middle">Середина ночи</string>
-    <string name="highlat_seventh">Седьмая часть ночи</string>
-    <string name="highlat_angle">Угол сумерек</string>
-    <string name="sound_azan">Азан</string>
-    <string name="sound_beep">Сигнал</string>
-    <string name="sound_silent">Без звука</string>
-    <string name="label_none">Без метки</string>
-    <string name="label_home">Дом</string>
-    <string name="label_work">Работа</string>
-    <string name="label_travel">Поездка</string>
 
-    <string name="no_location_title">Место не выбрано</string>
-    <string name="no_location_message">Выберите город или используйте GPS, чтобы увидеть время намаза.</string>
-    <string name="choose_location">Выбрать место</string>
-    <string name="travel_title">Обнаружено новое место</string>
-    <string name="travel_message">Похоже, вы в городе %1$s. Обновить время намаза для нового места?</string>
-    <string name="yes">Да</string>
-    <string name="no">Нет</string>
-    <string name="toggle_notification">Включить или выключить уведомление</string>
 
     <string name="previous_month">Предыдущий месяц</string>
     <string name="next_month">Следующий месяц</string>
@@ -88,7 +44,6 @@
     <string name="cancel">Отмена</string>
     <string name="close">Закрыть</string>
     <string name="back">Назад</string>
-    <string name="delete">Удалить</string>
     <string name="next">Далее</string>
     <string name="later">Позже</string>
     <string name="allow">Разрешить</string>
@@ -97,12 +52,6 @@
 
     <string name="settings">Настройки</string>
     <string name="section_location">Местоположение</string>
-    <string name="saved_locations">Сохранённые места</string>
-    <string name="add_location">Добавить место</string>
-    <string name="use_gps">Определить по GPS</string>
-    <string name="gps_failed">Не удалось определить местоположение. Включите геолокацию или найдите город.</string>
-    <string name="gps_optional">GPS не обязателен — город можно найти через поиск.</string>
-    <string name="search_city">Поиск города</string>
     <string name="section_calculation">Расчёт</string>
     <string name="calc_method">Метод расчёта</string>
     <string name="auto_value">Автоматически: %1$s</string>

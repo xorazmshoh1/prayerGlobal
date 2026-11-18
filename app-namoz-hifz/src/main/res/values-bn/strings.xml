@@ -13,52 +13,8 @@
     <string name="notif_reminder_title">%2$d মিনিট পরে %1$s</string>
     <string name="notif_text">%1$s · %2$s</string>
 
-    <string name="prayer_fajr">ফজর</string>
-    <string name="prayer_sunrise">সূর্যোদয়</string>
-    <string name="prayer_dhuhr">যোহর</string>
-    <string name="prayer_asr">আসর</string>
-    <string name="prayer_maghrib">মাগরিব</string>
-    <string name="prayer_isha">এশা</string>
-    <string name="until_fajr">ফজর পর্যন্ত</string>
-    <string name="until_sunrise">সূর্যোদয় পর্যন্ত</string>
-    <string name="until_dhuhr">যোহর পর্যন্ত</string>
-    <string name="until_asr">আসর পর্যন্ত</string>
-    <string name="until_maghrib">মাগরিব পর্যন্ত</string>
-    <string name="until_isha">এশা পর্যন্ত</string>
 
-    <string name="method_mwl">মুসলিম ওয়ার্ল্ড লীগ</string>
-    <string name="method_umm_al_qura">উম্মুল কুরা, মক্কা</string>
-    <string name="method_dubai">দুবাই</string>
-    <string name="method_kuwait">কুয়েত</string>
-    <string name="method_qatar">কাতার</string>
-    <string name="method_egyptian">মিশরীয় সাধারণ কর্তৃপক্ষ</string>
-    <string name="method_karachi">ইসলামিক বিজ্ঞান বিশ্ববিদ্যালয়, করাচি</string>
-    <string name="method_turkey">তুরস্ক (দিয়ানেত প্যারামিটার)</string>
-    <string name="method_uzbekistan">উজবেকিস্তান / মধ্য এশিয়া</string>
-    <string name="method_singapore">সিঙ্গাপুর, মালয়েশিয়া, ইন্দোনেশিয়া</string>
-    <string name="method_isna">ISNA (উত্তর আমেরিকা)</string>
-    <string name="method_moonsighting">মুনসাইটিং কমিটি</string>
-    <string name="madhab_shafi">শাফেয়ী (স্ট্যান্ডার্ড)</string>
-    <string name="madhab_hanafi">হানাফী</string>
-    <string name="highlat_middle">রাতের মধ্যভাগ</string>
-    <string name="highlat_seventh">রাতের এক-সপ্তমাংশ</string>
-    <string name="highlat_angle">গোধূলি কোণ</string>
-    <string name="sound_azan">আজান</string>
-    <string name="sound_beep">সংকেত</string>
-    <string name="sound_silent">নীরব</string>
-    <string name="label_none">লেবেল নেই</string>
-    <string name="label_home">বাড়ি</string>
-    <string name="label_work">কর্মস্থল</string>
-    <string name="label_travel">ভ্রমণ</string>
 
-    <string name="no_location_title">স্থান নির্ধারণ করা হয়নি</string>
-    <string name="no_location_message">নামাজের সময় দেখতে একটি শহর বেছে নিন বা GPS ব্যবহার করুন।</string>
-    <string name="choose_location">স্থান বেছে নিন</string>
-    <string name="travel_title">নতুন স্থান শনাক্ত হয়েছে</string>
-    <string name="travel_message">মনে হচ্ছে আপনি %1$s-এ আছেন। নতুন স্থানের জন্য নামাজের সময় হালনাগাদ করবেন?</string>
-    <string name="yes">হ্যাঁ</string>
-    <string name="no">না</string>
-    <string name="toggle_notification">বিজ্ঞপ্তি চালু বা বন্ধ করুন</string>
 
     <string name="previous_month">আগের মাস</string>
     <string name="next_month">পরের মাস</string>
@@ -88,7 +44,6 @@
     <string name="cancel">বাতিল</string>
     <string name="close">বন্ধ</string>
     <string name="back">ফিরে যান</string>
-    <string name="delete">মুছুন</string>
     <string name="next">পরবর্তী</string>
     <string name="later">পরে</string>
     <string name="allow">অনুমতি দিন</string>
@@ -97,12 +52,6 @@
 
     <string name="settings">সেটিংস</string>
     <string name="section_location">স্থান</string>
-    <string name="saved_locations">সংরক্ষিত স্থান</string>
-    <string name="add_location">স্থান যোগ করুন</string>
-    <string name="use_gps">GPS দিয়ে শনাক্ত করুন</string>
-    <string name="gps_failed">আপনার অবস্থান শনাক্ত করা যায়নি। লোকেশন চালু করুন বা শহর খুঁজুন।</string>
-    <string name="gps_optional">GPS ঐচ্ছিক — আপনি সবসময় শহর খুঁজতে পারেন।</string>
-    <string name="search_city">শহর খুঁজুন</string>
     <string name="section_calculation">গণনা</string>
     <string name="calc_method">গণনা পদ্ধতি</string>
     <string name="auto_value">স্বয়ংক্রিয়: %1$s</string>

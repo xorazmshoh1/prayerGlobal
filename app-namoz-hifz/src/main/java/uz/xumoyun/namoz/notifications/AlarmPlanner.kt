@@ -1,8 +1,8 @@
 package uz.xumoyun.namoz.notifications
 
-import uz.xumoyun.namoz.data.PrayerAlert
-import uz.xumoyun.namoz.domain.DayTimes
-import uz.xumoyun.namoz.domain.Prayer
+import uz.xumoyun.feature.prayer.data.PrayerAlert
+import uz.xumoyun.feature.prayer.domain.DayTimes
+import uz.xumoyun.feature.prayer.domain.Prayer
 import java.time.Instant
 
 /** Bitta rejalashtiriladigan signal. */

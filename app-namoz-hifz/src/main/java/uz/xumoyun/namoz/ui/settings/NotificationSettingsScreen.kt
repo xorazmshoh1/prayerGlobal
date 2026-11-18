@@ -29,12 +29,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import uz.xumoyun.namoz.R
-import uz.xumoyun.namoz.data.AlertSound
-import uz.xumoyun.namoz.data.PrayerAlert
-import uz.xumoyun.namoz.domain.Prayer
+import uz.xumoyun.feature.prayer.data.AlertSound
+import uz.xumoyun.feature.prayer.data.PrayerAlert
+import uz.xumoyun.feature.prayer.domain.Prayer
 import uz.xumoyun.namoz.ui.NamozPreview
-import uz.xumoyun.namoz.ui.prayerName
-import uz.xumoyun.namoz.ui.soundName
+import uz.xumoyun.feature.prayer.ui.prayerName
+import uz.xumoyun.feature.prayer.ui.soundName
 
 @Composable
 fun NotificationSettingsRoute(viewModel: SettingsViewModel) {
