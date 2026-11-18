@@ -147,7 +147,7 @@
     <string name="onboarding_notif_title">Notifications de prière</string>
     <string name="onboarding_notif_text">Autorisez les notifications pour entendre l’adhan à chaque heure de prière.</string>
     <string name="tab_prayer">Prière</string>
-    <string name="tab_calendar">Mois</string>
+    <string name="tab_calendar">Calendrier</string>
     <string name="tab_qibla">Qibla</string>
     <string name="tab_tasbeh">Tasbih</string>
     <string name="tab_settings">Paramètres</string>

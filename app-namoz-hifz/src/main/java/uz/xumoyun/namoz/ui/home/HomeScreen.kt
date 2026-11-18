@@ -17,7 +17,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.CalendarMonth
+import androidx.compose.material.icons.rounded.DarkMode
 import androidx.compose.material.icons.rounded.LocationOn
 import androidx.compose.material.icons.rounded.Notifications
 import androidx.compose.material.icons.rounded.NotificationsOff
@@ -74,7 +74,7 @@ private val Gold = Color(0xFFC9A227)
 @Composable
 fun HomeRoute(
     onPickLocation: () -> Unit,
-    onCalendar: () -> Unit = {},
+    onRamadan: () -> Unit = {},
     onSettings: () -> Unit = {},
     viewModel: HomeViewModel = hiltViewModel(),
 ) {
@@ -91,7 +91,7 @@ fun HomeRoute(
             actionLabel = stringResource(R.string.choose_location),
             onAction = onPickLocation,
         )
-        is HomeState.Ready -> HomeContent(s, onToggleAlert = viewModel::toggleAlert, onCityClick = onPickLocation, onCalendar = onCalendar, onSettings = onSettings)
+        is HomeState.Ready -> HomeContent(s, onToggleAlert = viewModel::toggleAlert, onCityClick = onPickLocation, onRamadan = onRamadan, onSettings = onSettings)
     }
 
     travel?.let { city ->
@@ -110,7 +110,7 @@ fun HomeContent(
     state: HomeState.Ready,
     onToggleAlert: (Prayer) -> Unit,
     onCityClick: () -> Unit,
-    onCalendar: () -> Unit = {},
+    onRamadan: () -> Unit = {},
     onSettings: () -> Unit = {},
 ) {
     val context = LocalContext.current
@@ -148,10 +148,10 @@ fun HomeContent(
                     Text(fmt.format(state.next.time), color = onBg.copy(alpha = 0.85f), style = MaterialTheme.typography.bodyLarge)
                     Spacer(Modifier.height(20.dp))
                 }
-                // Ichki ekranlar: oylik jadval va sozlamalar (TZ 6-bo'lim, pastki navigatsiyada 4 ta tab).
+                // Ramazon menyusi va sozlamalar (TZ 1 va 6-bo'limlar).
                 Row(Modifier.align(Alignment.TopEnd).statusBarsPadding().padding(4.dp)) {
-                    IconButton(onClick = onCalendar) {
-                        Icon(Icons.Rounded.CalendarMonth, stringResource(R.string.tab_calendar), tint = onBg)
+                    IconButton(onClick = onRamadan) {
+                        Icon(Icons.Rounded.DarkMode, stringResource(uz.xumoyun.feature.ramadan.R.string.ramadan_title), tint = onBg)
                     }
                     IconButton(onClick = onSettings) {
                         Icon(Icons.Rounded.Settings, stringResource(R.string.tab_settings), tint = onBg)

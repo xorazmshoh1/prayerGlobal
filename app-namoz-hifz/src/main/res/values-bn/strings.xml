@@ -147,7 +147,7 @@
     <string name="onboarding_notif_title">নামাজের বিজ্ঞপ্তি</string>
     <string name="onboarding_notif_text">প্রতি ওয়াক্তে আজান শুনতে বিজ্ঞপ্তির অনুমতি দিন।</string>
     <string name="tab_prayer">নামাজ</string>
-    <string name="tab_calendar">মাস</string>
+    <string name="tab_calendar">ক্যালেন্ডার</string>
     <string name="tab_qibla">কিবলা</string>
     <string name="tab_tasbeh">তাসবিহ</string>
     <string name="tab_settings">সেটিংস</string>

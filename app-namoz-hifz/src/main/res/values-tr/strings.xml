@@ -147,7 +147,7 @@
     <string name="onboarding_notif_title">Namaz bildirimleri</string>
     <string name="onboarding_notif_text">Her namaz vaktinde ezanı duymak için bildirimlere izin verin.</string>
     <string name="tab_prayer">Namaz</string>
-    <string name="tab_calendar">Ay</string>
+    <string name="tab_calendar">Takvim</string>
     <string name="tab_qibla">Kıble</string>
     <string name="tab_tasbeh">Tesbih</string>
     <string name="tab_settings">Ayarlar</string>

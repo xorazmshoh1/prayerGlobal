@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material.icons.rounded.AutoStories
+import androidx.compose.material.icons.rounded.CalendarMonth
 import androidx.compose.material.icons.rounded.Explore
 import androidx.compose.material.icons.rounded.Schedule
 import androidx.compose.material.icons.rounded.TouchApp
@@ -28,8 +29,11 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
+import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import uz.xumoyun.feature.hifz.HifzRoute
+import uz.xumoyun.feature.ramadan.RamadanHomeRoute
+import uz.xumoyun.feature.ramadan.RamadanRoutes
 import uz.xumoyun.namoz.R
 import uz.xumoyun.namoz.ui.calendar.CalendarRoute
 import uz.xumoyun.namoz.ui.home.HomeRoute
@@ -42,9 +46,10 @@ import uz.xumoyun.namoz.ui.settings.SettingsRoute
 import uz.xumoyun.namoz.ui.settings.SettingsViewModel
 import uz.xumoyun.namoz.ui.tasbeh.TasbehRoute
 
-/** TZ 6-bo'lim: pastki navigatsiyada 4 ta tab. Reklama hech bir ekranda yo'q. */
+/** TZ 6-bo'lim: pastki navigatsiyada 5 ta tab. Reklama hech bir ekranda yo'q. */
 private enum class Tab(val route: String, @StringRes val label: Int, val icon: ImageVector) {
     PRAYER("prayer", R.string.tab_prayer, Icons.Rounded.Schedule),
+    CALENDAR("calendar", R.string.tab_calendar, Icons.Rounded.CalendarMonth),
     HIFZ("hifz", uz.xumoyun.feature.hifz.R.string.hifz_title, Icons.Rounded.AutoStories),
     QIBLA("qibla", R.string.tab_qibla, Icons.Rounded.Explore),
     TASBEH("tasbeh", R.string.tab_tasbeh, Icons.Rounded.TouchApp),
@@ -52,7 +57,6 @@ private enum class Tab(val route: String, @StringRes val label: Int, val icon: I
 
 private object Routes {
     const val ONBOARDING = "onboarding"
-    const val CALENDAR = "calendar"
     /** Sozlamalar o'z sarlavhasini chizadi (yuqori panel yo'q). */
     const val SETTINGS = "settings"
     const val LOCATIONS = "locations"
@@ -105,14 +109,18 @@ fun NamozRoot(startWithOnboarding: Boolean) {
             composable(Tab.PRAYER.route) {
                 HomeRoute(
                     onPickLocation = { nav.navigate(Routes.LOCATIONS) },
-                    onCalendar = { nav.navigate(Routes.CALENDAR) },
+                    onRamadan = { nav.navigate(RamadanRoutes.GRAPH) },
                     onSettings = { nav.navigate(Routes.SETTINGS) },
                 )
             }
             composable(Tab.HIFZ.route) { HifzRoute() }
             composable(Tab.QIBLA.route) { QiblaRoute() }
             composable(Tab.TASBEH.route) { TasbehRoute() }
-            composable(Routes.CALENDAR) { CalendarRoute() }
+            composable(Tab.CALENDAR.route) { CalendarRoute(onRamadan = { nav.navigate(RamadanRoutes.GRAPH) }) }
+            // Alohida Ramazon menyusi grafi: R1 bosh sahifa; R2–R6 11-bosqichda qo'shiladi.
+            navigation(startDestination = RamadanRoutes.HOME, route = RamadanRoutes.GRAPH) {
+                composable(RamadanRoutes.HOME) { RamadanHomeRoute() }
+            }
             composable(Routes.SETTINGS) {
                 SettingsRoute(
                     hiltViewModel(),
@@ -132,7 +140,7 @@ fun NamozRoot(startWithOnboarding: Boolean) {
 @Composable
 private fun SubScreenBar(route: String?, nav: NavHostController) {
     val title = when (route) {
-        Routes.CALENDAR -> R.string.tab_calendar
+        RamadanRoutes.HOME -> uz.xumoyun.feature.ramadan.R.string.ramadan_title
         Routes.LOCATIONS -> R.string.saved_locations
         Routes.NOTIFICATIONS -> R.string.notifications
         Routes.HELP -> R.string.help_notifications

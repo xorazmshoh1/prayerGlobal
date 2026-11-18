@@ -17,6 +17,7 @@ dependencyResolutionManagement {
 rootProject.name = "NamozHifz"
 include(
     ":core-common", ":core-ui", ":core-data",
-    ":feature-prayer", ":feature-hifz", ":feature-qibla", ":feature-tasbih",
+    ":feature-prayer", ":feature-calendar", ":feature-hifz",
+    ":feature-qibla", ":feature-tasbih", ":feature-ramadan",
     ":app-namoz-hifz",
 )

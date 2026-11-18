@@ -147,7 +147,7 @@
     <string name="onboarding_notif_title">Pemberitahuan solat</string>
     <string name="onboarding_notif_text">Benarkan pemberitahuan untuk mendengar azan pada setiap waktu solat.</string>
     <string name="tab_prayer">Solat</string>
-    <string name="tab_calendar">Bulan</string>
+    <string name="tab_calendar">Kalendar</string>
     <string name="tab_qibla">Kiblat</string>
     <string name="tab_tasbeh">Tasbih</string>
     <string name="tab_settings">Tetapan</string>

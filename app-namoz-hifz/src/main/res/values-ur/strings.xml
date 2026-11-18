@@ -147,7 +147,7 @@
     <string name="onboarding_notif_title">نماز کی اطلاعات</string>
     <string name="onboarding_notif_text">ہر نماز کے وقت اذان سننے کے لیے اطلاعات کی اجازت دیں۔</string>
     <string name="tab_prayer">نماز</string>
-    <string name="tab_calendar">مہینہ</string>
+    <string name="tab_calendar">کیلنڈر</string>
     <string name="tab_qibla">قبلہ</string>
     <string name="tab_tasbeh">تسبیح</string>
     <string name="tab_settings">ترتیبات</string>

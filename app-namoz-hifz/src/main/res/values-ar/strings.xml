@@ -147,7 +147,7 @@
     <string name="onboarding_notif_title">إشعارات الصلاة</string>
     <string name="onboarding_notif_text">اسمح بالإشعارات لسماع الأذان في كل وقت صلاة.</string>
     <string name="tab_prayer">الصلاة</string>
-    <string name="tab_calendar">الشهر</string>
+    <string name="tab_calendar">التقويم</string>
     <string name="tab_qibla">القبلة</string>
     <string name="tab_tasbeh">المسبحة</string>
     <string name="tab_settings">الإعدادات</string>

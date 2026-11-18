@@ -14,6 +14,8 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.KeyboardArrowLeft
 import androidx.compose.material.icons.automirrored.rounded.KeyboardArrowRight
+import androidx.compose.material.icons.rounded.DarkMode
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -92,23 +94,24 @@ class CalendarViewModel @Inject constructor(
 }
 
 @Composable
-fun CalendarRoute(viewModel: CalendarViewModel = hiltViewModel()) {
+fun CalendarRoute(onRamadan: () -> Unit = {}, viewModel: CalendarViewModel = hiltViewModel()) {
     val state by viewModel.state.collectAsStateWithLifecycle()
-    state?.let { CalendarContent(it, viewModel::previous, viewModel::next) }
+    state?.let { CalendarContent(it, viewModel::previous, viewModel::next, onRamadan) }
 }
 
 private val DayCol = 56.dp
 private val TimeCol = 60.dp
 
 @Composable
-fun CalendarContent(state: CalendarState, onPrev: () -> Unit, onNext: () -> Unit) {
+fun CalendarContent(state: CalendarState, onPrev: () -> Unit, onNext: () -> Unit, onRamadan: () -> Unit = {}) {
     val context = LocalContext.current
     val locale = TimeFormat.currentLocale(context)
     val fmt = TimeFormat.formatter(context, locale)
     val monthFmt = DateTimeFormatter.ofPattern("LLLL yyyy", locale)
     val ramadan = state.hasRamadan
     val scroll = rememberScrollState()
-    Column(Modifier.fillMaxSize()) {
+    // Taqvim — tab: status bar ostidan boshlanadi (TZ 6-bo'lim).
+    Column(Modifier.fillMaxSize().statusBarsPadding()) {
         Row(Modifier.fillMaxWidth().padding(8.dp), verticalAlignment = Alignment.CenterVertically) {
             IconButton(onClick = onPrev) { Icon(Icons.AutoMirrored.Rounded.KeyboardArrowLeft, stringResource(R.string.previous_month)) }
             Column(Modifier.weight(1f), horizontalAlignment = Alignment.CenterHorizontally) {
@@ -116,6 +119,10 @@ fun CalendarContent(state: CalendarState, onPrev: () -> Unit, onNext: () -> Unit
                 Text(state.city, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
             IconButton(onClick = onNext) { Icon(Icons.AutoMirrored.Rounded.KeyboardArrowRight, stringResource(R.string.next_month)) }
+            // Ramazon menyusiga kirish (TZ 1-bo'lim: Namoz va Taqvim tablaridan ochiladi).
+            IconButton(onClick = onRamadan) {
+                Icon(Icons.Rounded.DarkMode, stringResource(uz.xumoyun.feature.ramadan.R.string.ramadan_title))
+            }
         }
         Column(Modifier.horizontalScroll(scroll)) {
             Row(Modifier.background(MaterialTheme.colorScheme.primaryContainer).padding(vertical = 10.dp)) {

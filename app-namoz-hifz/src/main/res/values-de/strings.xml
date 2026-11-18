@@ -147,7 +147,7 @@
     <string name="onboarding_notif_title">Gebetsbenachrichtigungen</string>
     <string name="onboarding_notif_text">Erlaube Benachrichtigungen, um zu jeder Gebetszeit den Adhan zu hören.</string>
     <string name="tab_prayer">Gebet</string>
-    <string name="tab_calendar">Monat</string>
+    <string name="tab_calendar">Kalender</string>
     <string name="tab_qibla">Qibla</string>
     <string name="tab_tasbeh">Tasbih</string>
     <string name="tab_settings">Einstellungen</string>

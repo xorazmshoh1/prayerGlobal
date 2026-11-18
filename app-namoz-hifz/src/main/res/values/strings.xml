@@ -147,7 +147,7 @@
     <string name="onboarding_notif_title">Prayer notifications</string>
     <string name="onboarding_notif_text">Allow notifications to hear the azan at each prayer time.</string>
     <string name="tab_prayer">Prayer</string>
-    <string name="tab_calendar">Month</string>
+    <string name="tab_calendar">Calendar</string>
     <string name="tab_qibla">Qibla</string>
     <string name="tab_tasbeh">Tasbih</string>
     <string name="tab_settings">Settings</string>

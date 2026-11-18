@@ -147,7 +147,7 @@
     <string name="onboarding_notif_title">Уведомления о намазе</string>
     <string name="onboarding_notif_text">Разрешите уведомления, чтобы слышать азан в каждое время намаза.</string>
     <string name="tab_prayer">Намаз</string>
-    <string name="tab_calendar">Месяц</string>
+    <string name="tab_calendar">Календарь</string>
     <string name="tab_qibla">Кибла</string>
     <string name="tab_tasbeh">Тасбих</string>
     <string name="tab_settings">Настройки</string>

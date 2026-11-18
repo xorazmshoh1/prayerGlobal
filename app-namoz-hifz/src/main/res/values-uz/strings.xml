@@ -147,7 +147,7 @@
     <string name="onboarding_notif_title">Namoz bildirishnomalari</string>
     <string name="onboarding_notif_text">Har namoz vaqtida azon eshitish uchun bildirishnomalarga ruxsat bering.</string>
     <string name="tab_prayer">Namoz</string>
-    <string name="tab_calendar">Oy</string>
+    <string name="tab_calendar">Taqvim</string>
     <string name="tab_qibla">Qibla</string>
     <string name="tab_tasbeh">Tasbeh</string>
     <string name="tab_settings">Sozlamalar</string>

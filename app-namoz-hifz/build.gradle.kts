@@ -77,6 +77,8 @@ dependencies {
     implementation(project(":feature-hifz"))
     implementation(project(":feature-qibla"))
     implementation(project(":feature-tasbih"))
+    implementation(project(":feature-calendar"))
+    implementation(project(":feature-ramadan"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
