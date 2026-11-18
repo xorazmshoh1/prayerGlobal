@@ -12,16 +12,14 @@ import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import uz.xumoyun.core.common.enumOrNull
+import uz.xumoyun.feature.prayer.domain.AlertMode
 import uz.xumoyun.feature.prayer.domain.AsrMadhab
 import uz.xumoyun.feature.prayer.domain.CalcMethod
 import uz.xumoyun.feature.prayer.domain.HighLatRule
 import uz.xumoyun.feature.prayer.domain.Prayer
+import uz.xumoyun.feature.prayer.domain.PrayerAlert
 import javax.inject.Inject
 import javax.inject.Singleton
-
-enum class AlertSound { AZAN, BEEP, SILENT }
-
-data class PrayerAlert(val enabled: Boolean, val sound: AlertSound, val minutesBefore: Int)
 
 /** TZ 7-bo'lim, PrayerSettings: usul, mazhab, yuqori kenglik qoidasi, har namozga ± daqiqa, ogohlantirishlar. */
 data class PrayerPrefs(
@@ -31,7 +29,7 @@ data class PrayerPrefs(
     val madhabOverride: AsrMadhab? = null,
     val highLatRule: HighLatRule = HighLatRule.SEVENTH_OF_THE_NIGHT,
     val adjustments: Map<Prayer, Int> = Prayer.entries.associateWith { 0 },
-    val alerts: Map<Prayer, PrayerAlert> = Prayer.entries.associateWith { PrayerAlert(it.isPrayer, AlertSound.AZAN, 0) },
+    val alerts: Map<Prayer, PrayerAlert> = Prayer.entries.associateWith { PrayerAlert.default(it) },
 )
 
 /** Namoz sozlamalari DataStore'da (core-data dagi umumiy "settings" fayli). */
@@ -47,9 +45,10 @@ class PrayerSettings @Inject constructor(private val store: DataStore<Preference
             adjustments = Prayer.entries.associateWith { p[adjKey(it)] ?: 0 },
             alerts = Prayer.entries.associateWith { prayer ->
                 PrayerAlert(
-                    enabled = p[alertEnabledKey(prayer)] ?: prayer.isPrayer,
-                    sound = p[alertSoundKey(prayer)]?.let { enumOrNull<AlertSound>(it) } ?: AlertSound.AZAN,
-                    minutesBefore = p[alertBeforeKey(prayer)] ?: 0,
+                    mode = p[alertModeKey(prayer)]?.let { enumOrNull<AlertMode>(it) }
+                        ?: legacyMode(p[legacyEnabledKey(prayer)], p[legacySoundKey(prayer)])
+                        ?: PrayerAlert.default(prayer).mode,
+                    minutesBefore = PrayerAlert.clampMinutes(p[alertBeforeKey(prayer)] ?: 0),
                 )
             },
         )
@@ -74,9 +73,10 @@ class PrayerSettings @Inject constructor(private val store: DataStore<Preference
         store.edit { it[adjKey(prayer)] = minutes.coerceIn(-MAX_ADJUSTMENT, MAX_ADJUSTMENT) }
 
     suspend fun setAlert(prayer: Prayer, alert: PrayerAlert) = store.edit {
-        it[alertEnabledKey(prayer)] = alert.enabled
-        it[alertSoundKey(prayer)] = alert.sound.name
-        it[alertBeforeKey(prayer)] = alert.minutesBefore.coerceIn(0, 60)
+        it[alertModeKey(prayer)] = alert.mode.name
+        it[alertBeforeKey(prayer)] = PrayerAlert.clampMinutes(alert.minutesBefore)
+        it.remove(legacyEnabledKey(prayer))
+        it.remove(legacySoundKey(prayer))
     }
 
     companion object {
@@ -88,8 +88,18 @@ class PrayerSettings @Inject constructor(private val store: DataStore<Preference
         private val MADHAB = stringPreferencesKey("asr_madhab")
         private val HIGH_LAT = stringPreferencesKey("high_lat_rule")
         private fun adjKey(p: Prayer) = intPreferencesKey("adj_${p.name}")
-        private fun alertEnabledKey(p: Prayer) = booleanPreferencesKey("alert_on_${p.name}")
-        private fun alertSoundKey(p: Prayer) = stringPreferencesKey("alert_sound_${p.name}")
+        private fun alertModeKey(p: Prayer) = stringPreferencesKey("alert_mode_${p.name}")
         private fun alertBeforeKey(p: Prayer) = intPreferencesKey("alert_before_${p.name}")
+
+        // 1–2-bosqich formati (yoqilgan + AZAN/BEEP/SILENT ovozi): o'qiladi va setAlert'da o'chiriladi.
+        private fun legacyEnabledKey(p: Prayer) = booleanPreferencesKey("alert_on_${p.name}")
+        private fun legacySoundKey(p: Prayer) = stringPreferencesKey("alert_sound_${p.name}")
+
+        internal fun legacyMode(enabled: Boolean?, sound: String?): AlertMode? = when {
+            enabled == null && sound == null -> null
+            enabled == false -> AlertMode.OFF
+            sound == "SILENT" -> AlertMode.SILENT
+            else -> AlertMode.SOUND
+        }
     }
 }

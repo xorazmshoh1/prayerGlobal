@@ -2,4 +2,5 @@
 <resources>
     <string name="hifz_title">Hafazan</string>
     <string name="hifz_coming_soon">Rancangan hafazan dan pelajaran harian anda akan dipaparkan di sini.</string>
+    <string name="channel_hifz_reminder">Peringatan hafazan</string>
 </resources>

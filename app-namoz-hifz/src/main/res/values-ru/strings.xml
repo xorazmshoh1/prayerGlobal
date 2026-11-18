@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Намаз и Хифз</string>
-    <string name="widget_name">Время намаза</string>
-    <string name="widget_no_location">Откройте приложение и выберите место</string>
-    <string name="widget_next">Далее: %1$s %2$s</string>
 
-    <string name="channel_azan">Время намаза (азан)</string>
-    <string name="channel_beep">Время намаза (сигнал)</string>
-    <string name="channel_silent">Время намаза (без звука)</string>
-    <string name="channel_reminder">Напоминание перед намазом</string>
-    <string name="notif_title">Наступило время: %1$s</string>
-    <string name="notif_reminder_title">%1$s через %2$d мин</string>
-    <string name="notif_text">%1$s · %2$s</string>
 
 
 
@@ -47,8 +37,6 @@
     <string name="next">Далее</string>
     <string name="later">Позже</string>
     <string name="allow">Разрешить</string>
-    <string name="off">Нет</string>
-    <string name="minutes_short">%1$d мин</string>
 
     <string name="settings">Настройки</string>
     <string name="section_location">Местоположение</string>
@@ -73,8 +61,6 @@
     <string name="rate_app">Оценить приложение</string>
     <string name="disclaimer">Время рассчитывается на вашем телефоне. Метод и поправки можно изменить в настройках. Приложение не связано с государственными или религиозными организациями.</string>
 
-    <string name="exact_alarm_needed">Разрешите «Будильники и напоминания», чтобы уведомления приходили точно вовремя.</string>
-    <string name="remind_before">Напомнить заранее</string>
 
     <string name="help_notifications">Не приходят уведомления?</string>
     <string name="help_intro">Некоторые телефоны останавливают приложения в фоне ради экономии батареи. Проверьте следующее:</string>

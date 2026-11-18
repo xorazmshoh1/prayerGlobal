@@ -29,9 +29,6 @@
     <string name="highlat_middle">Tengah malam</string>
     <string name="highlat_seventh">Sepertujuh malam</string>
     <string name="highlat_angle">Sudut senja</string>
-    <string name="sound_azan">Adzan</string>
-    <string name="sound_beep">Sinyal</string>
-    <string name="sound_silent">Senyap</string>
     <string name="label_none">Tanpa label</string>
     <string name="label_home">Rumah</string>
     <string name="label_work">Kantor</string>
@@ -54,4 +51,24 @@
     <string name="open_ramadan">Ramadan</string>
     <string name="open_settings">Pengaturan</string>
     <string name="location_denied">Akses lokasi ditolak. Cari kota Anda di kolom pencarian di bawah.</string>
+    <string name="widget_name">Waktu sholat</string>
+    <string name="widget_no_location">Buka aplikasi dan pilih lokasi</string>
+    <string name="widget_next">Berikutnya: %1$s %2$s</string>
+    <string name="channel_reminder">Pengingat sebelum sholat</string>
+    <string name="notif_title">Telah masuk waktu %1$s</string>
+    <string name="notif_reminder_title">%1$s dalam %2$d menit</string>
+    <string name="notif_text">%1$s · %2$s</string>
+    <string name="remind_before">Ingatkan sebelum</string>
+    <string name="minutes_short">%1$d mnt</string>
+    <string name="alert_mode_off">Mati</string>
+    <string name="permission_allow">Izinkan</string>
+    <string name="later">Nanti</string>
+    <string name="notifications_blocked_text">Izinkan notifikasi untuk mendengar adzan setiap waktu sholat.</string>
+    <string name="channel_group_prayers">Waktu sholat</string>
+    <string name="alert_mode_silent">Senyap</string>
+    <string name="alert_mode_sound">Suara</string>
+    <string name="notif_sunrise_title">Matahari terbit — waktu Subuh telah berakhir</string>
+    <string name="exact_alarm_title">Notifikasi bisa terlambat</string>
+    <string name="exact_alarm_text">Tanpa izin \"Alarm &amp; pengingat\", Android dapat menampilkan notifikasi sholat hingga 10 menit terlambat. Izinkan agar adzan tiba tepat waktu.</string>
+    <string name="notifications_blocked_title">Notifikasi nonaktif</string>
 </resources>

@@ -29,9 +29,6 @@
     <string name="highlat_middle">Tun oʻrtasi</string>
     <string name="highlat_seventh">Tunning yettidan biri</string>
     <string name="highlat_angle">Shafaq burchagi</string>
-    <string name="sound_azan">Azon</string>
-    <string name="sound_beep">Signal</string>
-    <string name="sound_silent">Jim</string>
     <string name="label_none">Belgisiz</string>
     <string name="label_home">Uy</string>
     <string name="label_work">Ish</string>
@@ -54,4 +51,24 @@
     <string name="open_ramadan">Ramazon</string>
     <string name="open_settings">Sozlamalar</string>
     <string name="location_denied">Joylashuvga ruxsat berilmadi. Shaharingizni quyidagi qidiruvdan toping.</string>
+    <string name="widget_name">Namoz vaqtlari</string>
+    <string name="widget_no_location">Ilovani ochib, joyni tanlang</string>
+    <string name="widget_next">Keyingi: %1$s %2$s</string>
+    <string name="channel_reminder">Namozdan oldin eslatma</string>
+    <string name="notif_title">%1$s vaqti kirdi</string>
+    <string name="notif_reminder_title">%1$s vaqtiga %2$d daqiqa qoldi</string>
+    <string name="notif_text">%1$s · %2$s</string>
+    <string name="remind_before">Oldindan eslatish</string>
+    <string name="minutes_short">%1$d daq</string>
+    <string name="alert_mode_off">Oʻchiq</string>
+    <string name="permission_allow">Ruxsat berish</string>
+    <string name="later">Keyinroq</string>
+    <string name="notifications_blocked_text">Har namoz vaqtida azon eshitish uchun bildirishnomalarga ruxsat bering.</string>
+    <string name="channel_group_prayers">Namoz vaqtlari</string>
+    <string name="alert_mode_silent">Jim</string>
+    <string name="alert_mode_sound">Ovozli</string>
+    <string name="notif_sunrise_title">Quyosh chiqdi — Bomdod vaqti tugadi</string>
+    <string name="exact_alarm_title">Bildirishnomalar kechikishi mumkin</string>
+    <string name="exact_alarm_text">«Signallar va eslatmalar» ruxsatisiz Android namoz bildirishnomasini 10 daqiqagacha kechiktirib koʻrsatishi mumkin. Azon aynan vaqtida kelishi uchun ruxsat bering.</string>
+    <string name="notifications_blocked_title">Bildirishnomalar oʻchirilgan</string>
 </resources>

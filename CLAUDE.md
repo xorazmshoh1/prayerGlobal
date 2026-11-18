@@ -19,14 +19,19 @@ minSdk 24, compileSdk/targetSdk 36, Gradle version catalog (`gradle/libs.version
 
 ## Modullar
 - `app-namoz-hifz` — Application, MainActivity, navigatsiya (5 tab: Namoz, Taqvim, Hifz, Qibla, Tasbeh + Ramazon menyusi grafi), DI
-- `core-common` — TimeSource, DurationFormat, ThemeMode, toza Kotlin formulalar
+- `core-common` — TimeSource, DurationFormat, ThemeMode, bildirishnoma kanali ta'rifi (`notifications/Channels.kt`: ChannelSpec, NotificationChannelSource, ChannelCatalog), toza Kotlin formulalar
 - `core-ui` — Material 3 tema (`NamozHifzPalette`, AppTheme), umumiy komponentlar, AppLocale
-- `core-data` — DataStore, AssetSource, CommonSettings (tema, til, onboarding)
+- `core-data` — DataStore, AssetSource, CommonSettings (tema, til, onboarding), `NotificationChannelRegistrar` (modullar `@IntoSet` bilan bergan kanallarni yaratadi)
 - `feature-prayer`, `feature-calendar`, `feature-hifz`, `feature-qibla`, `feature-tasbih`, `feature-ramadan` — funksiya modullari
 
 Umumiy kod faqat `core-*` modullarida; feature modullar bir-biriga bog'lanmaydi.
 Namoz yadrosi (hisoblash, mamlakat → usul, PrayerSettings, joylar va shahar qidiruvi, Namoz ekrani) — `feature-prayer` (2-bosqich).
-Hozircha bildirishnomalar va vidjet (3-bosqich), qibla va tasbeh (4-bosqich), oylik jadval (10-bosqich), sozlamalar/onboarding (9-bosqich)
+Bildirishnomalar va vidjet ham `feature-prayer`da (3-bosqich): `domain/AlarmPlanner` (sof Kotlin: 2 kunlik oyna, exact/setWindow,
+request kodlari), `notifications/` (5 namoz kanali + eslatmalar, `PrayerAlarmScheduler`, qabul qiluvchilar, kunlik `DailyRescheduleWorker`),
+`widget/PrayerWidget` (Glance), `ui/NotificationSettingsScreen`; receiver/vidjet deklaratsiyalari feature-prayer manifestida (manifest merge).
+"Hifz eslatmasi" kanali — `feature-hifz/HifzNotifications.kt`. Saharlik/Iftor (11) va Islomiy sanalar (10) kanallari o'z modulida
+`NotificationChannelSource` sifatida qo'shiladi. Ilova (`NamozApp`) faqat kanallarni ro'yxatdan o'tkazadi va `PrayerAlarmScheduler.start` ni chaqiradi.
+Hozircha qibla va tasbeh (4-bosqich), oylik jadval (10-bosqich), sozlamalar/onboarding (9-bosqich)
 va Room bazasi (`NamozDatabase`: feature-prayer'dagi `SavedLocation` + tasbeh) `app-namoz-hifz` ichida; ular feature-prayer API'sidan foydalanadi.
 Hijriy sana (`HijriProvider`) va `hijriAdjustDays` — `core-data`da (namoz, taqvim, Ramazon uchun umumiy).
 
@@ -48,7 +53,8 @@ Windows (lokal): `JAVA_HOME="/c/Users/HP/.jdks/corretto-17.0.5" ./gradlew ...`
 - `feature-prayer/src/main/assets/methods.json` — davlat → hisoblash usuli va Asr mazhabi (TZ 2-bo'lim)
 - `feature-prayer/src/main/assets/cities.json` — shaharlar (`tools/geonames-to-json.mjs` bilan GeoNames'dan qayta yaratiladi)
 - `feature-prayer/.../domain/PrayerCalculator.kt` — hisoblash (adhan, Android'siz); `domain/` dagi hamma narsa sof Kotlin
-- `feature-prayer/.../data/PrayerSettings.kt` — usul, mazhab, yuqori kenglik qoidasi, ±daqiqa (DataStore)
+- `feature-prayer/.../data/PrayerSettings.kt` — usul, mazhab, yuqori kenglik qoidasi, ±daqiqa, ogohlantirish rejimi SOUND/SILENT/OFF va 0–30 daqiqa eslatma (DataStore)
+- `feature-prayer/.../domain/AlarmPlanner.kt` — qaysi signallar qo'yiladi (Android'siz, `AlarmPlannerTest`)
 - `feature-prayer/src/test/resources/adhan-testdata/` — rasmiy jadvallar (Diyanet, Umm al-Qura, MUIS), adhan'dan
 - `docs/prayer-tables/` — sinov shaharlari uchun oylik jadval; `ReferenceTimesTest` solishtiradi,
   qayta yaratish: `./gradlew :feature-prayer:testDebugUnitTest -Dprayer.tables.write=true`

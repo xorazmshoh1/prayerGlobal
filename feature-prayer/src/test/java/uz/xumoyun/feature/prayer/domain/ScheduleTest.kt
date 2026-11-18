@@ -50,7 +50,7 @@ class ScheduleTest {
 
     @Test fun boardHighlightsCurrentAndKeepsSixRows() {
         val now = today[Prayer.ASR].plusMinutes(5)
-        val board = PrayerBoard.build(now, today, tomorrow) { it.isPrayer }
+        val board = PrayerBoard.build(now, today, tomorrow) { PrayerAlert.default(it).mode }
         assertEquals(6, board.rows.size)
         assertEquals(Prayer.entries, board.rows.map { it.prayer })
         assertEquals(Prayer.ASR, board.rows.single { it.isCurrent }.prayer)
@@ -62,7 +62,7 @@ class ScheduleTest {
 
     @Test fun boardBeforeFajrHasNoCurrentRow() {
         val now = today[Prayer.FAJR].minusMinutes(1)
-        val board = PrayerBoard.build(now, today, tomorrow) { true }
+        val board = PrayerBoard.build(now, today, tomorrow) { AlertMode.SOUND }
         assertNull(board.current)
         assertTrue(board.rows.none { it.isCurrent })
         assertEquals(Prayer.FAJR, board.next.prayer)

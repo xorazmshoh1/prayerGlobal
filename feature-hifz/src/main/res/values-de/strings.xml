@@ -2,4 +2,5 @@
 <resources>
     <string name="hifz_title">Hifz</string>
     <string name="hifz_coming_soon">Hier erscheinen dein Memorierplan und die täglichen Lektionen.</string>
+    <string name="channel_hifz_reminder">Hifz-Erinnerung</string>
 </resources>

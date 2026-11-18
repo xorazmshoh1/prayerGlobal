@@ -29,9 +29,6 @@
     <string name="highlat_middle">Middle of the night</string>
     <string name="highlat_seventh">One-seventh of the night</string>
     <string name="highlat_angle">Twilight angle</string>
-    <string name="sound_azan">Azan</string>
-    <string name="sound_beep">Signal</string>
-    <string name="sound_silent">Silent</string>
     <string name="label_none">No label</string>
     <string name="label_home">Home</string>
     <string name="label_work">Work</string>
@@ -54,4 +51,24 @@
     <string name="open_ramadan">Ramadan</string>
     <string name="open_settings">Settings</string>
     <string name="location_denied">Location access was denied. Find your city in the search below.</string>
+    <string name="widget_name">Prayer times</string>
+    <string name="widget_no_location">Open the app and choose a location</string>
+    <string name="widget_next">Next: %1$s %2$s</string>
+    <string name="channel_reminder">Reminder before prayer</string>
+    <string name="notif_title">It\'s time for %1$s</string>
+    <string name="notif_reminder_title">%1$s in %2$d min</string>
+    <string name="notif_text">%1$s · %2$s</string>
+    <string name="remind_before">Remind before</string>
+    <string name="minutes_short">%1$d min</string>
+    <string name="alert_mode_off">Off</string>
+    <string name="permission_allow">Allow</string>
+    <string name="later">Later</string>
+    <string name="notifications_blocked_text">Allow notifications to hear the azan at each prayer time.</string>
+    <string name="channel_group_prayers">Prayer times</string>
+    <string name="alert_mode_silent">Silent</string>
+    <string name="alert_mode_sound">Sound</string>
+    <string name="notif_sunrise_title">Sunrise — Fajr time has ended</string>
+    <string name="exact_alarm_title">Notifications may be late</string>
+    <string name="exact_alarm_text">Without the \"Alarms &amp; reminders\" permission, Android may show the prayer notification up to 10 minutes late. Allow it so the azan arrives exactly on time.</string>
+    <string name="notifications_blocked_title">Notifications are off</string>
 </resources>

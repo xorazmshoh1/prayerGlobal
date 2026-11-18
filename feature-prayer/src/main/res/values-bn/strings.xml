@@ -29,9 +29,6 @@
     <string name="highlat_middle">রাতের মধ্যভাগ</string>
     <string name="highlat_seventh">রাতের এক-সপ্তমাংশ</string>
     <string name="highlat_angle">গোধূলি কোণ</string>
-    <string name="sound_azan">আজান</string>
-    <string name="sound_beep">সংকেত</string>
-    <string name="sound_silent">নীরব</string>
     <string name="label_none">লেবেল নেই</string>
     <string name="label_home">বাড়ি</string>
     <string name="label_work">কর্মস্থল</string>
@@ -54,4 +51,24 @@
     <string name="open_ramadan">রমজান</string>
     <string name="open_settings">সেটিংস</string>
     <string name="location_denied">অবস্থানের অনুমতি দেওয়া হয়নি। নিচের অনুসন্ধানে আপনার শহর খুঁজুন।</string>
+    <string name="widget_name">নামাজের সময়</string>
+    <string name="widget_no_location">অ্যাপ খুলে একটি স্থান বেছে নিন</string>
+    <string name="widget_next">পরবর্তী: %1$s %2$s</string>
+    <string name="channel_reminder">নামাজের আগে অনুস্মারক</string>
+    <string name="notif_title">%1$s-এর সময় হয়েছে</string>
+    <string name="notif_reminder_title">%2$d মিনিট পরে %1$s</string>
+    <string name="notif_text">%1$s · %2$s</string>
+    <string name="remind_before">আগে মনে করিয়ে দিন</string>
+    <string name="minutes_short">%1$d মিনিট</string>
+    <string name="alert_mode_off">বন্ধ</string>
+    <string name="permission_allow">অনুমতি দিন</string>
+    <string name="later">পরে</string>
+    <string name="notifications_blocked_text">প্রতি ওয়াক্তে আজান শুনতে বিজ্ঞপ্তির অনুমতি দিন।</string>
+    <string name="channel_group_prayers">নামাজের সময়</string>
+    <string name="alert_mode_silent">নীরব</string>
+    <string name="alert_mode_sound">শব্দ</string>
+    <string name="notif_sunrise_title">সূর্যোদয় — ফজরের সময় শেষ</string>
+    <string name="exact_alarm_title">বিজ্ঞপ্তি দেরিতে আসতে পারে</string>
+    <string name="exact_alarm_text">\"অ্যালার্ম ও রিমাইন্ডার\" অনুমতি ছাড়া অ্যান্ড্রয়েড নামাজের বিজ্ঞপ্তি ১০ মিনিট পর্যন্ত দেরিতে দেখাতে পারে। আজান ঠিক সময়ে পেতে অনুমতি দিন।</string>
+    <string name="notifications_blocked_title">বিজ্ঞপ্তি বন্ধ আছে</string>
 </resources>

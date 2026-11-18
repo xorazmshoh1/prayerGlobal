@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Prière &amp; Hifz</string>
-    <string name="widget_name">Heures de prière</string>
-    <string name="widget_no_location">Ouvrez l’application et choisissez un lieu</string>
-    <string name="widget_next">Prochaine : %1$s %2$s</string>
 
-    <string name="channel_azan">Heure de prière (adhan)</string>
-    <string name="channel_beep">Heure de prière (signal)</string>
-    <string name="channel_silent">Heure de prière (silencieux)</string>
-    <string name="channel_reminder">Rappel avant la prière</string>
-    <string name="notif_title">C’est l’heure de %1$s</string>
-    <string name="notif_reminder_title">%1$s dans %2$d min</string>
-    <string name="notif_text">%1$s · %2$s</string>
 
 
 
@@ -47,8 +37,6 @@
     <string name="next">Suivant</string>
     <string name="later">Plus tard</string>
     <string name="allow">Autoriser</string>
-    <string name="off">Désactivé</string>
-    <string name="minutes_short">%1$d min</string>
 
     <string name="settings">Paramètres</string>
     <string name="section_location">Lieu</string>
@@ -73,8 +61,6 @@
     <string name="rate_app">Noter l’application</string>
     <string name="disclaimer">Les heures sont calculées sur votre appareil. Les méthodes et ajustements peuvent être modifiés dans les paramètres. Cette application n’est affiliée à aucune autorité gouvernementale ou religieuse.</string>
 
-    <string name="exact_alarm_needed">Autorisez « Alarmes et rappels » pour que les notifications arrivent à l’heure exacte.</string>
-    <string name="remind_before">Rappeler avant</string>
 
     <string name="help_notifications">Les notifications n’arrivent pas ?</string>
     <string name="help_intro">Certains téléphones arrêtent les applications en arrière-plan pour économiser la batterie. Vérifiez les points suivants :</string>

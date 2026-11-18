@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Salat &amp; Hafalan</string>
-    <string name="widget_name">Waktu sholat</string>
-    <string name="widget_no_location">Buka aplikasi dan pilih lokasi</string>
-    <string name="widget_next">Berikutnya: %1$s %2$s</string>
 
-    <string name="channel_azan">Waktu sholat (adzan)</string>
-    <string name="channel_beep">Waktu sholat (sinyal)</string>
-    <string name="channel_silent">Waktu sholat (senyap)</string>
-    <string name="channel_reminder">Pengingat sebelum sholat</string>
-    <string name="notif_title">Telah masuk waktu %1$s</string>
-    <string name="notif_reminder_title">%1$s dalam %2$d menit</string>
-    <string name="notif_text">%1$s · %2$s</string>
 
 
 
@@ -47,8 +37,6 @@
     <string name="next">Lanjut</string>
     <string name="later">Nanti</string>
     <string name="allow">Izinkan</string>
-    <string name="off">Mati</string>
-    <string name="minutes_short">%1$d mnt</string>
 
     <string name="settings">Pengaturan</string>
     <string name="section_location">Lokasi</string>
@@ -73,8 +61,6 @@
     <string name="rate_app">Beri nilai aplikasi</string>
     <string name="disclaimer">Waktu dihitung di perangkat Anda. Metode dan penyesuaian dapat diubah di pengaturan. Aplikasi ini tidak berafiliasi dengan lembaga pemerintah atau keagamaan mana pun.</string>
 
-    <string name="exact_alarm_needed">Izinkan \"Alarm &amp; pengingat\" agar notifikasi tiba tepat waktu.</string>
-    <string name="remind_before">Ingatkan sebelum</string>
 
     <string name="help_notifications">Notifikasi tidak muncul?</string>
     <string name="help_intro">Beberapa ponsel menghentikan aplikasi di latar belakang untuk menghemat baterai. Periksa hal berikut:</string>

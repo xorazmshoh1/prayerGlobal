@@ -29,9 +29,6 @@
     <string name="highlat_middle">Mitte der Nacht</string>
     <string name="highlat_seventh">Ein Siebtel der Nacht</string>
     <string name="highlat_angle">Dämmerungswinkel</string>
-    <string name="sound_azan">Adhan</string>
-    <string name="sound_beep">Signal</string>
-    <string name="sound_silent">Lautlos</string>
     <string name="label_none">Ohne Bezeichnung</string>
     <string name="label_home">Zuhause</string>
     <string name="label_work">Arbeit</string>
@@ -54,4 +51,24 @@
     <string name="open_ramadan">Ramadan</string>
     <string name="open_settings">Einstellungen</string>
     <string name="location_denied">Der Standortzugriff wurde verweigert. Suchen Sie Ihre Stadt unten.</string>
+    <string name="widget_name">Gebetszeiten</string>
+    <string name="widget_no_location">Öffne die App und wähle einen Ort</string>
+    <string name="widget_next">Nächstes: %1$s %2$s</string>
+    <string name="channel_reminder">Erinnerung vor dem Gebet</string>
+    <string name="notif_title">Es ist Zeit für %1$s</string>
+    <string name="notif_reminder_title">%1$s in %2$d Min.</string>
+    <string name="notif_text">%1$s · %2$s</string>
+    <string name="remind_before">Vorher erinnern</string>
+    <string name="minutes_short">%1$d Min.</string>
+    <string name="alert_mode_off">Aus</string>
+    <string name="permission_allow">Erlauben</string>
+    <string name="later">Später</string>
+    <string name="notifications_blocked_text">Erlaube Benachrichtigungen, um zu jeder Gebetszeit den Adhan zu hören.</string>
+    <string name="channel_group_prayers">Gebetszeiten</string>
+    <string name="alert_mode_silent">Lautlos</string>
+    <string name="alert_mode_sound">Ton</string>
+    <string name="notif_sunrise_title">Sonnenaufgang – die Fajr-Zeit ist vorbei</string>
+    <string name="exact_alarm_title">Benachrichtigungen können sich verspäten</string>
+    <string name="exact_alarm_text">Ohne die Berechtigung „Wecker und Erinnerungen“ kann Android die Gebetsbenachrichtigung bis zu 10 Minuten verspätet anzeigen. Erlaube sie, damit der Adhan pünktlich kommt.</string>
+    <string name="notifications_blocked_title">Benachrichtigungen sind deaktiviert</string>
 </resources>

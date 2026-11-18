@@ -2,4 +2,5 @@
 <resources>
     <string name="hifz_title">Hifz</string>
     <string name="hifz_coming_soon">Yodlash rejangiz va kunlik darslar shu yerda bo\'ladi.</string>
+    <string name="channel_hifz_reminder">Hifz eslatmasi</string>
 </resources>

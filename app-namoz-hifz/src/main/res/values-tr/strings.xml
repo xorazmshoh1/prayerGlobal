@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Namaz ve Hıfz</string>
-    <string name="widget_name">Namaz vakitleri</string>
-    <string name="widget_no_location">Uygulamayı açıp konum seçin</string>
-    <string name="widget_next">Sıradaki: %1$s %2$s</string>
 
-    <string name="channel_azan">Namaz vakti (ezan)</string>
-    <string name="channel_beep">Namaz vakti (sinyal)</string>
-    <string name="channel_silent">Namaz vakti (sessiz)</string>
-    <string name="channel_reminder">Namazdan önce hatırlatma</string>
-    <string name="notif_title">%1$s vakti girdi</string>
-    <string name="notif_reminder_title">%1$s vaktine %2$d dk kaldı</string>
-    <string name="notif_text">%1$s · %2$s</string>
 
 
 
@@ -47,8 +37,6 @@
     <string name="next">İleri</string>
     <string name="later">Sonra</string>
     <string name="allow">İzin ver</string>
-    <string name="off">Kapalı</string>
-    <string name="minutes_short">%1$d dk</string>
 
     <string name="settings">Ayarlar</string>
     <string name="section_location">Konum</string>
@@ -73,8 +61,6 @@
     <string name="rate_app">Uygulamayı değerlendir</string>
     <string name="disclaimer">Vakitler cihazınızda hesaplanır. Yöntem ve düzeltmeler ayarlardan değiştirilebilir. Bu uygulama herhangi bir resmî veya dinî kurumla bağlantılı değildir.</string>
 
-    <string name="exact_alarm_needed">Bildirimlerin tam vaktinde gelmesi için \"Alarmlar ve hatırlatıcılar\" iznini verin.</string>
-    <string name="remind_before">Önceden hatırlat</string>
 
     <string name="help_notifications">Bildirimler gelmiyor mu?</string>
     <string name="help_intro">Bazı telefonlar pil tasarrufu için uygulamaları arka planda durdurur. Lütfen şunları kontrol edin:</string>

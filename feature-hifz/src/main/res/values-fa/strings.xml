@@ -2,4 +2,5 @@
 <resources>
     <string name="hifz_title">حفظ</string>
     <string name="hifz_coming_soon">برنامهٔ حفظ و درس‌های روزانهٔ شما اینجا نمایش داده می‌شود.</string>
+    <string name="channel_hifz_reminder">یادآوری حفظ</string>
 </resources>

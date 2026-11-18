@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">الصلاة والحفظ</string>
-    <string name="widget_name">مواقيت الصلاة</string>
-    <string name="widget_no_location">افتح التطبيق واختر موقعك</string>
-    <string name="widget_next">التالية: %1$s %2$s</string>
 
-    <string name="channel_azan">وقت الصلاة (أذان)</string>
-    <string name="channel_beep">وقت الصلاة (تنبيه)</string>
-    <string name="channel_silent">وقت الصلاة (صامت)</string>
-    <string name="channel_reminder">تذكير قبل الصلاة</string>
-    <string name="notif_title">حان وقت صلاة %1$s</string>
-    <string name="notif_reminder_title">%1$s بعد %2$d دقيقة</string>
-    <string name="notif_text">%1$s · %2$s</string>
 
 
 
@@ -47,8 +37,6 @@
     <string name="next">التالي</string>
     <string name="later">لاحقًا</string>
     <string name="allow">السماح</string>
-    <string name="off">إيقاف</string>
-    <string name="minutes_short">%1$d د</string>
 
     <string name="settings">الإعدادات</string>
     <string name="section_location">الموقع</string>
@@ -73,8 +61,6 @@
     <string name="rate_app">قيّم التطبيق</string>
     <string name="disclaimer">تُحسب المواقيت على جهازك. يمكن تغيير الطريقة والتعديلات من الإعدادات. التطبيق غير تابع لأي جهة حكومية أو دينية.</string>
 
-    <string name="exact_alarm_needed">اسمح بـ «المنبهات والتذكيرات» لتصل الإشعارات في وقتها تمامًا.</string>
-    <string name="remind_before">التذكير قبل</string>
 
     <string name="help_notifications">الإشعارات لا تصل؟</string>
     <string name="help_intro">بعض الهواتف توقف التطبيقات في الخلفية لتوفير البطارية. يرجى التحقق مما يلي:</string>

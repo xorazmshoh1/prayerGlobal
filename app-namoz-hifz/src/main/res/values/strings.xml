@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Prayer &amp; Hifz</string>
-    <string name="widget_name">Prayer times</string>
-    <string name="widget_no_location">Open the app and choose a location</string>
-    <string name="widget_next">Next: %1$s %2$s</string>
 
-    <string name="channel_azan">Prayer time (azan)</string>
-    <string name="channel_beep">Prayer time (signal)</string>
-    <string name="channel_silent">Prayer time (silent)</string>
-    <string name="channel_reminder">Reminder before prayer</string>
-    <string name="notif_title">It\'s time for %1$s</string>
-    <string name="notif_reminder_title">%1$s in %2$d min</string>
-    <string name="notif_text">%1$s · %2$s</string>
 
 
 
@@ -47,8 +37,6 @@
     <string name="next">Next</string>
     <string name="later">Later</string>
     <string name="allow">Allow</string>
-    <string name="off">Off</string>
-    <string name="minutes_short">%1$d min</string>
 
     <string name="settings">Settings</string>
     <string name="section_location">Location</string>
@@ -73,8 +61,6 @@
     <string name="rate_app">Rate the app</string>
     <string name="disclaimer">Times are calculated on your device. Methods and adjustments can be changed in settings. This app is not affiliated with any government or religious authority.</string>
 
-    <string name="exact_alarm_needed">Allow \"Alarms &amp; reminders\" so notifications arrive exactly on time.</string>
-    <string name="remind_before">Remind before</string>
 
     <string name="help_notifications">Notifications not arriving?</string>
     <string name="help_intro">Some phones stop apps in the background to save battery. Please check the following:</string>

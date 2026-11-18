@@ -11,7 +11,6 @@ import kotlinx.coroutines.launch
 import uz.xumoyun.core.common.ThemeMode
 import uz.xumoyun.core.data.CommonSettings
 import uz.xumoyun.feature.prayer.data.LocationConfig
-import uz.xumoyun.feature.prayer.data.PrayerAlert
 import uz.xumoyun.feature.prayer.data.PrayerRepository
 import uz.xumoyun.feature.prayer.data.PrayerSettings
 import uz.xumoyun.feature.prayer.domain.AsrMadhab
@@ -27,7 +26,7 @@ data class SettingsState(
 )
 
 /**
- * Sozlamalar, bildirishnomalar va onboarding ekranlari uchun ViewModel (9-bosqichda kengaytiriladi).
+ * Sozlamalar va onboarding ekranlari uchun ViewModel (bildirishnomalar — feature-prayer NotificationSettingsViewModel) (9-bosqichda kengaytiriladi).
  * Namoz sozlamalari feature-prayer'dagi [PrayerSettings] ga yoziladi; joylar — feature-prayer LocationsViewModel.
  */
 @HiltViewModel
@@ -48,6 +47,5 @@ class SettingsViewModel @Inject constructor(
     fun setHijriOffset(days: Int) = viewModelScope.launch { common.setHijriAdjustDays(days) }
     fun setTheme(t: ThemeMode) = viewModelScope.launch { common.setThemeMode(t) }
     fun setLanguage(tag: String) = viewModelScope.launch { common.setLanguage(tag) }
-    fun setAlert(p: Prayer, alert: PrayerAlert) = viewModelScope.launch { settings.setAlert(p, alert) }
     fun finishOnboarding() = viewModelScope.launch { common.setOnboardingDone() }
 }

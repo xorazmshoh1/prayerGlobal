@@ -29,9 +29,6 @@
     <string name="highlat_middle">نصف شب</string>
     <string name="highlat_seventh">رات کا ساتواں حصہ</string>
     <string name="highlat_angle">شفق کا زاویہ</string>
-    <string name="sound_azan">اذان</string>
-    <string name="sound_beep">سگنل</string>
-    <string name="sound_silent">خاموش</string>
     <string name="label_none">بغیر لیبل</string>
     <string name="label_home">گھر</string>
     <string name="label_work">دفتر</string>
@@ -54,4 +51,24 @@
     <string name="open_ramadan">رمضان</string>
     <string name="open_settings">ترتیبات</string>
     <string name="location_denied">مقام تک رسائی کی اجازت نہیں دی گئی۔ نیچے تلاش میں اپنا شہر تلاش کریں۔</string>
+    <string name="widget_name">نماز کے اوقات</string>
+    <string name="widget_no_location">ایپ کھولیں اور مقام منتخب کریں</string>
+    <string name="widget_next">اگلی: %1$s %2$s</string>
+    <string name="channel_reminder">نماز سے پہلے یاد دہانی</string>
+    <string name="notif_title">%1$s کا وقت ہو گیا</string>
+    <string name="notif_reminder_title">%1$s میں %2$d منٹ باقی</string>
+    <string name="notif_text">%1$s · %2$s</string>
+    <string name="remind_before">پہلے یاد دلائیں</string>
+    <string name="minutes_short">%1$d منٹ</string>
+    <string name="alert_mode_off">بند</string>
+    <string name="permission_allow">اجازت دیں</string>
+    <string name="later">بعد میں</string>
+    <string name="notifications_blocked_text">ہر نماز کے وقت اذان سننے کے لیے اطلاعات کی اجازت دیں۔</string>
+    <string name="channel_group_prayers">نماز کے اوقات</string>
+    <string name="alert_mode_silent">خاموش</string>
+    <string name="alert_mode_sound">آواز</string>
+    <string name="notif_sunrise_title">طلوعِ آفتاب — فجر کا وقت ختم ہو گیا</string>
+    <string name="exact_alarm_title">اطلاعات تاخیر سے آ سکتی ہیں</string>
+    <string name="exact_alarm_text">«الارم اور یاد دہانیاں» کی اجازت کے بغیر اینڈرائیڈ نماز کی اطلاع 10 منٹ تک دیر سے دکھا سکتا ہے۔ اذان بالکل وقت پر آنے کے لیے اجازت دیں۔</string>
+    <string name="notifications_blocked_title">اطلاعات بند ہیں</string>
 </resources>

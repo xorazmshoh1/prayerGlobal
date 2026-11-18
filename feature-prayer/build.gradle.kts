@@ -41,6 +41,9 @@ dependencies {
     implementation(libs.room.ktx)
     // adhan turlari tashqariga chiqmaydi: ommaviy API — CalcInput, DayTimes, PrayerCalculator.
     implementation(libs.adhan)
+    // Bildirishnomalar va vidjet (3-bosqich).
+    implementation(libs.work.runtime)
+    implementation(libs.glance.appwidget)
 
     testImplementation(libs.junit)
     testImplementation(libs.kotlinx.coroutines.test)
