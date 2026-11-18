@@ -14,5 +14,9 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "PrayerTimes"
-include(":core-common", ":core-ui", ":core-data", ":core-ads", ":app-namoz")
+rootProject.name = "NamozHifz"
+include(
+    ":core-common", ":core-ui", ":core-data",
+    ":feature-prayer", ":feature-hifz", ":feature-qibla", ":feature-tasbih",
+    ":app-namoz-hifz",
+)

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gebet &amp; Hifz</string>
+    <string name="widget_name">Gebetszeiten</string>
+    <string name="widget_no_location">Öffne die App und wähle einen Ort</string>
+    <string name="widget_next">Nächstes: %1$s %2$s</string>
+
+    <string name="channel_azan">Gebetszeit (Adhan)</string>
+    <string name="channel_beep">Gebetszeit (Signal)</string>
+    <string name="channel_silent">Gebetszeit (lautlos)</string>
+    <string name="channel_reminder">Erinnerung vor dem Gebet</string>
+    <string name="notif_title">Es ist Zeit für %1$s</string>
+    <string name="notif_reminder_title">%1$s in %2$d Min.</string>
+    <string name="notif_text">%1$s · %2$s</string>
+
+    <string name="prayer_fajr">Fadschr</string>
+    <string name="prayer_sunrise">Sonnenaufgang</string>
+    <string name="prayer_dhuhr">Dhuhr</string>
+    <string name="prayer_asr">Asr</string>
+    <string name="prayer_maghrib">Maghrib</string>
+    <string name="prayer_isha">Ischa</string>
+    <string name="until_fajr">Bis Fadschr</string>
+    <string name="until_sunrise">Bis Sonnenaufgang</string>
+    <string name="until_dhuhr">Bis Dhuhr</string>
+    <string name="until_asr">Bis Asr</string>
+    <string name="until_maghrib">Bis Maghrib</string>
+    <string name="until_isha">Bis Ischa</string>
+
+    <string name="method_mwl">Islamische Weltliga</string>
+    <string name="method_umm_al_qura">Umm al-Qura, Mekka</string>
+    <string name="method_dubai">Dubai</string>
+    <string name="method_kuwait">Kuwait</string>
+    <string name="method_qatar">Katar</string>
+    <string name="method_egyptian">Ägyptische Generalbehörde</string>
+    <string name="method_karachi">Universität für Islamwissenschaften, Karachi</string>
+    <string name="method_turkey">Türkei (Diyanet-Parameter)</string>
+    <string name="method_uzbekistan">Usbekistan / Zentralasien</string>
+    <string name="method_singapore">Singapur, Malaysia, Indonesien</string>
+    <string name="method_isna">ISNA (Nordamerika)</string>
+    <string name="method_moonsighting">Moonsighting Committee</string>
+    <string name="madhab_shafi">Schafiitisch (Standard)</string>
+    <string name="madhab_hanafi">Hanafitisch</string>
+    <string name="highlat_middle">Mitte der Nacht</string>
+    <string name="highlat_seventh">Ein Siebtel der Nacht</string>
+    <string name="highlat_angle">Dämmerungswinkel</string>
+    <string name="sound_azan">Adhan</string>
+    <string name="sound_beep">Signal</string>
+    <string name="sound_silent">Lautlos</string>
+    <string name="label_none">Ohne Bezeichnung</string>
+    <string name="label_home">Zuhause</string>
+    <string name="label_work">Arbeit</string>
+    <string name="label_travel">Reise</string>
+
+    <string name="no_location_title">Kein Ort festgelegt</string>
+    <string name="no_location_message">Wähle eine Stadt oder nutze GPS, um die Gebetszeiten zu sehen.</string>
+    <string name="choose_location">Ort wählen</string>
+    <string name="travel_title">Neuer Ort erkannt</string>
+    <string name="travel_message">Du scheinst in %1$s zu sein. Gebetszeiten für den neuen Ort aktualisieren?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="toggle_notification">Benachrichtigung ein- oder ausschalten</string>
+
+    <string name="previous_month">Vorheriger Monat</string>
+    <string name="next_month">Nächster Monat</string>
+    <string name="calendar_day">Tag</string>
+    <string name="suhoor">Suhur</string>
+    <string name="iftar">Iftar</string>
+
+    <string name="qibla_title">Qibla-Richtung</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">Du blickst in Richtung Qibla</string>
+    <string name="qibla_turn">Drehe dich, bis der Pfeil auf die Kaaba zeigt</string>
+    <string name="calibrate_hint">Die Kompassgenauigkeit ist gering. Bewege dein Handy in Form einer Acht und halte es von Metall und Magneten fern.</string>
+    <string name="compass_unavailable">Dieses Handy hat keinen Kompasssensor</string>
+
+    <string name="dhikr_subhanallah">SubhanAllah</string>
+    <string name="dhikr_alhamdulillah">Alhamdulillah</string>
+    <string name="dhikr_allahuakbar">Allahu Akbar</string>
+    <string name="dhikr_tahlil">La ilaha illallah</string>
+    <string name="dhikr_istighfar">Astaghfirullah</string>
+    <string name="dhikr_salawat">Salawat</string>
+    <string name="tasbeh_rounds">Runden: %1$d · Ziel %2$d</string>
+    <string name="tasbeh_custom">Eigenes</string>
+    <string name="tasbeh_target">Ziel</string>
+    <string name="tasbeh_today_total">Heute: %1$d</string>
+    <string name="reset">Zurücksetzen</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="close">Schließen</string>
+    <string name="back">Zurück</string>
+    <string name="delete">Löschen</string>
+    <string name="next">Weiter</string>
+    <string name="later">Später</string>
+    <string name="allow">Erlauben</string>
+    <string name="off">Aus</string>
+    <string name="minutes_short">%1$d Min.</string>
+
+    <string name="settings">Einstellungen</string>
+    <string name="section_location">Ort</string>
+    <string name="saved_locations">Gespeicherte Orte</string>
+    <string name="add_location">Ort hinzufügen</string>
+    <string name="use_gps">Per GPS ermitteln</string>
+    <string name="gps_failed">Dein Standort konnte nicht ermittelt werden. Schalte die Ortung ein oder suche nach einer Stadt.</string>
+    <string name="gps_optional">GPS ist optional — du kannst jederzeit nach einer Stadt suchen.</string>
+    <string name="search_city">Stadt suchen</string>
+    <string name="section_calculation">Berechnung</string>
+    <string name="calc_method">Berechnungsmethode</string>
+    <string name="auto_value">Automatisch: %1$s</string>
+    <string name="asr_madhab">Rechtsschule für Asr</string>
+    <string name="high_lat_rule">Regel für hohe Breitengrade</string>
+    <string name="time_adjustments">Zeitkorrekturen</string>
+    <string name="time_adjustments_hint">Füge für jede Zeit Minuten hinzu oder ziehe sie ab, passend zu deiner Moschee.</string>
+    <string name="hijri_adjust">Korrektur des Hidschri-Datums (Tage)</string>
+    <string name="section_app">App</string>
+    <string name="notifications">Benachrichtigungen</string>
+    <string name="language">Sprache</string>
+    <string name="system_default">Systemstandard</string>
+    <string name="theme">Design</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Hell</string>
+    <string name="theme_dark">Dunkel</string>
+    <string name="section_about">Über</string>
+    <string name="privacy_policy">Datenschutzerklärung</string>
+    <string name="rate_app">App bewerten</string>
+    <string name="disclaimer">Die Zeiten werden auf deinem Gerät berechnet. Methoden und Korrekturen lassen sich in den Einstellungen ändern. Diese App ist mit keiner staatlichen oder religiösen Behörde verbunden.</string>
+
+    <string name="exact_alarm_needed">Erlaube „Wecker und Erinnerungen“, damit Benachrichtigungen pünktlich ankommen.</string>
+    <string name="remind_before">Vorher erinnern</string>
+
+    <string name="help_notifications">Keine Benachrichtigungen?</string>
+    <string name="help_intro">Manche Handys stoppen Apps im Hintergrund, um Akku zu sparen. Bitte prüfe Folgendes:</string>
+    <string name="help_battery_title">Akkuoptimierung</string>
+    <string name="help_battery_text">Einstellungen → Apps → Gebetszeiten → Akku → „Nicht eingeschränkt“ (oder „Nicht optimieren“) wählen.</string>
+    <string name="help_xiaomi_title">Xiaomi / Redmi / POCO</string>
+    <string name="help_xiaomi_text">Sicherheit → Berechtigungen → Autostart → für Gebetszeiten aktivieren. Dann Einstellungen → Apps → Gebetszeiten → Energiesparen → „Keine Einschränkungen“.</string>
+    <string name="help_huawei_title">Huawei / Honor</string>
+    <string name="help_huawei_text">Einstellungen → Akku → App-Start → Gebetszeiten → manuell verwalten und automatischen Start, Sekundärstart und Hintergrundausführung aktivieren.</string>
+    <string name="help_samsung_title">Samsung</string>
+    <string name="help_samsung_text">Einstellungen → Akku → Hintergrundnutzungslimits → Gebetszeiten aus „Inaktive Apps“ und „Apps im Tiefschlaf“ entfernen.</string>
+    <string name="open_app_settings">App-Einstellungen öffnen</string>
+    <string name="open_battery_settings">Akku-Einstellungen öffnen</string>
+
+    <string name="onboarding_language_title">Wähle deine Sprache</string>
+    <string name="onboarding_location_title">Wo bist du?</string>
+    <string name="onboarding_method_title">Berechnungsmethode</string>
+    <string name="onboarding_method_hint">Wir haben die in deinem Land übliche Methode gewählt. Du kannst sie jederzeit in den Einstellungen ändern.</string>
+    <string name="onboarding_notif_title">Gebetsbenachrichtigungen</string>
+    <string name="onboarding_notif_text">Erlaube Benachrichtigungen, um zu jeder Gebetszeit den Adhan zu hören.</string>
+    <string name="tab_prayer">Gebet</string>
+    <string name="tab_calendar">Monat</string>
+    <string name="tab_qibla">Qibla</string>
+    <string name="tab_tasbeh">Tasbih</string>
+    <string name="tab_settings">Einstellungen</string>
+</resources>

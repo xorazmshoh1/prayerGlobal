@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نماز اور حفظ</string>
+    <string name="widget_name">نماز کے اوقات</string>
+    <string name="widget_no_location">ایپ کھولیں اور مقام منتخب کریں</string>
+    <string name="widget_next">اگلی: %1$s %2$s</string>
+
+    <string name="channel_azan">نماز کا وقت (اذان)</string>
+    <string name="channel_beep">نماز کا وقت (سگنل)</string>
+    <string name="channel_silent">نماز کا وقت (خاموش)</string>
+    <string name="channel_reminder">نماز سے پہلے یاد دہانی</string>
+    <string name="notif_title">%1$s کا وقت ہو گیا</string>
+    <string name="notif_reminder_title">%1$s میں %2$d منٹ باقی</string>
+    <string name="notif_text">%1$s · %2$s</string>
+
+    <string name="prayer_fajr">فجر</string>
+    <string name="prayer_sunrise">طلوع آفتاب</string>
+    <string name="prayer_dhuhr">ظہر</string>
+    <string name="prayer_asr">عصر</string>
+    <string name="prayer_maghrib">مغرب</string>
+    <string name="prayer_isha">عشاء</string>
+    <string name="until_fajr">فجر میں باقی وقت</string>
+    <string name="until_sunrise">طلوع آفتاب میں باقی وقت</string>
+    <string name="until_dhuhr">ظہر میں باقی وقت</string>
+    <string name="until_asr">عصر میں باقی وقت</string>
+    <string name="until_maghrib">مغرب میں باقی وقت</string>
+    <string name="until_isha">عشاء میں باقی وقت</string>
+
+    <string name="method_mwl">رابطہ عالم اسلامی</string>
+    <string name="method_umm_al_qura">ام القریٰ، مکہ</string>
+    <string name="method_dubai">دبئی</string>
+    <string name="method_kuwait">کویت</string>
+    <string name="method_qatar">قطر</string>
+    <string name="method_egyptian">مصری جنرل اتھارٹی</string>
+    <string name="method_karachi">جامعہ علوم اسلامیہ، کراچی</string>
+    <string name="method_turkey">ترکی (دیانت پیرامیٹرز)</string>
+    <string name="method_uzbekistan">ازبکستان / وسطی ایشیا</string>
+    <string name="method_singapore">سنگاپور، ملائیشیا، انڈونیشیا</string>
+    <string name="method_isna">ISNA (شمالی امریکہ)</string>
+    <string name="method_moonsighting">مون سائٹنگ کمیٹی</string>
+    <string name="madhab_shafi">شافعی (معیاری)</string>
+    <string name="madhab_hanafi">حنفی</string>
+    <string name="highlat_middle">نصف شب</string>
+    <string name="highlat_seventh">رات کا ساتواں حصہ</string>
+    <string name="highlat_angle">شفق کا زاویہ</string>
+    <string name="sound_azan">اذان</string>
+    <string name="sound_beep">سگنل</string>
+    <string name="sound_silent">خاموش</string>
+    <string name="label_none">بغیر لیبل</string>
+    <string name="label_home">گھر</string>
+    <string name="label_work">دفتر</string>
+    <string name="label_travel">سفر</string>
+
+    <string name="no_location_title">مقام منتخب نہیں</string>
+    <string name="no_location_message">نماز کے اوقات دیکھنے کے لیے شہر منتخب کریں یا GPS استعمال کریں۔</string>
+    <string name="choose_location">مقام منتخب کریں</string>
+    <string name="travel_title">نیا مقام معلوم ہوا</string>
+    <string name="travel_message">لگتا ہے آپ %1$s میں ہیں۔ کیا نئے مقام کے مطابق اوقات تبدیل کریں؟</string>
+    <string name="yes">ہاں</string>
+    <string name="no">نہیں</string>
+    <string name="toggle_notification">اطلاع آن یا آف کریں</string>
+
+    <string name="previous_month">پچھلا مہینہ</string>
+    <string name="next_month">اگلا مہینہ</string>
+    <string name="calendar_day">دن</string>
+    <string name="suhoor">سحری</string>
+    <string name="iftar">افطار</string>
+
+    <string name="qibla_title">قبلہ کی سمت</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">آپ کا رخ قبلہ کی طرف ہے</string>
+    <string name="qibla_turn">اس وقت تک گھومیں جب تک تیر کعبہ کی طرف نہ ہو</string>
+    <string name="calibrate_hint">کمپاس کی درستگی کم ہے۔ فون کو ہوا میں 8 کی شکل میں گھمائیں اور دھات اور مقناطیس سے دور رکھیں۔</string>
+    <string name="compass_unavailable">اس فون میں کمپاس سینسر نہیں ہے</string>
+
+    <string name="dhikr_subhanallah">سبحان اللہ</string>
+    <string name="dhikr_alhamdulillah">الحمد للہ</string>
+    <string name="dhikr_allahuakbar">اللہ اکبر</string>
+    <string name="dhikr_tahlil">لا الہ الا اللہ</string>
+    <string name="dhikr_istighfar">استغفر اللہ</string>
+    <string name="dhikr_salawat">درود</string>
+    <string name="tasbeh_rounds">چکر: %1$d · ہدف %2$d</string>
+    <string name="tasbeh_custom">اپنی مرضی</string>
+    <string name="tasbeh_target">ہدف</string>
+    <string name="tasbeh_today_total">آج: %1$d</string>
+    <string name="reset">صفر کریں</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="cancel">منسوخ</string>
+    <string name="close">بند کریں</string>
+    <string name="back">واپس</string>
+    <string name="delete">حذف کریں</string>
+    <string name="next">اگلا</string>
+    <string name="later">بعد میں</string>
+    <string name="allow">اجازت دیں</string>
+    <string name="off">بند</string>
+    <string name="minutes_short">%1$d منٹ</string>
+
+    <string name="settings">ترتیبات</string>
+    <string name="section_location">مقام</string>
+    <string name="saved_locations">محفوظ مقامات</string>
+    <string name="add_location">مقام شامل کریں</string>
+    <string name="use_gps">GPS سے معلوم کریں</string>
+    <string name="gps_failed">آپ کا مقام معلوم نہیں ہو سکا۔ لوکیشن آن کریں یا شہر تلاش کریں۔</string>
+    <string name="gps_optional">GPS اختیاری ہے — آپ ہمیشہ شہر تلاش کر سکتے ہیں۔</string>
+    <string name="search_city">شہر تلاش کریں</string>
+    <string name="section_calculation">حساب</string>
+    <string name="calc_method">حساب کا طریقہ</string>
+    <string name="auto_value">خودکار: %1$s</string>
+    <string name="asr_madhab">عصر کا مسلک</string>
+    <string name="high_lat_rule">بلند عرض بلد کا اصول</string>
+    <string name="time_adjustments">اوقات میں ترمیم</string>
+    <string name="time_adjustments_hint">مقامی مسجد کے مطابق ہر وقت میں منٹ جمع یا کم کریں۔</string>
+    <string name="hijri_adjust">ہجری تاریخ میں ترمیم (دن)</string>
+    <string name="section_app">ایپ</string>
+    <string name="notifications">اطلاعات</string>
+    <string name="language">زبان</string>
+    <string name="system_default">سسٹم کی زبان</string>
+    <string name="theme">تھیم</string>
+    <string name="theme_system">سسٹم</string>
+    <string name="theme_light">روشن</string>
+    <string name="theme_dark">تاریک</string>
+    <string name="section_about">ایپ کے بارے میں</string>
+    <string name="privacy_policy">رازداری کی پالیسی</string>
+    <string name="rate_app">ایپ کی درجہ بندی کریں</string>
+    <string name="disclaimer">اوقات آپ کے فون پر ہی حساب کیے جاتے ہیں۔ طریقہ اور ترامیم ترتیبات میں بدلی جا سکتی ہیں۔ یہ ایپ کسی سرکاری یا مذہبی ادارے سے وابستہ نہیں۔</string>
+
+    <string name="exact_alarm_needed">اطلاعات بالکل وقت پر آنے کے لیے «الارم اور یاد دہانیاں» کی اجازت دیں۔</string>
+    <string name="remind_before">پہلے یاد دلائیں</string>
+
+    <string name="help_notifications">اطلاعات نہیں آ رہیں؟</string>
+    <string name="help_intro">کچھ فون بیٹری بچانے کے لیے پس منظر میں ایپس روک دیتے ہیں۔ براہ کرم یہ چیک کریں:</string>
+    <string name="help_battery_title">بیٹری آپٹیمائزیشن</string>
+    <string name="help_battery_text">ترتیبات ← ایپس ← نماز کے اوقات ← بیٹری ← «غیر محدود» منتخب کریں۔</string>
+    <string name="help_xiaomi_title">Xiaomi / Redmi / POCO</string>
+    <string name="help_xiaomi_text">سیکیورٹی ← اجازتیں ← آٹو اسٹارٹ ← ایپ کے لیے آن کریں۔ پھر ترتیبات ← ایپس ← بیٹری سیور ← «کوئی پابندی نہیں»۔</string>
+    <string name="help_huawei_title">Huawei / Honor</string>
+    <string name="help_huawei_text">ترتیبات ← بیٹری ← ایپ لانچ ← نماز کے اوقات ← دستی طور پر منظم کریں اور تینوں آپشن آن کریں۔</string>
+    <string name="help_samsung_title">Samsung</string>
+    <string name="help_samsung_text">ترتیبات ← بیٹری ← پس منظر کے استعمال کی حدیں ← ایپ کو «سوئی ہوئی ایپس» سے ہٹا دیں۔</string>
+    <string name="open_app_settings">ایپ کی ترتیبات کھولیں</string>
+    <string name="open_battery_settings">بیٹری کی ترتیبات کھولیں</string>
+
+    <string name="onboarding_language_title">اپنی زبان منتخب کریں</string>
+    <string name="onboarding_location_title">آپ کہاں ہیں؟</string>
+    <string name="onboarding_method_title">حساب کا طریقہ</string>
+    <string name="onboarding_method_hint">ہم نے آپ کے ملک میں رائج طریقہ منتخب کیا ہے۔ آپ اسے کسی بھی وقت ترتیبات میں بدل سکتے ہیں۔</string>
+    <string name="onboarding_notif_title">نماز کی اطلاعات</string>
+    <string name="onboarding_notif_text">ہر نماز کے وقت اذان سننے کے لیے اطلاعات کی اجازت دیں۔</string>
+    <string name="tab_prayer">نماز</string>
+    <string name="tab_calendar">مہینہ</string>
+    <string name="tab_qibla">قبلہ</string>
+    <string name="tab_tasbeh">تسبیح</string>
+    <string name="tab_settings">ترتیبات</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#0F5C4D</color>
+    <color name="brand_accent">#C9A227</color>
+    <color name="launcher_background">#0F5C4D</color>
+
+    <style name="Theme.Namoz" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorSecondary">@color/brand_accent</item>
+    </style>
+</resources>

@@ -1,38 +1,47 @@
-# Loyiha: Prayer Times: Azan & Qibla (3-ilova)
+# Loyiha: Namoz va Hifz
 
-Global namoz vaqtlari ilovasi: internetsiz hisoblash (adhan), qibla, tasbeh, oylik taqvim, bildirishnomalar, Glance vidjeti, 12 til (en, ar, id, ur, bn, tr, fa, ms, fr, ru, uz, de).
+Reklamasiz, bepul, internetsiz Android ilova: namoz vaqtlari va azon (adhan), qibla, tasbeh, namoz kuzatuvchisi va qazo,
+mus'haf (Tanzil matni) va Qur'on yodlash rejasi (Sabaq / Sabqi / Manzil, SM-2). 11 til (en, ar, uz, ru, id, ms, tr, ur, fa, bn, fr).
+
+To'liq TZ: `docs/TZ.md` (13-bo'lim — 10 ta ish bosqichi, 14-bo'lim — har bosqichning prompti).
+
+## Dev agenti
+- `/dev <N>` — TZ'ning N-bosqichini `dev` agenti (`.claude/agents/dev.md`) orqali bajaradi; `/dev` argumentsiz — keyingi bosqich.
+- `/dev <matn>` — aniq vazifa.
 
 ## Texnologiyalar
-Kotlin 2.0, Jetpack Compose, Material 3, MVVM, Hilt, Room, DataStore,
-Navigation Compose, Google Mobile Ads (AdMob), UMP, Jetpack Glance, adhan (Java) 1.2.1.
-minSdk 24, compileSdk/targetSdk 34, Gradle version catalog (`gradle/libs.versions.toml`).
+Kotlin 2.0, Jetpack Compose, Material 3, MVVM + Repository, Hilt, Room, DataStore, Navigation Compose,
+WorkManager, AlarmManager, Media3 ExoPlayer, Jetpack Glance, adhan 1.2.1, Firebase Crashlytics (9-bosqichda).
+minSdk 24, compileSdk/targetSdk 36, Gradle version catalog (`gradle/libs.versions.toml`).
+**AdMob, UMP, Billing, Analytics — yo'q.**
 
 ## Modullar
-- `core-common` — TimeSource, DurationFormat, ThemeMode
-- `core-ui` — Material 3 tema (AppPalette, AppTheme), umumiy komponentlar, AppLocale
+- `app-namoz-hifz` — Application, MainActivity, navigatsiya (4 tab: Namoz, Hifz, Qibla, Tasbeh), DI
+- `core-common` — TimeSource, DurationFormat, ThemeMode, toza Kotlin formulalar
+- `core-ui` — Material 3 tema (`NamozHifzPalette`, AppTheme), umumiy komponentlar, AppLocale
 - `core-data` — DataStore, AssetSource, CommonSettings (tema, til, onboarding)
-- `core-ads` — AdsManager (UMP, banner, interstitial, rewarded, app open), chastota qoidalari
-- `app-namoz` — ilovaning o'zi
+- `feature-prayer`, `feature-hifz`, `feature-qibla`, `feature-tasbih` — funksiya modullari
 
-Umumiy kod faqat `core-*` modullarida.
+Umumiy kod faqat `core-*` modullarida; feature modullar bir-biriga bog'lanmaydi.
+Hozircha namoz, qibla va tasbeh kodi `app-namoz-hifz` ichida — 2- va 4-bosqichlarda tegishli feature modullarga ko'chiriladi.
 
 ## Qoidalar
-- Barcha matnlar `strings.xml` da: `values` = inglizcha, `values-{ar,in,ur,bn,tr,fa,ms,fr,ru,uz,de}`. RTL (ar, ur, fa) qo'llab-quvvatlanadi, kompas aylantirilmaydi.
-- Faqat AdMob TEST ID lari; haqiqiy ID lar `local.properties` dan (faqat release).
-- Diniy ilova: interstitial va app open YO'Q, faqat banner (bosh sahifa, oylik taqvim) va ixtiyoriy rewarded (sozlamalar → "Mualliflarni qo'llab-quvvatlash"). AdMob'da qimor, spirtli ichimlik, tanishuv, astrologiya toifalarini bloklang.
+- Barcha matnlar `strings.xml` da: `values` = inglizcha, `values-{ar,uz,ru,in,ms,tr,ur,fa,bn,fr}`. RTL (ar, ur, fa) qo'llab-quvvatlanadi, kompas aylantirilmaydi.
+- Reklama, ichki xarid, xayriya so'rovi yo'q. `verifyNoAds` Gradle vazifasi reklama/billing/analytics SDK'lari bog'liqliklarda bo'lsa build'ni to'xtatadi.
+- Qur'on matni Tanzil'dan o'zgartirilmasdan; tarjima/tafsir yo'q.
+- Ruxsatlar: COARSE_LOCATION, POST_NOTIFICATIONS, SCHEDULE_EXACT_ALARM, RECEIVE_BOOT_COMPLETED, INTERNET, VIBRATE (FINE, USE_EXACT_ALARM yo'q).
 - Har bir ViewModel va hisoblash funksiyasi uchun unit test.
 - Har bir bosqichdan keyin build va testlar o'tishi shart, keyin alohida commit.
 
 ## Build (JDK 17)
 ```bash
-JAVA_HOME="/c/Users/HP/.jdks/corretto-17.0.5" ./gradlew assembleDebug testDebugUnitTest
+./gradlew assembleDebug testDebugUnitTest verifyNoAds
 ```
+Windows (lokal): `JAVA_HOME="/c/Users/HP/.jdks/corretto-17.0.5" ./gradlew ...`
 
 ## Muhim fayllar
-- `app-namoz/src/main/assets/methods.json` — davlat → hisoblash usuli va Asr mazhabi
-- `app-namoz/src/main/assets/cities.json` — shaharlar (`tools/geonames-to-json.mjs` bilan GeoNames'dan qayta yaratiladi)
-- `app-namoz/.../domain/PrayerCalculator.kt` — hisoblash; `UZBEKISTAN` usuli parametrlari rasmiy taqvim bilan solishtirib sozlanadi
-- `docs/prayer-tables/` — 7 sinov shahri uchun oylik jadval (unit test yaratadi)
-
-## Texnik topshiriq
-To'liq TZ: docs/TZ.md
+- `app-namoz-hifz/src/main/assets/methods.json` — davlat → hisoblash usuli va Asr mazhabi (TZ 2-bo'lim)
+- `app-namoz-hifz/src/main/assets/cities.json` — shaharlar (`tools/geonames-to-json.mjs` bilan GeoNames'dan qayta yaratiladi)
+- `app-namoz-hifz/.../domain/PrayerCalculator.kt` — hisoblash
+- `docs/prayer-tables/` — sinov shaharlari uchun oylik jadval (unit test yaratadi)
+- `.github/workflows/ci.yml` — CI: build, unit testlar, reklama SDK tekshiruvi

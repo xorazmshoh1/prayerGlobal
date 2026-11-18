@@ -60,7 +60,7 @@ fun AppTheme(
         ThemeMode.DARK -> true
     }
     val extra = ExtraColors(
-        accent = palette.accent,
+        accent = palette.accentFor(dark),
         success = if (dark) palette.success.tone(0.65f) else palette.success,
         failure = if (dark) palette.failure.tone(0.70f) else palette.failure,
         isDark = dark,

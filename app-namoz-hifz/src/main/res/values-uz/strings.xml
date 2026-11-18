@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Namoz va Hifz</string>
+    <string name="widget_name">Namoz vaqtlari</string>
+    <string name="widget_no_location">Ilovani ochib, joyni tanlang</string>
+    <string name="widget_next">Keyingi: %1$s %2$s</string>
+
+    <string name="channel_azan">Namoz vaqti (azon)</string>
+    <string name="channel_beep">Namoz vaqti (signal)</string>
+    <string name="channel_silent">Namoz vaqti (jim)</string>
+    <string name="channel_reminder">Namozdan oldin eslatma</string>
+    <string name="notif_title">%1$s vaqti kirdi</string>
+    <string name="notif_reminder_title">%1$s vaqtiga %2$d daqiqa qoldi</string>
+    <string name="notif_text">%1$s · %2$s</string>
+
+    <string name="prayer_fajr">Bomdod</string>
+    <string name="prayer_sunrise">Quyosh</string>
+    <string name="prayer_dhuhr">Peshin</string>
+    <string name="prayer_asr">Asr</string>
+    <string name="prayer_maghrib">Shom</string>
+    <string name="prayer_isha">Xufton</string>
+    <string name="until_fajr">Bomdodgacha</string>
+    <string name="until_sunrise">Quyosh chiqishigacha</string>
+    <string name="until_dhuhr">Peshingacha</string>
+    <string name="until_asr">Asrgacha</string>
+    <string name="until_maghrib">Shomgacha</string>
+    <string name="until_isha">Xuftongacha</string>
+
+    <string name="method_mwl">Musulmon olami ligasi</string>
+    <string name="method_umm_al_qura">Ummul-Quro, Makka</string>
+    <string name="method_dubai">Dubay</string>
+    <string name="method_kuwait">Quvayt</string>
+    <string name="method_qatar">Qatar</string>
+    <string name="method_egyptian">Misr</string>
+    <string name="method_karachi">Karachi islom fanlari universiteti</string>
+    <string name="method_turkey">Turkiya (Diyanet parametrlari)</string>
+    <string name="method_uzbekistan">Oʻzbekiston / Markaziy Osiyo</string>
+    <string name="method_singapore">Singapur, Malayziya, Indoneziya</string>
+    <string name="method_isna">ISNA (Shimoliy Amerika)</string>
+    <string name="method_moonsighting">Moonsighting Committee</string>
+    <string name="madhab_shafi">Shofiʼiy (standart)</string>
+    <string name="madhab_hanafi">Hanafiy</string>
+    <string name="highlat_middle">Tun oʻrtasi</string>
+    <string name="highlat_seventh">Tunning yettidan biri</string>
+    <string name="highlat_angle">Shafaq burchagi</string>
+    <string name="sound_azan">Azon</string>
+    <string name="sound_beep">Signal</string>
+    <string name="sound_silent">Jim</string>
+    <string name="label_none">Belgisiz</string>
+    <string name="label_home">Uy</string>
+    <string name="label_work">Ish</string>
+    <string name="label_travel">Safar</string>
+
+    <string name="no_location_title">Joy tanlanmagan</string>
+    <string name="no_location_message">Namoz vaqtlarini koʻrish uchun shaharni tanlang yoki GPS dan foydalaning.</string>
+    <string name="choose_location">Joyni tanlash</string>
+    <string name="travel_title">Yangi joy aniqlandi</string>
+    <string name="travel_message">Siz %1$s shahrida koʻrinasiz. Vaqtlarni yangi joyga moslaymi?</string>
+    <string name="yes">Ha</string>
+    <string name="no">Yoʻq</string>
+    <string name="toggle_notification">Bildirishnomani yoqish yoki oʻchirish</string>
+
+    <string name="previous_month">Oldingi oy</string>
+    <string name="next_month">Keyingi oy</string>
+    <string name="calendar_day">Kun</string>
+    <string name="suhoor">Saharlik</string>
+    <string name="iftar">Iftorlik</string>
+
+    <string name="qibla_title">Qibla yoʻnalishi</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">Siz qiblaga qaragansiz</string>
+    <string name="qibla_turn">Strelka Kaʼbaga qaraguncha buriling</string>
+    <string name="calibrate_hint">Kompas aniqligi past. Telefonni havoda «8» shaklida aylantiring, metall va magnitdan uzoqroq tuting.</string>
+    <string name="compass_unavailable">Bu telefonda kompas sensori yoʻq</string>
+
+    <string name="dhikr_subhanallah">Subhanalloh</string>
+    <string name="dhikr_alhamdulillah">Alhamdulilloh</string>
+    <string name="dhikr_allahuakbar">Allohu akbar</string>
+    <string name="dhikr_tahlil">La ilaha illalloh</string>
+    <string name="dhikr_istighfar">Astagʻfirulloh</string>
+    <string name="dhikr_salawat">Salovat</string>
+    <string name="tasbeh_rounds">Davra: %1$d · maqsad %2$d</string>
+    <string name="tasbeh_custom">Ixtiyoriy</string>
+    <string name="tasbeh_target">Maqsad</string>
+    <string name="tasbeh_today_total">Bugun: %1$d</string>
+    <string name="reset">Nolga</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Bekor qilish</string>
+    <string name="close">Yopish</string>
+    <string name="back">Orqaga</string>
+    <string name="delete">Oʻchirish</string>
+    <string name="next">Keyingi</string>
+    <string name="later">Keyinroq</string>
+    <string name="allow">Ruxsat berish</string>
+    <string name="off">Yoʻq</string>
+    <string name="minutes_short">%1$d daq</string>
+
+    <string name="settings">Sozlamalar</string>
+    <string name="section_location">Joylashuv</string>
+    <string name="saved_locations">Saqlangan joylar</string>
+    <string name="add_location">Joy qoʻshish</string>
+    <string name="use_gps">GPS bilan aniqlash</string>
+    <string name="gps_failed">Joylashuvni aniqlab boʻlmadi. Joylashuvni yoqing yoki shaharni qidiring.</string>
+    <string name="gps_optional">GPS ixtiyoriy — shaharni qidirib ham tanlash mumkin.</string>
+    <string name="search_city">Shahar qidirish</string>
+    <string name="section_calculation">Hisoblash</string>
+    <string name="calc_method">Hisoblash usuli</string>
+    <string name="auto_value">Avtomatik: %1$s</string>
+    <string name="asr_madhab">Asr mazhabi</string>
+    <string name="high_lat_rule">Shimoliy kengliklar qoidasi</string>
+    <string name="time_adjustments">Vaqt tuzatishlari</string>
+    <string name="time_adjustments_hint">Mahalliy masjid taqvimiga moslash uchun har bir vaqtga daqiqa qoʻshing yoki ayiring.</string>
+    <string name="hijri_adjust">Hijriy sana tuzatishi (kun)</string>
+    <string name="section_app">Ilova</string>
+    <string name="notifications">Bildirishnomalar</string>
+    <string name="language">Til</string>
+    <string name="system_default">Tizim tili</string>
+    <string name="theme">Tema</string>
+    <string name="theme_system">Tizim</string>
+    <string name="theme_light">Yorugʻ</string>
+    <string name="theme_dark">Qorongʻi</string>
+    <string name="section_about">Ilova haqida</string>
+    <string name="privacy_policy">Maxfiylik siyosati</string>
+    <string name="rate_app">Ilovani baholash</string>
+    <string name="disclaimer">Vaqtlar telefoningizda hisoblanadi. Usul va tuzatishlarni sozlamalarda oʻzgartirish mumkin. Ilova hech qanday davlat yoki diniy idoraga tegishli emas.</string>
+
+    <string name="exact_alarm_needed">Bildirishnomalar aniq vaqtda kelishi uchun «Signallar va eslatmalar» ruxsatini bering.</string>
+    <string name="remind_before">Oldindan eslatish</string>
+
+    <string name="help_notifications">Bildirishnomalar kelmayaptimi?</string>
+    <string name="help_intro">Baʼzi telefonlar batareyani tejash uchun ilovalarni fonda toʻxtatib qoʻyadi. Quyidagilarni tekshiring:</string>
+    <string name="help_battery_title">Batareya tejash</string>
+    <string name="help_battery_text">Sozlamalar → Ilovalar → Namoz vaqti → Batareya → «Cheklovsiz» ni tanlang.</string>
+    <string name="help_xiaomi_title">Xiaomi / Redmi / POCO</string>
+    <string name="help_xiaomi_text">Xavfsizlik → Ruxsatlar → Avtoishga tushirish → Namoz vaqti uchun yoqing. Keyin Sozlamalar → Ilovalar → Namoz vaqti → Batareya tejash → «Cheklovlarsiz».</string>
+    <string name="help_huawei_title">Huawei / Honor</string>
+    <string name="help_huawei_text">Sozlamalar → Batareya → Ilovalarni ishga tushirish → Namoz vaqti → qoʻlda boshqarish va barcha uchta kalitni yoqing.</string>
+    <string name="help_samsung_title">Samsung</string>
+    <string name="help_samsung_text">Sozlamalar → Batareya → Fonda foydalanish cheklovlari → Namoz vaqtini «Uxlayotgan ilovalar» roʻyxatidan olib tashlang.</string>
+    <string name="open_app_settings">Ilova sozlamalarini ochish</string>
+    <string name="open_battery_settings">Batareya sozlamalarini ochish</string>
+
+    <string name="onboarding_language_title">Tilni tanlang</string>
+    <string name="onboarding_location_title">Qayerdasiz?</string>
+    <string name="onboarding_method_title">Hisoblash usuli</string>
+    <string name="onboarding_method_hint">Davlatingizda qoʻllanadigan usul tanlandi. Uni istalgan vaqtda sozlamalarda oʻzgartirish mumkin.</string>
+    <string name="onboarding_notif_title">Namoz bildirishnomalari</string>
+    <string name="onboarding_notif_text">Har namoz vaqtida azon eshitish uchun bildirishnomalarga ruxsat bering.</string>
+    <string name="tab_prayer">Namoz</string>
+    <string name="tab_calendar">Oy</string>
+    <string name="tab_qibla">Qibla</string>
+    <string name="tab_tasbeh">Tasbeh</string>
+    <string name="tab_settings">Sozlamalar</string>
+</resources>
