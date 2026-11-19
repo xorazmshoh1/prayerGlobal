@@ -87,3 +87,37 @@ val MIGRATION_3_4 = object : Migration(3, 4) {
         db.execSQL("CREATE INDEX IF NOT EXISTS `index_review_session_date` ON `review_session` (`date`)")
     }
 }
+
+/**
+ * 4 → 5: namoz kuzatuvchisi va qazo (9-bosqich) — prayer_log, qada_counter, qada_event. Yangi jadvallar.
+ * Ustun turlari Room sxemasi bilan mos: String → TEXT NOT NULL, Int/Long → INTEGER NOT NULL.
+ */
+val MIGRATION_4_5 = object : Migration(4, 5) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `prayer_log` (" +
+                "`date` TEXT NOT NULL, " +
+                "`prayer` TEXT NOT NULL, " +
+                "`status` TEXT NOT NULL, " +
+                "`updatedAt` INTEGER NOT NULL, " +
+                "PRIMARY KEY(`date`, `prayer`))",
+        )
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `qada_counter` (" +
+                "`prayer` TEXT NOT NULL, " +
+                "`remaining` INTEGER NOT NULL, " +
+                "`initialEstimate` INTEGER NOT NULL, " +
+                "`dailyGoal` INTEGER NOT NULL, " +
+                "`updatedAt` INTEGER NOT NULL, " +
+                "PRIMARY KEY(`prayer`))",
+        )
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `qada_event` (" +
+                "`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
+                "`prayer` TEXT NOT NULL, " +
+                "`delta` INTEGER NOT NULL, " +
+                "`source` TEXT NOT NULL, " +
+                "`createdAt` INTEGER NOT NULL)",
+        )
+    }
+}

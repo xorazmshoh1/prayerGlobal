@@ -71,4 +71,36 @@
     <string name="exact_alarm_title">Уведомления могут опаздывать</string>
     <string name="exact_alarm_text">Без разрешения «Будильники и напоминания» Android может показать уведомление о намазе с опозданием до 10 минут. Разрешите, чтобы азан звучал точно вовремя.</string>
     <string name="notifications_blocked_title">Уведомления отключены</string>
+    <!-- TZ 9-bosqich -->
+    <string name="open_tracker">Трекер намаза</string>
+    <string name="tracker_title">Трекер намазов и каза</string>
+    <string name="tracker_streak">Подряд дней: %1$d</string>
+    <string name="tracker_streak_hint">День засчитывается, когда отмечены все 5 намазов.</string>
+    <string name="tracker_week_prev">Предыдущая неделя</string>
+    <string name="tracker_week_next">Следующая неделя</string>
+    <string name="tracker_state_none">Не отмечено</string>
+    <string name="tracker_state_prayed">Совершено</string>
+    <string name="tracker_state_missed">Пропущено</string>
+    <string name="tracker_qada_title">Каза</string>
+    <string name="tracker_qada_total">Всего осталось: %1$d</string>
+    <string name="tracker_qada_done">Все каза выполнены</string>
+    <string name="tracker_qada_no_goal">Задайте дневную цель, чтобы увидеть дату завершения</string>
+    <string name="tracker_qada_finish">Ожидаемое завершение: %1$s</string>
+    <string name="tracker_daily_goal">Цель в день (на каждый намаз)</string>
+    <string name="tracker_undo">Отменить последнее</string>
+    <string name="tracker_wizard_button">Оценить по датам</string>
+    <string name="tracker_qada_hint">Числа указаны для каждого намаза. Приложение не выносит фетв; точное число уточните у учёного.</string>
+    <string name="tracker_wizard_title">Оценка каза</string>
+    <string name="tracker_wizard_start">Дата начала</string>
+    <string name="tracker_wizard_end">Дата окончания</string>
+    <string name="tracker_wizard_result">%1$d дн. × %2$d намазов = %3$d каза</string>
+    <string name="tracker_wizard_invalid">Дата окончания не может быть раньше даты начала.</string>
+    <string name="tracker_wizard_disclaimer">Это приблизительная оценка, а не точное число. Уточните у учёного.</string>
+    <string name="tracker_wizard_apply">Применить</string>
+    <string name="tracker_set_title">Количество осталось</string>
+    <string name="tracker_save">Сохранить</string>
+    <string name="tracker_cancel">Отмена</string>
+    <string name="tracker_ok">ОК</string>
+    <string name="tracker_prayer_witr">Витр</string>
+    <string name="tracker_prayer_fast">Пост</string>
 </resources>

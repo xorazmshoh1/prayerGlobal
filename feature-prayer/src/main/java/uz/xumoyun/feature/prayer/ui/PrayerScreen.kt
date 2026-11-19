@@ -21,6 +21,7 @@ import androidx.compose.material.icons.rounded.LocationOn
 import androidx.compose.material.icons.rounded.Notifications
 import androidx.compose.material.icons.rounded.NotificationsActive
 import androidx.compose.material.icons.rounded.NotificationsOff
+import androidx.compose.material.icons.rounded.Checklist
 import androidx.compose.material.icons.rounded.Settings
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Card
@@ -78,6 +79,7 @@ fun PrayerRoute(
     onPickLocation: () -> Unit,
     onRamadan: () -> Unit = {},
     onSettings: () -> Unit = {},
+    onTracker: () -> Unit = {},
     viewModel: PrayerViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
@@ -105,6 +107,7 @@ fun PrayerRoute(
                 onCityClick = onPickLocation,
                 onRamadan = onRamadan,
                 onSettings = onSettings,
+                onTracker = onTracker,
                 banner = {
                     if (showExact) {
                         ExactAlarmCard(
@@ -137,6 +140,7 @@ fun PrayerContent(
     onCityClick: () -> Unit,
     onRamadan: () -> Unit = {},
     onSettings: () -> Unit = {},
+    onTracker: () -> Unit = {},
     banner: @Composable () -> Unit = {},
 ) {
     val context = LocalContext.current
@@ -155,6 +159,7 @@ fun PrayerContent(
             Spacer(Modifier.weight(1f))
             // Ramazon menyusi va sozlamalar (TZ 1 va 6-bo'limlar).
             IconButton(onClick = onRamadan) { Icon(Icons.Rounded.DarkMode, stringResource(R.string.open_ramadan)) }
+            IconButton(onClick = onTracker) { Icon(Icons.Rounded.Checklist, stringResource(R.string.open_tracker)) }
             IconButton(onClick = onSettings) { Icon(Icons.Rounded.Settings, stringResource(R.string.open_settings)) }
         }
         Text(

@@ -48,6 +48,8 @@ import uz.xumoyun.namoz.ui.calendar.CalendarRoute
 import uz.xumoyun.namoz.ui.onboarding.OnboardingRoute
 import uz.xumoyun.feature.qibla.ui.QiblaRoute
 import uz.xumoyun.namoz.ui.settings.HelpScreen
+import uz.xumoyun.namoz.ui.settings.LicensesScreen
+import uz.xumoyun.feature.prayer.tracker.ui.TrackerRoute
 import uz.xumoyun.namoz.ui.settings.SettingsRoute
 import uz.xumoyun.namoz.ui.settings.SettingsViewModel
 import uz.xumoyun.feature.tasbih.ui.TasbihRoute
@@ -68,6 +70,10 @@ private object Routes {
     const val LOCATIONS = "locations"
     const val NOTIFICATIONS = "notifications"
     const val HELP = "help"
+    /** TZ 9: namoz kuzatuvchisi va qazo (Namoz tabidan). */
+    const val TRACKER = "tracker"
+    /** TZ 12: Litsenziyalar va manbalar (Sozlamalardan). */
+    const val LICENSES = "licenses"
 }
 
 @Composable
@@ -117,6 +123,7 @@ fun NamozRoot(startWithOnboarding: Boolean) {
                     onPickLocation = { nav.navigate(Routes.LOCATIONS) },
                     onRamadan = { nav.navigate(RamadanRoutes.GRAPH) },
                     onSettings = { nav.navigate(Routes.SETTINGS) },
+                    onTracker = { nav.navigate(Routes.TRACKER) },
                 )
             }
             composable(Tab.HIFZ.route) {
@@ -147,11 +154,14 @@ fun NamozRoot(startWithOnboarding: Boolean) {
                     onLocations = { nav.navigate(Routes.LOCATIONS) },
                     onNotifications = { nav.navigate(Routes.NOTIFICATIONS) },
                     onHelp = { nav.navigate(Routes.HELP) },
+                    onLicenses = { nav.navigate(Routes.LICENSES) },
                 )
             }
             composable(Routes.LOCATIONS) { LocationsScreen(onPicked = { nav.popBackStack() }) }
             composable(Routes.NOTIFICATIONS) { NotificationSettingsRoute() }
             composable(Routes.HELP) { HelpScreen() }
+            composable(Routes.TRACKER) { TrackerRoute() }
+            composable(Routes.LICENSES) { LicensesScreen() }
         }
     }
 }
@@ -164,6 +174,8 @@ private fun SubScreenBar(route: String?, nav: NavHostController) {
         Routes.LOCATIONS -> uz.xumoyun.feature.prayer.R.string.saved_locations
         Routes.NOTIFICATIONS -> R.string.notifications
         Routes.HELP -> R.string.help_notifications
+        Routes.TRACKER -> uz.xumoyun.feature.prayer.R.string.tracker_title
+        Routes.LICENSES -> R.string.licenses_title
         else -> return
     }
     TopAppBar(

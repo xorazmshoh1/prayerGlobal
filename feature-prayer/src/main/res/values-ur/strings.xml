@@ -71,4 +71,36 @@
     <string name="exact_alarm_title">اطلاعات تاخیر سے آ سکتی ہیں</string>
     <string name="exact_alarm_text">«الارم اور یاد دہانیاں» کی اجازت کے بغیر اینڈرائیڈ نماز کی اطلاع 10 منٹ تک دیر سے دکھا سکتا ہے۔ اذان بالکل وقت پر آنے کے لیے اجازت دیں۔</string>
     <string name="notifications_blocked_title">اطلاعات بند ہیں</string>
+    <!-- TZ 9-bosqich -->
+    <string name="open_tracker">نماز ٹریکر</string>
+    <string name="tracker_title">نماز ٹریکر اور قضا</string>
+    <string name="tracker_streak">مسلسل دن: %1$d</string>
+    <string name="tracker_streak_hint">جب پانچوں نمازیں نشان زد ہوں تو دن مکمل شمار ہوتا ہے۔</string>
+    <string name="tracker_week_prev">پچھلا ہفتہ</string>
+    <string name="tracker_week_next">اگلا ہفتہ</string>
+    <string name="tracker_state_none">نشان زد نہیں</string>
+    <string name="tracker_state_prayed">ادا کی</string>
+    <string name="tracker_state_missed">رہ گئی</string>
+    <string name="tracker_qada_title">قضا</string>
+    <string name="tracker_qada_total">کل باقی: %1$d</string>
+    <string name="tracker_qada_done">تمام قضا نمازیں ادا ہو گئیں</string>
+    <string name="tracker_qada_no_goal">ختم کی تاریخ دیکھنے کے لیے روزانہ ہدف مقرر کریں</string>
+    <string name="tracker_qada_finish">متوقع ختم: %1$s</string>
+    <string name="tracker_daily_goal">روزانہ ہدف (ہر نماز کے لیے)</string>
+    <string name="tracker_undo">آخری تبدیلی واپس کریں</string>
+    <string name="tracker_wizard_button">تاریخوں سے اندازہ</string>
+    <string name="tracker_qada_hint">یہ تعداد ہر نماز کے لیے ہے۔ ایپ فتویٰ نہیں دیتی؛ درست تعداد کے لیے عالم سے پوچھیں۔</string>
+    <string name="tracker_wizard_title">قضا کا اندازہ</string>
+    <string name="tracker_wizard_start">آغاز کی تاریخ</string>
+    <string name="tracker_wizard_end">اختتام کی تاریخ</string>
+    <string name="tracker_wizard_result">%1$d دن × %2$d نمازیں = %3$d قضا</string>
+    <string name="tracker_wizard_invalid">اختتام کی تاریخ آغاز سے پہلے نہیں ہو سکتی۔</string>
+    <string name="tracker_wizard_disclaimer">یہ اندازہ ہے، درست تعداد نہیں۔ درست تعداد کے لیے عالم سے پوچھیں۔</string>
+    <string name="tracker_wizard_apply">لاگو کریں</string>
+    <string name="tracker_set_title">باقی تعداد</string>
+    <string name="tracker_save">محفوظ کریں</string>
+    <string name="tracker_cancel">منسوخ</string>
+    <string name="tracker_ok">ٹھیک ہے</string>
+    <string name="tracker_prayer_witr">وتر</string>
+    <string name="tracker_prayer_fast">روزہ</string>
 </resources>

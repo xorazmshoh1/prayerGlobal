@@ -71,4 +71,36 @@
     <string name="exact_alarm_title">Bildirimler gecikebilir</string>
     <string name="exact_alarm_text">\"Alarmlar ve hatırlatıcılar\" izni olmadan Android namaz bildirimini 10 dakikaya kadar geç gösterebilir. Ezanın tam vaktinde gelmesi için izin verin.</string>
     <string name="notifications_blocked_title">Bildirimler kapalı</string>
+    <!-- TZ 9-bosqich -->
+    <string name="open_tracker">Namaz takibi</string>
+    <string name="tracker_title">Namaz takibi ve kaza</string>
+    <string name="tracker_streak">Art arda gün: %1$d</string>
+    <string name="tracker_streak_hint">Beş vaktin tamamı işaretlendiğinde gün tamamlanmış sayılır.</string>
+    <string name="tracker_week_prev">Önceki hafta</string>
+    <string name="tracker_week_next">Sonraki hafta</string>
+    <string name="tracker_state_none">İşaretlenmedi</string>
+    <string name="tracker_state_prayed">Kılındı</string>
+    <string name="tracker_state_missed">Kılınmadı</string>
+    <string name="tracker_qada_title">Kaza</string>
+    <string name="tracker_qada_total">Toplam kalan: %1$d</string>
+    <string name="tracker_qada_done">Tüm kazalar tamamlandı</string>
+    <string name="tracker_qada_no_goal">Bitiş tarihini görmek için günlük hedef belirleyin</string>
+    <string name="tracker_qada_finish">Tahmini bitiş: %1$s</string>
+    <string name="tracker_daily_goal">Günlük hedef (vakit başına)</string>
+    <string name="tracker_undo">Son değişikliği geri al</string>
+    <string name="tracker_wizard_button">Tarihlerden tahmin</string>
+    <string name="tracker_qada_hint">Sayılar her vakit içindir. Uygulama fetva vermez; kesin sayı için bir alime danışın.</string>
+    <string name="tracker_wizard_title">Kazayı tahmin et</string>
+    <string name="tracker_wizard_start">Başlangıç tarihi</string>
+    <string name="tracker_wizard_end">Bitiş tarihi</string>
+    <string name="tracker_wizard_result">%1$d gün × %2$d vakit = %3$d kaza</string>
+    <string name="tracker_wizard_invalid">Bitiş tarihi başlangıç tarihinden önce olamaz.</string>
+    <string name="tracker_wizard_disclaimer">Bu bir tahmindir, kesin sayı değildir. Kesin sayı için bir alime danışın.</string>
+    <string name="tracker_wizard_apply">Uygula</string>
+    <string name="tracker_set_title">Kalan sayı</string>
+    <string name="tracker_save">Kaydet</string>
+    <string name="tracker_cancel">İptal</string>
+    <string name="tracker_ok">Tamam</string>
+    <string name="tracker_prayer_witr">Vitir</string>
+    <string name="tracker_prayer_fast">Oruç</string>
 </resources>

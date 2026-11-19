@@ -16,8 +16,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.NotificationsActive
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.LinearProgressIndicator
@@ -36,7 +34,6 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import uz.xumoyun.core.ui.AppLocale
 import uz.xumoyun.core.ui.components.ChoiceRow
-import uz.xumoyun.core.ui.components.EmptyState
 import uz.xumoyun.namoz.R
 import uz.xumoyun.namoz.ui.NamozPreview
 import uz.xumoyun.namoz.ui.SupportedLanguages
@@ -45,7 +42,10 @@ import uz.xumoyun.feature.prayer.ui.methodName
 import uz.xumoyun.feature.prayer.ui.LocationsScreen
 import uz.xumoyun.namoz.ui.settings.SettingsViewModel
 
-/** Onboarding: til → joylashuv → avtomatik tanlangan usul → bildirishnoma ruxsati. */
+/**
+ * Onboarding (TZ 6-bo'lim, ekran 1 — 3 qadam): 1) til, 2) joylashuv (GPS yoki shahar qidirish),
+ * 3) hisoblash usulini tasdiqlash va bildirishnoma ruxsati.
+ */
 @Composable
 fun OnboardingRoute(viewModel: SettingsViewModel, onFinished: () -> Unit) {
     var step by rememberSaveable { mutableIntStateOf(0) }
@@ -55,7 +55,7 @@ fun OnboardingRoute(viewModel: SettingsViewModel, onFinished: () -> Unit) {
     }
 
     Column(Modifier.fillMaxSize().statusBarsPadding()) {
-        LinearProgressIndicator(progress = { (step + 1) / 4f }, modifier = Modifier.fillMaxWidth().padding(16.dp))
+        LinearProgressIndicator(progress = { (step + 1) / ONBOARDING_STEPS.toFloat() }, modifier = Modifier.fillMaxWidth().padding(16.dp))
         Box(Modifier.weight(1f)) {
             when (step) {
                 0 -> LanguageStep(current = AppLocale.current()) { tag ->
@@ -66,7 +66,7 @@ fun OnboardingRoute(viewModel: SettingsViewModel, onFinished: () -> Unit) {
                     Text(stringResource(R.string.onboarding_location_title), style = MaterialTheme.typography.headlineSmall, modifier = Modifier.padding(horizontal = 16.dp))
                     LocationsScreen(showSaved = false, onPicked = { step = 2 })
                 }
-                2 -> {
+                else -> {
                     val c = state.config
                     Column(Modifier.padding(16.dp).verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                         Text(stringResource(R.string.onboarding_method_title), style = MaterialTheme.typography.headlineSmall)
@@ -80,28 +80,26 @@ fun OnboardingRoute(viewModel: SettingsViewModel, onFinished: () -> Unit) {
                             }
                             Text(stringResource(R.string.onboarding_method_hint), style = MaterialTheme.typography.bodyMedium)
                         }
-                        Button(onClick = { step = 3 }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)) { Text(stringResource(R.string.next)) }
-                    }
-                }
-                else -> Column(Modifier.padding(16.dp)) {
-                    EmptyState(
-                        icon = Icons.Rounded.NotificationsActive,
-                        title = stringResource(R.string.onboarding_notif_title),
-                        message = stringResource(R.string.onboarding_notif_text),
-                        actionLabel = stringResource(R.string.allow),
-                        onAction = {
-                            if (Build.VERSION.SDK_INT >= 33) notifPermission.launch(Manifest.permission.POST_NOTIFICATIONS)
-                            else { viewModel.finishOnboarding(); onFinished() }
-                        },
-                    )
-                    TextButton(onClick = { viewModel.finishOnboarding(); onFinished() }, modifier = Modifier.fillMaxWidth()) {
-                        Text(stringResource(R.string.later))
+                        Text(stringResource(R.string.onboarding_notif_title), style = MaterialTheme.typography.titleMedium)
+                        Text(stringResource(R.string.onboarding_notif_text), style = MaterialTheme.typography.bodyMedium)
+                        Button(
+                            onClick = {
+                                if (Build.VERSION.SDK_INT >= 33) notifPermission.launch(Manifest.permission.POST_NOTIFICATIONS)
+                                else { viewModel.finishOnboarding(); onFinished() }
+                            },
+                            modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp),
+                        ) { Text(stringResource(R.string.allow)) }
+                        TextButton(onClick = { viewModel.finishOnboarding(); onFinished() }, modifier = Modifier.fillMaxWidth()) {
+                            Text(stringResource(R.string.later))
+                        }
                     }
                 }
             }
         }
     }
 }
+
+private const val ONBOARDING_STEPS = 3
 
 @Composable
 fun LanguageStep(current: String?, onPick: (String?) -> Unit) {

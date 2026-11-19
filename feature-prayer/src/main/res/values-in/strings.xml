@@ -71,4 +71,36 @@
     <string name="exact_alarm_title">Notifikasi bisa terlambat</string>
     <string name="exact_alarm_text">Tanpa izin \"Alarm &amp; pengingat\", Android dapat menampilkan notifikasi sholat hingga 10 menit terlambat. Izinkan agar adzan tiba tepat waktu.</string>
     <string name="notifications_blocked_title">Notifikasi nonaktif</string>
+    <!-- TZ 9-bosqich -->
+    <string name="open_tracker">Pelacak shalat</string>
+    <string name="tracker_title">Pelacak shalat &amp; qadha</string>
+    <string name="tracker_streak">Berturut-turut: %1$d hari</string>
+    <string name="tracker_streak_hint">Satu hari dihitung jika kelima shalat sudah ditandai.</string>
+    <string name="tracker_week_prev">Minggu sebelumnya</string>
+    <string name="tracker_week_next">Minggu berikutnya</string>
+    <string name="tracker_state_none">Belum ditandai</string>
+    <string name="tracker_state_prayed">Dilaksanakan</string>
+    <string name="tracker_state_missed">Terlewat</string>
+    <string name="tracker_qada_title">Qadha</string>
+    <string name="tracker_qada_total">Total tersisa: %1$d</string>
+    <string name="tracker_qada_done">Semua qadha telah dilunasi</string>
+    <string name="tracker_qada_no_goal">Atur target harian untuk melihat tanggal selesai</string>
+    <string name="tracker_qada_finish">Perkiraan selesai: %1$s</string>
+    <string name="tracker_daily_goal">Target harian (per shalat)</string>
+    <string name="tracker_undo">Batalkan perubahan terakhir</string>
+    <string name="tracker_wizard_button">Perkirakan dari tanggal</string>
+    <string name="tracker_qada_hint">Angka berlaku untuk setiap shalat. Aplikasi tidak mengeluarkan fatwa; tanyakan jumlah pasti kepada ulama.</string>
+    <string name="tracker_wizard_title">Perkiraan qadha</string>
+    <string name="tracker_wizard_start">Tanggal mulai</string>
+    <string name="tracker_wizard_end">Tanggal selesai</string>
+    <string name="tracker_wizard_result">%1$d hari × %2$d shalat = %3$d qadha</string>
+    <string name="tracker_wizard_invalid">Tanggal selesai tidak boleh sebelum tanggal mulai.</string>
+    <string name="tracker_wizard_disclaimer">Ini perkiraan, bukan angka pasti. Tanyakan jumlah pastinya kepada ulama.</string>
+    <string name="tracker_wizard_apply">Terapkan</string>
+    <string name="tracker_set_title">Jumlah tersisa</string>
+    <string name="tracker_save">Simpan</string>
+    <string name="tracker_cancel">Batal</string>
+    <string name="tracker_ok">OK</string>
+    <string name="tracker_prayer_witr">Witir</string>
+    <string name="tracker_prayer_fast">Puasa</string>
 </resources>

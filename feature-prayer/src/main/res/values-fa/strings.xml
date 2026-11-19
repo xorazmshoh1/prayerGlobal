@@ -71,4 +71,36 @@
     <string name="exact_alarm_title">ممکن است اعلان‌ها با تأخیر برسند</string>
     <string name="exact_alarm_text">بدون اجازه «زنگ‌ها و یادآوری‌ها» ممکن است اندروید اعلان نماز را تا ۱۰ دقیقه دیرتر نشان دهد. اجازه دهید تا اذان دقیقاً سر وقت برسد.</string>
     <string name="notifications_blocked_title">اعلان‌ها خاموش است</string>
+    <!-- TZ 9-bosqich -->
+    <string name="open_tracker">پیگیری نماز</string>
+    <string name="tracker_title">پیگیری نماز و قضا</string>
+    <string name="tracker_streak">روزهای پیاپی: %1$d</string>
+    <string name="tracker_streak_hint">وقتی پنج نماز ثبت شود، روز کامل به حساب می‌آید.</string>
+    <string name="tracker_week_prev">هفته قبل</string>
+    <string name="tracker_week_next">هفته بعد</string>
+    <string name="tracker_state_none">ثبت نشده</string>
+    <string name="tracker_state_prayed">خوانده شد</string>
+    <string name="tracker_state_missed">قضا شد</string>
+    <string name="tracker_qada_title">قضا</string>
+    <string name="tracker_qada_total">مجموع باقی‌مانده: %1$d</string>
+    <string name="tracker_qada_done">همه قضاها ادا شد</string>
+    <string name="tracker_qada_no_goal">برای دیدن تاریخ پایان، هدف روزانه تعیین کنید</string>
+    <string name="tracker_qada_finish">پایان پیش‌بینی‌شده: %1$s</string>
+    <string name="tracker_daily_goal">هدف روزانه (هر نماز)</string>
+    <string name="tracker_undo">بازگرداندن آخرین تغییر</string>
+    <string name="tracker_wizard_button">تخمین از روی تاریخ</string>
+    <string name="tracker_qada_hint">اعداد برای هر نماز است. برنامه فتوا نمی‌دهد؛ عدد دقیق را از عالم بپرسید.</string>
+    <string name="tracker_wizard_title">تخمین قضا</string>
+    <string name="tracker_wizard_start">تاریخ شروع</string>
+    <string name="tracker_wizard_end">تاریخ پایان</string>
+    <string name="tracker_wizard_result">%1$d روز × %2$d نماز = %3$d قضا</string>
+    <string name="tracker_wizard_invalid">تاریخ پایان نمی‌تواند قبل از تاریخ شروع باشد.</string>
+    <string name="tracker_wizard_disclaimer">این تخمین است، نه عدد دقیق. عدد دقیق را از عالم بپرسید.</string>
+    <string name="tracker_wizard_apply">اعمال</string>
+    <string name="tracker_set_title">تعداد باقی‌مانده</string>
+    <string name="tracker_save">ذخیره</string>
+    <string name="tracker_cancel">لغو</string>
+    <string name="tracker_ok">تأیید</string>
+    <string name="tracker_prayer_witr">وتر</string>
+    <string name="tracker_prayer_fast">روزه</string>
 </resources>

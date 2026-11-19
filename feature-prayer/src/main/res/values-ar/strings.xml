@@ -71,4 +71,36 @@
     <string name="exact_alarm_title">قد تتأخر الإشعارات</string>
     <string name="exact_alarm_text">بدون إذن «المنبهات والتذكيرات» قد يعرض أندرويد إشعار الصلاة متأخرًا حتى 10 دقائق. اسمح به ليصل الأذان في وقته تمامًا.</string>
     <string name="notifications_blocked_title">الإشعارات متوقفة</string>
+    <!-- TZ 9-bosqich -->
+    <string name="open_tracker">متابعة الصلاة</string>
+    <string name="tracker_title">متابعة الصلاة والقضاء</string>
+    <string name="tracker_streak">أيام متتالية: %1$d</string>
+    <string name="tracker_streak_hint">يُحسب اليوم كاملاً عند تسجيل الصلوات الخمس كلها.</string>
+    <string name="tracker_week_prev">الأسبوع السابق</string>
+    <string name="tracker_week_next">الأسبوع التالي</string>
+    <string name="tracker_state_none">غير مسجّلة</string>
+    <string name="tracker_state_prayed">صُلّيت</string>
+    <string name="tracker_state_missed">فاتت</string>
+    <string name="tracker_qada_title">القضاء</string>
+    <string name="tracker_qada_total">المجموع المتبقي: %1$d</string>
+    <string name="tracker_qada_done">تم قضاء جميع الصلوات</string>
+    <string name="tracker_qada_no_goal">حدّد هدفاً يومياً لرؤية تاريخ الانتهاء</string>
+    <string name="tracker_qada_finish">الانتهاء المتوقع: %1$s</string>
+    <string name="tracker_daily_goal">الهدف اليومي (لكل صلاة)</string>
+    <string name="tracker_undo">التراجع عن آخر تغيير</string>
+    <string name="tracker_wizard_button">تقدير من التواريخ</string>
+    <string name="tracker_qada_hint">الأعداد لكل صلاة. التطبيق لا يصدر فتاوى؛ اسأل عالماً عن العدد الدقيق.</string>
+    <string name="tracker_wizard_title">تقدير القضاء</string>
+    <string name="tracker_wizard_start">تاريخ البداية</string>
+    <string name="tracker_wizard_end">تاريخ النهاية</string>
+    <string name="tracker_wizard_result">%1$d يومًا × %2$d صلوات = %3$d صلاة</string>
+    <string name="tracker_wizard_invalid">يجب ألا يكون تاريخ النهاية قبل تاريخ البداية.</string>
+    <string name="tracker_wizard_disclaimer">هذا تقدير وليس عدداً دقيقاً. اسأل عالماً عن العدد الدقيق.</string>
+    <string name="tracker_wizard_apply">تطبيق</string>
+    <string name="tracker_set_title">عدد المتبقي</string>
+    <string name="tracker_save">حفظ</string>
+    <string name="tracker_cancel">إلغاء</string>
+    <string name="tracker_ok">موافق</string>
+    <string name="tracker_prayer_witr">الوتر</string>
+    <string name="tracker_prayer_fast">الصيام</string>
 </resources>
