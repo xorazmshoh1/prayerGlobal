@@ -104,4 +104,10 @@
     <string name="backup_err_newer">Bu zaxira ilovaning yangiroq versiyasida yaratilgan. Avval ilovani yangilang.</string>
     <string name="backup_err_invalid">Zaxira fayli buzilgan yoki to\'liq emas. Hech narsa o\'zgarmadi.</string>
     <string name="backup_err_io">Faylni o\'qib yoki yozib bo\'lmadi.</string>
+    <string name="shortcut_ramadan_short">Ramazon</string>
+    <string name="shortcut_ramadan_long">Ramazon menyusi</string>
+    <string name="share_app">Ilovani ulashish</string>
+    <string name="share_app_text">Namoz va Hifz: namoz vaqtlari, qibla, Qur\'on yodlash va Ramazon. Reklamasiz va internetsiz. %s</string>
+    <string name="other_apps">Boshqa ilovalarimiz</string>
+    <string name="other_apps_empty">Tez kunda.</string>
 </resources>

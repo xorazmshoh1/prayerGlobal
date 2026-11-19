@@ -106,7 +106,9 @@ object TimeFormat {
         return DateTimeFormatter.ofPattern(pattern, locale).withDecimalStyle(DecimalStyle.of(locale))
     }
 
-    fun format(context: Context, time: ZonedDateTime): String = formatter(context).format(time)
+    /** Raqamlar locale bo'yicha (TZ 9): ar — arab-hind, fa/ur — fors raqamlari. */
+    fun format(context: Context, time: ZonedDateTime): String =
+        uz.xumoyun.core.common.text.LocalDigits.forLanguage(currentLocale(context).language)(formatter(context).format(time))
 
     fun currentLocale(context: Context): Locale = context.resources.configuration.locales[0]
 }

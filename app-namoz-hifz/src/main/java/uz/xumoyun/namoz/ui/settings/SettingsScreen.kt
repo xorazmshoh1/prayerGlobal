@@ -51,6 +51,8 @@ import uz.xumoyun.core.data.CommonSettings
 import uz.xumoyun.core.ui.AppLocale
 import uz.xumoyun.core.ui.components.ChoiceRow
 import uz.xumoyun.core.ui.components.SectionTitle
+import androidx.compose.material.icons.rounded.Share
+import androidx.compose.material.icons.rounded.Apps
 import uz.xumoyun.core.ui.components.SettingsRow
 import uz.xumoyun.core.ui.theme.TabularNumbers
 import uz.xumoyun.namoz.R
@@ -74,8 +76,10 @@ fun SettingsRoute(
     onNotifications: () -> Unit,
     onHelp: () -> Unit,
     onLicenses: () -> Unit = {},
+    onOtherApps: () -> Unit = {},
     backup: BackupViewModel = hiltViewModel(),
 ) {
+    val context = androidx.compose.ui.platform.LocalContext.current
     val state by viewModel.state.collectAsStateWithLifecycle()
     val config = state.config
     val context = LocalContext.current
@@ -150,6 +154,10 @@ fun SettingsRoute(
         )
 
         SectionTitle(stringResource(R.string.section_about))
+        SettingsRow(stringResource(R.string.share_app), icon = Icons.Rounded.Share, onClick = { shareApp(context) })
+        if (OtherApps.ALL.isNotEmpty()) {
+            SettingsRow(stringResource(R.string.other_apps), icon = Icons.Rounded.Apps, onClick = onOtherApps)
+        }
         SettingsRow(stringResource(R.string.licenses_title), icon = Icons.Rounded.Info, onClick = onLicenses)
         SettingsRow(stringResource(R.string.privacy_policy), icon = Icons.Rounded.Policy, onClick = {
             openUrl(context, context.getString(R.string.privacy_policy_url))

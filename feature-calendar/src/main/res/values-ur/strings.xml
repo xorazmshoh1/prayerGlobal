@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calendar_previous_month">پچھلا مہینہ</string>
+    <string name="calendar_next_month">اگلا مہینہ</string>
+    <string name="islamic_events_title">اسلامی تاریخیں</string>
+    <string name="ramadan_menu_open">رمضان مینو</string>
+    <string name="calendar_mode_grid">کیلنڈر</string>
+    <string name="calendar_mode_timetable">نماز کا جدول</string>
+    <string name="calendar_primary_hijri">پہلے ہجری</string>
+    <string name="calendar_primary_gregorian">پہلے عیسوی</string>
+    <string name="calendar_cell_hijri">ہجری دن %d</string>
+    <string name="calendar_cell_gregorian">دن %d</string>
+    <string name="calendar_no_events_this_month">اس مہینے میں کوئی اسلامی تاریخ نہیں</string>
+    <string name="calendar_day">دن</string>
+    <string name="calendar_no_location">نماز کا جدول دیکھنے کے لیے نماز ٹیب میں شہر منتخب کریں۔</string>
+    <string name="calendar_official_check">اپنے ملک کے سرکاری اعلان سے موازنہ کریں۔ ہجری تاریخیں ایک دن مختلف ہو سکتی ہیں۔</string>
+    <string name="converter_title">تاریخ کنورٹر</string>
+    <string name="converter_from_gregorian">تاریخ منتخب کریں</string>
+    <string name="converter_clear">صاف کریں</string>
+    <string name="converter_day">دن</string>
+    <string name="converter_month">مہینہ</string>
+    <string name="converter_year">سال</string>
+    <string name="converter_from_hijri">ہجری سے عیسوی</string>
+    <string name="converter_invalid">یہ ہجری تاریخ درست نہیں ہے۔</string>
+    <string name="converter_result">%1$s ہجری %2$d %3$s %4$d</string>
+    <string name="converter_ok">ٹھیک ہے</string>
+    <string name="converter_cancel">منسوخ کریں</string>
+    <string name="channel_islamic_events">اسلامی تاریخیں</string>
+    <string name="islamic_reminder_title">کل اسلامی تاریخ</string>
+    <string name="islamic_reminder_text">کل: %s</string>
+    <string name="islamic_events_hint">تاریخیں آن یا آف کریں۔ دن سے ایک روز پہلے صبح 09:00 بجے یاد دہانی آئے گی۔</string>
+    <string name="islamic_remind_day_before">ایک دن پہلے یاد دلائیں</string>
+    <string name="event_muharram_1">اسلامی نیا سال (یکم محرم)</string>
+    <string name="event_ashura">یومِ عاشورا (10 محرم)</string>
+    <string name="event_rajab_27">شب معراج (27 رجب)</string>
+    <string name="event_shaban_15">شب برات (15 شعبان)</string>
+    <string name="event_ramadan_1">رمضان کا پہلا دن</string>
+    <string name="event_laylat_al_qadr">شب قدر (27 رمضان)</string>
+    <string name="event_eid_al_fitr">عید الفطر (یکم شوال)</string>
+    <string name="event_arafa">یومِ عرفہ (9 ذوالحجہ)</string>
+    <string name="event_eid_al_adha">عید الاضحیٰ (10 ذوالحجہ)</string>
+    <string-array name="hijri_months">
+        <item>محرم</item>
+        <item>صفر</item>
+        <item>ربیع الاول</item>
+        <item>ربیع الثانی</item>
+        <item>جمادی الاولیٰ</item>
+        <item>جمادی الثانیہ</item>
+        <item>رجب</item>
+        <item>شعبان</item>
+        <item>رمضان</item>
+        <item>شوال</item>
+        <item>ذوالقعدہ</item>
+        <item>ذوالحجہ</item>
+    </string-array>
+</resources>

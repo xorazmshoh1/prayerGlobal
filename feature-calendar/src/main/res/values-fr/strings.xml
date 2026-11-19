@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calendar_previous_month">Mois précédent</string>
+    <string name="calendar_next_month">Mois suivant</string>
+    <string name="islamic_events_title">Dates islamiques</string>
+    <string name="ramadan_menu_open">Menu Ramadan</string>
+    <string name="calendar_mode_grid">Calendrier</string>
+    <string name="calendar_mode_timetable">Horaires de prière</string>
+    <string name="calendar_primary_hijri">Hégire d\'abord</string>
+    <string name="calendar_primary_gregorian">Grégorien d\'abord</string>
+    <string name="calendar_cell_hijri">Jour hégirien %d</string>
+    <string name="calendar_cell_gregorian">Jour %d</string>
+    <string name="calendar_no_events_this_month">Aucune date islamique ce mois-ci</string>
+    <string name="calendar_day">Jour</string>
+    <string name="calendar_no_location">Choisissez une ville dans l\'onglet Prière pour voir les horaires.</string>
+    <string name="calendar_official_check">Vérifiez avec l\'annonce officielle de votre pays. Les dates hégiriennes peuvent différer d\'un jour.</string>
+    <string name="converter_title">Convertisseur de dates</string>
+    <string name="converter_from_gregorian">Choisir une date</string>
+    <string name="converter_clear">Effacer</string>
+    <string name="converter_day">Jour</string>
+    <string name="converter_month">Mois</string>
+    <string name="converter_year">Année</string>
+    <string name="converter_from_hijri">De l\'hégire au grégorien</string>
+    <string name="converter_invalid">Cette date hégirienne n\'est pas valide.</string>
+    <string name="converter_result">%1$s correspond au %2$d %3$s %4$d (hégirien)</string>
+    <string name="converter_ok">OK</string>
+    <string name="converter_cancel">Annuler</string>
+    <string name="channel_islamic_events">Dates islamiques</string>
+    <string name="islamic_reminder_title">Date islamique demain</string>
+    <string name="islamic_reminder_text">Demain : %s</string>
+    <string name="islamic_events_hint">Activez ou désactivez les dates. Un rappel s\'affiche à 9 h la veille.</string>
+    <string name="islamic_remind_day_before">Rappeler la veille</string>
+    <string name="event_muharram_1">Nouvel an hégirien (1er Muharram)</string>
+    <string name="event_ashura">Achoura (10 Muharram)</string>
+    <string name="event_rajab_27">Isra et Mi\'raj (27 Rajab)</string>
+    <string name="event_shaban_15">Nuit de la mi-Sha\'ban (15 Sha\'ban)</string>
+    <string name="event_ramadan_1">Premier jour du Ramadan</string>
+    <string name="event_laylat_al_qadr">Nuit du Destin (27 Ramadan)</string>
+    <string name="event_eid_al_fitr">Aïd al-Fitr (1er Chawwal)</string>
+    <string name="event_arafa">Jour d\'Arafat (9 Dhou al-Hijja)</string>
+    <string name="event_eid_al_adha">Aïd al-Adha (10 Dhou al-Hijja)</string>
+    <string-array name="hijri_months">
+        <item>Mouharram</item>
+        <item>Safar</item>
+        <item>Rabi al-awwal</item>
+        <item>Rabi ath-thani</item>
+        <item>Joumada al-oula</item>
+        <item>Joumada ath-thania</item>
+        <item>Rajab</item>
+        <item>Chaabane</item>
+        <item>Ramadan</item>
+        <item>Chawwal</item>
+        <item>Dhou al-qida</item>
+        <item>Dhou al-hijja</item>
+    </string-array>
+</resources>

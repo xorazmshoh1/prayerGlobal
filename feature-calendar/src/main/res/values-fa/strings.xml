@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calendar_previous_month">ماه قبل</string>
+    <string name="calendar_next_month">ماه بعد</string>
+    <string name="islamic_events_title">تاریخ‌های اسلامی</string>
+    <string name="ramadan_menu_open">منوی رمضان</string>
+    <string name="calendar_mode_grid">تقویم</string>
+    <string name="calendar_mode_timetable">جدول نماز</string>
+    <string name="calendar_primary_hijri">اول هجری</string>
+    <string name="calendar_primary_gregorian">اول میلادی</string>
+    <string name="calendar_cell_hijri">روز هجری %d</string>
+    <string name="calendar_cell_gregorian">روز %d</string>
+    <string name="calendar_no_events_this_month">این ماه تاریخ اسلامی ندارد</string>
+    <string name="calendar_day">روز</string>
+    <string name="calendar_no_location">برای دیدن جدول، در برگه نماز شهری انتخاب کنید.</string>
+    <string name="calendar_official_check">آن را با اعلام رسمی کشورتان مقایسه کنید. تاریخ‌های هجری ممکن است یک روز متفاوت باشد.</string>
+    <string name="converter_title">مبدل تاریخ</string>
+    <string name="converter_from_gregorian">انتخاب تاریخ</string>
+    <string name="converter_clear">پاک کردن</string>
+    <string name="converter_day">روز</string>
+    <string name="converter_month">ماه</string>
+    <string name="converter_year">سال</string>
+    <string name="converter_from_hijri">از هجری به میلادی</string>
+    <string name="converter_invalid">این تاریخ هجری معتبر نیست.</string>
+    <string name="converter_result">%1$s برابر است با %2$d %3$s %4$d هجری</string>
+    <string name="converter_ok">تأیید</string>
+    <string name="converter_cancel">لغو</string>
+    <string name="channel_islamic_events">تاریخ‌های اسلامی</string>
+    <string name="islamic_reminder_title">فردا تاریخ اسلامی است</string>
+    <string name="islamic_reminder_text">فردا: %s</string>
+    <string name="islamic_events_hint">تاریخ‌ها را روشن یا خاموش کنید. یادآوری یک روز قبل ساعت ۰۹:۰۰ نشان داده می‌شود.</string>
+    <string name="islamic_remind_day_before">یک روز قبل یادآوری شود</string>
+    <string name="event_muharram_1">سال نو هجری (۱ محرم)</string>
+    <string name="event_ashura">عاشورا (۱۰ محرم)</string>
+    <string name="event_rajab_27">معراج (۲۷ رجب)</string>
+    <string name="event_shaban_15">شب نیمه شعبان (۱۵ شعبان)</string>
+    <string name="event_ramadan_1">نخستین روز رمضان</string>
+    <string name="event_laylat_al_qadr">شب قدر (۲۷ رمضان)</string>
+    <string name="event_eid_al_fitr">عید فطر (۱ شوال)</string>
+    <string name="event_arafa">روز عرفه (۹ ذی‌الحجه)</string>
+    <string name="event_eid_al_adha">عید قربان (۱۰ ذی‌الحجه)</string>
+    <string-array name="hijri_months">
+        <item>محرم</item>
+        <item>صفر</item>
+        <item>ربیع‌الاول</item>
+        <item>ربیع‌الثانی</item>
+        <item>جمادی‌الاولی</item>
+        <item>جمادی‌الثانی</item>
+        <item>رجب</item>
+        <item>شعبان</item>
+        <item>رمضان</item>
+        <item>شوال</item>
+        <item>ذی‌القعده</item>
+        <item>ذی‌الحجه</item>
+    </string-array>
+</resources>

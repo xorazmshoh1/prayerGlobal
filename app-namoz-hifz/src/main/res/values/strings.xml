@@ -106,4 +106,8 @@
     <string name="backup_err_io">Could not read or write the file.</string>
     <string name="shortcut_ramadan_short">Ramadan</string>
     <string name="shortcut_ramadan_long">Ramadan menu</string>
+    <string name="share_app">Share the app</string>
+    <string name="share_app_text">Namoz and Hifz: prayer times, Qibla, Quran memorization and Ramadan. Ad-free and offline. %s</string>
+    <string name="other_apps">Our other apps</string>
+    <string name="other_apps_empty">Coming soon.</string>
 </resources>

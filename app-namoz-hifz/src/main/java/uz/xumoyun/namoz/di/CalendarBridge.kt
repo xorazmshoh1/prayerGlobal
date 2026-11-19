@@ -31,10 +31,11 @@ class PrayerTimetableBridge @Inject constructor(
         combine(start, repository.config) { from, config -> config to from }.map { (config, from) ->
             config ?: return@map null
             val fmt = TimeFormat.formatter(context)
+            val digits = uz.xumoyun.core.common.text.LocalDigits.forLanguage(TimeFormat.currentLocale(context).language)
             val rows = (0 until DAYS).map { i ->
                 val date = from.plusDays(i.toLong())
                 val day = config.day(date)
-                PrayerDayRow(date, Prayer.entries.map { p -> PrayerTimeText(prayerName(p), fmt.format(day[p])) })
+                PrayerDayRow(date, Prayer.entries.map { p -> PrayerTimeText(prayerName(p), digits(fmt.format(day[p]))) })
             }
             PrayerTimetable(config.location.name, rows)
         }

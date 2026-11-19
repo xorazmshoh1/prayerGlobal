@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calendar_previous_month">الشهر السابق</string>
+    <string name="calendar_next_month">الشهر التالي</string>
+    <string name="islamic_events_title">المناسبات الإسلامية</string>
+    <string name="ramadan_menu_open">قائمة رمضان</string>
+    <string name="calendar_mode_grid">التقويم</string>
+    <string name="calendar_mode_timetable">جدول الصلاة</string>
+    <string name="calendar_primary_hijri">الهجري أولاً</string>
+    <string name="calendar_primary_gregorian">الميلادي أولاً</string>
+    <string name="calendar_cell_hijri">يوم هجري %d</string>
+    <string name="calendar_cell_gregorian">يوم %d</string>
+    <string name="calendar_no_events_this_month">لا توجد مناسبات إسلامية هذا الشهر</string>
+    <string name="calendar_day">اليوم</string>
+    <string name="calendar_no_location">اختر مدينة من تبويب الصلاة لعرض الجدول.</string>
+    <string name="calendar_official_check">قارِن مع الإعلان الرسمي في بلدك. قد تختلف التواريخ الهجرية بيوم واحد.</string>
+    <string name="converter_title">محوّل التاريخ</string>
+    <string name="converter_from_gregorian">اختر تاريخاً</string>
+    <string name="converter_clear">مسح</string>
+    <string name="converter_day">اليوم</string>
+    <string name="converter_month">الشهر</string>
+    <string name="converter_year">السنة</string>
+    <string name="converter_from_hijri">من الهجري إلى الميلادي</string>
+    <string name="converter_invalid">هذا التاريخ الهجري غير صالح.</string>
+    <string name="converter_result">%1$s يوافق %2$d %3$s %4$d هـ</string>
+    <string name="converter_ok">موافق</string>
+    <string name="converter_cancel">إلغاء</string>
+    <string name="channel_islamic_events">المناسبات الإسلامية</string>
+    <string name="islamic_reminder_title">مناسبة إسلامية غداً</string>
+    <string name="islamic_reminder_text">غداً: %s</string>
+    <string name="islamic_events_hint">فعّل المناسبات أو أوقفها. يظهر تذكير الساعة 09:00 قبل يوم المناسبة.</string>
+    <string name="islamic_remind_day_before">تذكير قبل يوم</string>
+    <string name="event_muharram_1">رأس السنة الهجرية (1 محرم)</string>
+    <string name="event_ashura">عاشوراء (10 محرم)</string>
+    <string name="event_rajab_27">الإسراء والمعراج (27 رجب)</string>
+    <string name="event_shaban_15">ليلة النصف من شعبان (15 شعبان)</string>
+    <string name="event_ramadan_1">أول أيام رمضان</string>
+    <string name="event_laylat_al_qadr">ليلة القدر (27 رمضان)</string>
+    <string name="event_eid_al_fitr">عيد الفطر (1 شوال)</string>
+    <string name="event_arafa">يوم عرفة (9 ذو الحجة)</string>
+    <string name="event_eid_al_adha">عيد الأضحى (10 ذو الحجة)</string>
+    <string-array name="hijri_months">
+        <item>محرم</item>
+        <item>صفر</item>
+        <item>ربيع الأول</item>
+        <item>ربيع الآخر</item>
+        <item>جمادى الأولى</item>
+        <item>جمادى الآخرة</item>
+        <item>رجب</item>
+        <item>شعبان</item>
+        <item>رمضان</item>
+        <item>شوال</item>
+        <item>ذو القعدة</item>
+        <item>ذو الحجة</item>
+    </string-array>
+</resources>

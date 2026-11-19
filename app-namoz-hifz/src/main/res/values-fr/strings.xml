@@ -104,4 +104,10 @@
     <string name="backup_err_newer">Cette sauvegarde provient d\'une version plus récente de l\'application. Mettez d\'abord l\'application à jour.</string>
     <string name="backup_err_invalid">Le fichier de sauvegarde est endommagé ou incomplet. Rien n\'a été modifié.</string>
     <string name="backup_err_io">Impossible de lire ou d\'écrire le fichier.</string>
+    <string name="shortcut_ramadan_short">Ramadan</string>
+    <string name="shortcut_ramadan_long">Menu Ramadan</string>
+    <string name="share_app">Partager l\'application</string>
+    <string name="share_app_text">Prière et Hifz : horaires de prière, qibla, mémorisation du Coran et Ramadan. Sans publicité et hors ligne. %s</string>
+    <string name="other_apps">Nos autres applications</string>
+    <string name="other_apps_empty">Bientôt disponible.</string>
 </resources>

@@ -104,4 +104,10 @@
     <string name="backup_err_newer">Cadangan ini dibuat oleh versi aplikasi yang lebih baru. Perbarui aplikasi terlebih dahulu.</string>
     <string name="backup_err_invalid">File cadangan rusak atau tidak lengkap. Tidak ada yang diubah.</string>
     <string name="backup_err_io">Tidak dapat membaca atau menulis file.</string>
+    <string name="shortcut_ramadan_short">Ramadan</string>
+    <string name="shortcut_ramadan_long">Menu Ramadan</string>
+    <string name="share_app">Bagikan aplikasi</string>
+    <string name="share_app_text">Namoz dan Hifz: waktu shalat, kiblat, hafalan Quran dan Ramadan. Tanpa iklan dan berfungsi offline. %s</string>
+    <string name="other_apps">Aplikasi kami lainnya</string>
+    <string name="other_apps_empty">Segera hadir.</string>
 </resources>

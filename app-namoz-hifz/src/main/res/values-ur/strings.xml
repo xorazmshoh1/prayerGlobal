@@ -104,4 +104,10 @@
     <string name="backup_err_newer">یہ بیک اپ ایپ کے نئے ورژن سے بنایا گیا ہے۔ پہلے ایپ اپ ڈیٹ کریں۔</string>
     <string name="backup_err_invalid">بیک اپ فائل خراب یا نامکمل ہے۔ کچھ تبدیل نہیں ہوا۔</string>
     <string name="backup_err_io">فائل پڑھی یا لکھی نہ جا سکی۔</string>
+    <string name="shortcut_ramadan_short">رمضان</string>
+    <string name="shortcut_ramadan_long">رمضان مینو</string>
+    <string name="share_app">ایپ شیئر کریں</string>
+    <string name="share_app_text">نماز اور حفظ: نماز کے اوقات، قبلہ، قرآن حفظ اور رمضان۔ اشتہارات کے بغیر اور آف لائن۔ %s</string>
+    <string name="other_apps">ہماری دوسری ایپس</string>
+    <string name="other_apps_empty">جلد آ رہا ہے۔</string>
 </resources>

@@ -1,0 +1,29 @@
+Prière et Hifz réunit les horaires de prière quotidiens, la direction de la qibla et la mémorisation du Coran dans une application simple.
+
+HORAIRES DE PRIÈRE
+- Les six horaires quotidiens sont calculés sur votre téléphone, avec la méthode adaptée à votre pays.
+- Notifications de l'adhan pour chaque prière : avec son, silencieuses ou désactivées. Rappel avant la prière.
+- Suivi des prières avec compteur de rattrapage (qada) et objectif quotidien.
+
+QIBLA ET TASBIH
+- Boussole avec la direction de la qibla, la distance jusqu'à la Kaaba et une aide à l'étalonnage.
+- Tasbih numérique avec objectifs de 33, 99 ou 100, vibration et historique quotidien.
+
+MÉMORISATION DU CORAN
+- Mushaf avec le texte Uthmani de Tanzil, par sourate et par juz, avec recherche.
+- Leçon quotidienne : nouveaux versets, révision récente et révision ancienne.
+- Progression par juz, jours consécutifs et prévision de la date de fin. Audio avec répétition et vitesse réglable.
+
+RAMADAN
+- Horaires du shour et de l'iftar avec compte à rebours, et calendrier du Ramadan sur 30 jours que vous pouvez partager en image.
+- Suivi du jeûne, invocations, plan de khatm, rappels et widget d'écran d'accueil.
+
+DATES ISLAMIQUES
+- Calendrier hégirien et grégorien avec les dates islamiques, et un rappel la veille si vous le souhaitez.
+
+CONFIDENTIALITÉ
+- Pas de publicité, de compte, d'analyse ni d'achat intégré.
+- Vos données restent sur votre téléphone. La localisation sert uniquement à calculer les horaires.
+- Internet est utilisé uniquement pour télécharger l'audio de récitation du Coran.
+
+Application non officielle, elle ne rend pas de fatwas. Comparez les horaires avec votre mosquée locale.

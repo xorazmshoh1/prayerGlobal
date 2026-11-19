@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calendar_previous_month">Предыдущий месяц</string>
+    <string name="calendar_next_month">Следующий месяц</string>
+    <string name="islamic_events_title">Исламские даты</string>
+    <string name="ramadan_menu_open">Меню Рамадана</string>
+    <string name="calendar_mode_grid">Календарь</string>
+    <string name="calendar_mode_timetable">Расписание намаза</string>
+    <string name="calendar_primary_hijri">Сначала хиджра</string>
+    <string name="calendar_primary_gregorian">Сначала григорианский</string>
+    <string name="calendar_cell_hijri">Хиджра, день %d</string>
+    <string name="calendar_cell_gregorian">День %d</string>
+    <string name="calendar_no_events_this_month">В этом месяце нет исламских дат</string>
+    <string name="calendar_day">День</string>
+    <string name="calendar_no_location">Выберите город на вкладке «Намаз», чтобы увидеть расписание.</string>
+    <string name="calendar_official_check">Сверяйте с официальным объявлением в вашей стране. Даты по хиджре могут отличаться на один день.</string>
+    <string name="converter_title">Конвертер дат</string>
+    <string name="converter_from_gregorian">Выбрать дату</string>
+    <string name="converter_clear">Очистить</string>
+    <string name="converter_day">День</string>
+    <string name="converter_month">Месяц</string>
+    <string name="converter_year">Год</string>
+    <string name="converter_from_hijri">Из хиджры в григорианский</string>
+    <string name="converter_invalid">Эта дата по хиджре некорректна.</string>
+    <string name="converter_result">%1$s — %2$d %3$s %4$d г. хиджры</string>
+    <string name="converter_ok">ОК</string>
+    <string name="converter_cancel">Отмена</string>
+    <string name="channel_islamic_events">Исламские даты</string>
+    <string name="islamic_reminder_title">Завтра исламская дата</string>
+    <string name="islamic_reminder_text">Завтра: %s</string>
+    <string name="islamic_events_hint">Включайте и выключайте даты. Напоминание приходит в 09:00 за день до события.</string>
+    <string name="islamic_remind_day_before">Напомнить за день</string>
+    <string name="event_muharram_1">Новый год по хиджре (1 Мухаррам)</string>
+    <string name="event_ashura">Ашура (10 Мухаррам)</string>
+    <string name="event_rajab_27">Исра и Мирадж (27 Раджаб)</string>
+    <string name="event_shaban_15">Ночь Бараат (15 Шаабан)</string>
+    <string name="event_ramadan_1">Первый день Рамадана</string>
+    <string name="event_laylat_al_qadr">Ночь Предопределения (27 Рамадан)</string>
+    <string name="event_eid_al_fitr">Ураза-байрам (1 Шавваль)</string>
+    <string name="event_arafa">День Арафы (9 Зуль-Хиджа)</string>
+    <string name="event_eid_al_adha">Курбан-байрам (10 Зуль-Хиджа)</string>
+    <string-array name="hijri_months">
+        <item>Мухаррам</item>
+        <item>Сафар</item>
+        <item>Раби уль-авваль</item>
+        <item>Раби ус-сани</item>
+        <item>Джумад уль-уля</item>
+        <item>Джумад ус-сани</item>
+        <item>Раджаб</item>
+        <item>Шаабан</item>
+        <item>Рамадан</item>
+        <item>Шавваль</item>
+        <item>Зуль-каада</item>
+        <item>Зуль-хиджа</item>
+    </string-array>
+</resources>

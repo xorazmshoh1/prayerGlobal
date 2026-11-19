@@ -6,6 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.runtime.getValue
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -14,12 +17,14 @@ import uz.xumoyun.core.common.ThemeMode
 import uz.xumoyun.core.data.CommonSettings
 import uz.xumoyun.core.ui.theme.AppTheme
 import uz.xumoyun.namoz.ui.NamozPalette
+import uz.xumoyun.namoz.review.ReviewPrompter
 import uz.xumoyun.namoz.ui.NamozRoot
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     @Inject lateinit var common: CommonSettings
+    @Inject lateinit var reviews: ReviewPrompter
 
     /** Ramazon yorlig'i (ShortcutManager) yoki vidjetdan ochilganda true. */
     private var openRamadan by mutableStateOf(false)
@@ -34,6 +39,14 @@ class MainActivity : AppCompatActivity() {
             AppTheme(NamozPalette, theme) {
                 onboardingDone?.let { NamozRoot(startWithOnboarding = !it, openRamadan = openRamadan) }
             }
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // TZ 12: In-App Review faqat qiymat olingach (onboarding tugagan bo'lsa); ichki tekshiruv ReviewPolicy da.
+        lifecycleScope.launch {
+            if (common.onboardingDone.first()) reviews.maybePrompt(this@MainActivity)
         }
     }
 

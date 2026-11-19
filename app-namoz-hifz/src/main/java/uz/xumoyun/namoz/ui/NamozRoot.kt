@@ -52,6 +52,8 @@ import uz.xumoyun.feature.calendar.ui.IslamicEventsRoute
 import uz.xumoyun.namoz.ui.onboarding.OnboardingRoute
 import uz.xumoyun.feature.qibla.ui.QiblaRoute
 import uz.xumoyun.namoz.ui.settings.HelpScreen
+import uz.xumoyun.namoz.ui.settings.OtherAppsScreen
+import uz.xumoyun.namoz.ui.settings.openPlayLink
 import uz.xumoyun.namoz.ui.settings.LicensesScreen
 import uz.xumoyun.feature.prayer.tracker.ui.TrackerRoute
 import uz.xumoyun.namoz.ui.settings.SettingsRoute
@@ -80,6 +82,8 @@ private object Routes {
     const val LICENSES = "licenses"
     /** TZ 7: islomiy sanalar yoqish va eslatma (Taqvim tabidan). */
     const val ISLAMIC_EVENTS = "islamic_events"
+    /** TZ 12: "Boshqa ilovalarimiz" (statik ro'yxat). */
+    const val OTHER_APPS = "other_apps"
 }
 
 @Composable
@@ -167,6 +171,7 @@ fun NamozRoot(startWithOnboarding: Boolean, openRamadan: Boolean = false) {
                     onNotifications = { nav.navigate(Routes.NOTIFICATIONS) },
                     onHelp = { nav.navigate(Routes.HELP) },
                     onLicenses = { nav.navigate(Routes.LICENSES) },
+                    onOtherApps = { nav.navigate(Routes.OTHER_APPS) },
                 )
             }
             composable(Routes.LOCATIONS) { LocationsScreen(onPicked = { nav.popBackStack() }) }
@@ -175,6 +180,10 @@ fun NamozRoot(startWithOnboarding: Boolean, openRamadan: Boolean = false) {
             composable(Routes.TRACKER) { TrackerRoute() }
             composable(Routes.LICENSES) { LicensesScreen() }
             composable(Routes.ISLAMIC_EVENTS) { IslamicEventsRoute() }
+            composable(Routes.OTHER_APPS) {
+                val ctx = androidx.compose.ui.platform.LocalContext.current
+                OtherAppsScreen(openUrl = { openPlayLink(ctx, it) })
+            }
         }
     }
 }
@@ -190,6 +199,7 @@ private fun SubScreenBar(route: String?, nav: NavHostController) {
         Routes.TRACKER -> stringResource(uz.xumoyun.feature.prayer.R.string.tracker_title)
         Routes.LICENSES -> stringResource(R.string.licenses_title)
         Routes.ISLAMIC_EVENTS -> stringResource(uz.xumoyun.feature.calendar.R.string.islamic_events_title)
+        Routes.OTHER_APPS -> stringResource(R.string.other_apps)
         else -> return
     }
     TopAppBar(

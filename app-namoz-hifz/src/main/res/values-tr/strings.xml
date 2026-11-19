@@ -104,4 +104,10 @@
     <string name="backup_err_newer">Bu yedek uygulamanın daha yeni bir sürümüyle oluşturulmuş. Önce uygulamayı güncelleyin.</string>
     <string name="backup_err_invalid">Yedek dosyası bozuk veya eksik. Hiçbir şey değiştirilmedi.</string>
     <string name="backup_err_io">Dosya okunamadı veya yazılamadı.</string>
+    <string name="shortcut_ramadan_short">Ramazan</string>
+    <string name="shortcut_ramadan_long">Ramazan menüsü</string>
+    <string name="share_app">Uygulamayı paylaş</string>
+    <string name="share_app_text">Namaz ve Hıfz: namaz vakitleri, kıble, Kur\'an ezberi ve Ramazan. Reklamsız ve internetsiz çalışır. %s</string>
+    <string name="other_apps">Diğer uygulamalarımız</string>
+    <string name="other_apps_empty">Yakında.</string>
 </resources>

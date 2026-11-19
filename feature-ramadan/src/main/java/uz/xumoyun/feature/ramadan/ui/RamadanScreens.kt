@@ -83,17 +83,18 @@ object RamadanRoutes {
 internal fun timeText(instant: Instant?, zone: ZoneId?, locale: Locale = Locale.getDefault()): String {
     if (instant == null) return "—"
     val z = zone ?: ZoneId.systemDefault()
-    return DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT).withLocale(locale).format(instant.atZone(z))
+    val raw = DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT).withLocale(locale).format(instant.atZone(z))
+    return uz.xumoyun.core.common.text.LocalDigits.forLanguage(locale.language)(raw)
 }
 
-/** "3 h 05 min" ko'rinishidagi qolgan vaqt (manfiy bo'lsa — 0). */
-internal fun countdownText(from: Instant, to: Instant?): String {
+/** Qolgan vaqt matni (manfiy bo'lsa — 0). [hm] — "%1$d h %2$02d min", [m] — "%d min" (resurs). */
+internal fun countdownText(from: Instant, to: Instant?, hm: String, m: String): String {
     if (to == null) return "—"
     val d = Duration.between(from, to)
     if (d.isNegative || d.isZero) return "0"
     val h = d.toHours()
-    val m = d.toMinutesPart()
-    return if (h > 0) "%d h %02d min".format(h, m) else "%d min".format(m)
+    val mm = d.toMinutesPart()
+    return if (h > 0) hm.format(h, mm) else m.format(mm)
 }
 
 @Composable
@@ -132,16 +133,18 @@ fun RamadanHomeRoute(
             val done = (s.dayNumber ?: 0)
             LinearProgressIndicator(progress = { done / RamadanCalc.DAYS.toFloat() }, Modifier.fillMaxWidth().height(6.dp).clip(RoundedCornerShape(3.dp)))
             Row(horizontalArrangement = Arrangement.spacedBy(12.dp), modifier = Modifier.fillMaxWidth()) {
+                val hm = stringResource(R.string.countdown_hm)
+                val mn = stringResource(R.string.countdown_m)
                 TimeCard(
                     label = stringResource(R.string.suhoor),
                     time = timeText(s.suhoorAt, s.zone),
-                    remaining = countdownText(s.now, s.suhoorAt?.takeIf { it.isAfter(s.now) }),
+                    remaining = countdownText(s.now, s.suhoorAt?.takeIf { it.isAfter(s.now) }, hm, mn),
                     modifier = Modifier.weight(1f),
                 )
                 TimeCard(
                     label = stringResource(R.string.iftar),
                     time = timeText(s.iftarAt, s.zone),
-                    remaining = countdownText(s.now, s.iftarAt?.takeIf { it.isAfter(s.now) }),
+                    remaining = countdownText(s.now, s.iftarAt?.takeIf { it.isAfter(s.now) }, hm, mn),
                     modifier = Modifier.weight(1f),
                 )
             }
@@ -159,7 +162,8 @@ fun RamadanHomeRoute(
     }
 }
 
-private fun hijriLabel(h: HijriYmd): String = "${h.day}/${h.month}/${h.year} AH"
+@Composable
+private fun hijriLabel(h: HijriYmd): String = stringResource(R.string.hijri_label, h.day, h.month, h.year)
 
 @Composable
 private fun TimeCard(label: String, time: String, remaining: String, modifier: Modifier = Modifier) {
@@ -270,7 +274,7 @@ private fun FastCell(row: RamadanDayRow, modifier: Modifier, onClick: () -> Unit
     }
     Column(
         modifier.height(64.dp).clip(RoundedCornerShape(10.dp)).background(bg).clickable(onClick = onClick)
-            .semantics { contentDescription = "${row.number}: $label" },
+            .semantics { contentDescription = stringResource(R.string.ramadan_fast_cell_desc, row.number, label) },
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
@@ -404,7 +408,11 @@ fun RamadanEntryCard(onOpen: () -> Unit, viewModel: RamadanHomeViewModel = hiltV
             } else {
                 Text(stringResource(R.string.ramadan_day_title, s.dayNumber ?: 0), style = MaterialTheme.typography.bodyMedium)
                 Text(
-                    stringResource(R.string.ramadan_card_iftar, timeText(s.iftarAt, s.zone), countdownText(s.now, s.iftarAt?.takeIf { it.isAfter(s.now) })),
+                    stringResource(
+                        R.string.ramadan_card_iftar,
+                        timeText(s.iftarAt, s.zone),
+                        countdownText(s.now, s.iftarAt?.takeIf { it.isAfter(s.now) }, stringResource(R.string.countdown_hm), stringResource(R.string.countdown_m)),
+                    ),
                     style = MaterialTheme.typography.bodySmall,
                 )
             }

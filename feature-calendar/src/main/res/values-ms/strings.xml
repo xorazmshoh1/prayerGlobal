@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calendar_previous_month">Bulan sebelumnya</string>
+    <string name="calendar_next_month">Bulan seterusnya</string>
+    <string name="islamic_events_title">Tarikh Islam</string>
+    <string name="ramadan_menu_open">Menu Ramadan</string>
+    <string name="calendar_mode_grid">Kalendar</string>
+    <string name="calendar_mode_timetable">Jadual solat</string>
+    <string name="calendar_primary_hijri">Hijri dahulu</string>
+    <string name="calendar_primary_gregorian">Masihi dahulu</string>
+    <string name="calendar_cell_hijri">Hari Hijri %d</string>
+    <string name="calendar_cell_gregorian">Hari %d</string>
+    <string name="calendar_no_events_this_month">Tiada tarikh Islam bulan ini</string>
+    <string name="calendar_day">Hari</string>
+    <string name="calendar_no_location">Pilih bandar dalam tab Solat untuk melihat jadual.</string>
+    <string name="calendar_official_check">Semak dengan pengumuman rasmi di negara anda. Tarikh Hijri boleh berbeza sehari.</string>
+    <string name="converter_title">Penukar tarikh</string>
+    <string name="converter_from_gregorian">Pilih tarikh</string>
+    <string name="converter_clear">Kosongkan</string>
+    <string name="converter_day">Hari</string>
+    <string name="converter_month">Bulan</string>
+    <string name="converter_year">Tahun</string>
+    <string name="converter_from_hijri">Dari Hijri ke Masihi</string>
+    <string name="converter_invalid">Tarikh Hijri ini tidak sah.</string>
+    <string name="converter_result">%1$s ialah %2$d %3$s %4$d H</string>
+    <string name="converter_ok">OK</string>
+    <string name="converter_cancel">Batal</string>
+    <string name="channel_islamic_events">Tarikh Islam</string>
+    <string name="islamic_reminder_title">Esok tarikh Islam</string>
+    <string name="islamic_reminder_text">Esok: %s</string>
+    <string name="islamic_events_hint">Hidupkan atau matikan tarikh. Peringatan muncul pukul 09.00 sehari sebelumnya.</string>
+    <string name="islamic_remind_day_before">Ingatkan sehari sebelum</string>
+    <string name="event_muharram_1">Awal Muharram (1 Muharram)</string>
+    <string name="event_ashura">Asyura (10 Muharram)</string>
+    <string name="event_rajab_27">Isra\' Mi\'raj (27 Rejab)</string>
+    <string name="event_shaban_15">Nisfu Syaaban (15 Syaaban)</string>
+    <string name="event_ramadan_1">Hari pertama Ramadan</string>
+    <string name="event_laylat_al_qadr">Malam Lailatul Qadar (27 Ramadan)</string>
+    <string name="event_eid_al_fitr">Hari Raya Aidilfitri (1 Syawal)</string>
+    <string name="event_arafa">Hari Arafah (9 Zulhijjah)</string>
+    <string name="event_eid_al_adha">Hari Raya Aidiladha (10 Zulhijjah)</string>
+    <string-array name="hijri_months">
+        <item>Muharram</item>
+        <item>Safar</item>
+        <item>Rabiulawal</item>
+        <item>Rabiulakhir</item>
+        <item>Jamadilawal</item>
+        <item>Jamadilakhir</item>
+        <item>Rejab</item>
+        <item>Syaaban</item>
+        <item>Ramadan</item>
+        <item>Syawal</item>
+        <item>Zulkaedah</item>
+        <item>Zulhijjah</item>
+    </string-array>
+</resources>

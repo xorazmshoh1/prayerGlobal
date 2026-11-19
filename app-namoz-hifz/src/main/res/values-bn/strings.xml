@@ -104,4 +104,10 @@
     <string name="backup_err_newer">এই ব্যাকআপটি অ্যাপের নতুন সংস্করণে তৈরি। আগে অ্যাপটি আপডেট করুন।</string>
     <string name="backup_err_invalid">ব্যাকআপ ফাইলটি নষ্ট বা অসম্পূর্ণ। কিছুই পরিবর্তন হয়নি।</string>
     <string name="backup_err_io">ফাইলটি পড়া বা লেখা যায়নি।</string>
+    <string name="shortcut_ramadan_short">রমজান</string>
+    <string name="shortcut_ramadan_long">রমজান মেনু</string>
+    <string name="share_app">অ্যাপ শেয়ার করুন</string>
+    <string name="share_app_text">নামাজ ও হিফয: নামাজের সময়, কিবলা, কুরআন মুখস্থ ও রমজান। বিজ্ঞাপনমুক্ত ও অফলাইনে চলে। %s</string>
+    <string name="other_apps">আমাদের অন্যান্য অ্যাপ</string>
+    <string name="other_apps_empty">শীঘ্রই আসছে।</string>
 </resources>

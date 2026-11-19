@@ -36,7 +36,7 @@ fun NavGraphBuilder.ramadanGraph(nav: NavHostController, onOpenMushaf: () -> Uni
                 RamadanShare.share(
                     context,
                     ShareCardText(
-                        title = "${s.city.orEmpty()} · ${s.hijriYear} AH",
+                        title = "${s.city.orEmpty()} · " + context.getString(R.string.hijri_year_label, s.hijriYear),
                         columns = RamadanShare.rowsText(s.rows, times, locale),
                         appName = context.getString(R.string.share_app_name),
                         playLink = RamadanShare.PLAY_LINK,

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calendar_previous_month">Önceki ay</string>
+    <string name="calendar_next_month">Sonraki ay</string>
+    <string name="islamic_events_title">İslami günler</string>
+    <string name="ramadan_menu_open">Ramazan menüsü</string>
+    <string name="calendar_mode_grid">Takvim</string>
+    <string name="calendar_mode_timetable">Namaz vakitleri</string>
+    <string name="calendar_primary_hijri">Önce hicri</string>
+    <string name="calendar_primary_gregorian">Önce miladi</string>
+    <string name="calendar_cell_hijri">Hicri gün %d</string>
+    <string name="calendar_cell_gregorian">Gün %d</string>
+    <string name="calendar_no_events_this_month">Bu ay İslami gün yok</string>
+    <string name="calendar_day">Gün</string>
+    <string name="calendar_no_location">Vakitleri görmek için Namaz sekmesinden bir şehir seçin.</string>
+    <string name="calendar_official_check">Ülkenizdeki resmi duyuruyla karşılaştırın. Hicri tarihler bir gün farklı olabilir.</string>
+    <string name="converter_title">Tarih çevirici</string>
+    <string name="converter_from_gregorian">Tarih seç</string>
+    <string name="converter_clear">Temizle</string>
+    <string name="converter_day">Gün</string>
+    <string name="converter_month">Ay</string>
+    <string name="converter_year">Yıl</string>
+    <string name="converter_from_hijri">Hicriden miladiye</string>
+    <string name="converter_invalid">Bu hicri tarih geçersiz.</string>
+    <string name="converter_result">%1$s, %2$d %3$s %4$d (Hicri)</string>
+    <string name="converter_ok">Tamam</string>
+    <string name="converter_cancel">İptal</string>
+    <string name="channel_islamic_events">İslami günler</string>
+    <string name="islamic_reminder_title">Yarın İslami gün</string>
+    <string name="islamic_reminder_text">Yarın: %s</string>
+    <string name="islamic_events_hint">Günleri açıp kapatın. Hatırlatma, günden bir gün önce saat 09:00\'da gelir.</string>
+    <string name="islamic_remind_day_before">Bir gün önce hatırlat</string>
+    <string name="event_muharram_1">Hicri yılbaşı (1 Muharrem)</string>
+    <string name="event_ashura">Aşure günü (10 Muharrem)</string>
+    <string name="event_rajab_27">Miraç Kandili (27 Recep)</string>
+    <string name="event_shaban_15">Berat Kandili (15 Şaban)</string>
+    <string name="event_ramadan_1">Ramazan\'ın ilk günü</string>
+    <string name="event_laylat_al_qadr">Kadir Gecesi (27 Ramazan)</string>
+    <string name="event_eid_al_fitr">Ramazan Bayramı (1 Şevval)</string>
+    <string name="event_arafa">Arefe günü (9 Zilhicce)</string>
+    <string name="event_eid_al_adha">Kurban Bayramı (10 Zilhicce)</string>
+    <string-array name="hijri_months">
+        <item>Muharrem</item>
+        <item>Safer</item>
+        <item>Rebiü\'l-evvel</item>
+        <item>Rebiü\'l-ahir</item>
+        <item>Cemaziyelevvel</item>
+        <item>Cemaziyelahir</item>
+        <item>Recep</item>
+        <item>Şaban</item>
+        <item>Ramazan</item>
+        <item>Şevval</item>
+        <item>Zilkade</item>
+        <item>Zilhicce</item>
+    </string-array>
+</resources>

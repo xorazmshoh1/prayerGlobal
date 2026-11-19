@@ -60,4 +60,9 @@
     <string name="iftar_reminder_text">It is time to break the fast.</string>
     <string name="qadr_reminder_title">Laylat al-Qadr</string>
     <string name="qadr_reminder_text">Tonight may be Laylat al-Qadr. Increase your worship.</string>
+    <string name="hijri_label">%1$d/%2$d/%3$d AH</string>
+    <string name="hijri_year_label">%d AH</string>
+    <string name="countdown_hm">%1$d h %2$02d min</string>
+    <string name="countdown_m">%d min</string>
+    <string name="ramadan_fast_cell_desc">Day %1$d: %2$s</string>
 </resources>

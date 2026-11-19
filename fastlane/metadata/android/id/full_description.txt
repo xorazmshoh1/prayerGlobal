@@ -1,0 +1,29 @@
+Namoz dan Hifz menggabungkan jadwal shalat harian, arah kiblat, dan hafalan Al-Qur'an dalam satu aplikasi sederhana.
+
+JADWAL SHALAT
+- Enam waktu setiap hari dihitung di ponsel Anda, dengan metode perhitungan yang sesuai negara Anda.
+- Notifikasi adzan untuk setiap shalat: dengan suara, senyap, atau mati. Pengingat sebelum shalat.
+- Pelacak shalat dengan penghitung qadha dan target harian.
+
+KIBLAT DAN TASBIH
+- Kompas dengan arah kiblat, jarak ke Ka'bah, dan petunjuk kalibrasi.
+- Tasbih digital dengan target 33, 99, atau 100, getaran, dan riwayat harian.
+
+HAFALAN AL-QUR'AN
+- Mushaf dengan teks Tanzil Utsmani, per surah dan juz, dengan pencarian.
+- Pelajaran harian: ayat baru, murajaah terbaru, dan murajaah lama.
+- Kemajuan per juz, hari berturut-turut, dan perkiraan tanggal selesai. Audio dengan pengulangan dan kecepatan.
+
+RAMADAN
+- Waktu sahur dan berbuka dengan hitung mundur, kalender Ramadan 30 hari yang bisa dibagikan sebagai gambar.
+- Pelacak puasa, doa, rencana khatam, pengingat, dan widget layar utama.
+
+TANGGAL ISLAM
+- Kalender Hijriah dan Masehi dengan tanggal Islam, serta pengingat sehari sebelumnya bila diaktifkan.
+
+PRIVASI
+- Tanpa iklan, akun, analitik, dan pembelian dalam aplikasi.
+- Data Anda tetap di ponsel. Lokasi hanya dipakai untuk menghitung waktu.
+- Internet hanya dipakai untuk mengunduh audio bacaan Al-Qur'an.
+
+Aplikasi ini tidak resmi dan tidak mengeluarkan fatwa. Bandingkan jadwal dengan masjid setempat.
