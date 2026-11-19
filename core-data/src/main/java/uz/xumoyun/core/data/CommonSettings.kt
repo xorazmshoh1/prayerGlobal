@@ -40,8 +40,8 @@ class CommonSettings @Inject constructor(private val store: DataStore<Preference
     suspend fun setLanguage(tag: String) = store.edit { it[LANGUAGE] = tag }
 
     companion object {
-        // TZ hijriAdjustDays −1/0/+1 deydi; 1-bosqichdagi ±2 chegarasi saqlandi (11-bosqichda qayta ko'riladi).
-        const val MAX_HIJRI_ADJUST = 2
+        /** TZ 2-bo'lim: hijriAdjustDays −1/0/+1. */
+        const val MAX_HIJRI_ADJUST = uz.xumoyun.core.common.hijri.HijriCalendar.MAX_OFFSET_DAYS
         private val HIJRI_OFFSET = intPreferencesKey("hijri_offset")
         private val THEME = stringPreferencesKey("theme_mode")
         private val ONBOARDING = booleanPreferencesKey("onboarding_done")

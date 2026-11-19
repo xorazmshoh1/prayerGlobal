@@ -44,7 +44,8 @@ import uz.xumoyun.feature.prayer.ui.PrayerRoute
 import uz.xumoyun.feature.ramadan.RamadanHomeRoute
 import uz.xumoyun.feature.ramadan.RamadanRoutes
 import uz.xumoyun.namoz.R
-import uz.xumoyun.namoz.ui.calendar.CalendarRoute
+import uz.xumoyun.feature.calendar.ui.CalendarRoute
+import uz.xumoyun.feature.calendar.ui.IslamicEventsRoute
 import uz.xumoyun.namoz.ui.onboarding.OnboardingRoute
 import uz.xumoyun.feature.qibla.ui.QiblaRoute
 import uz.xumoyun.namoz.ui.settings.HelpScreen
@@ -74,6 +75,8 @@ private object Routes {
     const val TRACKER = "tracker"
     /** TZ 12: Litsenziyalar va manbalar (Sozlamalardan). */
     const val LICENSES = "licenses"
+    /** TZ 7: islomiy sanalar yoqish va eslatma (Taqvim tabidan). */
+    const val ISLAMIC_EVENTS = "islamic_events"
 }
 
 @Composable
@@ -143,7 +146,12 @@ fun NamozRoot(startWithOnboarding: Boolean) {
             audioGraph(nav)
             composable(Tab.QIBLA.route) { QiblaRoute() }
             composable(Tab.TASBEH.route) { TasbihRoute() }
-            composable(Tab.CALENDAR.route) { CalendarRoute(onRamadan = { nav.navigate(RamadanRoutes.GRAPH) }) }
+            composable(Tab.CALENDAR.route) {
+                CalendarRoute(
+                    onIslamicEvents = { nav.navigate(Routes.ISLAMIC_EVENTS) },
+                    onRamadan = { nav.navigate(RamadanRoutes.GRAPH) },
+                )
+            }
             // Alohida Ramazon menyusi grafi: R1 bosh sahifa; R2–R6 11-bosqichda qo'shiladi.
             navigation(startDestination = RamadanRoutes.HOME, route = RamadanRoutes.GRAPH) {
                 composable(RamadanRoutes.HOME) { RamadanHomeRoute() }
@@ -162,6 +170,7 @@ fun NamozRoot(startWithOnboarding: Boolean) {
             composable(Routes.HELP) { HelpScreen() }
             composable(Routes.TRACKER) { TrackerRoute() }
             composable(Routes.LICENSES) { LicensesScreen() }
+            composable(Routes.ISLAMIC_EVENTS) { IslamicEventsRoute() }
         }
     }
 }
@@ -176,6 +185,7 @@ private fun SubScreenBar(route: String?, nav: NavHostController) {
         Routes.HELP -> R.string.help_notifications
         Routes.TRACKER -> uz.xumoyun.feature.prayer.R.string.tracker_title
         Routes.LICENSES -> R.string.licenses_title
+        Routes.ISLAMIC_EVENTS -> uz.xumoyun.feature.calendar.R.string.islamic_events_title
         else -> return
     }
     TopAppBar(

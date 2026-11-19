@@ -7,6 +7,9 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import uz.xumoyun.core.common.hijri.HijriCalendar
+import uz.xumoyun.core.common.hijri.HijriYmd
+import uz.xumoyun.core.common.hijri.UmmAlQuraSource
 import java.time.LocalDate
 import java.time.ZoneOffset
 import java.util.Locale
@@ -20,15 +23,34 @@ data class HijriDate(val day: Int, val month: Int, val year: Int, val formatted:
 
 /** Hijriy sana manbai; namoz, taqvim va Ramazon modullari umumiy foydalanadi. Testlarda soxta versiya. */
 interface HijriProvider {
+    /** Ko'rsatiladigan sana (tuzatish bilan) va locale bo'yicha to'liq matn. */
     fun of(date: LocalDate, offsetDays: Int, locale: Locale = Locale.getDefault()): HijriDate
+
+    /** Tuzatishli taqvim: sana → hijriy sana va teskari qidiruv (taqvim, Ramazon modullari shu bilan ishlaydi). */
+    fun calendar(offsetDays: Int): HijriCalendar
 }
 
-/** Umm al-Qura taqvimi (android.icu, API 24+), sozlamada ±kun tuzatish. */
+/** Android'dagi Umm al-Qura manbai (android.icu, API 24+). Sof hisob [HijriCalendar] da. */
+object AndroidUmmAlQura : UmmAlQuraSource {
+    override fun ymd(date: LocalDate): HijriYmd {
+        val millis = date.atTime(12, 0).toInstant(ZoneOffset.UTC).toEpochMilli()
+        val cal = IslamicCalendar(TimeZone.getTimeZone("UTC"), ULocale.forLanguageTag("en-u-ca-islamic-umalqura")).apply {
+            calculationType = IslamicCalendar.CalculationType.ISLAMIC_UMALQURA
+            timeInMillis = millis
+        }
+        return HijriYmd(cal.get(IslamicCalendar.YEAR), cal.get(IslamicCalendar.MONTH) + 1, cal.get(IslamicCalendar.DAY_OF_MONTH))
+    }
+}
+
 @Singleton
 class IcuHijriProvider @Inject constructor() : HijriProvider {
+    override fun calendar(offsetDays: Int): HijriCalendar = HijriCalendar(AndroidUmmAlQura, offsetDays)
+
     override fun of(date: LocalDate, offsetDays: Int, locale: Locale): HijriDate {
-        val shifted = date.plusDays(offsetDays.toLong())
-        val millis = shifted.atTime(12, 0).toInstant(ZoneOffset.UTC).toEpochMilli()
+        val shown = calendar(offsetDays).ymd(date)
+        // Matn uchun umm al-Qura sanasi (tuzatishdan keyingi ko'rinish bilan bir xil kun).
+        val raw = date.minusDays(offsetDays.toLong())
+        val millis = raw.atTime(12, 0).toInstant(ZoneOffset.UTC).toEpochMilli()
         val uLocale = ULocale.forLocale(locale).setKeywordValue("calendar", "islamic-umalqura")
         val cal = IslamicCalendar(TimeZone.getTimeZone("UTC"), uLocale).apply {
             calculationType = IslamicCalendar.CalculationType.ISLAMIC_UMALQURA
@@ -37,12 +59,7 @@ class IcuHijriProvider @Inject constructor() : HijriProvider {
         val format = android.icu.text.DateFormat.getDateInstance(cal, android.icu.text.DateFormat.LONG, uLocale).apply {
             timeZone = TimeZone.getTimeZone("UTC")
         }
-        return HijriDate(
-            day = cal.get(IslamicCalendar.DAY_OF_MONTH),
-            month = cal.get(IslamicCalendar.MONTH) + 1,
-            year = cal.get(IslamicCalendar.YEAR),
-            formatted = format.format(cal.time),
-        )
+        return HijriDate(shown.day, shown.month, shown.year, format.format(cal.time))
     }
 }
 

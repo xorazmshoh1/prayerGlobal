@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calendar_previous_month">Previous month</string>
+    <string name="calendar_next_month">Next month</string>
+    <string name="islamic_events_title">Islamic dates</string>
+    <string name="ramadan_menu_open">Ramadan menu</string>
+    <string name="calendar_mode_grid">Calendar</string>
+    <string name="calendar_mode_timetable">Prayer timetable</string>
+    <string name="calendar_primary_hijri">Hijri first</string>
+    <string name="calendar_primary_gregorian">Gregorian first</string>
+    <string name="calendar_cell_hijri">Hijri day %d</string>
+    <string name="calendar_cell_gregorian">Day %d</string>
+    <string name="calendar_no_events_this_month">No Islamic dates this month</string>
+    <string name="calendar_day">Day</string>
+    <string name="calendar_no_location">Choose a city in the Prayer tab to see the timetable.</string>
+    <string name="calendar_official_check">Compare with the official announcement in your country. Hijri dates can differ by one day.</string>
+    <string name="converter_title">Date converter</string>
+    <string name="converter_from_gregorian">Pick a date</string>
+    <string name="converter_clear">Clear</string>
+    <string name="converter_day">Day</string>
+    <string name="converter_month">Month</string>
+    <string name="converter_year">Year</string>
+    <string name="converter_from_hijri">Hijri to Gregorian</string>
+    <string name="converter_invalid">This Hijri date is not valid.</string>
+    <string name="converter_result">%1$s is %2$d %3$s %4$d (Hijri)</string>
+    <string name="converter_ok">OK</string>
+    <string name="converter_cancel">Cancel</string>
+    <string name="channel_islamic_events">Islamic dates</string>
+    <string name="islamic_reminder_title">Islamic date tomorrow</string>
+    <string name="islamic_reminder_text">Tomorrow is %s</string>
+    <string name="islamic_events_hint">Turn dates on or off. A reminder is shown at 09:00 the day before.</string>
+    <string name="islamic_remind_day_before">Remind me the day before</string>
+    <string name="event_muharram_1">Islamic New Year (1 Muharram)</string>
+    <string name="event_ashura">Ashura (10 Muharram)</string>
+    <string name="event_rajab_27">Isra and Mi\'raj (27 Rajab)</string>
+    <string name="event_shaban_15">Night of Bara\'ah (15 Sha\'ban)</string>
+    <string name="event_ramadan_1">First day of Ramadan</string>
+    <string name="event_laylat_al_qadr">Laylat al-Qadr (27 Ramadan)</string>
+    <string name="event_eid_al_fitr">Eid al-Fitr (1 Shawwal)</string>
+    <string name="event_arafa">Day of Arafah (9 Dhul-Hijjah)</string>
+    <string name="event_eid_al_adha">Eid al-Adha (10 Dhul-Hijjah)</string>
+    <string-array name="hijri_months">
+        <item>Muharram</item>
+        <item>Safar</item>
+        <item>Rabi al-Awwal</item>
+        <item>Rabi al-Thani</item>
+        <item>Jumada al-Ula</item>
+        <item>Jumada al-Thani</item>
+        <item>Rajab</item>
+        <item>Sha\'ban</item>
+        <item>Ramadan</item>
+        <item>Shawwal</item>
+        <item>Dhul-Qadah</item>
+        <item>Dhul-Hijjah</item>
+    </string-array>
+</resources>

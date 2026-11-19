@@ -12,6 +12,7 @@ import uz.xumoyun.core.data.CommonSettings
 import uz.xumoyun.core.data.notifications.NotificationChannelRegistrar
 import uz.xumoyun.feature.prayer.notifications.PrayerAlarmScheduler
 import uz.xumoyun.namoz.notifications.HifzReminderScheduler
+import uz.xumoyun.namoz.notifications.IslamicReminderScheduler
 import javax.inject.Inject
 
 @HiltAndroidApp
@@ -20,6 +21,7 @@ class NamozApp : Application() {
     @Inject lateinit var channelSources: Set<@JvmSuppressWildcards NotificationChannelSource>
     @Inject lateinit var prayerAlarms: PrayerAlarmScheduler
     @Inject lateinit var hifzReminders: HifzReminderScheduler
+    @Inject lateinit var islamicReminders: IslamicReminderScheduler
     @Inject lateinit var crashGate: CrashReportGate
     @Inject lateinit var common: CommonSettings
 
@@ -32,6 +34,8 @@ class NamozApp : Application() {
         prayerAlarms.start(appScope)
         // Hifz eslatmasi: faol reja yoki joy o'zgarganda qayta rejalashtiriladi.
         hifzReminders.start(appScope)
+        // Islomiy sana eslatmasi: sozlama yoki hijriy tuzatish o'zgarganda qayta rejalashtiriladi.
+        islamicReminders.start(appScope)
         // TZ 8: xato hisoboti sozlamasi keshlanadi (uncaught handler sinxron ishlaydi).
         appScope.launch { common.crashReportingEnabled.collect { crashGate.enabled = it } }
         val previous = Thread.getDefaultUncaughtExceptionHandler()
