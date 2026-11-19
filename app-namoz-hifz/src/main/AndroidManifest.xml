@@ -31,6 +31,10 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <!-- ShortcutManager: ikonkaning uzoq bosilganda Ramazon menyusi (TZ 11-bo'lim). -->
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
         </activity>
 
         <!-- Namoz bildirishnomalari va vidjet qabul qiluvchilari feature-prayer manifestidan birlashtiriladi. -->
@@ -38,6 +42,17 @@
         <!-- Hifz eslatmasi (TZ 8-bo'lim): ichki signal va qayta yoqilganda qayta rejalashtirish. -->
         <receiver
             android:name=".notifications.HifzReminderReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".notifications.RamadanReminderReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

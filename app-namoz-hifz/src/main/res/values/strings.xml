@@ -104,4 +104,6 @@
     <string name="backup_err_newer">This backup was made by a newer version of the app. Update the app first.</string>
     <string name="backup_err_invalid">The backup file is damaged or incomplete. Nothing was changed.</string>
     <string name="backup_err_io">Could not read or write the file.</string>
+    <string name="shortcut_ramadan_short">Ramadan</string>
+    <string name="shortcut_ramadan_long">Ramadan menu</string>
 </resources>

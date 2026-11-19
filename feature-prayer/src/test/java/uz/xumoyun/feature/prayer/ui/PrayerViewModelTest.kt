@@ -40,7 +40,7 @@ class PrayerViewModelTest {
     private val settings = PrayerSettings(store)
     private val common = CommonSettings(store)
     private val dao = FakeLocationDao(listOf(Tashkent))
-    private val repository = PrayerRepository(dao, settings, FileAssets, AppJson)
+    private val repository = PrayerRepository(dao, settings, FileAssets, AppJson, uz.xumoyun.feature.prayer.domain.RamadanCheck.NONE)
     private val hijri = FakeHijri()
     private val location = FakeLocationProvider()
 

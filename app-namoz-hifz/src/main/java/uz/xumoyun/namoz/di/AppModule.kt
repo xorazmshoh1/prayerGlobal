@@ -22,6 +22,7 @@ import uz.xumoyun.namoz.data.db.MIGRATION_1_2
 import uz.xumoyun.namoz.data.db.MIGRATION_2_3
 import uz.xumoyun.namoz.data.db.MIGRATION_3_4
 import uz.xumoyun.namoz.data.db.MIGRATION_4_5
+import uz.xumoyun.namoz.data.db.MIGRATION_5_6
 import uz.xumoyun.namoz.data.db.NamozDatabase
 import uz.xumoyun.namoz.data.db.RoomTransactionRunner
 import javax.inject.Singleton
@@ -34,7 +35,7 @@ object AppModule {
     @Provides @Singleton
     fun database(@ApplicationContext context: Context): NamozDatabase =
         Room.databaseBuilder(context, NamozDatabase::class.java, "namoz.db")
-            .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5)
+            .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6)
             .build()
 
     @Provides fun locationDao(db: NamozDatabase): LocationDao = db.locations()
@@ -42,6 +43,7 @@ object AppModule {
     @Provides fun audioDao(db: NamozDatabase): AudioDownloadDao = db.audio()
     @Provides fun hifzDao(db: NamozDatabase): HifzDao = db.hifz()
     @Provides fun trackerDao(db: NamozDatabase): TrackerDao = db.tracker()
+    @Provides fun ramadanDao(db: NamozDatabase): uz.xumoyun.feature.ramadan.data.RamadanDao = db.ramadan()
 
     /** Xato hisobotlari: hozircha yuboruvchi yo'q (Firebase reliz oldidan ulanadi). */
     @Provides @Singleton fun crashGate(): CrashReportGate = CrashReportGate(NoopCrashSink)

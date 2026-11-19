@@ -19,6 +19,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -41,8 +42,10 @@ import uz.xumoyun.feature.hifz.mushafGraph
 import uz.xumoyun.feature.prayer.ui.LocationsScreen
 import uz.xumoyun.feature.prayer.ui.NotificationSettingsRoute
 import uz.xumoyun.feature.prayer.ui.PrayerRoute
-import uz.xumoyun.feature.ramadan.RamadanHomeRoute
-import uz.xumoyun.feature.ramadan.RamadanRoutes
+import uz.xumoyun.feature.ramadan.ui.RamadanEntryCard
+import uz.xumoyun.feature.ramadan.ui.RamadanRoutes
+import uz.xumoyun.feature.ramadan.ui.ramadanGraph
+import uz.xumoyun.feature.ramadan.ui.ramadanTitle
 import uz.xumoyun.namoz.R
 import uz.xumoyun.feature.calendar.ui.CalendarRoute
 import uz.xumoyun.feature.calendar.ui.IslamicEventsRoute
@@ -80,8 +83,10 @@ private object Routes {
 }
 
 @Composable
-fun NamozRoot(startWithOnboarding: Boolean) {
+fun NamozRoot(startWithOnboarding: Boolean, openRamadan: Boolean = false) {
     val nav = rememberNavController()
+    // ShortcutManager yorlig'i yoki vidjet: Ramazon menyusini ochish (onboarding tugagach).
+    LaunchedEffect(openRamadan) { if (openRamadan && !startWithOnboarding) nav.navigate(RamadanRoutes.GRAPH) }
     val entry by nav.currentBackStackEntryAsState()
     val route = entry?.destination?.route
     val tab = Tab.entries.firstOrNull { it.route == route }
@@ -127,6 +132,7 @@ fun NamozRoot(startWithOnboarding: Boolean) {
                     onRamadan = { nav.navigate(RamadanRoutes.GRAPH) },
                     onSettings = { nav.navigate(Routes.SETTINGS) },
                     onTracker = { nav.navigate(Routes.TRACKER) },
+                    topCard = { RamadanEntryCard(onOpen = { nav.navigate(RamadanRoutes.GRAPH) }) },
                 )
             }
             composable(Tab.HIFZ.route) {
@@ -153,9 +159,7 @@ fun NamozRoot(startWithOnboarding: Boolean) {
                 )
             }
             // Alohida Ramazon menyusi grafi: R1 bosh sahifa; R2–R6 11-bosqichda qo'shiladi.
-            navigation(startDestination = RamadanRoutes.HOME, route = RamadanRoutes.GRAPH) {
-                composable(RamadanRoutes.HOME) { RamadanHomeRoute() }
-            }
+            ramadanGraph(nav, onOpenMushaf = { nav.navigate(MushafRoutes.HOME) })
             composable(Routes.SETTINGS) {
                 SettingsRoute(
                     hiltViewModel(),
@@ -178,18 +182,18 @@ fun NamozRoot(startWithOnboarding: Boolean) {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun SubScreenBar(route: String?, nav: NavHostController) {
-    val title = when (route) {
-        RamadanRoutes.HOME -> uz.xumoyun.feature.ramadan.R.string.ramadan_title
-        Routes.LOCATIONS -> uz.xumoyun.feature.prayer.R.string.saved_locations
-        Routes.NOTIFICATIONS -> R.string.notifications
-        Routes.HELP -> R.string.help_notifications
-        Routes.TRACKER -> uz.xumoyun.feature.prayer.R.string.tracker_title
-        Routes.LICENSES -> R.string.licenses_title
-        Routes.ISLAMIC_EVENTS -> uz.xumoyun.feature.calendar.R.string.islamic_events_title
+    val ramadan = ramadanTitle(route)
+    val title: String = ramadan ?: when (route) {
+        Routes.LOCATIONS -> stringResource(uz.xumoyun.feature.prayer.R.string.saved_locations)
+        Routes.NOTIFICATIONS -> stringResource(R.string.notifications)
+        Routes.HELP -> stringResource(R.string.help_notifications)
+        Routes.TRACKER -> stringResource(uz.xumoyun.feature.prayer.R.string.tracker_title)
+        Routes.LICENSES -> stringResource(R.string.licenses_title)
+        Routes.ISLAMIC_EVENTS -> stringResource(uz.xumoyun.feature.calendar.R.string.islamic_events_title)
         else -> return
     }
     TopAppBar(
-        title = { Text(stringResource(title)) },
+        title = { Text(title) },
         navigationIcon = {
             IconButton(onClick = { nav.popBackStack() }) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, stringResource(R.string.back)) }
         },

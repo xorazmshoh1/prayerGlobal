@@ -12,6 +12,8 @@ import uz.xumoyun.feature.prayer.domain.City
 import uz.xumoyun.feature.prayer.domain.DayTimes
 import uz.xumoyun.feature.prayer.domain.MethodTable
 import uz.xumoyun.feature.prayer.domain.PrayerCalculator
+import uz.xumoyun.feature.prayer.domain.RamadanCheck
+import uz.xumoyun.feature.prayer.domain.RamadanIsha
 import java.time.LocalDate
 import java.time.YearMonth
 import java.time.ZoneId
@@ -27,9 +29,12 @@ data class LocationConfig(
     val methodIsAuto: Boolean,
     val madhabIsAuto: Boolean,
     val prefs: PrayerPrefs,
+    val ramadan: RamadanCheck = RamadanCheck.NONE,
 ) {
     val zone: ZoneId get() = input.zone
-    fun day(date: LocalDate): DayTimes = PrayerCalculator.day(input, date)
+    /** Namoz vaqti; Umm al-Qura'da Ramazon kunlarida Xufton Shom+120 (TZ 2-bo'lim). */
+    fun day(date: LocalDate): DayTimes =
+        RamadanIsha.apply(input.method, PrayerCalculator.day(input, date), ramadan.isRamadan(date))
     fun month(month: YearMonth): List<DayTimes> = PrayerCalculator.month(input, month)
 }
 
@@ -44,6 +49,7 @@ class PrayerRepository @Inject constructor(
     private val settings: PrayerSettings,
     private val assets: AssetSource,
     private val json: Json,
+    private val ramadan: RamadanCheck,
 ) {
     val methodTable: MethodTable by lazy { MethodTable.parse(json, assets.readText(METHODS_ASSET)) }
 
@@ -70,6 +76,7 @@ class PrayerRepository @Inject constructor(
             methodIsAuto = prefs.methodOverride == null,
             madhabIsAuto = prefs.madhabOverride == null,
             prefs = prefs,
+            ramadan = ramadan,
         )
     }
 

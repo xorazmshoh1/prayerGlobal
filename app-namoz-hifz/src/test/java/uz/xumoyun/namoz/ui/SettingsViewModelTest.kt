@@ -51,7 +51,7 @@ class SettingsViewModelTest {
     private val settings = PrayerSettings(store)
     private val common = CommonSettings(store)
     // viewModelScope Dispatchers.Main ni yaratilishida oladi — setMain dan keyin yaratiladi.
-    private val vm by lazy { SettingsViewModel(PrayerRepository(dao, settings, assets, AppJson), settings, common, DataStoreTrackerPrefs(store)) }
+    private val vm by lazy { SettingsViewModel(PrayerRepository(dao, settings, assets, AppJson, uz.xumoyun.feature.prayer.domain.RamadanCheck.NONE), settings, common, DataStoreTrackerPrefs(store)) }
 
     @Before fun setUp() = Dispatchers.setMain(UnconfinedTestDispatcher())
     @After fun tearDown() = Dispatchers.resetMain()

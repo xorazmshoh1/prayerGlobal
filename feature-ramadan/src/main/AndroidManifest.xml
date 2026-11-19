@@ -1,2 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest />
+<manifest>
+
+    <!-- Ramazon vidjeti (TZ 11-bo'lim). -->
+    <receiver
+        android:name="uz.xumoyun.feature.ramadan.widget.RamadanWidgetReceiver"
+        android:exported="true"
+        android:label="@string/widget_ramadan_name">
+        <intent-filter>
+            <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+        </intent-filter>
+        <meta-data
+            android:name="android.appwidget.provider"
+            android:resource="@xml/ramadan_widget_info" />
+    </receiver>
+
+    <!-- Ulashiladigan PNG: FileProvider (cache/share/). Authority — ilova paketi bo'yicha. -->
+    <provider
+        android:name="androidx.core.content.FileProvider"
+        android:authorities="${applicationId}.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/ramadan_file_paths" />
+    </provider>
+</manifest>

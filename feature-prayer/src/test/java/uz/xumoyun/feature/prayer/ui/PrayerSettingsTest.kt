@@ -29,7 +29,7 @@ import uz.xumoyun.feature.prayer.tempDataStore
 class PrayerSettingsTest {
     private val store = tempDataStore()
     private val settings = PrayerSettings(store)
-    private val repository = PrayerRepository(FakeLocationDao(listOf(Tashkent)), settings, FileAssets, AppJson)
+    private val repository = PrayerRepository(FakeLocationDao(listOf(Tashkent)), settings, FileAssets, AppJson, uz.xumoyun.feature.prayer.domain.RamadanCheck.NONE)
 
     @Test fun defaults() = runTest {
         val p = settings.current()
