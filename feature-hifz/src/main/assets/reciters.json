@@ -1,0 +1,28 @@
+{
+  "reciters": [
+    {
+      "key": "alafasy",
+      "name": "Mishary Rashid Alafasy",
+      "urlTemplate": "https://everyayah.com/data/Alafasy_64kbps/{surah3}{ayah3}.mp3",
+      "format": "mp3",
+      "bitrateKbps": 64,
+      "todo": "TODO(TZ-ochiq-savol): URL shabloni va qori ID tasdiqlanmagan; qori uchun yozma ruxsat yo'q"
+    },
+    {
+      "key": "husary",
+      "name": "Mahmoud Khalil Al-Husary",
+      "urlTemplate": "https://everyayah.com/data/Husary_64kbps/{surah3}{ayah3}.mp3",
+      "format": "mp3",
+      "bitrateKbps": 64,
+      "todo": "TODO(TZ-ochiq-savol): URL shabloni va qori ID tasdiqlanmagan; qori uchun yozma ruxsat yo'q"
+    },
+    {
+      "key": "abdulbasit",
+      "name": "Abdul Basit Abdus-Samad (Murattal)",
+      "urlTemplate": "https://everyayah.com/data/Abdul_Basit_Murattal_64kbps/{surah3}{ayah3}.mp3",
+      "format": "mp3",
+      "bitrateKbps": 64,
+      "todo": "TODO(TZ-ochiq-savol): URL shabloni va qori ID tasdiqlanmagan; qori uchun yozma ruxsat yo'q"
+    }
+  ]
+}

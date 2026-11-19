@@ -3,4 +3,19 @@
     <string name="hifz_title">الحفظ</string>
     <string name="hifz_coming_soon">ستظهر هنا خطة الحفظ والدروس اليومية.</string>
     <string name="channel_hifz_reminder">تذكير الحفظ</string>
+    <string name="audio_title">الصوت</string>
+    <string name="audio_back">رجوع</string>
+    <string name="audio_open">فتح الصوت</string>
+    <string name="audio_config_error">تعذّرت قراءة إعدادات القرّاء</string>
+    <string name="audio_no_quran">نص القرآن غير مثبّت؛ الصوت غير متاح</string>
+    <string name="audio_unverified">مصدر القارئ لم يُتحقَّق منه بعد</string>
+    <string name="audio_wifi_only">التنزيل عبر Wi-Fi فقط</string>
+    <string name="audio_total">المساحة المستخدمة: %1$s</string>
+    <string name="audio_download">تنزيل</string>
+    <string name="audio_delete">حذف</string>
+    <string name="audio_status_not_downloaded">غير منزَّل</string>
+    <string name="audio_status_queued">في الانتظار</string>
+    <string name="audio_status_downloading">جارٍ التنزيل %1$d/%2$d</string>
+    <string name="audio_status_downloaded">تم التنزيل · %1$s</string>
+    <string name="audio_status_failed">فشل — أعد المحاولة</string>
 </resources>

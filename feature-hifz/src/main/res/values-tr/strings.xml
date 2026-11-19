@@ -3,4 +3,19 @@
     <string name="hifz_title">Hıfz</string>
     <string name="hifz_coming_soon">Ezber planınız ve günlük dersleriniz burada görünecek.</string>
     <string name="channel_hifz_reminder">Hafızlık hatırlatıcısı</string>
+    <string name="audio_title">Ses</string>
+    <string name="audio_back">Geri</string>
+    <string name="audio_open">Sesi aç</string>
+    <string name="audio_config_error">Okuyucu yapılandırması okunamadı</string>
+    <string name="audio_no_quran">Kur\'an metni yüklü değil; ses kullanılamıyor</string>
+    <string name="audio_unverified">Okuyucu kaynağı henüz doğrulanmadı</string>
+    <string name="audio_wifi_only">Yalnızca Wi-Fi ile indir</string>
+    <string name="audio_total">Kullanılan alan: %1$s</string>
+    <string name="audio_download">İndir</string>
+    <string name="audio_delete">Sil</string>
+    <string name="audio_status_not_downloaded">İndirilmedi</string>
+    <string name="audio_status_queued">Sırada</string>
+    <string name="audio_status_downloading">İndiriliyor %1$d/%2$d</string>
+    <string name="audio_status_downloaded">İndirildi · %1$s</string>
+    <string name="audio_status_failed">Başarısız — tekrar dene</string>
 </resources>

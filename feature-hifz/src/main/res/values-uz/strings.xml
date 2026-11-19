@@ -3,4 +3,19 @@
     <string name="hifz_title">Hifz</string>
     <string name="hifz_coming_soon">Yodlash rejangiz va kunlik darslar shu yerda bo\'ladi.</string>
     <string name="channel_hifz_reminder">Hifz eslatmasi</string>
+    <string name="audio_title">Audio</string>
+    <string name="audio_back">Orqaga</string>
+    <string name="audio_open">Audioni ochish</string>
+    <string name="audio_config_error">Qorilar konfiguratsiyasini o\'qib bo\'lmadi</string>
+    <string name="audio_no_quran">Qur\'on matni o\'rnatilmagan; audio mavjud emas</string>
+    <string name="audio_unverified">Qori manbasi hali tasdiqlanmagan</string>
+    <string name="audio_wifi_only">Faqat Wi-Fi orqali yuklash</string>
+    <string name="audio_total">Egallangan joy: %1$s</string>
+    <string name="audio_download">Yuklash</string>
+    <string name="audio_delete">O\'chirish</string>
+    <string name="audio_status_not_downloaded">Yuklanmagan</string>
+    <string name="audio_status_queued">Navbatda</string>
+    <string name="audio_status_downloading">Yuklanmoqda %1$d/%2$d</string>
+    <string name="audio_status_downloaded">Yuklangan · %1$s</string>
+    <string name="audio_status_failed">Xato — qayta urinib ko\'ring</string>
 </resources>

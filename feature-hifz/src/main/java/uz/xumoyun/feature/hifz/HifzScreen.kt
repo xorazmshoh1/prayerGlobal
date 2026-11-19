@@ -24,6 +24,7 @@ import uz.xumoyun.core.ui.components.EmptyState
 fun HifzRoute(
     modifier: Modifier = Modifier,
     onOpenMushaf: () -> Unit = {},
+    onOpenAudio: () -> Unit = {},
 ) {
     Column(
         modifier.fillMaxSize().statusBarsPadding().padding(24.dp),
@@ -37,6 +38,9 @@ fun HifzRoute(
         )
         Button(onClick = onOpenMushaf) {
             Text(stringResource(R.string.mushaf_open))
+        }
+        Button(onClick = onOpenAudio) {
+            Text(stringResource(R.string.audio_open))
         }
     }
 }

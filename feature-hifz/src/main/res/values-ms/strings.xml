@@ -3,4 +3,19 @@
     <string name="hifz_title">Hafazan</string>
     <string name="hifz_coming_soon">Rancangan hafazan dan pelajaran harian anda akan dipaparkan di sini.</string>
     <string name="channel_hifz_reminder">Peringatan hafazan</string>
+    <string name="audio_title">Audio</string>
+    <string name="audio_back">Kembali</string>
+    <string name="audio_open">Buka audio</string>
+    <string name="audio_config_error">Gagal membaca konfigurasi qari</string>
+    <string name="audio_no_quran">Teks Al-Quran belum dipasang; audio tidak tersedia</string>
+    <string name="audio_unverified">Sumber qari belum disahkan</string>
+    <string name="audio_wifi_only">Muat turun melalui Wi-Fi sahaja</string>
+    <string name="audio_total">Ruang digunakan: %1$s</string>
+    <string name="audio_download">Muat turun</string>
+    <string name="audio_delete">Padam</string>
+    <string name="audio_status_not_downloaded">Belum dimuat turun</string>
+    <string name="audio_status_queued">Dalam giliran</string>
+    <string name="audio_status_downloading">Memuat turun %1$d/%2$d</string>
+    <string name="audio_status_downloaded">Telah dimuat turun · %1$s</string>
+    <string name="audio_status_failed">Gagal — cuba lagi</string>
 </resources>

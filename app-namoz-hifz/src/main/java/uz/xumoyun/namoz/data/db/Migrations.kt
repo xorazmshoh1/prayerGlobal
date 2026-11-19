@@ -25,3 +25,20 @@ val MIGRATION_1_2 = object : Migration(1, 2) {
         db.execSQL("DROP TABLE IF EXISTS `tasbeh_day`")
     }
 }
+
+/**
+ * 2 → 3: audio_download (6-bosqich). Yozuv — bitta qori va bitta sura; (reciterKey, surahId) kompozit kalit.
+ * Yangi jadval, eski ma'lumotga tegmaydi.
+ */
+val MIGRATION_2_3 = object : Migration(2, 3) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `audio_download` (" +
+                "`reciterKey` TEXT NOT NULL, " +
+                "`surahId` INTEGER NOT NULL, " +
+                "`bytes` INTEGER NOT NULL, " +
+                "`downloadedAt` INTEGER NOT NULL, " +
+                "PRIMARY KEY(`reciterKey`, `surahId`))",
+        )
+    }
+}

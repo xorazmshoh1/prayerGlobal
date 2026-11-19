@@ -24,6 +24,7 @@ minSdk 24, compileSdk/targetSdk 36, Gradle version catalog (`gradle/libs.version
 - `core-data` — DataStore, AssetSource, CommonSettings (tema, til, onboarding), `NotificationChannelRegistrar` (modullar `@IntoSet` bilan bergan kanallarni yaratadi)
 - `feature-prayer`, `feature-calendar`, `feature-hifz`, `feature-qibla`, `feature-tasbih`, `feature-ramadan` — funksiya modullari
 `feature-hifz` ichida mus'haf (5-bosqich): `data/` — quran.db Room (`createFromAsset`), `domain/QuranCatalog` (qidiruv, shrift), `ui/` — sura/juz ro'yxati va o'qish ekrani; navigatsiya `MushafNavigation.kt` (`mushafGraph`).
+`feature-hifz` ichida audio (6-bosqich): `audio/domain` — qori konfiguratsiyasi (`assets/reciters.json`, URL shablonlari kodda emas), AyahUrl, yuklash/Range qarorlari (`AudioPolicy`), fayl joylashuvi va MB (`AudioStorage`), takror/tezlik (`Playback`), boshqaruv qatorlari (`AudioOverview`) — sof Kotlin; `audio/data` — AudioDownload (Room, `NamozDatabase` v3, `MIGRATION_2_3`), `AyahFileDownloader` (`.part` + Range), `AudioFiles`, `AudioPrefs` (Wi-Fi standart); `audio/work` — sura bo'yicha WorkManager (`SuraDownloadWorker`, `AudioEntryPoint`); `audio/player` — Media3 `AyahAudioPlayer`; `audio/ui` — boshqaruv ekrani; navigatsiya `AudioNavigation.kt` (`audioGraph`). Qori URL va ID'lari TZ-ochiq-savol bilan belgilangan (tasdiqlanmagan).
 
 Umumiy kod faqat `core-*` modullarida; feature modullar bir-biriga bog'lanmaydi.
 Namoz yadrosi (hisoblash, mamlakat → usul, PrayerSettings, joylar va shahar qidiruvi, Namoz ekrani) — `feature-prayer` (2-bosqich).

@@ -3,4 +3,19 @@
     <string name="hifz_title">হিফজ</string>
     <string name="hifz_coming_soon">আপনার হিফজ পরিকল্পনা ও দৈনিক পাঠ এখানে দেখা যাবে।</string>
     <string name="channel_hifz_reminder">হিফজ অনুস্মারক</string>
+    <string name="audio_title">অডিও</string>
+    <string name="audio_back">ফিরে যান</string>
+    <string name="audio_open">অডিও খুলুন</string>
+    <string name="audio_config_error">কারী কনফিগারেশন পড়া যায়নি</string>
+    <string name="audio_no_quran">কুরআনের পাঠ ইনস্টল করা নেই; অডিও পাওয়া যাচ্ছে না</string>
+    <string name="audio_unverified">কারীর উৎস এখনও যাচাই করা হয়নি</string>
+    <string name="audio_wifi_only">শুধু ওয়াই-ফাইয়ে ডাউনলোড</string>
+    <string name="audio_total">ব্যবহৃত জায়গা: %1$s</string>
+    <string name="audio_download">ডাউনলোড</string>
+    <string name="audio_delete">মুছুন</string>
+    <string name="audio_status_not_downloaded">ডাউনলোড হয়নি</string>
+    <string name="audio_status_queued">অপেক্ষমাণ</string>
+    <string name="audio_status_downloading">ডাউনলোড হচ্ছে %1$d/%2$d</string>
+    <string name="audio_status_downloaded">ডাউনলোড হয়েছে · %1$s</string>
+    <string name="audio_status_failed">ব্যর্থ — আবার চেষ্টা করুন</string>
 </resources>

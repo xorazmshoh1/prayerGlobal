@@ -3,4 +3,19 @@
     <string name="hifz_title">حفظ</string>
     <string name="hifz_coming_soon">آپ کا حفظ کا منصوبہ اور روزانہ اسباق یہاں نظر آئیں گے۔</string>
     <string name="channel_hifz_reminder">حفظ کی یاد دہانی</string>
+    <string name="audio_title">آڈیو</string>
+    <string name="audio_back">واپس</string>
+    <string name="audio_open">آڈیو کھولیں</string>
+    <string name="audio_config_error">قاری کی ترتیب پڑھی نہیں جا سکی</string>
+    <string name="audio_no_quran">قرآن کا متن نصب نہیں؛ آڈیو دستیاب نہیں</string>
+    <string name="audio_unverified">قاری کا ذریعہ ابھی تصدیق شدہ نہیں</string>
+    <string name="audio_wifi_only">صرف وائی فائی پر ڈاؤن لوڈ</string>
+    <string name="audio_total">استعمال شدہ جگہ: %1$s</string>
+    <string name="audio_download">ڈاؤن لوڈ</string>
+    <string name="audio_delete">حذف کریں</string>
+    <string name="audio_status_not_downloaded">ڈاؤن لوڈ نہیں ہوا</string>
+    <string name="audio_status_queued">قطار میں</string>
+    <string name="audio_status_downloading">ڈاؤن لوڈ ہو رہا ہے %1$d/%2$d</string>
+    <string name="audio_status_downloaded">ڈاؤن لوڈ ہو گیا · %1$s</string>
+    <string name="audio_status_failed">ناکام — دوبارہ کوشش کریں</string>
 </resources>

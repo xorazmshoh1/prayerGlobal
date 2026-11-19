@@ -3,4 +3,19 @@
     <string name="hifz_title">Хифз</string>
     <string name="hifz_coming_soon">Здесь появятся ваш план заучивания и ежедневные уроки.</string>
     <string name="channel_hifz_reminder">Напоминание о хифзе</string>
+    <string name="audio_title">Аудио</string>
+    <string name="audio_back">Назад</string>
+    <string name="audio_open">Открыть аудио</string>
+    <string name="audio_config_error">Не удалось прочитать настройки чтецов</string>
+    <string name="audio_no_quran">Текст Корана не установлен; аудио недоступно</string>
+    <string name="audio_unverified">Источник чтеца ещё не проверен</string>
+    <string name="audio_wifi_only">Загружать только по Wi-Fi</string>
+    <string name="audio_total">Занято: %1$s</string>
+    <string name="audio_download">Загрузить</string>
+    <string name="audio_delete">Удалить</string>
+    <string name="audio_status_not_downloaded">Не загружено</string>
+    <string name="audio_status_queued">В очереди</string>
+    <string name="audio_status_downloading">Загрузка %1$d/%2$d</string>
+    <string name="audio_status_downloaded">Загружено · %1$s</string>
+    <string name="audio_status_failed">Ошибка — попробуйте снова</string>
 </resources>
