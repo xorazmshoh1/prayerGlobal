@@ -13,4 +13,10 @@ interface QuranDao {
 
     @Query("SELECT * FROM ayah WHERE juz = :juz ORDER BY globalId")
     suspend fun ayahsOfJuz(juz: Int): List<AyahEntity>
+
+    @Query("SELECT MIN(globalId) FROM ayah GROUP BY juz ORDER BY juz")
+    suspend fun juzStarts(): List<Int>
+
+    @Query("SELECT * FROM ayah WHERE globalId IN (:ids)")
+    suspend fun ayahsByIds(ids: List<Int>): List<AyahEntity>
 }

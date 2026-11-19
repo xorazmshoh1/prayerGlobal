@@ -32,4 +32,10 @@ interface QuranSource {
     suspend fun surahs(): List<SurahInfo>
     suspend fun ayahsOfSurah(surahId: Int): List<AyahText>
     suspend fun ayahsOfJuz(juz: Int): List<AyahText>
+
+    /** Har juzning birinchi global oyat raqami (1..30 tartibida, 30 ta element). */
+    suspend fun juzStarts(): List<Int>
+
+    /** Global id bo'yicha oyatlar (tartib saqlanmaydi; topilmaganlari qaytmaydi). */
+    suspend fun ayahsByIds(ids: List<Int>): List<AyahText>
 }

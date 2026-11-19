@@ -31,6 +31,14 @@ class RoomQuranSource @Inject constructor(
     override suspend fun ayahsOfJuz(juz: Int): List<AyahText> =
         db.get().quran().ayahsOfJuz(juz).map { it.toDomain() }
 
+    override suspend fun juzStarts(): List<Int> = db.get().quran().juzStarts()
+
+    /** SQLite o'zgaruvchilar chegarasi (eski qurilmalarda 999) uchun bo'laklab so'raladi. */
+    override suspend fun ayahsByIds(ids: List<Int>): List<AyahText> =
+        ids.distinct().chunked(ID_CHUNK).flatMap { chunk ->
+            db.get().quran().ayahsByIds(chunk).map { it.toDomain() }
+        }
+
     private fun SurahEntity.toDomain() = SurahInfo(
         id = id,
         nameArabic = nameArabic,
@@ -48,4 +56,8 @@ class RoomQuranSource @Inject constructor(
         page = page,
         text = textUthmani,
     )
+
+    private companion object {
+        const val ID_CHUNK = 500
+    }
 }

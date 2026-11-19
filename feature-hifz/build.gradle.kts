@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -29,6 +30,7 @@ dependencies {
     implementation(project(":core-common"))
     implementation(project(":core-ui"))
     implementation(project(":core-data"))
+    implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.lifecycle.viewmodel.savedstate)
     implementation(libs.androidx.navigation.compose)
@@ -36,6 +38,9 @@ dependencies {
     implementation(libs.hilt.navigation.compose)
     ksp(libs.hilt.compiler)
     implementation(libs.room.runtime)
+    implementation(libs.work.runtime)
+    implementation(libs.media3.exoplayer)
+    implementation(libs.kotlinx.serialization.json)
     implementation(libs.room.ktx)
     ksp(libs.room.compiler)
 

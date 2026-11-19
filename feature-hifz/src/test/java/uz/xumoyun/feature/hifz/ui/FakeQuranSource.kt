@@ -24,4 +24,6 @@ class FakeQuranSource(
     override suspend fun surahs(): List<SurahInfo> = check(!fail).let { surahList }
     override suspend fun ayahsOfSurah(surahId: Int): List<AyahText> = check(!fail).let { ayahList.filter { it.surahId == surahId } }
     override suspend fun ayahsOfJuz(juz: Int): List<AyahText> = check(!fail).let { ayahList.filter { it.juz == juz } }
+    override suspend fun juzStarts(): List<Int> = listOf(1)
+    override suspend fun ayahsByIds(ids: List<Int>): List<AyahText> = ayahList.filter { it.globalId in ids }
 }
