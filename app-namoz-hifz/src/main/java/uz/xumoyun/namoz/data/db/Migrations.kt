@@ -42,3 +42,48 @@ val MIGRATION_2_3 = object : Migration(2, 3) {
         )
     }
 }
+
+/**
+ * 3 → 4: hifz jadvallari (7-bosqich) — hifz_plan, ayah_progress, review_session. Yangi jadvallar, eski ma'lumotga tegmaydi.
+ * Ustun turlari Room sxemasi bilan mos: Long/Int → INTEGER NOT NULL, Double → REAL, nullable → NULL ruxsat.
+ */
+val MIGRATION_3_4 = object : Migration(3, 4) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `hifz_plan` (" +
+                "`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
+                "`scope` TEXT NOT NULL, " +
+                "`fromAyah` INTEGER NOT NULL, " +
+                "`toAyah` INTEGER NOT NULL, " +
+                "`dailyNewAyahs` INTEGER NOT NULL, " +
+                "`reminderAfterPrayer` TEXT, " +
+                "`reminderOffsetMin` INTEGER NOT NULL, " +
+                "`startDate` INTEGER NOT NULL, " +
+                "`isActive` INTEGER NOT NULL)",
+        )
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `ayah_progress` (" +
+                "`ayahGlobalId` INTEGER NOT NULL, " +
+                "`state` TEXT NOT NULL, " +
+                "`easeFactor` REAL NOT NULL, " +
+                "`intervalDays` INTEGER NOT NULL, " +
+                "`repetitions` INTEGER NOT NULL, " +
+                "`dueDate` INTEGER NOT NULL, " +
+                "`lastRating` INTEGER, " +
+                "`lastReviewedAt` INTEGER, " +
+                "PRIMARY KEY(`ayahGlobalId`))",
+        )
+        db.execSQL("CREATE INDEX IF NOT EXISTS `index_ayah_progress_dueDate` ON `ayah_progress` (`dueDate`)")
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `review_session` (" +
+                "`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
+                "`date` INTEGER NOT NULL, " +
+                "`type` TEXT NOT NULL, " +
+                "`ayahFrom` INTEGER NOT NULL, " +
+                "`ayahTo` INTEGER NOT NULL, " +
+                "`durationSec` INTEGER NOT NULL, " +
+                "`avgRating` REAL)",
+        )
+        db.execSQL("CREATE INDEX IF NOT EXISTS `index_review_session_date` ON `review_session` (`date`)")
+    }
+}

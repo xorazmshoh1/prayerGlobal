@@ -27,7 +27,7 @@ bo'lmasa tizim serif shrifti ishlatiladi. Shrift qo'shilgach, Litsenziyalar ekra
 
 ### Hozircha yo'q (keyingi bosqichlar)
 
-- Hifz yadrosi (HifzPlan, AyahProgress, SM-2) va "Hifzga qo'shish" tugmasining haqiqiy ishi — 7–8-bosqichlar.
+- "Hifzga qo'shish" tugmasining haqiqiy ishi, Hifz tab va dars ekrani — 8-bosqich. Yadro (SM-2, generator, Room jadvallari) 7-bosqichda `plan/` ichida tayyor.
   Hozir tugma faqat callback va "keyingi yangilanishda" xabari.
 - Hifz tabining kunlik dars ekrani — 8-bosqich.
 
