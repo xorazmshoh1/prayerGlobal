@@ -12,6 +12,7 @@ import kotlinx.coroutines.test.setMain
 import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import uz.xumoyun.core.data.AppJson
@@ -23,6 +24,7 @@ import uz.xumoyun.feature.prayer.data.PrayerSettings
 import uz.xumoyun.feature.prayer.data.SavedLocation
 import uz.xumoyun.feature.prayer.domain.CalcMethod
 import uz.xumoyun.feature.prayer.domain.Prayer
+import uz.xumoyun.feature.prayer.tracker.data.DataStoreTrackerPrefs
 import uz.xumoyun.namoz.tempDataStore
 import uz.xumoyun.namoz.ui.settings.SettingsViewModel
 import java.io.File
@@ -49,7 +51,7 @@ class SettingsViewModelTest {
     private val settings = PrayerSettings(store)
     private val common = CommonSettings(store)
     // viewModelScope Dispatchers.Main ni yaratilishida oladi — setMain dan keyin yaratiladi.
-    private val vm by lazy { SettingsViewModel(PrayerRepository(dao, settings, assets, AppJson), settings, common) }
+    private val vm by lazy { SettingsViewModel(PrayerRepository(dao, settings, assets, AppJson), settings, common, DataStoreTrackerPrefs(store)) }
 
     @Before fun setUp() = Dispatchers.setMain(UnconfinedTestDispatcher())
     @After fun tearDown() = Dispatchers.resetMain()
@@ -68,5 +70,14 @@ class SettingsViewModelTest {
         vm.setHijriOffset(5).join()
         assertEquals(3, settings.current().adjustments.getValue(Prayer.DHUHR))
         assertEquals(CommonSettings.MAX_HIJRI_ADJUST, vm.state.first { it.hijriAdjustDays != 0 }.hijriAdjustDays)
+    }
+
+    @Test fun qadaAndCrashSwitchesDefaultOnAndPersist() = runTest {
+        assertTrue(vm.state.first().autoQada)
+        assertTrue(vm.state.first().crashReporting)
+        vm.setAutoQada(false).join()
+        vm.setCrashReporting(false).join()
+        assertFalse(vm.state.first { !it.autoQada }.autoQada)
+        assertFalse(vm.state.first { !it.crashReporting }.crashReporting)
     }
 }

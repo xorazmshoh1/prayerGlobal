@@ -42,6 +42,8 @@ Oylik jadval (10-bosqich), sozlamalar/onboarding (9-bosqich) va Room bazasi (`Na
 `app-namoz-hifz` ichida; ular feature modullar API'laridan foydalanadi.
 Hijriy sana (`HijriProvider`) va `hijriAdjustDays` — `core-data`da (namoz, taqvim, Ramazon uchun umumiy).
 
+9-bosqich (qolgan ekranlar): namoz kuzatuvchisi va qazo — `feature-prayer/tracker/` (domain: `Qada`, `PrayerLog`, portlar `TrackerStore`/`TransactionRunner`/`MadhabSource`/`TrackerPrefs`; data: Room `prayer_log`/`qada_counter`/`qada_event` (`NamozDatabase` v5, `MIGRATION_4_5`), `TrackerRepository`; ui: `TrackerScreen`, `TrackerViewModel`; navigatsiya — Namoz tabidagi tugma, `Routes.TRACKER`). Zaxira — `app-namoz-hifz/backup/` (`BackupFormat`, `BackupService`: sof Kotlin; `RoomBackupStore`: Room + DataStore; SAF — `ui/settings/BackupRows.kt`). Onboarding — 3 qadam (`ui/onboarding`). Sozlamalar — `ui/settings` (`SettingsViewModel`, `LicensesScreen`, `BackupViewModel`). Xato hisoboti: `core-common/crash/CrashReportGate` (sozlama `CommonSettings.crashReportingEnabled`); Firebase SDK hali ulanmagan — `NoopCrashSink`.
+
 ## Qoidalar
 - Barcha matnlar `strings.xml` da: `values` = inglizcha, `values-{ar,uz,ru,in,ms,tr,ur,fa,bn,fr}`. RTL (ar, ur, fa) qo'llab-quvvatlanadi, kompas aylantirilmaydi.
 - Reklama, ichki xarid, xayriya so'rovi yo'q (review-ktx va Crashlytics ruxsat). `verifyNoAds` Gradle vazifasi reklama/billing/analytics SDK'lari bog'liqliklarda bo'lsa build'ni to'xtatadi.

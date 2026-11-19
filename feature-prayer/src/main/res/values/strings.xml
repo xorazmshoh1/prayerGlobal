@@ -71,4 +71,36 @@
     <string name="exact_alarm_title">Notifications may be late</string>
     <string name="exact_alarm_text">Without the \"Alarms &amp; reminders\" permission, Android may show the prayer notification up to 10 minutes late. Allow it so the azan arrives exactly on time.</string>
     <string name="notifications_blocked_title">Notifications are off</string>
+    <!-- TZ 9-bosqich -->
+    <string name="open_tracker">Prayer tracker</string>
+    <string name="tracker_title">Prayer tracker &amp; qada</string>
+    <string name="tracker_streak">Streak: %1$d days</string>
+    <string name="tracker_streak_hint">A day counts when all 5 prayers are marked as prayed.</string>
+    <string name="tracker_week_prev">Previous week</string>
+    <string name="tracker_week_next">Next week</string>
+    <string name="tracker_state_none">Not marked</string>
+    <string name="tracker_state_prayed">Prayed</string>
+    <string name="tracker_state_missed">Missed</string>
+    <string name="tracker_qada_title">Qada (missed prayers)</string>
+    <string name="tracker_qada_total">Total remaining: %1$d</string>
+    <string name="tracker_qada_done">All qada prayers are done</string>
+    <string name="tracker_qada_no_goal">Set a daily goal to see the finish date</string>
+    <string name="tracker_qada_finish">Expected to finish: %1$s</string>
+    <string name="tracker_daily_goal">Daily goal (per prayer)</string>
+    <string name="tracker_undo">Undo last change</string>
+    <string name="tracker_wizard_button">Estimate from dates</string>
+    <string name="tracker_qada_hint">Counts apply to each prayer. The app does not issue fatwas; ask a scholar for the exact number.</string>
+    <string name="tracker_wizard_title">Estimate qada</string>
+    <string name="tracker_wizard_start">Start date</string>
+    <string name="tracker_wizard_end">End date</string>
+    <string name="tracker_wizard_result">%1$d days × %2$d prayers = %3$d missed prayers</string>
+    <string name="tracker_wizard_invalid">The end date must not be before the start date.</string>
+    <string name="tracker_wizard_disclaimer">This is an estimate, not an exact count. Ask a scholar for the exact number.</string>
+    <string name="tracker_wizard_apply">Apply</string>
+    <string name="tracker_set_title">Remaining count</string>
+    <string name="tracker_save">Save</string>
+    <string name="tracker_cancel">Cancel</string>
+    <string name="tracker_ok">OK</string>
+    <string name="tracker_prayer_witr">Witr</string>
+    <string name="tracker_prayer_fast">Fast</string>
 </resources>

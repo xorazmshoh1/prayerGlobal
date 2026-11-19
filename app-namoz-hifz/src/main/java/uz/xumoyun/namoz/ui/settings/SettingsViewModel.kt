@@ -17,16 +17,22 @@ import uz.xumoyun.feature.prayer.domain.AsrMadhab
 import uz.xumoyun.feature.prayer.domain.CalcMethod
 import uz.xumoyun.feature.prayer.domain.HighLatRule
 import uz.xumoyun.feature.prayer.domain.Prayer
+import uz.xumoyun.feature.prayer.tracker.domain.TrackerPrefs
 import javax.inject.Inject
 
 data class SettingsState(
     val config: LocationConfig? = null,
     val theme: ThemeMode = ThemeMode.SYSTEM,
     val hijriAdjustDays: Int = 0,
+    /** TZ 9: MISSED belgilanganda qazoga avtomatik +1. */
+    val autoQada: Boolean = true,
+    /** TZ 8: xato hisobotlari (Crashlytics). */
+    val crashReporting: Boolean = true,
 )
 
 /**
- * Sozlamalar va onboarding ekranlari uchun ViewModel (bildirishnomalar — feature-prayer NotificationSettingsViewModel) (9-bosqichda kengaytiriladi).
+ * Sozlamalar va onboarding ekranlari uchun ViewModel (bildirishnomalar — feature-prayer NotificationSettingsViewModel).
+ * Qazo (MISSED) va xato hisoboti sozlamalari ham shu yerda.
  * Namoz sozlamalari feature-prayer'dagi [PrayerSettings] ga yoziladi; joylar — feature-prayer LocationsViewModel.
  */
 @HiltViewModel
@@ -34,10 +40,13 @@ class SettingsViewModel @Inject constructor(
     repository: PrayerRepository,
     private val settings: PrayerSettings,
     private val common: CommonSettings,
+    private val tracker: TrackerPrefs,
 ) : ViewModel() {
 
-    val state: StateFlow<SettingsState> = combine(repository.config, common.themeMode, common.hijriAdjustDays) { c, t, h ->
-        SettingsState(c, t, h)
+    val state: StateFlow<SettingsState> = combine(
+        repository.config, common.themeMode, common.hijriAdjustDays, tracker.autoQadaOnMissed, common.crashReportingEnabled,
+    ) { c, t, h, auto, crash ->
+        SettingsState(c, t, h, auto, crash)
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), SettingsState())
 
     fun setMethod(m: CalcMethod?) = viewModelScope.launch { settings.setMethod(m) }
@@ -48,4 +57,6 @@ class SettingsViewModel @Inject constructor(
     fun setTheme(t: ThemeMode) = viewModelScope.launch { common.setThemeMode(t) }
     fun setLanguage(tag: String) = viewModelScope.launch { common.setLanguage(tag) }
     fun finishOnboarding() = viewModelScope.launch { common.setOnboardingDone() }
+    fun setAutoQada(enabled: Boolean) = viewModelScope.launch { tracker.setAutoQadaOnMissed(enabled) }
+    fun setCrashReporting(enabled: Boolean) = viewModelScope.launch { common.setCrashReportingEnabled(enabled) }
 }

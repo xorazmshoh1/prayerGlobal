@@ -17,6 +17,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Calculate
 import androidx.compose.material.icons.rounded.CalendarMonth
 import androidx.compose.material.icons.rounded.DarkMode
+import androidx.compose.material.icons.rounded.Info
 import androidx.compose.material.icons.automirrored.rounded.HelpOutline
 import androidx.compose.material.icons.rounded.Language
 import androidx.compose.material.icons.rounded.LocationOn
@@ -28,6 +29,7 @@ import androidx.compose.material.icons.rounded.Star
 import androidx.compose.material.icons.rounded.WbTwilight
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Switch
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
@@ -42,6 +44,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import uz.xumoyun.core.common.ThemeMode
 import uz.xumoyun.core.data.CommonSettings
@@ -70,6 +73,8 @@ fun SettingsRoute(
     onLocations: () -> Unit,
     onNotifications: () -> Unit,
     onHelp: () -> Unit,
+    onLicenses: () -> Unit = {},
+    backup: BackupViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
     val config = state.config
@@ -116,6 +121,14 @@ fun SettingsRoute(
             onClick = { dialog = Dialog.HIJRI },
         )
 
+        SectionTitle(stringResource(R.string.section_tracker))
+        SettingsSwitchRow(
+            title = stringResource(R.string.qada_auto_title),
+            hint = stringResource(R.string.qada_auto_hint),
+            checked = state.autoQada,
+            onChange = viewModel::setAutoQada,
+        )
+
         SectionTitle(stringResource(R.string.section_app))
         SettingsRow(stringResource(R.string.notifications), icon = Icons.Rounded.Notifications, onClick = onNotifications)
         SettingsRow(
@@ -127,7 +140,17 @@ fun SettingsRoute(
         SettingsRow(stringResource(R.string.theme), value = stringResource(themeName(state.theme)), icon = Icons.Rounded.DarkMode, onClick = { dialog = Dialog.THEME })
         SettingsRow(stringResource(R.string.help_notifications), icon = Icons.AutoMirrored.Rounded.HelpOutline, onClick = onHelp)
 
+        SectionTitle(stringResource(R.string.section_data))
+        BackupRows(backup)
+        SettingsSwitchRow(
+            title = stringResource(R.string.crash_reports_title),
+            hint = stringResource(R.string.crash_reports_hint),
+            checked = state.crashReporting,
+            onChange = viewModel::setCrashReporting,
+        )
+
         SectionTitle(stringResource(R.string.section_about))
+        SettingsRow(stringResource(R.string.licenses_title), icon = Icons.Rounded.Info, onClick = onLicenses)
         SettingsRow(stringResource(R.string.privacy_policy), icon = Icons.Rounded.Policy, onClick = {
             openUrl(context, context.getString(R.string.privacy_policy_url))
         })
@@ -224,6 +247,23 @@ private fun openUrl(context: android.content.Context, url: String, fallback: Str
         context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
     } catch (e: ActivityNotFoundException) {
         fallback?.let { runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(it))) } }
+    }
+}
+
+/** Yoqish/o'chirish qatori: sarlavha, ixtiyoriy izoh va kalit. */
+@Composable
+internal fun SettingsSwitchRow(title: String, hint: String?, checked: Boolean, onChange: (Boolean) -> Unit) {
+    Row(
+        Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 10.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Column(Modifier.weight(1f)) {
+            Text(title, style = MaterialTheme.typography.bodyLarge)
+            hint?.let {
+                Text(it, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+        }
+        Switch(checked = checked, onCheckedChange = onChange)
     }
 }
 

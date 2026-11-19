@@ -71,4 +71,36 @@
     <string name="exact_alarm_title">Bildirishnomalar kechikishi mumkin</string>
     <string name="exact_alarm_text">«Signallar va eslatmalar» ruxsatisiz Android namoz bildirishnomasini 10 daqiqagacha kechiktirib koʻrsatishi mumkin. Azon aynan vaqtida kelishi uchun ruxsat bering.</string>
     <string name="notifications_blocked_title">Bildirishnomalar oʻchirilgan</string>
+    <!-- TZ 9-bosqich -->
+    <string name="open_tracker">Namoz kuzatuvchisi</string>
+    <string name="tracker_title">Namoz kuzatuvchisi va qazo</string>
+    <string name="tracker_streak">Ketma-ket kunlar: %1$d</string>
+    <string name="tracker_streak_hint">Bir kunda 5 namozning hammasi o\'qilsa, kun mukammal hisoblanadi.</string>
+    <string name="tracker_week_prev">Oldingi hafta</string>
+    <string name="tracker_week_next">Keyingi hafta</string>
+    <string name="tracker_state_none">Belgilanmagan</string>
+    <string name="tracker_state_prayed">O\'qildi</string>
+    <string name="tracker_state_missed">O\'qilmadi</string>
+    <string name="tracker_qada_title">Qazo</string>
+    <string name="tracker_qada_total">Jami qolgan: %1$d</string>
+    <string name="tracker_qada_done">Barcha qazolar ado etilgan</string>
+    <string name="tracker_qada_no_goal">Tugash sanasini ko\'rish uchun kunlik maqsadni belgilang</string>
+    <string name="tracker_qada_finish">Tugash sanasi: %1$s</string>
+    <string name="tracker_daily_goal">Kunlik maqsad (har namoz uchun)</string>
+    <string name="tracker_undo">Oxirgisini bekor qilish</string>
+    <string name="tracker_wizard_button">Sanalardan taxmin</string>
+    <string name="tracker_qada_hint">Son har bir namoz uchun. Ilova fatvo bermaydi; aniq son uchun olimdan so\'rang.</string>
+    <string name="tracker_wizard_title">Qazoni taxmin qilish</string>
+    <string name="tracker_wizard_start">Boshlanish sanasi</string>
+    <string name="tracker_wizard_end">Tugash sanasi</string>
+    <string name="tracker_wizard_result">%1$d kun × %2$d namoz = %3$d qazo</string>
+    <string name="tracker_wizard_invalid">Tugash sanasi boshlanishdan oldin bo\'lmasligi kerak.</string>
+    <string name="tracker_wizard_disclaimer">Bu taxminiy hisob, aniq son emas. Aniq sonni olimdan so\'rang.</string>
+    <string name="tracker_wizard_apply">Qo\'llash</string>
+    <string name="tracker_set_title">Qolgan sonni kiriting</string>
+    <string name="tracker_save">Saqlash</string>
+    <string name="tracker_cancel">Bekor qilish</string>
+    <string name="tracker_ok">OK</string>
+    <string name="tracker_prayer_witr">Vitr</string>
+    <string name="tracker_prayer_fast">Ro\'za</string>
 </resources>

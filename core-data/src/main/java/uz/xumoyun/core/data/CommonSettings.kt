@@ -28,6 +28,11 @@ class CommonSettings @Inject constructor(private val store: DataStore<Preference
     /** Hijriy sanani ±kun tuzatish (TZ: hijriAdjustDays). Namoz, taqvim va Ramazon ekranlari bir xil qiymatni ishlatadi. */
     val hijriAdjustDays: Flow<Int> = store.data.map { it[HIJRI_OFFSET] ?: 0 }.distinctUntilChanged()
 
+    /** TZ 8: xato hisobotlari (Crashlytics). Standart — yoqilgan; foydalanuvchi sozlamada o'chiradi. */
+    val crashReportingEnabled: Flow<Boolean> = store.data.map { it[CRASH_REPORTING] ?: true }.distinctUntilChanged()
+
+    suspend fun setCrashReportingEnabled(enabled: Boolean) = store.edit { it[CRASH_REPORTING] = enabled }
+
     suspend fun setHijriAdjustDays(days: Int) = store.edit { it[HIJRI_OFFSET] = days.coerceIn(-MAX_HIJRI_ADJUST, MAX_HIJRI_ADJUST) }
 
     suspend fun setThemeMode(mode: ThemeMode) = store.edit { it[THEME] = mode.name }
@@ -41,5 +46,6 @@ class CommonSettings @Inject constructor(private val store: DataStore<Preference
         private val THEME = stringPreferencesKey("theme_mode")
         private val ONBOARDING = booleanPreferencesKey("onboarding_done")
         private val LANGUAGE = stringPreferencesKey("language")
+        private val CRASH_REPORTING = booleanPreferencesKey("crash_reporting_enabled")
     }
 }

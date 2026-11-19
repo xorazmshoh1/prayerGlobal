@@ -71,4 +71,36 @@
     <string name="exact_alarm_title">Les notifications peuvent être en retard</string>
     <string name="exact_alarm_text">Sans l’autorisation « Alarmes et rappels », Android peut afficher la notification de prière jusqu’à 10 minutes en retard. Autorisez-la pour que l’adhan arrive à l’heure exacte.</string>
     <string name="notifications_blocked_title">Les notifications sont désactivées</string>
+    <!-- TZ 9-bosqich -->
+    <string name="open_tracker">Suivi des prières</string>
+    <string name="tracker_title">Suivi des prières et qadâ</string>
+    <string name="tracker_streak">Série : %1$d jours</string>
+    <string name="tracker_streak_hint">Une journée compte lorsque les 5 prières sont marquées.</string>
+    <string name="tracker_week_prev">Semaine précédente</string>
+    <string name="tracker_week_next">Semaine suivante</string>
+    <string name="tracker_state_none">Non marquée</string>
+    <string name="tracker_state_prayed">Accomplie</string>
+    <string name="tracker_state_missed">Manquée</string>
+    <string name="tracker_qada_title">Qadâ (prières manquées)</string>
+    <string name="tracker_qada_total">Total restant : %1$d</string>
+    <string name="tracker_qada_done">Toutes les prières de rattrapage sont faites</string>
+    <string name="tracker_qada_no_goal">Définissez un objectif quotidien pour voir la date de fin</string>
+    <string name="tracker_qada_finish">Fin prévue : %1$s</string>
+    <string name="tracker_daily_goal">Objectif quotidien (par prière)</string>
+    <string name="tracker_undo">Annuler la dernière modification</string>
+    <string name="tracker_wizard_button">Estimer à partir des dates</string>
+    <string name="tracker_qada_hint">Les nombres valent pour chaque prière. L\'application ne rend pas de fatwa ; demandez le nombre exact à un savant.</string>
+    <string name="tracker_wizard_title">Estimer le qadâ</string>
+    <string name="tracker_wizard_start">Date de début</string>
+    <string name="tracker_wizard_end">Date de fin</string>
+    <string name="tracker_wizard_result">%1$d jours × %2$d prières = %3$d qadâ</string>
+    <string name="tracker_wizard_invalid">La date de fin ne doit pas précéder la date de début.</string>
+    <string name="tracker_wizard_disclaimer">Il s\'agit d\'une estimation, non d\'un compte exact. Demandez le nombre exact à un savant.</string>
+    <string name="tracker_wizard_apply">Appliquer</string>
+    <string name="tracker_set_title">Nombre restant</string>
+    <string name="tracker_save">Enregistrer</string>
+    <string name="tracker_cancel">Annuler</string>
+    <string name="tracker_ok">OK</string>
+    <string name="tracker_prayer_witr">Witr</string>
+    <string name="tracker_prayer_fast">Jeûne</string>
 </resources>
