@@ -32,6 +32,8 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import uz.xumoyun.feature.hifz.HifzRoute
+import uz.xumoyun.feature.hifz.HifzRoutes
+import uz.xumoyun.feature.hifz.hifzGraph
 import uz.xumoyun.feature.hifz.audio.AudioRoutes
 import uz.xumoyun.feature.hifz.audio.audioGraph
 import uz.xumoyun.feature.hifz.MushafRoutes
@@ -119,10 +121,15 @@ fun NamozRoot(startWithOnboarding: Boolean) {
             }
             composable(Tab.HIFZ.route) {
                 HifzRoute(
+                    onStartLesson = { type -> nav.navigate(HifzRoutes.lesson(type)) },
+                    onOpenPlan = { nav.navigate(HifzRoutes.PLAN) },
+                    onOpenProgress = { nav.navigate(HifzRoutes.PROGRESS) },
                     onOpenMushaf = { nav.navigate(MushafRoutes.HOME) },
                     onOpenAudio = { nav.navigate(AudioRoutes.HOME) },
                 )
             }
+            // Hifz: dars rejimi, reja va progress (TZ 6-bo'lim, 5–7-ekranlar). Hifz tabidan ochiladi.
+            hifzGraph(nav)
             // Mus'haf (TZ 5-bosqich): sura/juz ro'yxati, qidiruv, o'qish. Hifz tabidan ochiladi.
             mushafGraph(nav)
             // Audio boshqaruvi (TZ 6-bosqich): qori, sura bo'yicha yuklash/o'chirish. Hifz tabidan ochiladi.
