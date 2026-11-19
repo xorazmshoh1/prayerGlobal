@@ -11,6 +11,9 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import uz.xumoyun.core.data.AssetSource
 import uz.xumoyun.core.data.HijriDate
+import uz.xumoyun.core.common.hijri.HijriCalendar
+import uz.xumoyun.core.common.hijri.HijriYmd
+import uz.xumoyun.core.common.hijri.UmmAlQuraSource
 import uz.xumoyun.core.data.HijriProvider
 import uz.xumoyun.feature.prayer.data.LocationDao
 import uz.xumoyun.feature.prayer.data.LocationProvider
@@ -54,6 +57,7 @@ class FakeHijri : HijriProvider {
         offsets += offsetDays
         return HijriDate(1 + offsetDays, 9, 1448, "${1 + offsetDays} Ramadan 1448")
     }
+    override fun calendar(offsetDays: Int) = HijriCalendar(UmmAlQuraSource { HijriYmd(1448, 9, 1) }, offsetDays)
 }
 
 /** Joylashuv ruxsati yo'q (yoki joy aniqlanmaydi) — shahar qidiruviga o'tiladi. */

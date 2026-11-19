@@ -1,0 +1,29 @@
+Namaz ve Hıfz günlük namaz vakitlerini, kıble yönünü ve Kur'an ezberini tek ve sade bir uygulamada toplar.
+
+NAMAZ VAKİTLERİ
+- Günde altı vakit, ülkenize uygun hesaplama yöntemiyle telefonunuzda hesaplanır.
+- Her namaz için ezan bildirimi: sesli, sessiz ya da kapalı. Namazdan önce hatırlatma.
+- Namaz takibi: her namazı işaretleyin, kaza sayacını ve günlük hedefi takip edin.
+
+KIBLE VE TESBİH
+- Kıble yönü, Kâbe'ye uzaklık ve kalibrasyon ipuçlu pusula.
+- 33, 99 veya 100 hedefli dijital tesbih, titreşim ve günlük geçmiş.
+
+KUR'AN EZBERİ
+- Tanzil Osmanî metniyle mushaf; sure ve cüz bazında, arama özelliğiyle.
+- Günlük ders: yeni ayetler, yakın tekrar ve eski tekrar.
+- Cüze göre ilerleme, art arda gün sayısı ve bitiş tarihi tahmini. Tekrar ve hız ayarlı ses.
+
+RAMAZAN
+- Sahur ve iftar vakitleri geri sayımla, resim olarak paylaşılabilen 30 günlük Ramazan takvimi.
+- Oruç takibi, dualar, hatim planı, hatırlatmalar ve ana ekran widget'ı.
+
+İSLAMİ GÜNLER
+- Hicri ve miladi takvim, İslami günler ve isteğe bağlı bir gün önce hatırlatma.
+
+GİZLİLİK
+- Reklam, hesap, analiz ve uygulama içi satın alma yok.
+- Verileriniz telefonunuzda kalır. Konum yalnızca vakitleri hesaplamak için kullanılır.
+- İnternet yalnızca Kur'an tilavet sesini indirmek için kullanılır.
+
+Bu uygulama resmî değildir ve fetva vermez. Vakitleri yerel camiyle karşılaştırın.

@@ -38,9 +38,10 @@ request kodlari), `notifications/` (5 namoz kanali + eslatmalar, `PrayerAlarmSch
 Qibla (4-bosqich) — `feature-qibla`: kompas (`data/SensorCompassSource`), holat (`domain/QiblaTracker`, `CompassMath`), ekran.
 Qibla formulasi va haversine — `core-common` (`geo/Geo`); joylashuv `core-data`dagi `SelectedPlaceSource` orqali, uning ko'prigi `app-namoz-hifz/di/PlaceBridge.kt`da.
 Tasbeh (4-bosqich) — `feature-tasbih`: hisoblagich, `TasbihEntry` (Room `tasbih_entry`), `TasbihDao`, `TasbihSettings`, ekran. Ilova bazasi `MIGRATION_1_2` bilan.
-Oylik jadval (10-bosqich), sozlamalar/onboarding (9-bosqich) va Room bazasi (`NamozDatabase`: feature-prayer'dagi `SavedLocation` + feature-tasbih'dagi `TasbihEntry`)
+Taqvim va oylik namoz jadvali (10-bosqich) `feature-calendar` da; ular namoz vaqtini app'dagi `di/CalendarBridge.kt` orqali oladi.
+Sozlamalar/onboarding (9-bosqich) va Room bazasi (`NamozDatabase`: feature-prayer'dagi `SavedLocation` + feature-tasbih'dagi `TasbihEntry`)
 `app-namoz-hifz` ichida; ular feature modullar API'laridan foydalanadi.
-Hijriy sana (`HijriProvider`) va `hijriAdjustDays` — `core-data`da (namoz, taqvim, Ramazon uchun umumiy).
+Hijriy sana (`HijriProvider`, `IcuHijriProvider`) va `hijriAdjustDays` — `core-data`da; sof hisob (`HijriCalendar`, `UmmAlQuraSource`) `core-common/hijri` da (namoz, taqvim, Ramazon uchun umumiy).
 
 9-bosqich (qolgan ekranlar): namoz kuzatuvchisi va qazo — `feature-prayer/tracker/` (domain: `Qada`, `PrayerLog`, portlar `TrackerStore`/`TransactionRunner`/`MadhabSource`/`TrackerPrefs`; data: Room `prayer_log`/`qada_counter`/`qada_event` (`NamozDatabase` v5, `MIGRATION_4_5`), `TrackerRepository`; ui: `TrackerScreen`, `TrackerViewModel`; navigatsiya — Namoz tabidagi tugma, `Routes.TRACKER`). Zaxira — `app-namoz-hifz/backup/` (`BackupFormat`, `BackupService`: sof Kotlin; `RoomBackupStore`: Room + DataStore; SAF — `ui/settings/BackupRows.kt`). Onboarding — 3 qadam (`ui/onboarding`). Sozlamalar — `ui/settings` (`SettingsViewModel`, `LicensesScreen`, `BackupViewModel`). Xato hisoboti: `core-common/crash/CrashReportGate` (sozlama `CommonSettings.crashReportingEnabled`); Firebase SDK hali ulanmagan — `NoopCrashSink`.
 

@@ -400,9 +400,9 @@ Ish 12 bosqichga bo'lingan, har biri bitta Claude Code sessiyasiga sig'adi va ox
 - [x] 7. Hifz yadrosi: HifzPlan, AyahProgress, SM-2, kunlik Sabaq/Sabqi/Manzil generatori, unit testlar
 - [x] 8. Hifz UI: Hifz tab, dars rejimi (matnni yashirish, baholash), reja ekrani, progress va juzlar xaritasi, namozdan keyingi eslatma
 - [x] 9. Namoz kuzatuvchisi va qazo hisoblagich, zaxira (eksport/import), onboarding, sozlamalar, Litsenziyalar ekrani, Crashlytics
-- [ ] 10. Taqvim: hijriy-milodiy setka, konvertor, islomiy sanalar va eslatmalar, oylik namoz jadvali, testlar
-- [ ] 11. Ramazon menyusi: bosh sahifa, 30 kunlik taqvim va rasm ulashish, saharlik/iftor eslatmalari, ro'za kuzatuvchisi, duolar, xatm, Qadr eslatmasi, vidjet, tezkor yorliq
-- [ ] 12. Lokalizatsiya (11 til, RTL), accessibility, unumdorlik, In-App Review, "Ulashish" va "Boshqa ilovalarimiz", release build (R8, imzo), Play sahifasi materiallari (12-bo'limdagi ASO jadvali bo'yicha)
+- [x] 10. Taqvim: hijriy-milodiy setka, konvertor, islomiy sanalar va eslatmalar, oylik namoz jadvali, testlar
+- [x] 11. Ramazon menyusi: bosh sahifa, 30 kunlik taqvim va rasm ulashish, saharlik/iftor eslatmalari, ro'za kuzatuvchisi, duolar, xatm, Qadr eslatmasi, vidjet, tezkor yorliq
+- [x] 12. Lokalizatsiya (11 til, RTL), accessibility, unumdorlik, In-App Review, "Ulashish" va "Boshqa ilovalarimiz", release build (R8, imzo), Play sahifasi materiallari (12-bo'limdagi ASO jadvali bo'yicha) — QISMAN: RTL Compose skrinshot testlari, AAB va qurilma tekshiruvi bajarilmadi; "Boshqa ilovalarimiz" ro'yxati bo'sh (ma'lumot yo'q)
 
 ## 14. Claude Code promptlari
 

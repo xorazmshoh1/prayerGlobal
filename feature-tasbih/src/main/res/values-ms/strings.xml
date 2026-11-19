@@ -14,4 +14,10 @@
     <string name="ok">OK</string>
     <string name="cancel">Batal</string>
     <string name="tasbeh_history">Sejarah</string>
+    <string name="dhikr_subhanallah_ar">سُبْحَانَ اللَّهِ</string>
+    <string name="dhikr_alhamdulillah_ar">الْحَمْدُ لِلَّهِ</string>
+    <string name="dhikr_allahuakbar_ar">اللَّهُ أَكْبَرُ</string>
+    <string name="dhikr_tahlil_ar">لَا إِلَهَ إِلَّا اللَّهُ</string>
+    <string name="dhikr_istighfar_ar">أَسْتَغْفِرُ اللَّهَ</string>
+    <string name="dhikr_salawat_ar">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ</string>
 </resources>

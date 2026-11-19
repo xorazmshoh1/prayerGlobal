@@ -80,6 +80,8 @@ fun PrayerRoute(
     onRamadan: () -> Unit = {},
     onSettings: () -> Unit = {},
     onTracker: () -> Unit = {},
+    /** Namoz tabining tepasidagi qo'shimcha karta (Ramazon kartasi — ilova ulaydi). */
+    topCard: @Composable () -> Unit = {},
     viewModel: PrayerViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
@@ -108,6 +110,7 @@ fun PrayerRoute(
                 onRamadan = onRamadan,
                 onSettings = onSettings,
                 onTracker = onTracker,
+                topCard = topCard,
                 banner = {
                     if (showExact) {
                         ExactAlarmCard(
@@ -141,6 +144,7 @@ fun PrayerContent(
     onRamadan: () -> Unit = {},
     onSettings: () -> Unit = {},
     onTracker: () -> Unit = {},
+    topCard: @Composable () -> Unit = {},
     banner: @Composable () -> Unit = {},
 ) {
     val context = LocalContext.current
@@ -162,6 +166,7 @@ fun PrayerContent(
             IconButton(onClick = onTracker) { Icon(Icons.Rounded.Checklist, stringResource(R.string.open_tracker)) }
             IconButton(onClick = onSettings) { Icon(Icons.Rounded.Settings, stringResource(R.string.open_settings)) }
         }
+        topCard()
         Text(
             state.today.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL).withLocale(locale)),
             style = MaterialTheme.typography.bodyLarge,

@@ -121,3 +121,29 @@ val MIGRATION_4_5 = object : Migration(4, 5) {
         )
     }
 }
+
+/**
+ * 5 → 6: ro'za kuzatuvchisi (fast_log) va Ramazon xatmi (khatm_plan), 11-bosqich. Yangi jadvallar;
+ * eski ma'lumotga tegmaydi.
+ */
+val MIGRATION_5_6 = object : Migration(5, 6) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `fast_log` (" +
+                "`date` TEXT NOT NULL, " +
+                "`hijriYear` INTEGER NOT NULL, " +
+                "`hijriDay` INTEGER NOT NULL, " +
+                "`status` TEXT NOT NULL, " +
+                "PRIMARY KEY(`date`))",
+        )
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `khatm_plan` (" +
+                "`hijriYear` INTEGER NOT NULL, " +
+                "`startDate` TEXT NOT NULL, " +
+                "`juzDone` INTEGER NOT NULL, " +
+                "`lastReadAyah` INTEGER NOT NULL, " +
+                "`updatedAt` INTEGER NOT NULL, " +
+                "PRIMARY KEY(`hijriYear`))",
+        )
+    }
+}

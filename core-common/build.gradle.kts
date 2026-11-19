@@ -19,4 +19,6 @@ dependencies {
     coreLibraryDesugaring(libs.desugar)
     api(libs.kotlinx.coroutines.android)
     testImplementation(libs.junit)
+    // Hijriy taqvim testlari: Umm al-Qura referensi (android.icu bilan bir xil ICU ma'lumoti).
+    testImplementation(libs.icu4j)
 }

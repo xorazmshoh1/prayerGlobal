@@ -104,4 +104,10 @@
     <string name="backup_err_newer">Sandaran ini dibuat oleh versi aplikasi yang lebih baharu. Kemas kini aplikasi dahulu.</string>
     <string name="backup_err_invalid">Fail sandaran rosak atau tidak lengkap. Tiada yang diubah.</string>
     <string name="backup_err_io">Tidak dapat membaca atau menulis fail.</string>
+    <string name="shortcut_ramadan_short">Ramadan</string>
+    <string name="shortcut_ramadan_long">Menu Ramadan</string>
+    <string name="share_app">Kongsi aplikasi</string>
+    <string name="share_app_text">Solat dan Hafazan: waktu solat, kiblat, hafazan Quran dan Ramadan. Tanpa iklan dan berfungsi luar talian. %s</string>
+    <string name="other_apps">Aplikasi kami yang lain</string>
+    <string name="other_apps_empty">Akan datang.</string>
 </resources>

@@ -104,4 +104,10 @@
     <string name="backup_err_newer">Копия создана более новой версией приложения. Сначала обновите приложение.</string>
     <string name="backup_err_invalid">Файл копии повреждён или неполный. Ничего не изменено.</string>
     <string name="backup_err_io">Не удалось прочитать или записать файл.</string>
+    <string name="shortcut_ramadan_short">Рамадан</string>
+    <string name="shortcut_ramadan_long">Меню Рамадана</string>
+    <string name="share_app">Поделиться приложением</string>
+    <string name="share_app_text">Намаз и Хифз: время намаза, кибла, заучивание Корана и Рамадан. Без рекламы и работает офлайн. %s</string>
+    <string name="other_apps">Наши другие приложения</string>
+    <string name="other_apps_empty">Скоро.</string>
 </resources>

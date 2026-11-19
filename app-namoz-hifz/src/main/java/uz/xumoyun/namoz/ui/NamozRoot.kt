@@ -19,6 +19,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -41,13 +42,18 @@ import uz.xumoyun.feature.hifz.mushafGraph
 import uz.xumoyun.feature.prayer.ui.LocationsScreen
 import uz.xumoyun.feature.prayer.ui.NotificationSettingsRoute
 import uz.xumoyun.feature.prayer.ui.PrayerRoute
-import uz.xumoyun.feature.ramadan.RamadanHomeRoute
-import uz.xumoyun.feature.ramadan.RamadanRoutes
+import uz.xumoyun.feature.ramadan.ui.RamadanEntryCard
+import uz.xumoyun.feature.ramadan.ui.RamadanRoutes
+import uz.xumoyun.feature.ramadan.ui.ramadanGraph
+import uz.xumoyun.feature.ramadan.ui.ramadanTitle
 import uz.xumoyun.namoz.R
-import uz.xumoyun.namoz.ui.calendar.CalendarRoute
+import uz.xumoyun.feature.calendar.ui.CalendarRoute
+import uz.xumoyun.feature.calendar.ui.IslamicEventsRoute
 import uz.xumoyun.namoz.ui.onboarding.OnboardingRoute
 import uz.xumoyun.feature.qibla.ui.QiblaRoute
 import uz.xumoyun.namoz.ui.settings.HelpScreen
+import uz.xumoyun.namoz.ui.settings.OtherAppsScreen
+import uz.xumoyun.namoz.ui.settings.openPlayLink
 import uz.xumoyun.namoz.ui.settings.LicensesScreen
 import uz.xumoyun.feature.prayer.tracker.ui.TrackerRoute
 import uz.xumoyun.namoz.ui.settings.SettingsRoute
@@ -74,11 +80,17 @@ private object Routes {
     const val TRACKER = "tracker"
     /** TZ 12: Litsenziyalar va manbalar (Sozlamalardan). */
     const val LICENSES = "licenses"
+    /** TZ 7: islomiy sanalar yoqish va eslatma (Taqvim tabidan). */
+    const val ISLAMIC_EVENTS = "islamic_events"
+    /** TZ 12: "Boshqa ilovalarimiz" (statik ro'yxat). */
+    const val OTHER_APPS = "other_apps"
 }
 
 @Composable
-fun NamozRoot(startWithOnboarding: Boolean) {
+fun NamozRoot(startWithOnboarding: Boolean, openRamadan: Boolean = false) {
     val nav = rememberNavController()
+    // ShortcutManager yorlig'i yoki vidjet: Ramazon menyusini ochish (onboarding tugagach).
+    LaunchedEffect(openRamadan) { if (openRamadan && !startWithOnboarding) nav.navigate(RamadanRoutes.GRAPH) }
     val entry by nav.currentBackStackEntryAsState()
     val route = entry?.destination?.route
     val tab = Tab.entries.firstOrNull { it.route == route }
@@ -124,6 +136,7 @@ fun NamozRoot(startWithOnboarding: Boolean) {
                     onRamadan = { nav.navigate(RamadanRoutes.GRAPH) },
                     onSettings = { nav.navigate(Routes.SETTINGS) },
                     onTracker = { nav.navigate(Routes.TRACKER) },
+                    topCard = { RamadanEntryCard(onOpen = { nav.navigate(RamadanRoutes.GRAPH) }) },
                 )
             }
             composable(Tab.HIFZ.route) {
@@ -143,11 +156,14 @@ fun NamozRoot(startWithOnboarding: Boolean) {
             audioGraph(nav)
             composable(Tab.QIBLA.route) { QiblaRoute() }
             composable(Tab.TASBEH.route) { TasbihRoute() }
-            composable(Tab.CALENDAR.route) { CalendarRoute(onRamadan = { nav.navigate(RamadanRoutes.GRAPH) }) }
-            // Alohida Ramazon menyusi grafi: R1 bosh sahifa; R2–R6 11-bosqichda qo'shiladi.
-            navigation(startDestination = RamadanRoutes.HOME, route = RamadanRoutes.GRAPH) {
-                composable(RamadanRoutes.HOME) { RamadanHomeRoute() }
+            composable(Tab.CALENDAR.route) {
+                CalendarRoute(
+                    onIslamicEvents = { nav.navigate(Routes.ISLAMIC_EVENTS) },
+                    onRamadan = { nav.navigate(RamadanRoutes.GRAPH) },
+                )
             }
+            // Alohida Ramazon menyusi grafi: R1 bosh sahifa; R2–R6 11-bosqichda qo'shiladi.
+            ramadanGraph(nav, onOpenMushaf = { nav.navigate(MushafRoutes.HOME) })
             composable(Routes.SETTINGS) {
                 SettingsRoute(
                     hiltViewModel(),
@@ -155,6 +171,7 @@ fun NamozRoot(startWithOnboarding: Boolean) {
                     onNotifications = { nav.navigate(Routes.NOTIFICATIONS) },
                     onHelp = { nav.navigate(Routes.HELP) },
                     onLicenses = { nav.navigate(Routes.LICENSES) },
+                    onOtherApps = { nav.navigate(Routes.OTHER_APPS) },
                 )
             }
             composable(Routes.LOCATIONS) { LocationsScreen(onPicked = { nav.popBackStack() }) }
@@ -162,6 +179,11 @@ fun NamozRoot(startWithOnboarding: Boolean) {
             composable(Routes.HELP) { HelpScreen() }
             composable(Routes.TRACKER) { TrackerRoute() }
             composable(Routes.LICENSES) { LicensesScreen() }
+            composable(Routes.ISLAMIC_EVENTS) { IslamicEventsRoute() }
+            composable(Routes.OTHER_APPS) {
+                val ctx = androidx.compose.ui.platform.LocalContext.current
+                OtherAppsScreen(openUrl = { openPlayLink(ctx, it) })
+            }
         }
     }
 }
@@ -169,17 +191,19 @@ fun NamozRoot(startWithOnboarding: Boolean) {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun SubScreenBar(route: String?, nav: NavHostController) {
-    val title = when (route) {
-        RamadanRoutes.HOME -> uz.xumoyun.feature.ramadan.R.string.ramadan_title
-        Routes.LOCATIONS -> uz.xumoyun.feature.prayer.R.string.saved_locations
-        Routes.NOTIFICATIONS -> R.string.notifications
-        Routes.HELP -> R.string.help_notifications
-        Routes.TRACKER -> uz.xumoyun.feature.prayer.R.string.tracker_title
-        Routes.LICENSES -> R.string.licenses_title
+    val ramadan = ramadanTitle(route)
+    val title: String = ramadan ?: when (route) {
+        Routes.LOCATIONS -> stringResource(uz.xumoyun.feature.prayer.R.string.saved_locations)
+        Routes.NOTIFICATIONS -> stringResource(R.string.notifications)
+        Routes.HELP -> stringResource(R.string.help_notifications)
+        Routes.TRACKER -> stringResource(uz.xumoyun.feature.prayer.R.string.tracker_title)
+        Routes.LICENSES -> stringResource(R.string.licenses_title)
+        Routes.ISLAMIC_EVENTS -> stringResource(uz.xumoyun.feature.calendar.R.string.islamic_events_title)
+        Routes.OTHER_APPS -> stringResource(R.string.other_apps)
         else -> return
     }
     TopAppBar(
-        title = { Text(stringResource(title)) },
+        title = { Text(title) },
         navigationIcon = {
             IconButton(onClick = { nav.popBackStack() }) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, stringResource(R.string.back)) }
         },

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calendar_previous_month">Oldingi oy</string>
+    <string name="calendar_next_month">Keyingi oy</string>
+    <string name="islamic_events_title">Islomiy sanalar</string>
+    <string name="ramadan_menu_open">Ramazon menyusi</string>
+    <string name="calendar_mode_grid">Taqvim</string>
+    <string name="calendar_mode_timetable">Namoz jadvali</string>
+    <string name="calendar_primary_hijri">Avval hijriy</string>
+    <string name="calendar_primary_gregorian">Avval milodiy</string>
+    <string name="calendar_cell_hijri">Hijriy kun %d</string>
+    <string name="calendar_cell_gregorian">Kun %d</string>
+    <string name="calendar_no_events_this_month">Bu oyda islomiy sanalar yo\'q</string>
+    <string name="calendar_day">Kun</string>
+    <string name="calendar_no_location">Jadvalni ko\'rish uchun Namoz tabida shahar tanlang.</string>
+    <string name="calendar_official_check">Mamlakatingizdagi rasmiy e\'lon bilan solishtiring. Hijriy sanalar bir kunga farq qilishi mumkin.</string>
+    <string name="converter_title">Sana konvertori</string>
+    <string name="converter_from_gregorian">Sanani tanlash</string>
+    <string name="converter_clear">Tozalash</string>
+    <string name="converter_day">Kun</string>
+    <string name="converter_month">Oy</string>
+    <string name="converter_year">Yil</string>
+    <string name="converter_from_hijri">Hijriydan milodiyga</string>
+    <string name="converter_invalid">Bu hijriy sana noto\'g\'ri.</string>
+    <string name="converter_result">%1$s — %4$d yil, %2$d-%3$s</string>
+    <string name="converter_ok">OK</string>
+    <string name="converter_cancel">Bekor qilish</string>
+    <string name="channel_islamic_events">Islomiy sanalar</string>
+    <string name="islamic_reminder_title">Ertaga islomiy sana</string>
+    <string name="islamic_reminder_text">Ertaga: %s</string>
+    <string name="islamic_events_hint">Sanalarni yoqing yoki o\'chiring. Sanadan bir kun oldin soat 09:00 da eslatma chiqadi.</string>
+    <string name="islamic_remind_day_before">Bir kun oldin eslatish</string>
+    <string name="event_muharram_1">Hijriy yangi yil (1-Muharram)</string>
+    <string name="event_ashura">Ashuro (10-Muharram)</string>
+    <string name="event_rajab_27">Isro va Mi\'roj (27-Rajab)</string>
+    <string name="event_shaban_15">Baroat kechasi (15-Sha\'bon)</string>
+    <string name="event_ramadan_1">Ramazonning birinchi kuni</string>
+    <string name="event_laylat_al_qadr">Qadr kechasi (27-Ramazon)</string>
+    <string name="event_eid_al_fitr">Ramazon hayiti (1-Shavvol)</string>
+    <string name="event_arafa">Arafa kuni (9-Zulhijja)</string>
+    <string name="event_eid_al_adha">Qurbon hayiti (10-Zulhijja)</string>
+    <string-array name="hijri_months">
+        <item>Muharram</item>
+        <item>Safar</item>
+        <item>Rabi\' al-avval</item>
+        <item>Rabi\' as-soniy</item>
+        <item>Jumodal-avval</item>
+        <item>Jumodas-soniy</item>
+        <item>Rajab</item>
+        <item>Sha\'bon</item>
+        <item>Ramazon</item>
+        <item>Shavvol</item>
+        <item>Zulqa\'da</item>
+        <item>Zulhijja</item>
+    </string-array>
+</resources>

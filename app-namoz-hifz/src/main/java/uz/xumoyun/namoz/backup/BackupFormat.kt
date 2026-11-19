@@ -58,6 +58,7 @@ object BackupFormat {
         "saved_location", "prayer_log", "qada_counter", "qada_event",
         "tasbih_entry", "audio_download",
         "hifz_plan", "ayah_progress", "review_session",
+        "fast_log", "khatm_plan",
     )
 
     private val IDENT = Regex("^[A-Za-z_][A-Za-z0-9_]{0,63}$")

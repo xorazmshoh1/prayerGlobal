@@ -30,7 +30,7 @@ import uz.xumoyun.feature.prayer.tempDataStore
 class LocationsViewModelTest {
     private val settings = PrayerSettings(tempDataStore())
     private val dao = FakeLocationDao()
-    private val repository = PrayerRepository(dao, settings, FileAssets, AppJson)
+    private val repository = PrayerRepository(dao, settings, FileAssets, AppJson, uz.xumoyun.feature.prayer.domain.RamadanCheck.NONE)
     private val cities = CityRepository(FileAssets, AppJson)
     private val location = FakeLocationProvider()
 

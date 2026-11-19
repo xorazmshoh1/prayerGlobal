@@ -104,4 +104,10 @@
     <string name="backup_err_newer">أُنشئت هذه النسخة بإصدار أحدث من التطبيق. حدّث التطبيق أولاً.</string>
     <string name="backup_err_invalid">ملف النسخة الاحتياطية تالف أو غير مكتمل. لم يتغير شيء.</string>
     <string name="backup_err_io">تعذّرت قراءة الملف أو كتابته.</string>
+    <string name="shortcut_ramadan_short">رمضان</string>
+    <string name="shortcut_ramadan_long">قائمة رمضان</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="share_app_text">نمازٌ وحفظ: أوقات الصلاة والقبلة وحفظ القرآن ورمضان. بلا إعلانات ويعمل بلا إنترنت. %s</string>
+    <string name="other_apps">تطبيقاتنا الأخرى</string>
+    <string name="other_apps_empty">قريباً.</string>
 </resources>

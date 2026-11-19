@@ -5,6 +5,7 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
+import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.distinctUntilChanged
@@ -33,6 +34,11 @@ class CommonSettings @Inject constructor(private val store: DataStore<Preference
 
     suspend fun setCrashReportingEnabled(enabled: Boolean) = store.edit { it[CRASH_REPORTING] = enabled }
 
+    /** TZ 12: oxirgi In-App Review so'rovi kuni (epoch day); yo'q bo'lsa null. */
+    val lastReviewRequestDay: Flow<Long?> = store.data.map { it[LAST_REVIEW_DAY] }.distinctUntilChanged()
+
+    suspend fun setLastReviewRequestDay(epochDay: Long) = store.edit { it[LAST_REVIEW_DAY] = epochDay }
+
     suspend fun setHijriAdjustDays(days: Int) = store.edit { it[HIJRI_OFFSET] = days.coerceIn(-MAX_HIJRI_ADJUST, MAX_HIJRI_ADJUST) }
 
     suspend fun setThemeMode(mode: ThemeMode) = store.edit { it[THEME] = mode.name }
@@ -40,12 +46,13 @@ class CommonSettings @Inject constructor(private val store: DataStore<Preference
     suspend fun setLanguage(tag: String) = store.edit { it[LANGUAGE] = tag }
 
     companion object {
-        // TZ hijriAdjustDays −1/0/+1 deydi; 1-bosqichdagi ±2 chegarasi saqlandi (11-bosqichda qayta ko'riladi).
-        const val MAX_HIJRI_ADJUST = 2
+        /** TZ 2-bo'lim: hijriAdjustDays −1/0/+1. */
+        const val MAX_HIJRI_ADJUST = uz.xumoyun.core.common.hijri.HijriCalendar.MAX_OFFSET_DAYS
         private val HIJRI_OFFSET = intPreferencesKey("hijri_offset")
         private val THEME = stringPreferencesKey("theme_mode")
         private val ONBOARDING = booleanPreferencesKey("onboarding_done")
         private val LANGUAGE = stringPreferencesKey("language")
         private val CRASH_REPORTING = booleanPreferencesKey("crash_reporting_enabled")
+        private val LAST_REVIEW_DAY = longPreferencesKey("last_review_request_day")
     }
 }

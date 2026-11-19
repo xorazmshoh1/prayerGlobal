@@ -14,22 +14,27 @@ import uz.xumoyun.feature.prayer.tracker.data.PrayerLogEntity
 import uz.xumoyun.feature.prayer.tracker.data.QadaCounterEntity
 import uz.xumoyun.feature.prayer.tracker.data.QadaEventEntity
 import uz.xumoyun.feature.prayer.tracker.data.TrackerDao
+import uz.xumoyun.feature.ramadan.data.FastLogEntity
+import uz.xumoyun.feature.ramadan.data.KhatmPlanEntity
+import uz.xumoyun.feature.ramadan.data.RamadanDao
 import uz.xumoyun.feature.tasbih.data.TasbihDao
 import uz.xumoyun.feature.tasbih.data.TasbihEntry
 
 /** Bazaning joriy sxema versiyasi. Zaxira faylida ham yoziladi (BackupFile.schemaVersion). */
-const val DB_SCHEMA_VERSION = 5
+const val DB_SCHEMA_VERSION = 6
 
 /**
  * Ilova bazasi: joylar (feature-prayer), tasbeh seanslari (feature-tasbih), audio, hifz, namoz kuzatuvchisi va qazo.
  * v2: tasbih_entry ([MIGRATION_1_2]). v3: audio_download ([MIGRATION_2_3]). v4: hifz jadvallari ([MIGRATION_3_4]).
  * v5: prayer_log, qada_counter, qada_event (9-bosqich, [MIGRATION_4_5]).
+ * v6: fast_log, khatm_plan (11-bosqich, Ramazon, [MIGRATION_5_6]).
  */
 @Database(
     entities = [
         SavedLocation::class, TasbihEntry::class, AudioDownloadEntity::class,
         HifzPlanEntity::class, AyahProgressEntity::class, ReviewSessionEntity::class,
         PrayerLogEntity::class, QadaCounterEntity::class, QadaEventEntity::class,
+        FastLogEntity::class, KhatmPlanEntity::class,
     ],
     version = DB_SCHEMA_VERSION,
     exportSchema = true,
@@ -40,4 +45,5 @@ abstract class NamozDatabase : RoomDatabase() {
     abstract fun audio(): AudioDownloadDao
     abstract fun hifz(): HifzDao
     abstract fun tracker(): TrackerDao
+    abstract fun ramadan(): RamadanDao
 }

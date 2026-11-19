@@ -104,4 +104,10 @@
     <string name="backup_err_newer">این پشتیبان با نسخه جدیدتری از برنامه ساخته شده است. ابتدا برنامه را به‌روز کنید.</string>
     <string name="backup_err_invalid">فایل پشتیبان خراب یا ناقص است. چیزی تغییر نکرد.</string>
     <string name="backup_err_io">خواندن یا نوشتن فایل ممکن نشد.</string>
+    <string name="shortcut_ramadan_short">رمضان</string>
+    <string name="shortcut_ramadan_long">منوی رمضان</string>
+    <string name="share_app">اشتراک‌گذاری برنامه</string>
+    <string name="share_app_text">نماز و حفظ: اوقات نماز، قبله، حفظ قرآن و رمضان. بدون تبلیغات و بدون اینترنت. %s</string>
+    <string name="other_apps">برنامه‌های دیگر ما</string>
+    <string name="other_apps_empty">به زودی.</string>
 </resources>

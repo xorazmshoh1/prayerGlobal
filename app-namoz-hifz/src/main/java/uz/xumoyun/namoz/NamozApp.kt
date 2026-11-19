@@ -12,6 +12,9 @@ import uz.xumoyun.core.data.CommonSettings
 import uz.xumoyun.core.data.notifications.NotificationChannelRegistrar
 import uz.xumoyun.feature.prayer.notifications.PrayerAlarmScheduler
 import uz.xumoyun.namoz.notifications.HifzReminderScheduler
+import uz.xumoyun.namoz.di.HijriRamadanCheck
+import uz.xumoyun.namoz.notifications.IslamicReminderScheduler
+import uz.xumoyun.namoz.notifications.RamadanReminderScheduler
 import javax.inject.Inject
 
 @HiltAndroidApp
@@ -20,6 +23,9 @@ class NamozApp : Application() {
     @Inject lateinit var channelSources: Set<@JvmSuppressWildcards NotificationChannelSource>
     @Inject lateinit var prayerAlarms: PrayerAlarmScheduler
     @Inject lateinit var hifzReminders: HifzReminderScheduler
+    @Inject lateinit var islamicReminders: IslamicReminderScheduler
+    @Inject lateinit var ramadanReminders: RamadanReminderScheduler
+    @Inject lateinit var hijriRamadan: HijriRamadanCheck
     @Inject lateinit var crashGate: CrashReportGate
     @Inject lateinit var common: CommonSettings
 
@@ -32,8 +38,14 @@ class NamozApp : Application() {
         prayerAlarms.start(appScope)
         // Hifz eslatmasi: faol reja yoki joy o'zgarganda qayta rejalashtiriladi.
         hifzReminders.start(appScope)
+        // Islomiy sana eslatmasi: sozlama yoki hijriy tuzatish o'zgarganda qayta rejalashtiriladi.
+        islamicReminders.start(appScope)
+        // Ramazon eslatmalari (saharlik, iftor, qadr): sozlama, joy yoki hijriy tuzatish o'zgarganda.
+        ramadanReminders.start(appScope)
         // TZ 8: xato hisoboti sozlamasi keshlanadi (uncaught handler sinxron ishlaydi).
         appScope.launch { common.crashReportingEnabled.collect { crashGate.enabled = it } }
+        // Ramazon Xufton qoidasi uchun hijriy tuzatish qiymati (TZ 2-bo'lim).
+        appScope.launch { common.hijriAdjustDays.collect { hijriRamadan.offset = it } }
         val previous = Thread.getDefaultUncaughtExceptionHandler()
         Thread.setDefaultUncaughtExceptionHandler { thread, error ->
             crashGate.report(error)

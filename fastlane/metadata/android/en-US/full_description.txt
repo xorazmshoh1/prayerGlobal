@@ -1,0 +1,29 @@
+Namoz and Hifz brings your daily prayer times, the qibla direction and Quran memorization into one simple app.
+
+PRAYER TIMES
+- Six daily times calculated on your phone, with the calculation method chosen for your country.
+- Adhan notifications for each prayer, with sound, silent or off per prayer. Reminders before a prayer.
+- Prayer tracker: mark each prayer and keep a qada (missed prayers) counter with a daily goal.
+
+QIBLA AND TASBIH
+- Compass with the qibla direction, distance to the Kaaba and a calibration hint.
+- Digital tasbih with 33, 99 or 100 targets, vibration and a daily history.
+
+QURAN MEMORIZATION
+- Mushaf with the Tanzil Uthmani text, by surah and juz, with search.
+- Daily lesson: new verses (Sabaq), recent review (Sabqi) and older review (Manzil), based on spaced repetition.
+- Progress by juz, streak days and a finish-date forecast. Audio repetition with speed control.
+
+RAMADAN
+- Suhoor and iftar times with countdowns, a 30-day Ramadan calendar you can share as an image.
+- Fasting tracker, duas, a khatm plan, reminders and a home screen widget.
+
+ISLAMIC DATES
+- Hijri and Gregorian calendar with Islamic dates, and an optional reminder the day before.
+
+PRIVACY
+- No ads, no accounts, no analytics and no in-app purchases.
+- Your data stays on your phone. Location is used only to calculate times, and the backup is a file you choose.
+- The internet is used only to download Quran recitation audio.
+
+Not an official app and not a source of fatwas. Compare prayer times with your local mosque.

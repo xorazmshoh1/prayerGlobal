@@ -79,6 +79,7 @@ dependencies {
     implementation(project(":feature-tasbih"))
     implementation(project(":feature-calendar"))
     implementation(project(":feature-ramadan"))
+    implementation(libs.play.review.ktx)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
