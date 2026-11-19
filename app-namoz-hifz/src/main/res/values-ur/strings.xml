@@ -12,26 +12,7 @@
     <string name="suhoor">سحری</string>
     <string name="iftar">افطار</string>
 
-    <string name="qibla_title">قبلہ کی سمت</string>
-    <string name="qibla_bearing">%1$d°</string>
-    <string name="qibla_aligned">آپ کا رخ قبلہ کی طرف ہے</string>
-    <string name="qibla_turn">اس وقت تک گھومیں جب تک تیر کعبہ کی طرف نہ ہو</string>
-    <string name="calibrate_hint">کمپاس کی درستگی کم ہے۔ فون کو ہوا میں 8 کی شکل میں گھمائیں اور دھات اور مقناطیس سے دور رکھیں۔</string>
-    <string name="compass_unavailable">اس فون میں کمپاس سینسر نہیں ہے</string>
 
-    <string name="dhikr_subhanallah">سبحان اللہ</string>
-    <string name="dhikr_alhamdulillah">الحمد للہ</string>
-    <string name="dhikr_allahuakbar">اللہ اکبر</string>
-    <string name="dhikr_tahlil">لا الہ الا اللہ</string>
-    <string name="dhikr_istighfar">استغفر اللہ</string>
-    <string name="dhikr_salawat">درود</string>
-    <string name="tasbeh_rounds">چکر: %1$d · ہدف %2$d</string>
-    <string name="tasbeh_custom">اپنی مرضی</string>
-    <string name="tasbeh_target">ہدف</string>
-    <string name="tasbeh_today_total">آج: %1$d</string>
-    <string name="reset">صفر کریں</string>
-    <string name="ok">ٹھیک ہے</string>
-    <string name="cancel">منسوخ</string>
     <string name="close">بند کریں</string>
     <string name="back">واپس</string>
     <string name="next">اگلا</string>

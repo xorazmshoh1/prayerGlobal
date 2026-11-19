@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dhikr_subhanallah">Subhanallah</string>
+    <string name="dhikr_alhamdulillah">Alhamdulillah</string>
+    <string name="dhikr_allahuakbar">Allahu Akbar</string>
+    <string name="dhikr_tahlil">La ilaha illallah</string>
+    <string name="dhikr_istighfar">Astaghfirullah</string>
+    <string name="dhikr_salawat">Sholawat</string>
+    <string name="tasbeh_rounds">Putaran: %1$d · target %2$d</string>
+    <string name="tasbeh_custom">Kustom</string>
+    <string name="tasbeh_target">Target</string>
+    <string name="tasbeh_today_total">Hari ini: %1$d</string>
+    <string name="reset">Atur ulang</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Batal</string>
+    <string name="tasbeh_history">Riwayat</string>
+</resources>

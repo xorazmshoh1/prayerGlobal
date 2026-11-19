@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qibla_title">কিবলার দিক</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">আপনি কিবলামুখী আছেন</string>
+    <string name="qibla_turn">তীরচিহ্ন কাবার দিকে না দেখানো পর্যন্ত ঘুরুন</string>
+    <string name="calibrate_hint">কম্পাসের নির্ভুলতা কম। ফোনটি ইংরেজি আট (8) আকারে ঘোরান এবং ধাতু ও চুম্বক থেকে দূরে রাখুন।</string>
+    <string name="compass_unavailable">এই ফোনে কম্পাস সেন্সর নেই</string>
+    <string name="qibla_distance">%1$s কিমি</string>
+    <string name="qibla_no_place">কিবলার দিক দেখতে নামাজ ট্যাবে আপনার শহর বেছে নিন</string>
+</resources>

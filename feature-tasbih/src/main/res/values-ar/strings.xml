@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dhikr_subhanallah">سبحان الله</string>
+    <string name="dhikr_alhamdulillah">الحمد لله</string>
+    <string name="dhikr_allahuakbar">الله أكبر</string>
+    <string name="dhikr_tahlil">لا إله إلا الله</string>
+    <string name="dhikr_istighfar">أستغفر الله</string>
+    <string name="dhikr_salawat">الصلاة على النبي</string>
+    <string name="tasbeh_rounds">الدورات: %1$d · الهدف %2$d</string>
+    <string name="tasbeh_custom">مخصص</string>
+    <string name="tasbeh_target">الهدف</string>
+    <string name="tasbeh_today_total">اليوم: %1$d</string>
+    <string name="reset">تصفير</string>
+    <string name="ok">حسنًا</string>
+    <string name="cancel">إلغاء</string>
+    <string name="tasbeh_history">السجل</string>
+</resources>

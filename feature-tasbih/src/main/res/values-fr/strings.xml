@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dhikr_subhanallah">SubhanAllah</string>
+    <string name="dhikr_alhamdulillah">Alhamdulillah</string>
+    <string name="dhikr_allahuakbar">Allahu Akbar</string>
+    <string name="dhikr_tahlil">La ilaha illallah</string>
+    <string name="dhikr_istighfar">Astaghfirullah</string>
+    <string name="dhikr_salawat">Salawat</string>
+    <string name="tasbeh_rounds">Tours : %1$d · objectif %2$d</string>
+    <string name="tasbeh_custom">Personnalisé</string>
+    <string name="tasbeh_target">Objectif</string>
+    <string name="tasbeh_today_total">Aujourd’hui : %1$d</string>
+    <string name="reset">Réinitialiser</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Annuler</string>
+    <string name="tasbeh_history">Historique</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qibla_title">Направление киблы</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">Вы смотрите в сторону киблы</string>
+    <string name="qibla_turn">Поворачивайтесь, пока стрелка не укажет на Каабу</string>
+    <string name="calibrate_hint">Низкая точность компаса. Поводите телефоном в форме восьмёрки и держите его подальше от металла и магнитов.</string>
+    <string name="compass_unavailable">В этом телефоне нет датчика компаса</string>
+    <string name="qibla_distance">%1$s км</string>
+    <string name="qibla_no_place">Чтобы увидеть направление киблы, выберите город на вкладке «Намаз»</string>
+</resources>

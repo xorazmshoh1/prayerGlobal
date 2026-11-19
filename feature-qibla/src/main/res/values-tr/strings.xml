@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qibla_title">Kıble yönü</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">Kıbleye yöneldiniz</string>
+    <string name="qibla_turn">Ok Kâbe\'yi gösterene kadar dönün</string>
+    <string name="calibrate_hint">Pusula doğruluğu düşük. Telefonu havada 8 çizerek hareket ettirin, metal ve mıknatıstan uzak tutun.</string>
+    <string name="compass_unavailable">Bu telefonda pusula sensörü yok</string>
+    <string name="qibla_distance">%1$s km</string>
+    <string name="qibla_no_place">Kıble yönünü görmek için Namaz sekmesinden şehrinizi seçin</string>
+</resources>

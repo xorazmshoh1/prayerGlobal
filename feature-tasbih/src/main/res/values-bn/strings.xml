@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dhikr_subhanallah">সুবহানাল্লাহ</string>
+    <string name="dhikr_alhamdulillah">আলহামদুলিল্লাহ</string>
+    <string name="dhikr_allahuakbar">আল্লাহু আকবার</string>
+    <string name="dhikr_tahlil">লা ইলাহা ইল্লাল্লাহ</string>
+    <string name="dhikr_istighfar">আস্তাগফিরুল্লাহ</string>
+    <string name="dhikr_salawat">দরুদ</string>
+    <string name="tasbeh_rounds">চক্র: %1$d · লক্ষ্য %2$d</string>
+    <string name="tasbeh_custom">নিজস্ব</string>
+    <string name="tasbeh_target">লক্ষ্য</string>
+    <string name="tasbeh_today_total">আজ: %1$d</string>
+    <string name="reset">রিসেট</string>
+    <string name="ok">ঠিক আছে</string>
+    <string name="cancel">বাতিল</string>
+    <string name="tasbeh_history">ইতিহাস</string>
+</resources>

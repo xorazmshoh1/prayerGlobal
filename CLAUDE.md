@@ -31,8 +31,11 @@ request kodlari), `notifications/` (5 namoz kanali + eslatmalar, `PrayerAlarmSch
 `widget/PrayerWidget` (Glance), `ui/NotificationSettingsScreen`; receiver/vidjet deklaratsiyalari feature-prayer manifestida (manifest merge).
 "Hifz eslatmasi" kanali — `feature-hifz/HifzNotifications.kt`. Saharlik/Iftor (11) va Islomiy sanalar (10) kanallari o'z modulida
 `NotificationChannelSource` sifatida qo'shiladi. Ilova (`NamozApp`) faqat kanallarni ro'yxatdan o'tkazadi va `PrayerAlarmScheduler.start` ni chaqiradi.
-Hozircha qibla va tasbeh (4-bosqich), oylik jadval (10-bosqich), sozlamalar/onboarding (9-bosqich)
-va Room bazasi (`NamozDatabase`: feature-prayer'dagi `SavedLocation` + tasbeh) `app-namoz-hifz` ichida; ular feature-prayer API'sidan foydalanadi.
+Qibla (4-bosqich) — `feature-qibla`: kompas (`data/SensorCompassSource`), holat (`domain/QiblaTracker`, `CompassMath`), ekran.
+Qibla formulasi va haversine — `core-common` (`geo/Geo`); joylashuv `core-data`dagi `SelectedPlaceSource` orqali, uning ko'prigi `app-namoz-hifz/di/PlaceBridge.kt`da.
+Tasbeh (4-bosqich) — `feature-tasbih`: hisoblagich, `TasbihEntry` (Room `tasbih_entry`), `TasbihDao`, `TasbihSettings`, ekran. Ilova bazasi `MIGRATION_1_2` bilan.
+Oylik jadval (10-bosqich), sozlamalar/onboarding (9-bosqich) va Room bazasi (`NamozDatabase`: feature-prayer'dagi `SavedLocation` + feature-tasbih'dagi `TasbihEntry`)
+`app-namoz-hifz` ichida; ular feature modullar API'laridan foydalanadi.
 Hijriy sana (`HijriProvider`) va `hijriAdjustDays` — `core-data`da (namoz, taqvim, Ramazon uchun umumiy).
 
 ## Qoidalar

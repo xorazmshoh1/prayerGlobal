@@ -12,26 +12,7 @@
     <string name="suhoor">Suhur</string>
     <string name="iftar">Iftar</string>
 
-    <string name="qibla_title">Qibla-Richtung</string>
-    <string name="qibla_bearing">%1$d°</string>
-    <string name="qibla_aligned">Du blickst in Richtung Qibla</string>
-    <string name="qibla_turn">Drehe dich, bis der Pfeil auf die Kaaba zeigt</string>
-    <string name="calibrate_hint">Die Kompassgenauigkeit ist gering. Bewege dein Handy in Form einer Acht und halte es von Metall und Magneten fern.</string>
-    <string name="compass_unavailable">Dieses Handy hat keinen Kompasssensor</string>
 
-    <string name="dhikr_subhanallah">SubhanAllah</string>
-    <string name="dhikr_alhamdulillah">Alhamdulillah</string>
-    <string name="dhikr_allahuakbar">Allahu Akbar</string>
-    <string name="dhikr_tahlil">La ilaha illallah</string>
-    <string name="dhikr_istighfar">Astaghfirullah</string>
-    <string name="dhikr_salawat">Salawat</string>
-    <string name="tasbeh_rounds">Runden: %1$d · Ziel %2$d</string>
-    <string name="tasbeh_custom">Eigenes</string>
-    <string name="tasbeh_target">Ziel</string>
-    <string name="tasbeh_today_total">Heute: %1$d</string>
-    <string name="reset">Zurücksetzen</string>
-    <string name="ok">OK</string>
-    <string name="cancel">Abbrechen</string>
     <string name="close">Schließen</string>
     <string name="back">Zurück</string>
     <string name="next">Weiter</string>

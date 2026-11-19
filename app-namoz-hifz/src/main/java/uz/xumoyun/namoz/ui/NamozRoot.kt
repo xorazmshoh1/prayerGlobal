@@ -40,11 +40,11 @@ import uz.xumoyun.feature.ramadan.RamadanRoutes
 import uz.xumoyun.namoz.R
 import uz.xumoyun.namoz.ui.calendar.CalendarRoute
 import uz.xumoyun.namoz.ui.onboarding.OnboardingRoute
-import uz.xumoyun.namoz.ui.qibla.QiblaRoute
+import uz.xumoyun.feature.qibla.ui.QiblaRoute
 import uz.xumoyun.namoz.ui.settings.HelpScreen
 import uz.xumoyun.namoz.ui.settings.SettingsRoute
 import uz.xumoyun.namoz.ui.settings.SettingsViewModel
-import uz.xumoyun.namoz.ui.tasbeh.TasbehRoute
+import uz.xumoyun.feature.tasbih.ui.TasbihRoute
 
 /** TZ 6-bo'lim: pastki navigatsiyada 5 ta tab. Reklama hech bir ekranda yo'q. */
 private enum class Tab(val route: String, @StringRes val label: Int, val icon: ImageVector) {
@@ -115,7 +115,7 @@ fun NamozRoot(startWithOnboarding: Boolean) {
             }
             composable(Tab.HIFZ.route) { HifzRoute() }
             composable(Tab.QIBLA.route) { QiblaRoute() }
-            composable(Tab.TASBEH.route) { TasbehRoute() }
+            composable(Tab.TASBEH.route) { TasbihRoute() }
             composable(Tab.CALENDAR.route) { CalendarRoute(onRamadan = { nav.navigate(RamadanRoutes.GRAPH) }) }
             // Alohida Ramazon menyusi grafi: R1 bosh sahifa; R2–R6 11-bosqichda qo'shiladi.
             navigation(startDestination = RamadanRoutes.HOME, route = RamadanRoutes.GRAPH) {

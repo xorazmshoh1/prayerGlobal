@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qibla_title">اتجاه القبلة</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">أنت متجه نحو القبلة</string>
+    <string name="qibla_turn">استدر حتى يشير السهم إلى الكعبة</string>
+    <string name="calibrate_hint">دقة البوصلة منخفضة. حرّك الهاتف على شكل الرقم ٨ وأبعده عن المعادن والمغناطيس.</string>
+    <string name="compass_unavailable">لا يحتوي هذا الهاتف على مستشعر بوصلة</string>
+    <string name="qibla_distance">%1$s كم</string>
+    <string name="qibla_no_place">اختر مدينتك من تبويب الصلاة لعرض اتجاه القبلة</string>
+</resources>
