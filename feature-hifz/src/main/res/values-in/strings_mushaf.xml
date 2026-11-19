@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mus'haf matnlari (TZ 9-bo'lim). Qur'on matni va oyat raqamlari bu yerda emas: ular ilova ma'lumoti. -->
+<resources>
+    <string name="mushaf_title">Mushaf</string>
+    <string name="mushaf_open">Buka Mushaf</string>
+    <string name="mushaf_back">Kembali</string>
+    <string name="mushaf_tab_surahs">Surah</string>
+    <string name="mushaf_tab_juz">Juz</string>
+    <string name="mushaf_search_hint">Cari surah</string>
+    <string name="mushaf_no_results">Tidak ada surah yang cocok</string>
+    <string name="mushaf_unavailable_title">Teks Al-Quran belum terpasang</string>
+    <string name="mushaf_unavailable">Build ini tidak memiliki quran.db. File ini dibuat dari berkas Tanzil, lihat tools/README.md.</string>
+    <string name="mushaf_read_failed">Teks Al-Quran tidak dapat dibaca.</string>
+    <string name="mushaf_ayah_count">%1$d ayat</string>
+    <string name="mushaf_juz_label">Juz %1$d</string>
+    <string name="mushaf_meccan">Makkiyah</string>
+    <string name="mushaf_medinan">Madaniyah</string>
+    <string name="mushaf_font_smaller">Perkecil teks</string>
+    <string name="mushaf_font_larger">Perbesar teks</string>
+    <string name="mushaf_add_hifz">Tambah ke hafalan</string>
+    <string name="mushaf_hifz_soon">Rencana hafalan akan hadir di pembaruan berikutnya.</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mus'haf matnlari (TZ 9-bo'lim). Qur'on matni va oyat raqamlari bu yerda emas: ular ilova ma'lumoti. -->
+<resources>
+    <string name="mushaf_title">Mushaf</string>
+    <string name="mushaf_open">Open Mushaf</string>
+    <string name="mushaf_back">Back</string>
+    <string name="mushaf_tab_surahs">Surahs</string>
+    <string name="mushaf_tab_juz">Juz</string>
+    <string name="mushaf_search_hint">Search surah</string>
+    <string name="mushaf_no_results">No matching surah</string>
+    <string name="mushaf_unavailable_title">Quran text not installed</string>
+    <string name="mushaf_unavailable">This build has no quran.db. It is created from the Tanzil files, see tools/README.md.</string>
+    <string name="mushaf_read_failed">The Quran text could not be read.</string>
+    <string name="mushaf_ayah_count">%1$d ayahs</string>
+    <string name="mushaf_juz_label">Juz %1$d</string>
+    <string name="mushaf_meccan">Meccan</string>
+    <string name="mushaf_medinan">Medinan</string>
+    <string name="mushaf_font_smaller">Smaller text</string>
+    <string name="mushaf_font_larger">Larger text</string>
+    <string name="mushaf_add_hifz">Add to memorization</string>
+    <string name="mushaf_hifz_soon">Memorization plans arrive in the next update.</string>
+</resources>

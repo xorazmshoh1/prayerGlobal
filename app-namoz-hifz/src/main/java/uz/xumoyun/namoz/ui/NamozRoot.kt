@@ -32,6 +32,8 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import uz.xumoyun.feature.hifz.HifzRoute
+import uz.xumoyun.feature.hifz.MushafRoutes
+import uz.xumoyun.feature.hifz.mushafGraph
 import uz.xumoyun.feature.prayer.ui.LocationsScreen
 import uz.xumoyun.feature.prayer.ui.NotificationSettingsRoute
 import uz.xumoyun.feature.prayer.ui.PrayerRoute
@@ -113,7 +115,9 @@ fun NamozRoot(startWithOnboarding: Boolean) {
                     onSettings = { nav.navigate(Routes.SETTINGS) },
                 )
             }
-            composable(Tab.HIFZ.route) { HifzRoute() }
+            composable(Tab.HIFZ.route) { HifzRoute(onOpenMushaf = { nav.navigate(MushafRoutes.HOME) }) }
+            // Mus'haf (TZ 5-bosqich): sura/juz ro'yxati, qidiruv, o'qish. Hifz tabidan ochiladi.
+            mushafGraph(nav)
             composable(Tab.QIBLA.route) { QiblaRoute() }
             composable(Tab.TASBEH.route) { TasbihRoute() }
             composable(Tab.CALENDAR.route) { CalendarRoute(onRamadan = { nav.navigate(RamadanRoutes.GRAPH) }) }

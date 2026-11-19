@@ -23,6 +23,7 @@ minSdk 24, compileSdk/targetSdk 36, Gradle version catalog (`gradle/libs.version
 - `core-ui` — Material 3 tema (`NamozHifzPalette`, AppTheme), umumiy komponentlar, AppLocale
 - `core-data` — DataStore, AssetSource, CommonSettings (tema, til, onboarding), `NotificationChannelRegistrar` (modullar `@IntoSet` bilan bergan kanallarni yaratadi)
 - `feature-prayer`, `feature-calendar`, `feature-hifz`, `feature-qibla`, `feature-tasbih`, `feature-ramadan` — funksiya modullari
+`feature-hifz` ichida mus'haf (5-bosqich): `data/` — quran.db Room (`createFromAsset`), `domain/QuranCatalog` (qidiruv, shrift), `ui/` — sura/juz ro'yxati va o'qish ekrani; navigatsiya `MushafNavigation.kt` (`mushafGraph`).
 
 Umumiy kod faqat `core-*` modullarida; feature modullar bir-biriga bog'lanmaydi.
 Namoz yadrosi (hisoblash, mamlakat → usul, PrayerSettings, joylar va shahar qidiruvi, Namoz ekrani) — `feature-prayer` (2-bosqich).
@@ -53,6 +54,8 @@ Hijriy sana (`HijriProvider`) va `hijriAdjustDays` — `core-data`da (namoz, taq
 Windows (lokal): `JAVA_HOME="/c/Users/HP/.jdks/corretto-17.0.5" ./gradlew ...`
 
 ## Muhim fayllar
+- `tools/build-quran-db/` — Tanzil `quran-uthmani.txt` + `quran-data.xml` dan `quran.db` yaratadigan Android'siz Gradle loyiha (5-bosqich); `tools/README.md`
+- `feature-hifz/src/main/assets/quran.db` — generatsiya qilinadi, repoda YO'Q (`.gitignore`); Room sxemasi `feature-hifz/.../data/QuranEntities.kt`, mus'haf `feature-hifz/.../ui/`
 - `feature-prayer/src/main/assets/methods.json` — davlat → hisoblash usuli va Asr mazhabi (TZ 2-bo'lim)
 - `feature-prayer/src/main/assets/cities.json` — shaharlar (`tools/geonames-to-json.mjs` bilan GeoNames'dan qayta yaratiladi)
 - `feature-prayer/.../domain/PrayerCalculator.kt` — hisoblash (adhan, Android'siz); `domain/` dagi hamma narsa sof Kotlin
