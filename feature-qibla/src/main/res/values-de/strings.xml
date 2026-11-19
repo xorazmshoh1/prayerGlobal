@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qibla_title">Qibla-Richtung</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">Du blickst in Richtung Qibla</string>
+    <string name="qibla_turn">Drehe dich, bis der Pfeil auf die Kaaba zeigt</string>
+    <string name="calibrate_hint">Die Kompassgenauigkeit ist gering. Bewege dein Handy in Form einer Acht und halte es von Metall und Magneten fern.</string>
+    <string name="compass_unavailable">Dieses Handy hat keinen Kompasssensor</string>
+    <string name="qibla_distance">%1$s km</string>
+    <string name="qibla_no_place">Wählen Sie Ihre Stadt im Tab Gebet, um die Qibla-Richtung zu sehen</string>
+</resources>

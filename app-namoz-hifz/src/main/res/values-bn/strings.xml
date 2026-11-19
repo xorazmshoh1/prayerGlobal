@@ -12,26 +12,7 @@
     <string name="suhoor">সেহরি</string>
     <string name="iftar">ইফতার</string>
 
-    <string name="qibla_title">কিবলার দিক</string>
-    <string name="qibla_bearing">%1$d°</string>
-    <string name="qibla_aligned">আপনি কিবলামুখী আছেন</string>
-    <string name="qibla_turn">তীরচিহ্ন কাবার দিকে না দেখানো পর্যন্ত ঘুরুন</string>
-    <string name="calibrate_hint">কম্পাসের নির্ভুলতা কম। ফোনটি ইংরেজি আট (8) আকারে ঘোরান এবং ধাতু ও চুম্বক থেকে দূরে রাখুন।</string>
-    <string name="compass_unavailable">এই ফোনে কম্পাস সেন্সর নেই</string>
 
-    <string name="dhikr_subhanallah">সুবহানাল্লাহ</string>
-    <string name="dhikr_alhamdulillah">আলহামদুলিল্লাহ</string>
-    <string name="dhikr_allahuakbar">আল্লাহু আকবার</string>
-    <string name="dhikr_tahlil">লা ইলাহা ইল্লাল্লাহ</string>
-    <string name="dhikr_istighfar">আস্তাগফিরুল্লাহ</string>
-    <string name="dhikr_salawat">দরুদ</string>
-    <string name="tasbeh_rounds">চক্র: %1$d · লক্ষ্য %2$d</string>
-    <string name="tasbeh_custom">নিজস্ব</string>
-    <string name="tasbeh_target">লক্ষ্য</string>
-    <string name="tasbeh_today_total">আজ: %1$d</string>
-    <string name="reset">রিসেট</string>
-    <string name="ok">ঠিক আছে</string>
-    <string name="cancel">বাতিল</string>
     <string name="close">বন্ধ</string>
     <string name="back">ফিরে যান</string>
     <string name="next">পরবর্তী</string>

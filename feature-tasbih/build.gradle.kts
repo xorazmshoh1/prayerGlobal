@@ -26,6 +26,9 @@ dependencies {
     implementation(project(":core-ui"))
     implementation(project(":core-data"))
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    // Entity va DAO shu modulda; @Database va Room kompilyatori ilova modulida (feature-prayer kabi).
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
     implementation(libs.hilt.android)
     implementation(libs.hilt.navigation.compose)
     ksp(libs.hilt.compiler)

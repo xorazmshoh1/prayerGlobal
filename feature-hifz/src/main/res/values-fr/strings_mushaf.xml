@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mus'haf matnlari (TZ 9-bo'lim). Qur'on matni va oyat raqamlari bu yerda emas: ular ilova ma'lumoti. -->
+<resources>
+    <string name="mushaf_title">Mushaf</string>
+    <string name="mushaf_open">Ouvrir le Mushaf</string>
+    <string name="mushaf_back">Retour</string>
+    <string name="mushaf_tab_surahs">Sourates</string>
+    <string name="mushaf_tab_juz">Juz</string>
+    <string name="mushaf_search_hint">Rechercher une sourate</string>
+    <string name="mushaf_no_results">Aucune sourate correspondante</string>
+    <string name="mushaf_unavailable_title">Texte du Coran non installé</string>
+    <string name="mushaf_unavailable">Cette version ne contient pas quran.db. Il est créé à partir des fichiers Tanzil, voir tools/README.md.</string>
+    <string name="mushaf_read_failed">Le texte du Coran n\'a pas pu être lu.</string>
+    <string name="mushaf_ayah_count">%1$d versets</string>
+    <string name="mushaf_juz_label">Juz %1$d</string>
+    <string name="mushaf_meccan">Mecquoise</string>
+    <string name="mushaf_medinan">Médinoise</string>
+    <string name="mushaf_font_smaller">Réduire le texte</string>
+    <string name="mushaf_font_larger">Agrandir le texte</string>
+    <string name="mushaf_add_hifz">Ajouter à la mémorisation</string>
+    <string name="mushaf_hifz_soon">Les plans de mémorisation arriveront dans la prochaine mise à jour.</string>
+</resources>

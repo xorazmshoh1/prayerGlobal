@@ -10,3 +10,5 @@ build/
 *.jks
 *.keystore
 .kotlin/
+# Tanzil matnidan generatsiya qilinadi (tools/README.md), repoga qo'shilmaydi
+**/src/main/assets/quran.db

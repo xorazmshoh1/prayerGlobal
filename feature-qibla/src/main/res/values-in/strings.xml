@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qibla_title">Arah kiblat</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">Anda menghadap kiblat</string>
+    <string name="qibla_turn">Putar sampai panah menunjuk ke Ka\'bah</string>
+    <string name="calibrate_hint">Akurasi kompas rendah. Gerakkan ponsel membentuk angka 8 dan jauhkan dari logam dan magnet.</string>
+    <string name="compass_unavailable">Ponsel ini tidak memiliki sensor kompas</string>
+    <string name="qibla_distance">%1$s km</string>
+    <string name="qibla_no_place">Pilih kota Anda di tab Salat untuk melihat arah kiblat</string>
+</resources>

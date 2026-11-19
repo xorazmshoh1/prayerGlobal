@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qibla_title">Qibla yoʻnalishi</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">Siz qiblaga qaragansiz</string>
+    <string name="qibla_turn">Strelka Kaʼbaga qaraguncha buriling</string>
+    <string name="calibrate_hint">Kompas aniqligi past. Telefonni havoda «8» shaklida aylantiring, metall va magnitdan uzoqroq tuting.</string>
+    <string name="compass_unavailable">Bu telefonda kompas sensori yoʻq</string>
+    <string name="qibla_distance">%1$s km</string>
+    <string name="qibla_no_place">Qibla yo‘nalishini ko‘rish uchun Namoz tabida shaharni tanlang</string>
+</resources>

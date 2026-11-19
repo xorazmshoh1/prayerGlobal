@@ -23,6 +23,7 @@ minSdk 24, compileSdk/targetSdk 36, Gradle version catalog (`gradle/libs.version
 - `core-ui` — Material 3 tema (`NamozHifzPalette`, AppTheme), umumiy komponentlar, AppLocale
 - `core-data` — DataStore, AssetSource, CommonSettings (tema, til, onboarding), `NotificationChannelRegistrar` (modullar `@IntoSet` bilan bergan kanallarni yaratadi)
 - `feature-prayer`, `feature-calendar`, `feature-hifz`, `feature-qibla`, `feature-tasbih`, `feature-ramadan` — funksiya modullari
+`feature-hifz` ichida mus'haf (5-bosqich): `data/` — quran.db Room (`createFromAsset`), `domain/QuranCatalog` (qidiruv, shrift), `ui/` — sura/juz ro'yxati va o'qish ekrani; navigatsiya `MushafNavigation.kt` (`mushafGraph`).
 
 Umumiy kod faqat `core-*` modullarida; feature modullar bir-biriga bog'lanmaydi.
 Namoz yadrosi (hisoblash, mamlakat → usul, PrayerSettings, joylar va shahar qidiruvi, Namoz ekrani) — `feature-prayer` (2-bosqich).
@@ -31,8 +32,11 @@ request kodlari), `notifications/` (5 namoz kanali + eslatmalar, `PrayerAlarmSch
 `widget/PrayerWidget` (Glance), `ui/NotificationSettingsScreen`; receiver/vidjet deklaratsiyalari feature-prayer manifestida (manifest merge).
 "Hifz eslatmasi" kanali — `feature-hifz/HifzNotifications.kt`. Saharlik/Iftor (11) va Islomiy sanalar (10) kanallari o'z modulida
 `NotificationChannelSource` sifatida qo'shiladi. Ilova (`NamozApp`) faqat kanallarni ro'yxatdan o'tkazadi va `PrayerAlarmScheduler.start` ni chaqiradi.
-Hozircha qibla va tasbeh (4-bosqich), oylik jadval (10-bosqich), sozlamalar/onboarding (9-bosqich)
-va Room bazasi (`NamozDatabase`: feature-prayer'dagi `SavedLocation` + tasbeh) `app-namoz-hifz` ichida; ular feature-prayer API'sidan foydalanadi.
+Qibla (4-bosqich) — `feature-qibla`: kompas (`data/SensorCompassSource`), holat (`domain/QiblaTracker`, `CompassMath`), ekran.
+Qibla formulasi va haversine — `core-common` (`geo/Geo`); joylashuv `core-data`dagi `SelectedPlaceSource` orqali, uning ko'prigi `app-namoz-hifz/di/PlaceBridge.kt`da.
+Tasbeh (4-bosqich) — `feature-tasbih`: hisoblagich, `TasbihEntry` (Room `tasbih_entry`), `TasbihDao`, `TasbihSettings`, ekran. Ilova bazasi `MIGRATION_1_2` bilan.
+Oylik jadval (10-bosqich), sozlamalar/onboarding (9-bosqich) va Room bazasi (`NamozDatabase`: feature-prayer'dagi `SavedLocation` + feature-tasbih'dagi `TasbihEntry`)
+`app-namoz-hifz` ichida; ular feature modullar API'laridan foydalanadi.
 Hijriy sana (`HijriProvider`) va `hijriAdjustDays` — `core-data`da (namoz, taqvim, Ramazon uchun umumiy).
 
 ## Qoidalar
@@ -50,6 +54,8 @@ Hijriy sana (`HijriProvider`) va `hijriAdjustDays` — `core-data`da (namoz, taq
 Windows (lokal): `JAVA_HOME="/c/Users/HP/.jdks/corretto-17.0.5" ./gradlew ...`
 
 ## Muhim fayllar
+- `tools/build-quran-db/` — Tanzil `quran-uthmani.txt` + `quran-data.xml` dan `quran.db` yaratadigan Android'siz Gradle loyiha (5-bosqich); `tools/README.md`
+- `feature-hifz/src/main/assets/quran.db` — generatsiya qilinadi, repoda YO'Q (`.gitignore`); Room sxemasi `feature-hifz/.../data/QuranEntities.kt`, mus'haf `feature-hifz/.../ui/`
 - `feature-prayer/src/main/assets/methods.json` — davlat → hisoblash usuli va Asr mazhabi (TZ 2-bo'lim)
 - `feature-prayer/src/main/assets/cities.json` — shaharlar (`tools/geonames-to-json.mjs` bilan GeoNames'dan qayta yaratiladi)
 - `feature-prayer/.../domain/PrayerCalculator.kt` — hisoblash (adhan, Android'siz); `domain/` dagi hamma narsa sof Kotlin

@@ -394,8 +394,8 @@ Ish 12 bosqichga bo'lingan, har biri bitta Claude Code sessiyasiga sig'adi va ox
 - [ ] 1. Loyiha skeleti: modullar, Hilt, Compose tema (11-bo'lim ranglari), navigatsiya, 5 ta bo'sh tab va Ramazon menyusi grafi, CI (build + test + reklama SDK tekshiruvi)
 - [x] 2. Namoz yadrosi: adhan-kotlin, mamlakat → usul jadvali, PrayerSettings (DataStore), joylashuv va shahar qidiruvi, Namoz ekrani, unit testlar
 - [x] 3. Bildirishnomalar: kanallar, AlarmManager, SCHEDULE_EXACT_ALARM bilan zaxira yo'l, boot va vaqt mintaqasi qabul qiluvchilari, kunlik WorkManager, vidjet
-- [ ] 4. Qibla va tasbeh: kompas, formula va testlar, tasbeh ekrani va tarix
-- [ ] 5. Qur'on bazasi: Tanzil'dan quran.db yaratish skripti, Room createFromAsset, mus'haf ekrani, Amiri Quran, matn butunligi testlari
+- [x] 4. Qibla va tasbeh: kompas, formula va testlar, tasbeh ekrani va tarix
+- [x] 5. Qur'on bazasi: Tanzil'dan quran.db yaratish skripti, Room createFromAsset, mus'haf ekrani, Amiri Quran, matn butunligi testlari
 - [ ] 6. Audio: qorilar ro'yxati, WorkManager yuklash, Media3 pleyer, oyat takrori va tezlik, audio boshqaruvi ekrani
 - [ ] 7. Hifz yadrosi: HifzPlan, AyahProgress, SM-2, kunlik Sabaq/Sabqi/Manzil generatori, unit testlar
 - [ ] 8. Hifz UI: Hifz tab, dars rejimi (matnni yashirish, baholash), reja ekrani, progress va juzlar xaritasi, namozdan keyingi eslatma

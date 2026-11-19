@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mus'haf matnlari (TZ 9-bo'lim). Qur'on matni va oyat raqamlari bu yerda emas: ular ilova ma'lumoti. -->
+<resources>
+    <string name="mushaf_title">Мусхаф</string>
+    <string name="mushaf_open">Открыть мусхаф</string>
+    <string name="mushaf_back">Назад</string>
+    <string name="mushaf_tab_surahs">Суры</string>
+    <string name="mushaf_tab_juz">Джузы</string>
+    <string name="mushaf_search_hint">Поиск суры</string>
+    <string name="mushaf_no_results">Подходящая сура не найдена</string>
+    <string name="mushaf_unavailable_title">Текст Корана не установлен</string>
+    <string name="mushaf_unavailable">В этой сборке нет quran.db. Его создают из файлов Tanzil, см. tools/README.md.</string>
+    <string name="mushaf_read_failed">Не удалось прочитать текст Корана.</string>
+    <string name="mushaf_ayah_count">%1$d аятов</string>
+    <string name="mushaf_juz_label">Джуз %1$d</string>
+    <string name="mushaf_meccan">Мекканская</string>
+    <string name="mushaf_medinan">Мединская</string>
+    <string name="mushaf_font_smaller">Уменьшить текст</string>
+    <string name="mushaf_font_larger">Увеличить текст</string>
+    <string name="mushaf_add_hifz">Добавить в заучивание</string>
+    <string name="mushaf_hifz_soon">Планы заучивания появятся в следующем обновлении.</string>
+</resources>

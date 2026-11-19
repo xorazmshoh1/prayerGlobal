@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qibla_title">Direction de la Qibla</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">Vous êtes face à la Qibla</string>
+    <string name="qibla_turn">Tournez jusqu’à ce que la flèche pointe vers la Kaaba</string>
+    <string name="calibrate_hint">La précision de la boussole est faible. Faites un mouvement en forme de huit avec votre téléphone et éloignez-le du métal et des aimants.</string>
+    <string name="compass_unavailable">Ce téléphone n’a pas de capteur boussole</string>
+    <string name="qibla_distance">%1$s km</string>
+    <string name="qibla_no_place">Choisissez votre ville dans l’onglet Prière pour voir la direction de la Qibla</string>
+</resources>

@@ -32,6 +32,8 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import uz.xumoyun.feature.hifz.HifzRoute
+import uz.xumoyun.feature.hifz.MushafRoutes
+import uz.xumoyun.feature.hifz.mushafGraph
 import uz.xumoyun.feature.prayer.ui.LocationsScreen
 import uz.xumoyun.feature.prayer.ui.NotificationSettingsRoute
 import uz.xumoyun.feature.prayer.ui.PrayerRoute
@@ -40,11 +42,11 @@ import uz.xumoyun.feature.ramadan.RamadanRoutes
 import uz.xumoyun.namoz.R
 import uz.xumoyun.namoz.ui.calendar.CalendarRoute
 import uz.xumoyun.namoz.ui.onboarding.OnboardingRoute
-import uz.xumoyun.namoz.ui.qibla.QiblaRoute
+import uz.xumoyun.feature.qibla.ui.QiblaRoute
 import uz.xumoyun.namoz.ui.settings.HelpScreen
 import uz.xumoyun.namoz.ui.settings.SettingsRoute
 import uz.xumoyun.namoz.ui.settings.SettingsViewModel
-import uz.xumoyun.namoz.ui.tasbeh.TasbehRoute
+import uz.xumoyun.feature.tasbih.ui.TasbihRoute
 
 /** TZ 6-bo'lim: pastki navigatsiyada 5 ta tab. Reklama hech bir ekranda yo'q. */
 private enum class Tab(val route: String, @StringRes val label: Int, val icon: ImageVector) {
@@ -113,9 +115,11 @@ fun NamozRoot(startWithOnboarding: Boolean) {
                     onSettings = { nav.navigate(Routes.SETTINGS) },
                 )
             }
-            composable(Tab.HIFZ.route) { HifzRoute() }
+            composable(Tab.HIFZ.route) { HifzRoute(onOpenMushaf = { nav.navigate(MushafRoutes.HOME) }) }
+            // Mus'haf (TZ 5-bosqich): sura/juz ro'yxati, qidiruv, o'qish. Hifz tabidan ochiladi.
+            mushafGraph(nav)
             composable(Tab.QIBLA.route) { QiblaRoute() }
-            composable(Tab.TASBEH.route) { TasbehRoute() }
+            composable(Tab.TASBEH.route) { TasbihRoute() }
             composable(Tab.CALENDAR.route) { CalendarRoute(onRamadan = { nav.navigate(RamadanRoutes.GRAPH) }) }
             // Alohida Ramazon menyusi grafi: R1 bosh sahifa; R2–R6 11-bosqichda qo'shiladi.
             navigation(startDestination = RamadanRoutes.HOME, route = RamadanRoutes.GRAPH) {

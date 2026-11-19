@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dhikr_subhanallah">СубханАллах</string>
+    <string name="dhikr_alhamdulillah">Альхамдулиллях</string>
+    <string name="dhikr_allahuakbar">Аллаху Акбар</string>
+    <string name="dhikr_tahlil">Ля иляха илляЛлах</string>
+    <string name="dhikr_istighfar">Астагфируллах</string>
+    <string name="dhikr_salawat">Салават</string>
+    <string name="tasbeh_rounds">Круги: %1$d · цель %2$d</string>
+    <string name="tasbeh_custom">Своя</string>
+    <string name="tasbeh_target">Цель</string>
+    <string name="tasbeh_today_total">Сегодня: %1$d</string>
+    <string name="reset">Сброс</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+    <string name="tasbeh_history">История</string>
+</resources>

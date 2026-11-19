@@ -85,4 +85,16 @@ class PrayerCalculatorTest {
         assertEquals(295.2, PrayerCalculator.qibla(-6.2088, 106.8456), 1.0)
         assertEquals(119.0, PrayerCalculator.qibla(51.5074, -0.1278), 1.0)
     }
+
+    /** adhan (PrayerCalculator.qibla) va core-common formulasi (Geo) bir xil natija berishi kerak (TZ 7). */
+    @Test fun qiblaMatchesCoreCommonFormula() {
+        var maxDiff = 0.0
+        for (lat in -60..60 step 5) for (lon in -170..170 step 10) {
+            val a = PrayerCalculator.qibla(lat.toDouble(), lon.toDouble())
+            val b = uz.xumoyun.core.common.geo.Geo.qiblaBearing(lat.toDouble(), lon.toDouble())
+            val diff = Math.abs(((a - b + 540) % 360) - 180)
+            maxDiff = maxOf(maxDiff, diff)
+        }
+        assertTrue("max diff $maxDiff", maxDiff <= 1.0)
+    }
 }

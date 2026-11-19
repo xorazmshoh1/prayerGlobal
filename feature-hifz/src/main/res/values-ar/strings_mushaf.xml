@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mus'haf matnlari (TZ 9-bo'lim). Qur'on matni va oyat raqamlari bu yerda emas: ular ilova ma'lumoti. -->
+<resources>
+    <string name="mushaf_title">المصحف</string>
+    <string name="mushaf_open">فتح المصحف</string>
+    <string name="mushaf_back">رجوع</string>
+    <string name="mushaf_tab_surahs">السور</string>
+    <string name="mushaf_tab_juz">الأجزاء</string>
+    <string name="mushaf_search_hint">ابحث عن سورة</string>
+    <string name="mushaf_no_results">لا توجد سورة مطابقة</string>
+    <string name="mushaf_unavailable_title">نص القرآن غير مثبت</string>
+    <string name="mushaf_unavailable">هذه النسخة لا تحتوي على quran.db، ويُنشأ من ملفات Tanzil، راجع tools/README.md.</string>
+    <string name="mushaf_read_failed">تعذّرت قراءة نص القرآن.</string>
+    <string name="mushaf_ayah_count">%1$d آية</string>
+    <string name="mushaf_juz_label">الجزء %1$d</string>
+    <string name="mushaf_meccan">مكية</string>
+    <string name="mushaf_medinan">مدنية</string>
+    <string name="mushaf_font_smaller">تصغير الخط</string>
+    <string name="mushaf_font_larger">تكبير الخط</string>
+    <string name="mushaf_add_hifz">أضف إلى الحفظ</string>
+    <string name="mushaf_hifz_soon">خطط الحفظ ستصل في التحديث القادم.</string>
+</resources>

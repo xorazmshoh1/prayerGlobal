@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qibla_title">قبلہ کی سمت</string>
+    <string name="qibla_bearing">%1$d°</string>
+    <string name="qibla_aligned">آپ کا رخ قبلہ کی طرف ہے</string>
+    <string name="qibla_turn">اس وقت تک گھومیں جب تک تیر کعبہ کی طرف نہ ہو</string>
+    <string name="calibrate_hint">کمپاس کی درستگی کم ہے۔ فون کو ہوا میں 8 کی شکل میں گھمائیں اور دھات اور مقناطیس سے دور رکھیں۔</string>
+    <string name="compass_unavailable">اس فون میں کمپاس سینسر نہیں ہے</string>
+    <string name="qibla_distance">%1$s کلومیٹر</string>
+    <string name="qibla_no_place">قبلہ کی سمت دیکھنے کے لیے نماز ٹیب میں اپنا شہر منتخب کریں</string>
+</resources>

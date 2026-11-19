@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mus'haf matnlari (TZ 9-bo'lim). Qur'on matni va oyat raqamlari bu yerda emas: ular ilova ma'lumoti. -->
+<resources>
+    <string name="mushaf_title">مصحف</string>
+    <string name="mushaf_open">مصحف کھولیں</string>
+    <string name="mushaf_back">واپس</string>
+    <string name="mushaf_tab_surahs">سورتیں</string>
+    <string name="mushaf_tab_juz">پارے</string>
+    <string name="mushaf_search_hint">سورت تلاش کریں</string>
+    <string name="mushaf_no_results">کوئی متعلقہ سورت نہیں ملی</string>
+    <string name="mushaf_unavailable_title">قرآن کا متن انسٹال نہیں ہے</string>
+    <string name="mushaf_unavailable">اس بلڈ میں quran.db نہیں ہے۔ یہ Tanzil فائلوں سے بنتی ہے، tools/README.md دیکھیں۔</string>
+    <string name="mushaf_read_failed">قرآن کا متن پڑھا نہیں جا سکا۔</string>
+    <string name="mushaf_ayah_count">%1$d آیات</string>
+    <string name="mushaf_juz_label">پارہ %1$d</string>
+    <string name="mushaf_meccan">مکی</string>
+    <string name="mushaf_medinan">مدنی</string>
+    <string name="mushaf_font_smaller">متن چھوٹا کریں</string>
+    <string name="mushaf_font_larger">متن بڑا کریں</string>
+    <string name="mushaf_add_hifz">حفظ میں شامل کریں</string>
+    <string name="mushaf_hifz_soon">حفظ کے منصوبے اگلی اپڈیٹ میں آئیں گے۔</string>
+</resources>

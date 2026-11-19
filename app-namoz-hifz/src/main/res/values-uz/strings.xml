@@ -12,26 +12,7 @@
     <string name="suhoor">Saharlik</string>
     <string name="iftar">Iftorlik</string>
 
-    <string name="qibla_title">Qibla yoʻnalishi</string>
-    <string name="qibla_bearing">%1$d°</string>
-    <string name="qibla_aligned">Siz qiblaga qaragansiz</string>
-    <string name="qibla_turn">Strelka Kaʼbaga qaraguncha buriling</string>
-    <string name="calibrate_hint">Kompas aniqligi past. Telefonni havoda «8» shaklida aylantiring, metall va magnitdan uzoqroq tuting.</string>
-    <string name="compass_unavailable">Bu telefonda kompas sensori yoʻq</string>
 
-    <string name="dhikr_subhanallah">Subhanalloh</string>
-    <string name="dhikr_alhamdulillah">Alhamdulilloh</string>
-    <string name="dhikr_allahuakbar">Allohu akbar</string>
-    <string name="dhikr_tahlil">La ilaha illalloh</string>
-    <string name="dhikr_istighfar">Astagʻfirulloh</string>
-    <string name="dhikr_salawat">Salovat</string>
-    <string name="tasbeh_rounds">Davra: %1$d · maqsad %2$d</string>
-    <string name="tasbeh_custom">Ixtiyoriy</string>
-    <string name="tasbeh_target">Maqsad</string>
-    <string name="tasbeh_today_total">Bugun: %1$d</string>
-    <string name="reset">Nolga</string>
-    <string name="ok">OK</string>
-    <string name="cancel">Bekor qilish</string>
     <string name="close">Yopish</string>
     <string name="back">Orqaga</string>
     <string name="next">Keyingi</string>
